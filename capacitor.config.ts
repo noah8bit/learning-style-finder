@@ -1,7 +1,7 @@
 import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'app.lovable.2f0e31466a3244edbc60b80677b19fd4',
+  appId: 'com.keys.learningstylesapp',
   appName: 'KEYS',
   webDir: 'dist',
   server: {
