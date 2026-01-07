@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowRight, Brain, Clock, Target } from "lucide-react";
+import keysLogo from "@/assets/keys-logo.png";
 
 interface WelcomeScreenProps {
   onStart: () => void;
@@ -10,8 +11,16 @@ export function WelcomeScreen({ onStart }: WelcomeScreenProps) {
   return (
     <div className="space-y-8 text-center">
       <div className="space-y-4">
-        <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
-          Find Your <span className="text-primary">KEYS</span> Behavior Style
+        {/* KEYS Logo */}
+        <div className="flex justify-center mb-6">
+          <img 
+            src={keysLogo} 
+            alt="KEYS" 
+            className="h-24 md:h-32 object-contain animate-fade-in"
+          />
+        </div>
+        <h1 className="text-3xl md:text-4xl font-bold tracking-tight">
+          Behavior Style Quiz
         </h1>
         <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
           Discover your unique personality type by answering 4 simple questions about how you interact with the world.
