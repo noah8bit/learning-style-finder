@@ -1,6 +1,7 @@
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowRight, Brain, Clock, Target } from "lucide-react";
+import { ArrowRight, Brain, Clock, Target, Compass } from "lucide-react";
 import keysLogo from "@/assets/keys-logo.png";
 
 interface WelcomeScreenProps {
@@ -65,10 +66,18 @@ export function WelcomeScreen({ onStart }: WelcomeScreenProps) {
         </Card>
       </div>
 
-      <Button size="lg" onClick={onStart} className="gap-2 text-lg px-8">
-        Start Questionnaire
-        <ArrowRight className="h-5 w-5" />
-      </Button>
+      <div className="flex flex-col sm:flex-row gap-3 justify-center">
+        <Button size="lg" onClick={onStart} className="gap-2 text-lg px-8">
+          Start Questionnaire
+          <ArrowRight className="h-5 w-5" />
+        </Button>
+        <Link to="/explore">
+          <Button size="lg" variant="outline" className="gap-2 text-lg px-8 w-full">
+            <Compass className="h-5 w-5" />
+            Explore Styles
+          </Button>
+        </Link>
+      </div>
     </div>
   );
 }
