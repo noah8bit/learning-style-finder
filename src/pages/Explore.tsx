@@ -7,6 +7,7 @@ import { Badge } from "@/components/ui/badge";
 import { behaviorStyles, BehaviorStyle } from "@/data/keysData";
 import { ArrowLeft, Users, Briefcase, MessageSquare, Target, AlertTriangle, Zap, Heart } from "lucide-react";
 import keysLogo from "@/assets/keys-logo.png";
+import { TraitGlossary } from "@/components/explore/TraitGlossary";
 
 // Import bird illustrations
 import eagleImg from "@/assets/eagle.png";
@@ -383,6 +384,9 @@ export default function Explore() {
 
         {/* Selected Style Details */}
         <StyleDetail style={selectedStyle} />
+
+        {/* Trait Glossary Section */}
+        <TraitGlossary />
       </div>
     </div>
   );
