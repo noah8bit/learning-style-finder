@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { PersonalityType, getPrimaryBehaviorStyle, behaviorStyles } from "@/data/keysData";
-import { RotateCcw, Share2, Download, Check, Briefcase, Heart, MessageSquare, Compass } from "lucide-react";
+import { RotateCcw, Share2, Download, Check, Briefcase, Heart, MessageSquare, Compass, User, AlertTriangle, Zap, Target } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import html2canvas from "html2canvas";
 import confetti from "canvas-confetti";
@@ -162,22 +162,29 @@ export function ResultsCard({ result, onRetake }: ResultsCardProps) {
 
         {/* Tabbed Content */}
         <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
-          <TabsList className="grid grid-cols-4 mb-4">
+          <TabsList className="grid grid-cols-5 mb-4">
             <TabsTrigger value="overview" className="text-xs sm:text-sm gap-1">
               <Check className="h-3 w-3 hidden sm:inline" />
-              Overview
+              <span className="hidden sm:inline">Overview</span>
+              <span className="sm:hidden">Info</span>
+            </TabsTrigger>
+            <TabsTrigger value="profile" className="text-xs sm:text-sm gap-1">
+              <User className="h-3 w-3 hidden sm:inline" />
+              Profile
             </TabsTrigger>
             <TabsTrigger value="work" className="text-xs sm:text-sm gap-1">
               <Briefcase className="h-3 w-3 hidden sm:inline" />
-              At Work
+              Work
             </TabsTrigger>
             <TabsTrigger value="communication" className="text-xs sm:text-sm gap-1">
               <MessageSquare className="h-3 w-3 hidden sm:inline" />
-              Communication
+              <span className="hidden sm:inline">Comm</span>
+              <span className="sm:hidden">Talk</span>
             </TabsTrigger>
             <TabsTrigger value="relationships" className="text-xs sm:text-sm gap-1">
               <Heart className="h-3 w-3 hidden sm:inline" />
-              Relationships
+              <span className="hidden sm:inline">Relations</span>
+              <span className="sm:hidden">❤️</span>
             </TabsTrigger>
           </TabsList>
 
@@ -245,6 +252,128 @@ export function ResultsCard({ result, onRetake }: ResultsCardProps) {
                   </div>
                 </CardContent>
               </Card>
+            )}
+          </TabsContent>
+
+          <TabsContent value="profile" className="space-y-4">
+            {primaryStyle && (
+              <>
+                {/* Core Desires & Needs */}
+                <Card className="animate-fade-in">
+                  <CardHeader>
+                    <CardTitle className="text-xl flex items-center gap-2">
+                      <Target className="h-5 w-5 text-primary" />
+                      Core Desires & Needs
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent className="space-y-4">
+                    <div className="p-4 bg-primary/10 rounded-lg border border-primary/20">
+                      <p className="text-xs font-medium text-primary mb-1">What You Desire Most</p>
+                      <p className="font-semibold text-lg">{primaryStyle.enhancedProfile.desires}</p>
+                    </div>
+                    <div className="p-4 bg-muted rounded-lg">
+                      <p className="text-xs font-medium text-muted-foreground mb-2">Emotional Needs</p>
+                      <p className="text-sm">{primaryStyle.enhancedProfile.emotionalNeeds}</p>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                {/* Key Strengths & Weaknesses */}
+                <Card className="animate-fade-in">
+                  <CardHeader>
+                    <CardTitle className="text-xl flex items-center gap-2">
+                      <Zap className="h-5 w-5 text-green-600" />
+                      KEYS Profile Insights
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent className="space-y-4">
+                    <div className="p-4 bg-green-50 rounded-lg border border-green-200">
+                      <p className="text-xs font-medium text-green-700 mb-2">Key Strengths</p>
+                      <p className="text-sm text-green-900">{primaryStyle.enhancedProfile.keyStrengths}</p>
+                    </div>
+                    <div className="p-4 bg-amber-50 rounded-lg border border-amber-200">
+                      <p className="text-xs font-medium text-amber-700 mb-2">Key Weaknesses</p>
+                      <p className="text-sm text-amber-900">{primaryStyle.enhancedProfile.keyWeaknesses}</p>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                {/* Emotional Triggers */}
+                <Card className="animate-fade-in">
+                  <CardHeader>
+                    <CardTitle className="text-xl flex items-center gap-2">
+                      <AlertTriangle className="h-5 w-5 text-amber-500" />
+                      Emotional Triggers
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent className="space-y-4">
+                    <div className="p-4 bg-slate-100 rounded-lg border border-slate-200">
+                      <p className="text-xs font-medium text-slate-600 mb-2">Gets Depressed When...</p>
+                      <p className="text-sm">{primaryStyle.enhancedProfile.getsDepressedWhen}</p>
+                    </div>
+                    <div className="p-4 bg-red-50 rounded-lg border border-red-200">
+                      <p className="text-xs font-medium text-red-700 mb-2">Afraid Of...</p>
+                      <p className="text-sm text-red-900">{primaryStyle.enhancedProfile.afraidOf}</p>
+                    </div>
+                    <div className="p-4 bg-orange-50 rounded-lg border border-orange-200">
+                      <p className="text-xs font-medium text-orange-700 mb-2">Under Stress, They...</p>
+                      <p className="text-sm text-orange-900">{primaryStyle.enhancedProfile.reactionToStress}</p>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                {/* Social Preferences */}
+                <Card className="animate-fade-in">
+                  <CardHeader>
+                    <CardTitle className="text-xl flex items-center gap-2">
+                      <Heart className="h-5 w-5 text-pink-500" />
+                      Social Preferences
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent className="space-y-4">
+                    <div className="p-4 bg-green-50 rounded-lg border border-green-200">
+                      <p className="text-xs font-medium text-green-700 mb-2">Likes People Who...</p>
+                      <p className="text-sm text-green-900">{primaryStyle.enhancedProfile.likesPeopleWho}</p>
+                    </div>
+                    <div className="p-4 bg-red-50 rounded-lg border border-red-200">
+                      <p className="text-xs font-medium text-red-700 mb-2">Dislikes People Who...</p>
+                      <p className="text-sm text-red-900">{primaryStyle.enhancedProfile.dislikesPeopleWho}</p>
+                    </div>
+                    <div className="p-4 bg-pink-50 rounded-lg border border-pink-200">
+                      <p className="text-xs font-medium text-pink-700 mb-2">Tends to Marry...</p>
+                      <p className="text-sm text-pink-900">{primaryStyle.enhancedProfile.tendsToMarry}</p>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                {/* Growth Areas */}
+                <Card className="animate-fade-in">
+                  <CardHeader>
+                    <CardTitle className="text-xl flex items-center gap-2">
+                      <Compass className="h-5 w-5 text-blue-500" />
+                      Growth & Recognition
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent className="space-y-4">
+                    <div className="p-4 bg-blue-50 rounded-lg border border-blue-200">
+                      <p className="text-xs font-medium text-blue-700 mb-2">Valuable in Work Because...</p>
+                      <p className="text-sm text-blue-900">{primaryStyle.enhancedProfile.valuableInWorkBecause}</p>
+                    </div>
+                    <div className="p-4 bg-purple-50 rounded-lg border border-purple-200">
+                      <p className="text-xs font-medium text-purple-700 mb-2">Could Improve If They...</p>
+                      <p className="text-sm text-purple-900">{primaryStyle.enhancedProfile.couldImproveIf}</p>
+                    </div>
+                    <div className="p-4 bg-indigo-50 rounded-lg border border-indigo-200">
+                      <p className="text-xs font-medium text-indigo-700 mb-2">As Leaders, They...</p>
+                      <p className="text-sm text-indigo-900">{primaryStyle.enhancedProfile.asLeadersThey}</p>
+                    </div>
+                    <div className="p-4 bg-muted rounded-lg">
+                      <p className="text-xs font-medium text-muted-foreground mb-2">Recognized By Their...</p>
+                      <p className="text-sm">{primaryStyle.enhancedProfile.recognizedByTheir}</p>
+                    </div>
+                  </CardContent>
+                </Card>
+              </>
             )}
           </TabsContent>
 
