@@ -1,3 +1,7 @@
+// Re-export trait definitions and bird profiles for easy access
+export * from './keysTraitDefinitions';
+export * from './keysBirdProfiles';
+
 export interface Question {
   id: string;
   title: string;
@@ -16,11 +20,30 @@ export interface RelationshipGuide {
   strategies: string;
 }
 
+// Enhanced Bird Profile from KEYS 40-Item Instrument
+export interface EnhancedBirdProfile {
+  desires: string;
+  emotionalNeeds: string;
+  keyStrengths: string;
+  keyWeaknesses: string;
+  getsDepressedWhen: string;
+  afraidOf: string;
+  likesPeopleWho: string;
+  dislikesPeopleWho: string;
+  valuableInWorkBecause: string;
+  couldImproveIf: string;
+  asLeadersThey: string;
+  tendsToMarry: string;
+  reactionToStress: string;
+  recognizedByTheir: string;
+}
+
 export interface BehaviorStyle {
   id: string;
   letter: string;
   name: string;
   bird: string;
+  birdType: "eagle" | "parrot" | "owl" | "dove";
   tagline: string;
   assertiveness: "high" | "low";
   expressiveness: "high" | "low";
@@ -46,6 +69,8 @@ export interface BehaviorStyle {
   communicatingWith: string[];
   conflictTips: string[];
   relationships: RelationshipGuide[];
+  // Enhanced KEYS 40-Item profile data
+  enhancedProfile: EnhancedBirdProfile;
 }
 
 export interface PersonalityType {
@@ -61,6 +86,7 @@ export const behaviorStyles: BehaviorStyle[] = [
   {
     id: "K",
     letter: "K",
+    birdType: "eagle",
     name: "Firm",
     bird: "Eagle",
     tagline: "The Doer",
@@ -157,11 +183,28 @@ export const behaviorStyles: BehaviorStyle[] = [
         struggles: "If you come on too strong, this person can feel intimidated and will take it personally. You may misunderstand their softhearted nature as being \"weak.\"",
         strategies: "Be patient and willing to spell things out step-by-step. Communicate in a calmer, softer manner. Relax, and do not push. Express appreciation often. Be sincere."
       }
-    ]
+    ],
+    enhancedProfile: {
+      desires: "To have control",
+      emotionalNeeds: "A sense of obedience, appreciation or accomplishments, credit for ability",
+      keyStrengths: "An ability to take charge of anything instantly and to make quick, correct judgments",
+      keyWeaknesses: "Are too busy, domineering, autocratic, insensitive, impatient, unwilling to delegate or give credit to others",
+      getsDepressedWhen: "Their life is out of control and people won't do things their way",
+      afraidOf: "Losing control of anything (e.g., losing a job, not being promoted, becoming seriously ill)",
+      likesPeopleWho: "Are supportive and submissive",
+      dislikesPeopleWho: "Are lazy and not interested in working constantly, buck their authority, become independent, aren't loyal",
+      valuableInWorkBecause: "Can accomplish more than anyone else in a shorter time, are usually right",
+      couldImproveIf: "Allowed others to make decisions, delegated authority, became more patient, didn't want everyone to produce as they do",
+      asLeadersThey: "Have a natural feel for being in charge, a quick sense of what will work, a sincere belief in their ability to achieve",
+      tendsToMarry: "Peaceful Doves who will quietly obey and not buck their authority",
+      reactionToStress: "Tighten control, work harder, execute more, get rid of the offender",
+      recognizedByTheir: "Fast-moving approach, quick grab for control, self-confidence, restless and overpowering attitude"
+    }
   },
   {
     id: "E",
     letter: "E",
+    birdType: "parrot",
     name: "Fun",
     bird: "Parrot",
     tagline: "The Talker",
@@ -257,11 +300,28 @@ export const behaviorStyles: BehaviorStyle[] = [
         struggles: "Your biggest struggle will be keeping up with pace differences. Your large social circle can seem overwhelming to them.",
         strategies: "Be more calming and patient. Don't talk them into things impulsively. Set some limits and respect their need for stability."
       }
-    ]
+    ],
+    enhancedProfile: {
+      desires: "To have Fun",
+      emotionalNeeds: "Attention, affection, approval, acceptance",
+      keyStrengths: "Ability to talk about anything at any time at any place, bubbling personality, optimism, sense of humor, storytelling ability",
+      keyWeaknesses: "Disorganized, can't remember details or names, exaggerates, not serious about anything, too gullible and naive",
+      getsDepressedWhen: "Life is no fun and no one seems to love them",
+      afraidOf: "Being unpopular or bored, having to live by the clock, having to keep a record of money spent",
+      likesPeopleWho: "Listen and laugh, praise and approve",
+      dislikesPeopleWho: "Criticize, don't respond to their humor, don't think they are cute",
+      valuableInWorkBecause: "Colorful creativity, optimism, light touch, cheering up others, entertaining",
+      couldImproveIf: "Got organized, didn't talk so much, learned to tell time",
+      asLeadersThey: "Excite, persuade, and inspire others; exude charm and entertain; are forgetful and poor on follow through",
+      tendsToMarry: "Owls who are sensitive and serious, but whom they quickly tire of having to cheer up",
+      reactionToStress: "Leave the scene, go shopping, find a fun group, create excuses, blame others",
+      recognizedByTheir: "Constant talking, loud volume, bright eyes"
+    }
   },
   {
     id: "Y",
     letter: "Y",
+    birdType: "owl",
     name: "Factual",
     bird: "Owl",
     tagline: "The Thinker",
@@ -357,11 +417,28 @@ export const behaviorStyles: BehaviorStyle[] = [
         struggles: "You may become frustrated when this person does not think things through the way you do. Your logic-oriented nature can clash with their feelings-oriented nature.",
         strategies: "Be aware of your focus on tasks versus their focus on peace in relationships. Be more warm and personal. Be careful not to criticize. Show sincere appreciation for their efforts."
       }
-    ]
+    ],
+    enhancedProfile: {
+      desires: "To have it right",
+      emotionalNeeds: "A sense of stability, space, silence, sensitivity, support",
+      keyStrengths: "The ability to organize and set long-range goals, has high standards and ideals",
+      keyWeaknesses: "Easily depressed, too much time on preparation, remembers negatives, suspicious of others",
+      getsDepressedWhen: "Life is out of order, standards aren't met, and no one seems to care",
+      afraidOf: "No one understands how they really feel, making a mistake, having no compromise standards",
+      likesPeopleWho: "Are serious, intellectual, deep, and will carry on a sensible conversation",
+      dislikesPeopleWho: "Are lightweights, forgetful, late, disorganized, superficial, and unpredictable",
+      valuableInWorkBecause: "Have a sense of detail, love of analysis, follow-through, high standards of performance",
+      couldImproveIf: "Didn't take life quite so seriously, didn't insist others be perfectionists",
+      asLeadersThey: "Organize well, are sensitive to people's feelings, have deep creativity, want quality performance",
+      tendsToMarry: "Parrots for their outgoing behavior style and social skills",
+      reactionToStress: "Withdrawn, gets lost in a book, becomes depressed, gives up, recounts the problems",
+      recognizedByTheir: "Serious and sensitive nature, well-mannered approach, meticulous and well-groomed looks"
+    }
   },
   {
     id: "S",
     letter: "S",
+    birdType: "dove",
     name: "Friendly",
     bird: "Dove",
     tagline: "The Listener",
@@ -458,7 +535,23 @@ export const behaviorStyles: BehaviorStyle[] = [
         struggles: "The main struggle is in the area of communication. You both talk indirectly and do not insist on your own way. Neither of you like to make hard decisions.",
         strategies: "Be willing to take more initiative and to be more decisive. Realize that some conflict and change is healthy. Draw out how the other person feels, and be willing to honestly share how you feel."
       }
-    ]
+    ],
+    enhancedProfile: {
+      desires: "To avoid conflict, keep peace",
+      emotionalNeeds: "A sense of respect, feeling of worth, understanding, emotional support",
+      keyStrengths: "Balance, even disposition, dry sense of humor, pleasing personality",
+      keyWeaknesses: "Lack of decisiveness",
+      getsDepressedWhen: "Life is full of conflict, they have to face confrontation, no one wants to help",
+      afraidOf: "Having to deal with a major personal problem, being left holding the bag, making major changes",
+      likesPeopleWho: "Will make decisions for them, will recognize their strengths, will give them respect",
+      dislikesPeopleWho: "Are too pushy, too loud, and expect too much of them",
+      valuableInWorkBecause: "Mediate between contentious people, objectively solve problems",
+      couldImproveIf: "Set goals and become self-motivated, willing to do more faster than expected",
+      asLeadersThey: "Keep calm, cool, and collected, don't make impulsive decisions; are well-liked and inoffensive",
+      tendsToMarry: "Powerful Eagles who are strong and decisive",
+      reactionToStress: "They hide from it, watch TV, eat, tune out life",
+      recognizedByTheir: "Calm approach, relaxed posture (sitting or leaning when possible)"
+    }
   }
 ];
 
