@@ -195,7 +195,7 @@ function SlideServices({ active }: { active: boolean }) {
 
 function SlideDisciplines({ active }: { active: boolean }) {
   const categories = [
-    { title: "Martial Arts", items: ["Tae Kwon Do", "Karate", "Jiu-Jitsu", "Muay Thai", "Kickboxing"], color: "text-primary" },
+    { title: "Martial Arts", items: ["Tae Kwon Do", "Karate", "Jiu-Jitsu", "Muay Thai", "Kickboxing", "Wing Chun", "Boxing", "Silat", "Jeet Kune Do"], color: "text-primary" },
     { title: "Weapons & Combat", items: ["Fencing", "Kendo", "HEMA Sword Fighting"], color: "text-accent" },
     { title: "Dance", items: ["Ballet", "Hip Hop", "Contemporary", "Jazz", "Tap"], color: "text-primary" },
     { title: "Field & Court", items: ["Basketball", "Soccer", "Volleyball"], color: "text-accent" },
