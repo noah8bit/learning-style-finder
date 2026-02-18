@@ -1,5 +1,7 @@
 import { useState, useEffect, useCallback, useRef } from "react";
-import { ChevronLeft, ChevronRight, Maximize, Minimize, Grid3X3 } from "lucide-react";
+import { ChevronLeft, ChevronRight, Maximize, Minimize, Grid3X3, Download, Loader2 } from "lucide-react";
+import html2canvas from "html2canvas";
+import { jsPDF } from "jspdf";
 
 import heroGym from "@/assets/pitch/hero-gym.jpg";
 import heroAthlete from "@/assets/pitch/hero-athlete.jpg";
@@ -488,7 +490,57 @@ export default function PitchDeck() {
   const [isFullscreen, setIsFullscreen] = useState(false);
   const [showGrid, setShowGrid] = useState(false);
   const [showUI, setShowUI] = useState(true);
+  const [exporting, setExporting] = useState(false);
   const uiTimeout = useRef<number>();
+  const exportRef = useRef<HTMLDivElement>(null);
+
+  const exportPDF = useCallback(async () => {
+    setExporting(true);
+    try {
+      const pdf = new jsPDF({ orientation: "landscape", unit: "px", format: [1920, 1080] });
+
+      // Create an off-screen container for rendering each slide
+      const container = document.createElement("div");
+      container.style.cssText = "position:fixed;top:0;left:0;width:1920px;height:1080px;z-index:-9999;opacity:0;pointer-events:none;";
+      document.body.appendChild(container);
+
+      for (let i = 0; i < SLIDES.length; i++) {
+        // Render slide into container
+        const { createRoot } = await import("react-dom/client");
+        const slideEl = document.createElement("div");
+        slideEl.style.cssText = "width:1920px;height:1080px;";
+        container.innerHTML = "";
+        container.appendChild(slideEl);
+
+        const Comp = SLIDES[i].component;
+        const root = createRoot(slideEl);
+        root.render(<Comp active={true} />);
+
+        // Wait for images and animations
+        await new Promise((r) => setTimeout(r, 800));
+
+        const canvas = await html2canvas(slideEl, {
+          width: 1920,
+          height: 1080,
+          scale: 1,
+          useCORS: true,
+          backgroundColor: "#0f0f0f",
+        });
+
+        root.unmount();
+
+        if (i > 0) pdf.addPage();
+        pdf.addImage(canvas.toDataURL("image/jpeg", 0.92), "JPEG", 0, 0, 1920, 1080);
+      }
+
+      document.body.removeChild(container);
+      pdf.save("IronForm_PitchDeck.pdf");
+    } catch (err) {
+      console.error("PDF export failed:", err);
+    } finally {
+      setExporting(false);
+    }
+  }, []);
 
   const go = useCallback((dir: number) => {
     setCurrent((prev) => Math.max(0, Math.min(SLIDES.length - 1, prev + dir)));
@@ -608,6 +660,15 @@ export default function PitchDeck() {
 
         <button onClick={() => setShowGrid(true)} className="text-muted-foreground hover:text-foreground p-1 transition-colors">
           <Grid3X3 className="w-4 h-4" />
+        </button>
+
+        <button
+          onClick={exportPDF}
+          disabled={exporting}
+          className="text-muted-foreground hover:text-foreground p-1 transition-colors disabled:opacity-50"
+          title="Download PDF"
+        >
+          {exporting ? <Loader2 className="w-4 h-4 animate-spin" /> : <Download className="w-4 h-4" />}
         </button>
 
         <button
