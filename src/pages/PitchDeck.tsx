@@ -7,6 +7,7 @@ import heroGym from "@/assets/pitch/hero-gym.jpg";
 import heroAthlete from "@/assets/pitch/hero-athlete.jpg";
 import heroAtlanta from "@/assets/pitch/hero-atlanta.jpg";
 import heroRecovery from "@/assets/pitch/hero-recovery.jpg";
+import heroFacility from "@/assets/pitch/hero-facility.jpg";
 
 // ─── ScaledSlide ────────────────────────────────────────────────────────────
 function ScaledSlide({ children, className = "" }: { children: React.ReactNode; className?: string }) {
@@ -206,31 +207,39 @@ function SlideDisciplines({ active }: { active: boolean }) {
   ];
   return (
     <ScaledSlide>
-      <div className="w-full h-full bg-background flex flex-col justify-center px-[120px]">
-        {active && (
-          <>
-            <p className="animate-fade-up stagger-1 text-primary font-medium tracking-[0.3em] uppercase text-[14px] mb-4">Cross-Training Mediums</p>
-            <h2 className="animate-fade-up stagger-2 text-[64px] font-bold leading-[1] text-foreground mb-14">
-              <span className="text-primary">20+</span> Athletic Disciplines Under One Roof
-            </h2>
-            <div className="animate-fade-up stagger-3 grid grid-cols-3 gap-x-16 gap-y-10">
-              {categories.map((cat, i) => (
-                <div key={i}>
-                  <h3 className={`${cat.color} text-[22px] font-bold uppercase tracking-wide mb-3`}>{cat.title}</h3>
-                  <ul className="space-y-1">
-                    {cat.items.map((item, j) => (
-                      <li key={j} className="text-secondary-foreground text-[17px] flex items-center gap-2">
-                        <span className="w-1.5 h-1.5 rounded-full bg-muted-foreground" />
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
-            </div>
-            <p className="animate-fade-up stagger-4 text-muted-foreground text-[13px] mt-8">*Swimming pending space availability at build-out</p>
-          </>
-        )}
+      <div className="w-full h-full bg-background flex">
+        {/* Left: discipline list */}
+        <div className="w-[55%] flex flex-col justify-center px-[80px] pl-[100px]">
+          {active && (
+            <>
+              <p className="animate-fade-up stagger-1 text-primary font-medium tracking-[0.3em] uppercase text-[14px] mb-4">Cross-Training Mediums</p>
+              <h2 className="animate-fade-up stagger-2 text-[56px] font-bold leading-[1] text-foreground mb-10">
+                <span className="text-primary">20+</span> Disciplines<br />Under One Roof
+              </h2>
+              <div className="animate-fade-up stagger-3 grid grid-cols-2 gap-x-12 gap-y-6">
+                {categories.map((cat, i) => (
+                  <div key={i}>
+                    <h3 className={`${cat.color} text-[18px] font-bold uppercase tracking-wide mb-2`}>{cat.title}</h3>
+                    <ul className="space-y-0.5">
+                      {cat.items.map((item, j) => (
+                        <li key={j} className="text-secondary-foreground text-[14px] flex items-center gap-2">
+                          <span className="w-1 h-1 rounded-full bg-muted-foreground" />
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+              <p className="animate-fade-up stagger-4 text-muted-foreground text-[12px] mt-6">*Swimming pending space availability at build-out</p>
+            </>
+          )}
+        </div>
+        {/* Right: facility image */}
+        <div className="w-[45%] h-full relative">
+          <img src={heroFacility} alt="Multi-sport training facility" className="absolute inset-0 w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-l from-transparent to-background" />
+        </div>
       </div>
     </ScaledSlide>
   );
