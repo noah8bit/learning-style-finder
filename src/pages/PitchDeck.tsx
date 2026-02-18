@@ -8,6 +8,7 @@ import heroAthlete from "@/assets/pitch/hero-athlete.jpg";
 import heroAtlanta from "@/assets/pitch/hero-atlanta.jpg";
 import heroRecovery from "@/assets/pitch/hero-recovery.jpg";
 import heroFacility from "@/assets/pitch/hero-facility.jpg";
+import heroPilates from "@/assets/pitch/hero-pilates.jpg";
 
 // ─── ScaledSlide ────────────────────────────────────────────────────────────
 function ScaledSlide({ children, className = "" }: { children: React.ReactNode; className?: string }) {
@@ -180,16 +181,24 @@ function SlideServices({ active }: { active: boolean }) {
             </>
           )}
         </div>
-        <div className="w-[50%] flex items-center justify-center pr-[80px]">
-          {active && (
-            <div className="animate-fade-up stagger-3 flex flex-wrap gap-3 max-w-[700px]">
-              {services.map((s, i) => (
-                <span key={i} className="bg-secondary text-secondary-foreground px-5 py-3 rounded-full text-[15px] font-medium border border-border">
-                  {s}
-                </span>
-              ))}
-            </div>
-          )}
+        <div className="w-[50%] h-full flex flex-col">
+          {/* Pilates room image */}
+          <div className="h-[45%] relative">
+            <img src={heroPilates} alt="Pilates studio" className="absolute inset-0 w-full h-full object-cover" />
+            <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent" />
+          </div>
+          {/* Service tags */}
+          <div className="flex-1 flex items-center justify-center px-[60px]">
+            {active && (
+              <div className="animate-fade-up stagger-4 flex flex-wrap gap-3 max-w-[700px]">
+                {services.map((s, i) => (
+                  <span key={i} className="bg-secondary text-secondary-foreground px-5 py-3 rounded-full text-[15px] font-medium border border-border">
+                    {s}
+                  </span>
+                ))}
+              </div>
+            )}
+          </div>
         </div>
       </div>
     </ScaledSlide>
