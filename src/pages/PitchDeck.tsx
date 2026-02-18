@@ -401,10 +401,11 @@ function SlideWhyAtlanta({ active }: { active: boolean }) {
 
 function SlideUseOfFunds({ active }: { active: boolean }) {
   const funds = [
-    { label: "Facility Build-Out", desc: "High-ceiling rigging, cross-training zones, recovery lounge, peptide clinic, film/stunt wing", pct: 40, color: "bg-primary" },
-    { label: "Equipment & Technology", desc: "Cryo, infrared, PEMF, Normatec, golf simulators, specialty training gear", pct: 30, color: "bg-accent" },
+    { label: "Facility Build-Out", desc: "High-ceiling rigging, cross-training zones, recovery lounge, peptide clinic, film/stunt wing", pct: 35, color: "bg-primary" },
+    { label: "Equipment & Technology", desc: "Cryo, infrared, PEMF, Normatec, golf simulators, specialty training gear", pct: 25, color: "bg-accent" },
+    { label: "App & Tech Platform", desc: "Athlete performance tracking app, analytics dashboards, facility bookkeeping & scheduling software", pct: 15, color: "bg-primary/80" },
     { label: "Team Recruitment", desc: "Ops manager, certified coaches across 20+ disciplines, medical staff", pct: 15, color: "bg-primary/60" },
-    { label: "Partnerships & Launch", desc: "Celebrity partnerships, insurance negotiations, grant applications, market launch", pct: 15, color: "bg-accent/60" },
+    { label: "Partnerships & Launch", desc: "Celebrity partnerships, insurance negotiations, grant applications, market launch", pct: 10, color: "bg-accent/60" },
   ];
   return (
     <ScaledSlide>
