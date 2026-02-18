@@ -9,6 +9,7 @@ import heroAtlanta from "@/assets/pitch/hero-atlanta.jpg";
 import heroRecovery from "@/assets/pitch/hero-recovery.jpg";
 import heroFacility from "@/assets/pitch/hero-facility.jpg";
 import heroPilates from "@/assets/pitch/hero-pilates.jpg";
+import heroTrack from "@/assets/pitch/hero-track.jpg";
 
 // ─── ScaledSlide ────────────────────────────────────────────────────────────
 function ScaledSlide({ children, className = "" }: { children: React.ReactNode; className?: string }) {
@@ -315,25 +316,29 @@ function SlideRevenue({ active }: { active: boolean }) {
   ];
   return (
     <ScaledSlide>
-      <div className="w-full h-full bg-background flex flex-col justify-center px-[120px]">
-        {active && (
-          <>
-            <p className="animate-fade-up stagger-1 text-primary font-medium tracking-[0.3em] uppercase text-[14px] mb-4">Revenue Model</p>
-            <h2 className="animate-fade-up stagger-2 text-[60px] font-bold leading-[1] text-foreground mb-12">
-              Diverse, <span className="text-primary">Recurring</span> Revenue Streams
-            </h2>
-            <div className="animate-fade-up stagger-3 grid grid-cols-3 gap-5">
-              {streams.map((s, i) => (
-                <div key={i} className="bg-secondary border border-border rounded-xl p-6 relative overflow-hidden">
-                  <div className="absolute top-4 right-5 text-primary font-bold text-[28px] opacity-30">{s.pct}</div>
-                  <span className="text-[28px] mb-3 block">{s.icon}</span>
-                  <h3 className="text-foreground text-[18px] font-semibold mb-2">{s.title}</h3>
-                  <p className="text-muted-foreground text-[14px] leading-relaxed">{s.desc}</p>
-                </div>
-              ))}
-            </div>
-          </>
-        )}
+      <div className="relative w-full h-full">
+        <img src={heroTrack} alt="Track and field outside facility" className="absolute inset-0 w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-black/80" />
+        <div className="relative z-10 flex flex-col justify-center h-full px-[120px]">
+          {active && (
+            <>
+              <p className="animate-fade-up stagger-1 text-primary font-medium tracking-[0.3em] uppercase text-[14px] mb-4">Revenue Model</p>
+              <h2 className="animate-fade-up stagger-2 text-[60px] font-bold leading-[1] text-foreground mb-12">
+                Diverse, <span className="text-primary">Recurring</span> Revenue Streams
+              </h2>
+              <div className="animate-fade-up stagger-3 grid grid-cols-3 gap-5">
+                {streams.map((s, i) => (
+                  <div key={i} className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 relative overflow-hidden">
+                    <div className="absolute top-4 right-5 text-primary font-bold text-[28px] opacity-30">{s.pct}</div>
+                    <span className="text-[28px] mb-3 block">{s.icon}</span>
+                    <h3 className="text-foreground text-[18px] font-semibold mb-2">{s.title}</h3>
+                    <p className="text-muted-foreground text-[14px] leading-relaxed">{s.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </>
+          )}
+        </div>
       </div>
     </ScaledSlide>
   );
