@@ -9,9 +9,9 @@ export default function SlideInvestmentAsk({ active }: { active: boolean }) {
   ];
 
   const equityTiers = [
-    { range: "$1M – $3M", equity: "5 – 10%", perks: "Board observer seat, quarterly reports" },
-    { range: "$3M – $5M", equity: "10 – 15%", perks: "Board seat, priority distributions" },
-    { range: "$5M+", equity: "15 – 20%", perks: "Board seat, co-governance rights, performance bonuses" },
+    { range: "$1M – $2M", equity: "5 – 8%", perks: "Board observer seat, quarterly reports" },
+    { range: "$2M – $4M", equity: "8 – 12%", perks: "Board seat, priority distributions" },
+    { range: "$4M+", equity: "12 – 18%", perks: "Board seat, co-governance rights, performance bonuses" },
   ];
 
   return (
@@ -68,7 +68,7 @@ export default function SlideInvestmentAsk({ active }: { active: boolean }) {
                   <div className="bg-primary/10 border border-primary/30 rounded-lg p-5">
                     <h4 className="text-primary text-[15px] font-bold mb-2">Founder Protection</h4>
                     <p className="text-muted-foreground text-[13px] leading-relaxed">
-                      Equity caps at 25% for outside investors, preserving majority ownership and decision-making authority for future growth rounds and strategic pivots.
+                      Total outside equity capped at <span className="text-foreground font-bold">20%</span> in this round. No single investor exceeds 18%. Preserves majority control for operations and future growth rounds.
                     </p>
                   </div>
 
@@ -82,7 +82,7 @@ export default function SlideInvestmentAsk({ active }: { active: boolean }) {
               </div>
 
               <p className="animate-fade-up stagger-5 absolute bottom-6 left-[100px] right-[100px] text-muted-foreground/50 text-[11px]">
-                Total start-up costs estimated at $4.35M–$8.9M. Funding range accounts for operational runway and contingency. Equity terms negotiable based on investment size and timing.
+                $7M raise structured across 3 milestone-based tranches. Total outside equity capped at 20%. Terms negotiable based on investment size and timing. Construction bids and equipment quotes being finalized.
               </p>
             </>
           )}

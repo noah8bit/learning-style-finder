@@ -4,44 +4,54 @@ import ScaledSlide from "./ScaledSlide";
 export default function SlideUseOfFundsDetailed({ active }: { active: boolean }) {
   const funds = [
     {
-      pct: "35%",
-      title: "Facility Build-Out",
-      desc: "High-ceiling rigging for stunts, cross-training zones, and specialized recovery lounges — dynamic environments tailored for various athletic disciplines.",
+      pct: "40%",
+      dollar: "$2.8M",
+      title: "Construction & Land",
+      desc: "Land acquisition, facility build-out with high-ceiling rigging, cross-training zones, and specialized recovery lounges.",
       color: "text-primary",
       borderColor: "border-primary/30",
       bgColor: "bg-primary/10",
+      tranche: "Tranche 1",
     },
     {
       pct: "25%",
+      dollar: "$1.75M",
       title: "Equipment & Technology",
-      desc: "Advanced neuromuscular therapy equipment, cryotherapy, infrared therapy, Olympic swimming lanes, and golf simulators for optimal care and performance.",
+      desc: "Neuromuscular therapy, cryotherapy, infrared therapy, Olympic swimming lanes, golf simulators, and climbing walls.",
       color: "text-accent",
       borderColor: "border-accent/30",
       bgColor: "bg-accent/10",
-    },
-    {
-      pct: "15%",
-      title: "App & Tech Platform",
-      desc: "Athlete performance tracking app and analytics dashboards for personalized training, progress monitoring, and data-driven results.",
-      color: "text-primary",
-      borderColor: "border-primary/30",
-      bgColor: "bg-primary/10",
-    },
-    {
-      pct: "15%",
-      title: "Team Recruitment",
-      desc: "Certified coaches across 20+ disciplines, medical staff, and operations manager — ensuring high-quality service and community credibility.",
-      color: "text-accent",
-      borderColor: "border-accent/30",
-      bgColor: "bg-accent/10",
+      tranche: "Tranche 2",
     },
     {
       pct: "10%",
-      title: "Partnerships & Launch",
-      desc: "Insurance negotiations, grant applications, sponsorships with local businesses — creating additional revenue streams and broader audience reach.",
+      dollar: "$700K",
+      title: "App & Tech Platform",
+      desc: "Athlete performance tracking, analytics dashboards, and member management systems.",
       color: "text-primary",
       borderColor: "border-primary/30",
       bgColor: "bg-primary/10",
+      tranche: "Tranche 2",
+    },
+    {
+      pct: "15%",
+      dollar: "$1.05M",
+      title: "Team & Operations",
+      desc: "Coaches across 20+ disciplines, medical staff, operations manager, and Year 1 operating runway.",
+      color: "text-accent",
+      borderColor: "border-accent/30",
+      bgColor: "bg-accent/10",
+      tranche: "Tranche 1 & 3",
+    },
+    {
+      pct: "10%",
+      dollar: "$700K",
+      title: "Marketing & Contingency",
+      desc: "Grand opening campaigns, digital presence, community partnerships, and reserve for unforeseen costs.",
+      color: "text-primary",
+      borderColor: "border-primary/30",
+      bgColor: "bg-primary/10",
+      tranche: "Tranche 2 & 3",
     },
   ];
 
@@ -59,9 +69,13 @@ export default function SlideUseOfFundsDetailed({ active }: { active: boolean })
                 {funds.map((f, i) => (
                   <div key={i} className={`${f.bgColor} border ${f.borderColor} rounded-xl p-5 flex gap-5 items-start`}>
                     <span className={`${f.color} text-[32px] font-bold shrink-0 min-w-[70px]`}>{f.pct}</span>
-                    <div>
-                      <h3 className={`${f.color} text-[18px] font-bold mb-1`}>{f.title}</h3>
-                      <p className="text-muted-foreground text-[14px] leading-relaxed">{f.desc}</p>
+                    <div className="flex-1">
+                      <div className="flex justify-between items-center">
+                        <h3 className={`${f.color} text-[18px] font-bold mb-1`}>{f.title}</h3>
+                        <span className={`${f.color} text-[16px] font-bold`}>{f.dollar}</span>
+                      </div>
+                      <p className="text-muted-foreground text-[13px] leading-relaxed">{f.desc}</p>
+                      <span className="text-muted-foreground/60 text-[11px] mt-1 block">{f.tranche}</span>
                     </div>
                   </div>
                 ))}
