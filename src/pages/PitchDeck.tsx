@@ -11,6 +11,7 @@ import heroPilates from "@/assets/pitch/hero-pilates.jpg";
 import heroTrack from "@/assets/pitch/hero-track.jpg";
 import heroFilmStudio from "@/assets/pitch/hero-film-studio.jpg";
 import heroTechPlatform from "@/assets/pitch/hero-tech-platform.jpg";
+import heroFacilityInterior from "@/assets/pitch/hero-facility-interior.jpg";
 
 import ScaledSlide from "@/components/pitch/ScaledSlide";
 import SlideMarketStats from "@/components/pitch/SlideMarketStats";
@@ -344,7 +345,10 @@ function SlideTeam({ active }: { active: boolean }) {
   ];
   return (
     <ScaledSlide>
-      <div className="w-full h-full bg-background flex flex-col justify-center px-[120px]">
+      <div className="relative w-full h-full">
+        <img src={heroFacilityInterior} alt="Training facility interior" className="absolute inset-0 w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-black/85" />
+        <div className="relative z-10 flex flex-col justify-center h-full px-[120px]">
         {active && (
           <>
             <p className="animate-fade-up stagger-1 text-primary font-medium tracking-[0.3em] uppercase text-[14px] mb-4">Team & Credentials</p>
@@ -372,6 +376,7 @@ function SlideTeam({ active }: { active: boolean }) {
             </div>
           </>
         )}
+        </div>
       </div>
     </ScaledSlide>
   );
