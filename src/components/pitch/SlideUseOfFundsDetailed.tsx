@@ -4,10 +4,10 @@ import ScaledSlide from "./ScaledSlide";
 export default function SlideUseOfFundsDetailed({ active }: { active: boolean }) {
   const funds = [
     {
-      pct: "38%",
-      dollar: "$4.5M",
+      pct: "42%",
+      dollar: "$5M",
       title: "Construction & Land",
-      desc: "Land acquisition (2–4 acres), ground-up 60,000+ sq ft build with high-ceiling rigging, cross-training zones, and recovery lounges.",
+      desc: "Land acquisition (2–4 acres) and ground-up 60,000+ sq ft build with high-ceiling rigging, cross-training zones, and recovery lounges.",
       color: "text-primary",
       borderColor: "border-primary/30",
       bgColor: "bg-primary/10",
@@ -34,8 +34,8 @@ export default function SlideUseOfFundsDetailed({ active }: { active: boolean })
       tranche: "Tranche 3",
     },
     {
-      pct: "13%",
-      dollar: "$1.5M",
+      pct: "8%",
+      dollar: "$1M",
       title: "App Platform & Technology",
       desc: "Athlete performance tracking, biometric analytics dashboards, member management, and facility-wide smart systems.",
       color: "text-accent",
@@ -44,14 +44,24 @@ export default function SlideUseOfFundsDetailed({ active }: { active: boolean })
       tranche: "Tranche 2",
     },
     {
-      pct: "13%",
-      dollar: "$1.5M",
-      title: "Marketing, Launch & Contingency",
-      desc: "Grand opening campaigns, digital presence, community partnerships, sponsorships, and reserve for unforeseen costs.",
+      pct: "6%",
+      dollar: "$750K",
+      title: "Marketing & Launch",
+      desc: "Grand opening campaigns, digital presence, community partnerships, and sponsorship activations.",
       color: "text-primary",
       borderColor: "border-primary/30",
       bgColor: "bg-primary/10",
       tranche: "Tranche 2 & 3",
+    },
+    {
+      pct: "6%",
+      dollar: "$750K",
+      title: "Contingency Reserve",
+      desc: "Dedicated buffer for permitting delays, material cost overruns, and unforeseen construction or regulatory expenses.",
+      color: "text-accent",
+      borderColor: "border-accent/30",
+      bgColor: "bg-accent/10",
+      tranche: "Held in reserve",
     },
   ];
 

@@ -3,16 +3,16 @@ import ScaledSlide from "./ScaledSlide";
 
 export default function SlideTraction({ active }: { active: boolean }) {
   const validations = [
-    { metric: "150+", label: "Waitlist Signups", desc: "Pre-launch interest from athletes, families, and fitness enthusiasts across metro Atlanta", icon: "📋" },
-    { metric: "3", label: "Letters of Intent", desc: "Signed LOIs from local sports organizations for team training retainment agreements", icon: "📝" },
+    { metric: "150+", label: "Waitlist Signups", desc: "Pre-launch interest from athletes, families, and fitness enthusiasts across metro Atlanta (target — campaign in progress)", icon: "📋" },
+    { metric: "3", label: "Letters of Intent", desc: "In-progress LOIs from local sports organizations for team training retainment agreements (target)", icon: "📝" },
     { metric: "5", label: "Partnership Discussions", desc: "Active conversations with insurance providers, local schools, and corporate wellness programs", icon: "🤝" },
     { metric: "2", label: "Industry Advisors", desc: "Committed advisors from the Atlanta sports medicine and film stunt coordination industries", icon: "🧠" },
   ];
 
   const socialProof = [
     "Endorsed by Atlanta-based professional athletes and trainers",
-    "Featured in local fitness community forums and social channels",
-    "Pre-launch survey: 87% of respondents said they'd switch from current gym",
+    "Concept validated through local fitness community outreach",
+    "Pre-launch survey planned to gauge switching intent from existing gym members",
   ];
 
   return (
