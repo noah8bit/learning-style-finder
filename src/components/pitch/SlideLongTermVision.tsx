@@ -1,4 +1,4 @@
-import heroFacility from "@/assets/pitch/hero-facility-v2.jpg";
+import heroRockClimbing from "@/assets/pitch/hero-rockclimbing.jpg";
 import ScaledSlide from "./ScaledSlide";
 
 export default function SlideLongTermVision({ active }: { active: boolean }) {
@@ -14,7 +14,7 @@ export default function SlideLongTermVision({ active }: { active: boolean }) {
   return (
     <ScaledSlide>
       <div className="relative w-full h-full">
-        <img src={heroFacility} alt="" className="absolute inset-0 w-full h-full object-cover" />
+        <img src={heroRockClimbing} alt="Indoor rock climbing facility" className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 bg-black/80" />
         <div className="relative z-10 flex flex-col justify-center h-full px-[120px]">
           {active && (
