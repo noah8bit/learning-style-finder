@@ -1,3 +1,4 @@
+import heroPersonalTraining from "@/assets/pitch/hero-personal-training.jpg";
 import ScaledSlide from "./ScaledSlide";
 
 export default function SlideCustomerPersonas({ active }: { active: boolean }) {
@@ -48,8 +49,10 @@ export default function SlideCustomerPersonas({ active }: { active: boolean }) {
 
   return (
     <ScaledSlide>
-      <div className="w-full h-full bg-background">
-        <div className="flex flex-col justify-center h-full px-[100px]">
+      <div className="relative w-full h-full">
+        <img src={heroPersonalTraining} alt="" className="absolute inset-0 w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-black/92" />
+        <div className="relative z-10 flex flex-col justify-center h-full px-[100px]">
           {active && (
             <>
               <p className="animate-fade-up stagger-1 text-primary font-medium tracking-[0.3em] uppercase text-[14px] mb-4">Target Audience</p>
@@ -58,7 +61,7 @@ export default function SlideCustomerPersonas({ active }: { active: boolean }) {
               </h2>
               <div className="animate-fade-up stagger-3 grid grid-cols-3 gap-5">
                 {personas.map((p, i) => (
-                  <div key={i} className="bg-secondary border border-border rounded-xl p-6">
+                  <div key={i} className="bg-black/70 backdrop-blur-md border border-white/20 rounded-xl p-6">
                     <div className="flex items-center gap-3 mb-3">
                       <span className="text-[28px]">{p.icon}</span>
                       <div>
