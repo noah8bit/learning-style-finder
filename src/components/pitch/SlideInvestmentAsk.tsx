@@ -3,15 +3,15 @@ import ScaledSlide from "./ScaledSlide";
 
 export default function SlideInvestmentAsk({ active }: { active: boolean }) {
   const milestones = [
-    { phase: "Tranche 1", amount: "$3M", trigger: "At close", use: "Land acquisition, construction start, core team hiring", color: "text-primary", bg: "bg-primary/10", border: "border-primary/30" },
-    { phase: "Tranche 2", amount: "$2.5M", trigger: "Construction 50%", use: "Equipment procurement, tech platform build, marketing launch", color: "text-accent", bg: "bg-accent/10", border: "border-accent/30" },
-    { phase: "Tranche 3", amount: "$1.5M", trigger: "Doors open", use: "Year 1 operating runway, contingency buffer, growth initiatives", color: "text-primary", bg: "bg-primary/10", border: "border-primary/30" },
+    { phase: "Tranche 1", amount: "$4.5M", trigger: "At close", use: "Land acquisition, construction start, architectural & permitting, core team hiring", color: "text-primary", bg: "bg-primary/10", border: "border-primary/30" },
+    { phase: "Tranche 2", amount: "$4.5M", trigger: "Construction 50%", use: "Equipment procurement, pool & specialty installations, tech platform build, marketing launch", color: "text-accent", bg: "bg-accent/10", border: "border-accent/30" },
+    { phase: "Tranche 3", amount: "$3M", trigger: "Doors open", use: "Year 1 operating runway, final fit-out, contingency buffer, growth initiatives", color: "text-primary", bg: "bg-primary/10", border: "border-primary/30" },
   ];
 
   const equityTiers = [
-    { range: "$1M – $2M", equity: "5 – 8%", perks: "Board observer seat, quarterly reports" },
-    { range: "$2M – $4M", equity: "8 – 12%", perks: "Board seat, priority distributions" },
-    { range: "$4M+", equity: "12 – 18%", perks: "Board seat, co-governance rights, performance bonuses" },
+    { range: "$1M – $3M", equity: "3 – 6%", perks: "Board observer seat, quarterly reports" },
+    { range: "$3M – $6M", equity: "6 – 12%", perks: "Board seat, priority distributions" },
+    { range: "$6M+", equity: "12 – 18%", perks: "Board seat, co-governance rights, performance bonuses" },
   ];
 
   return (
@@ -24,10 +24,10 @@ export default function SlideInvestmentAsk({ active }: { active: boolean }) {
             <>
               <p className="animate-fade-up stagger-1 text-primary font-medium tracking-[0.3em] uppercase text-[14px] mb-4">The Ask</p>
               <h2 className="animate-fade-up stagger-2 text-[56px] font-bold leading-[1] text-foreground mb-3">
-                Raising <span className="text-primary">$7M</span>
+                Raising <span className="text-primary">$12M</span>
               </h2>
               <p className="animate-fade-up stagger-3 text-muted-foreground text-[17px] mb-8 max-w-[800px]">
-                Milestone-based funding that de-risks your investment — capital is deployed only as we hit build-out targets, preserving founder control while maximizing investor confidence.
+                Full capital for a ground-up 60,000+ sq ft world-class athletic facility — milestone-gated tranches that de-risk your investment while delivering the complete Iron Form vision from day one.
               </p>
 
               <div className="animate-fade-up stagger-4 flex gap-8">
@@ -82,7 +82,7 @@ export default function SlideInvestmentAsk({ active }: { active: boolean }) {
               </div>
 
               <p className="animate-fade-up stagger-5 absolute bottom-6 left-[100px] right-[100px] text-muted-foreground/50 text-[11px]">
-                $7M raise structured across 3 milestone-based tranches. Total outside equity capped at 20%. Terms negotiable based on investment size and timing. Construction bids and equipment quotes being finalized.
+                $12M raise structured across 3 milestone-based tranches for a 60,000+ sq ft facility. Total outside equity capped at 20%. Terms negotiable based on investment size and timing.
               </p>
             </>
           )}

@@ -3,12 +3,12 @@ import ScaledSlide from "./ScaledSlide";
 
 export default function SlideFinancialProjections({ active }: { active: boolean }) {
   const startupCosts = [
-    { label: "Land Acquisition", range: "$800K – $2M" },
-    { label: "Construction & Infrastructure", range: "$3M – $4M" },
-    { label: "Equipment (All Training Areas)", range: "$750K – $1.2M" },
-    { label: "Marketing & Branding", range: "$150K" },
-    { label: "Legal & Permitting", range: "$75K – $100K" },
-    { label: "Miscellaneous (Furniture, Tech)", range: "$225K" },
+    { label: "Land Acquisition (2–4 acres)", range: "$1.5M – $2.5M" },
+    { label: "Construction (60K sq ft)", range: "$6M – $7.5M" },
+    { label: "Equipment & Specialty Install", range: "$2M – $2.5M" },
+    { label: "Marketing & Branding", range: "$200K" },
+    { label: "Legal & Permitting", range: "$100K – $150K" },
+    { label: "Miscellaneous (Furniture, Tech)", range: "$300K" },
   ];
 
   const projections = [
@@ -18,10 +18,10 @@ export default function SlideFinancialProjections({ active }: { active: boolean 
   ];
 
   const roi = [
-    { label: "Break-Even Point", value: "18–24 months", icon: "⏱️" },
+    { label: "Break-Even Point", value: "24–36 months", icon: "⏱️" },
     { label: "Year 3 Net Profit", value: "$600K–$1.4M", icon: "📈" },
     { label: "5-Year Cumulative", value: "$3M – $5.5M", icon: "💰" },
-    { label: "Payback Period", value: "4–6 years", icon: "🔄" },
+    { label: "Payback Period", value: "5–8 years", icon: "🔄" },
   ];
 
   const maxBar = 2500;
@@ -53,7 +53,7 @@ export default function SlideFinancialProjections({ active }: { active: boolean 
                 <div className="mt-4 bg-primary/10 border border-primary/30 rounded-xl p-4">
                   <div className="flex justify-between items-center">
                     <span className="text-foreground text-[16px] font-bold">Total Start-Up</span>
-                    <span className="text-primary text-[18px] font-bold">$5.5M – $7.7M</span>
+                    <span className="text-primary text-[18px] font-bold">$10.1M – $13.2M</span>
                   </div>
                 </div>
               </div>
