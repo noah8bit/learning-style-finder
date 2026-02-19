@@ -4,7 +4,7 @@ export default function SlideFAQs({ active }: { active: boolean }) {
   const faqs = [
     {
       q: "What is the expected return on investment?",
-      a: "Based on conservative projections, investors can expect a 25–40% ROI by Year 3, with a full payback period of 3–5 years depending on membership growth and partnership acquisitions.",
+      a: "Based on conservative projections, the facility reaches profitability by Year 1 with net margins growing through Year 3 ($850K–$1.6M). Full payback period is estimated at 4–6 years depending on membership growth.",
     },
     {
       q: "How does Iron Form generate revenue before full capacity?",
@@ -12,7 +12,7 @@ export default function SlideFAQs({ active }: { active: boolean }) {
     },
     {
       q: "What makes this different from a traditional gym?",
-      a: "Iron Form combines 30+ sport disciplines, integrated medical/recovery services, a film & stunt wing, and community outreach — no traditional gym offers this level of integration.",
+      a: "Iron Form combines 30+ sport disciplines, integrated medical/recovery services, a film & stunt wing, and community outreach — no traditional gym or even elite performance center offers this level of integration.",
     },
     {
       q: "How will you attract and retain members?",

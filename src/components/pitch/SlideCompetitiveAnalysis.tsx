@@ -14,10 +14,10 @@ export default function SlideCompetitiveAnalysis({ active }: { active: boolean }
 
   const competitors = [
     { name: "Iron Form", scores: [true, true, true, true, true, true, true, true] },
-    { name: "Lifetime Fitness", scores: [false, false, false, true, false, true, false, false] },
-    { name: "LA Fitness", scores: [false, false, false, false, false, true, false, false] },
-    { name: "CrossFit Gyms", scores: [false, false, false, false, false, false, false, false] },
-    { name: "PT Clinics", scores: [false, true, false, true, false, false, false, false] },
+    { name: "IMG Academy", scores: [true, true, false, true, false, false, true, true] },
+    { name: "EXOS", scores: [false, true, false, true, false, false, true, false] },
+    { name: "D1 Training", scores: [false, false, false, false, false, true, false, true] },
+    { name: "Plex / Multi-Sport", scores: [true, false, false, false, false, true, false, true] },
   ];
 
   return (
@@ -30,7 +30,7 @@ export default function SlideCompetitiveAnalysis({ active }: { active: boolean }
               How Iron Form <span className="text-primary">Stands Apart</span>
             </h2>
             <p className="animate-fade-up stagger-3 text-muted-foreground text-[18px] mb-10 max-w-[900px]">
-              No competitor in the Atlanta market offers a fully integrated training, recovery, and entertainment facility.
+              Compared against elite performance facilities and multi-sport centers — no competitor offers a fully integrated training, recovery, medical, and entertainment ecosystem.
             </p>
             <div className="animate-fade-up stagger-4 overflow-hidden rounded-2xl border border-border">
               <table className="w-full">
@@ -64,7 +64,7 @@ export default function SlideCompetitiveAnalysis({ active }: { active: boolean }
             </div>
             <div className="animate-fade-up stagger-5 mt-6 bg-primary/10 border border-primary/20 rounded-xl p-5">
               <p className="text-foreground text-[15px]">
-                <span className="font-bold text-primary">Iron Form Advantage:</span> The only facility checking every box — creating a truly unmatched athletic ecosystem.
+                <span className="font-bold text-primary">Iron Form Advantage:</span> The only facility combining elite multi-sport training, integrated medical services, cutting-edge recovery tech, and a film & stunt wing — creating a truly unmatched athletic ecosystem.
               </p>
             </div>
           </>

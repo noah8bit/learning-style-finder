@@ -7,19 +7,14 @@ import heroAtlanta from "@/assets/pitch/hero-atlanta.jpg";
 import heroRecovery from "@/assets/pitch/hero-recovery.jpg";
 import heroFacility from "@/assets/pitch/hero-facility-v2.jpg";
 import heroSwimmingPool from "@/assets/pitch/hero-swimming-pool.jpg";
-import heroPilates from "@/assets/pitch/hero-pilates.jpg";
-import heroTrack from "@/assets/pitch/hero-track.jpg";
 import heroFilmStudio from "@/assets/pitch/hero-film-studio.jpg";
-import heroTechPlatform from "@/assets/pitch/hero-tech-platform.jpg";
 import heroFacilityInterior from "@/assets/pitch/hero-crosstraining.jpg";
 
 import ScaledSlide from "@/components/pitch/ScaledSlide";
-
 import SlideFinancialProjections from "@/components/pitch/SlideFinancialProjections";
 import SlideRevenueDetailed from "@/components/pitch/SlideRevenueDetailed";
 import SlidePartnerships from "@/components/pitch/SlidePartnerships";
 import SlideEmployeeStructure from "@/components/pitch/SlideEmployeeStructure";
-import SlideDifferentiators from "@/components/pitch/SlideDifferentiators";
 import SlideCommunityOutreach from "@/components/pitch/SlideCommunityOutreach";
 import SlideLongTermVision from "@/components/pitch/SlideLongTermVision";
 import SlideUseOfFundsDetailed from "@/components/pitch/SlideUseOfFundsDetailed";
@@ -28,8 +23,6 @@ import SlideCompetitiveAnalysis from "@/components/pitch/SlideCompetitiveAnalysi
 import SlideTimeline from "@/components/pitch/SlideTimeline";
 import SlideCampSchedules from "@/components/pitch/SlideCampSchedules";
 import SlideFacilityLayout from "@/components/pitch/SlideFacilityLayout";
-import SlideCostBenefit from "@/components/pitch/SlideCostBenefit";
-import SlideCommunityEngagement from "@/components/pitch/SlideCommunityEngagement";
 import SlideRiskManagement from "@/components/pitch/SlideRiskManagement";
 import SlideMarketingStrategy from "@/components/pitch/SlideMarketingStrategy";
 import SlideFAQs from "@/components/pitch/SlideFAQs";
@@ -154,54 +147,40 @@ function SlideSolution({ active }: { active: boolean }) {
 }
 
 function SlideServices({ active }: { active: boolean }) {
-  const services = [
-    "Built for Every Athlete", "Neuromuscular Therapy", "Peptide Wellness Clinic",
-    "Sauna & Cold Plunge", "Olympic Swimming Lanes", "Cryotherapy", "Infrared Therapy",
-    "Red & Green Light Therapy", "PEMF Therapy", "Normatec Compression",
-    "Personal Training & Coaching", "Film/Stunt Action Wing", "Cross-Training 30+ Sports",
-    "Athlete & Coach Seminars", "Athlete Grant Program", "Corporate Packages",
+  const diffs = [
+    { icon: "🏥", title: "Integrated Medical & Recovery", benefit: "Neuromuscular therapy and peptide clinics on-site — bridging elite sports medicine with everyday training." },
+    { icon: "🏋", title: "30+ Training Disciplines", benefit: "One-stop hub for diverse athletic needs — martial arts, track & field, swimming, dance, and more." },
+    { icon: "🎬", title: "Film & Stunt Wing", benefit: "High-ceiling rigging, green screen, and mo-cap in Georgia's #1-ranked film production market." },
+    { icon: "🌍", title: "Community Outreach", benefit: "Scouting and mentoring undiscovered talent — accessibility over profit-first models." },
+    { icon: "💰", title: "Diverse Revenue Streams", benefit: "Memberships, team retainment, insurance, film rentals, events — stable, adaptable financial model." },
+    { icon: "⚡", title: "Recovery Tech Suite", benefit: "Cryotherapy, infrared, PEMF, Normatec, sauna & cold plunge — forefront of performance innovation." },
+    { icon: "📊", title: "Performance Analytics", benefit: "Proprietary app for athlete tracking, biometric data, and personalized training insights." },
   ];
   return (
     <ScaledSlide>
-      <div className="w-full h-full bg-background flex">
-        <div className="w-[50%] flex flex-col justify-center px-[100px]">
+      <div className="relative w-full h-full">
+        <img src={heroSwimmingPool} alt="Olympic swimming pool" className="absolute inset-0 w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-black/85" />
+        <div className="relative z-10 flex flex-col justify-center h-full px-[120px]">
           {active && (
             <>
               <p className="animate-fade-up stagger-1 text-primary font-medium tracking-[0.3em] uppercase text-[14px] mb-4">Services & Differentiators</p>
-              <h2 className="animate-fade-up stagger-2 text-[58px] font-bold leading-[1] text-foreground mb-10">
-                What Makes<br />Iron Form <span className="text-primary">Different</span>
+              <h2 className="animate-fade-up stagger-2 text-[56px] font-bold leading-[1] text-foreground mb-12">
+                What Makes Iron Form <span className="text-primary">Different</span>
               </h2>
-              <div className="animate-fade-up stagger-3 space-y-5">
-                <div className="bg-accent/20 border border-accent/30 rounded-xl p-6">
-                  <h3 className="text-accent text-[20px] font-semibold mb-2">Integrated Medical & Recovery</h3>
-                  <p className="text-muted-foreground text-[15px]">Neuromuscular therapy and peptide clinics on-site bridge elite sports medicine with everyday training.</p>
-                </div>
-                <div className="bg-primary/10 border border-primary/20 rounded-xl p-6">
-                  <h3 className="text-primary text-[20px] font-semibold mb-2">Film & Stunt Wing</h3>
-                  <p className="text-muted-foreground text-[15px]">High-ceiling rigging and action design — a first-of-its-kind resource in Atlanta's booming film market.</p>
-                </div>
+              <div className="animate-fade-up stagger-3 grid grid-cols-2 gap-x-10 gap-y-5">
+                {diffs.map((d, i) => (
+                  <div key={i} className="flex gap-5 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-5">
+                    <span className="text-[30px] shrink-0">{d.icon}</span>
+                    <div>
+                      <h3 className="text-foreground text-[18px] font-bold mb-1">{d.title}</h3>
+                      <p className="text-muted-foreground text-[14px] leading-relaxed">{d.benefit}</p>
+                    </div>
+                  </div>
+                ))}
               </div>
             </>
           )}
-        </div>
-        <div className="w-[50%] h-full flex flex-col">
-          {/* Pilates room image */}
-          <div className="h-[45%] relative">
-            <img src={heroPilates} alt="Pilates studio" className="absolute inset-0 w-full h-full object-cover" />
-            <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent" />
-          </div>
-          {/* Service tags */}
-          <div className="flex-1 flex items-center justify-center px-[60px]">
-            {active && (
-              <div className="animate-fade-up stagger-4 flex flex-wrap gap-3 max-w-[700px]">
-                {services.map((s, i) => (
-                  <span key={i} className="bg-secondary text-secondary-foreground px-5 py-3 rounded-full text-[15px] font-medium border border-border">
-                    {s}
-                  </span>
-                ))}
-              </div>
-            )}
-          </div>
         </div>
       </div>
     </ScaledSlide>
@@ -259,11 +238,11 @@ function SlideDisciplines({ active }: { active: boolean }) {
 
 function SlideMarket({ active }: { active: boolean }) {
   const stats = [
-    { value: "$87B", label: "U.S. Health & Fitness Industry", sub: "Growing at 23% CAGR" },
-    { value: "$46B", label: "Sports Medicine & Rehab", sub: "Recovery & therapy focus" },
-    { value: "73%", label: "Americans in Fitness Activities", sub: "Strong facility demand" },
-    { value: "7M+", label: "Atlanta Metro Population", sub: "#2 U.S. film market" },
-    { value: "70%", label: "Prefer Multi-Training", sub: "Cross-training demand" },
+    { value: "$100B+", label: "Global Health & Fitness Industry", sub: "Growing at ~7% CAGR" },
+    { value: "$10B", label: "Sports Medicine Market", sub: "Projected to reach $14B by 2035" },
+    { value: "80%", label: "Americans Physically Active", sub: "247M active in 2024 (SFIA)" },
+    { value: "6M+", label: "Atlanta Metro Population", sub: "#1 U.S. film production state" },
+    { value: "↑", label: "Multi-Training Demand", sub: "Cross-training growth accelerating" },
     { value: "#1", label: "First-Mover Advantage", sub: "No SE competitor matches" },
   ];
   return (
@@ -298,44 +277,6 @@ function SlideMarket({ active }: { active: boolean }) {
   );
 }
 
-function SlideRevenue({ active }: { active: boolean }) {
-  const streams = [
-    { icon: "📅", title: "Monthly Memberships", desc: "Tiered plans for individuals. Recurring access to training, group classes, and all facility amenities.", pct: "35%" },
-    { icon: "🤝", title: "Team & Athlete Retainment", desc: "Agreements with pro athletes, sports teams, and productions covering access, therapy, and coaching.", pct: "25%" },
-    { icon: "🏥", title: "Insurance Partnerships", desc: "Partner with insurers to cover physical therapy, neuromuscular rehab, and recovery services.", pct: "15%" },
-    { icon: "🎬", title: "Film Industry Rentals", desc: "Hourly and project-based rental of rigging space and stunt facilities to productions.", pct: "10%" },
-    { icon: "💊", title: "Clinic & Therapy", desc: "Fee-for-service billing for peptide consultations, cryo, infrared, PEMF, and Normatec.", pct: "10%" },
-    { icon: "🎓", title: "Grants & Community", desc: "Dedicated ops manager pursuing sports, wellness, and community development grants.", pct: "5%" },
-  ];
-  return (
-    <ScaledSlide>
-      <div className="relative w-full h-full">
-        <img src={heroTrack} alt="Track and field outside facility" className="absolute inset-0 w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-black/80" />
-        <div className="relative z-10 flex flex-col justify-center h-full px-[120px]">
-          {active && (
-            <>
-              <p className="animate-fade-up stagger-1 text-primary font-medium tracking-[0.3em] uppercase text-[14px] mb-4">Revenue Model</p>
-              <h2 className="animate-fade-up stagger-2 text-[60px] font-bold leading-[1] text-foreground mb-12">
-                Diverse, <span className="text-primary">Recurring</span> Revenue Streams
-              </h2>
-              <div className="animate-fade-up stagger-3 grid grid-cols-3 gap-5">
-                {streams.map((s, i) => (
-                  <div key={i} className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 relative overflow-hidden">
-                    <div className="absolute top-4 right-5 text-primary font-bold text-[28px] opacity-30">{s.pct}</div>
-                    <span className="text-[28px] mb-3 block">{s.icon}</span>
-                    <h3 className="text-foreground text-[18px] font-semibold mb-2">{s.title}</h3>
-                    <p className="text-muted-foreground text-[14px] leading-relaxed">{s.desc}</p>
-                  </div>
-                ))}
-              </div>
-            </>
-          )}
-        </div>
-      </div>
-    </ScaledSlide>
-  );
-}
 
 function SlideTeam({ active }: { active: boolean }) {
   const team = [
@@ -387,8 +328,8 @@ function SlideWhyAtlanta({ active }: { active: boolean }) {
   const reasons = [
     { num: "01", title: "Thriving Sports Culture", desc: "Home to Falcons (NFL), Hawks (NBA), Braves (MLB), Atlanta United (MLS) — plus a massive youth athletics community." },
     { num: "02", title: "Underserved Market", desc: "Despite being a major metro, Atlanta lacks a true integrated training and rehabilitation destination for serious athletes." },
-    { num: "03", title: "Film Capital", desc: "Ranks #2 in U.S. for film & TV production. Major studios, Netflix, Marvel film here — driving demand for stunt training." },
-    { num: "04", title: "Growing Population", desc: "7M+ metro includes competitive athletes, fitness pros, military, law enforcement, and film talent — all core demographics." },
+    { num: "03", title: "#1 Film State", desc: "Georgia ranks #1 in U.S. film & TV production. Major studios, Netflix, Marvel film here — driving demand for stunt training." },
+    { num: "04", title: "Growing Population", desc: "6M+ metro includes competitive athletes, fitness pros, military, law enforcement, and film talent — all core demographics." },
   ];
   return (
     <ScaledSlide>
@@ -421,51 +362,6 @@ function SlideWhyAtlanta({ active }: { active: boolean }) {
   );
 }
 
-function SlideUseOfFunds({ active }: { active: boolean }) {
-  const funds = [
-    { label: "Facility Build-Out", desc: "High-ceiling rigging, cross-training zones, recovery lounge, peptide clinic, film/stunt wing", pct: 35, color: "bg-primary" },
-    { label: "Equipment & Technology", desc: "Cryo, infrared, PEMF, Normatec, golf simulators, specialty training gear", pct: 25, color: "bg-accent" },
-    { label: "App & Tech Platform", desc: "Athlete performance tracking app, analytics dashboards, facility bookkeeping & scheduling software", pct: 15, color: "bg-primary/80" },
-    { label: "Team Recruitment", desc: "Ops manager, certified coaches across 20+ disciplines, medical staff", pct: 15, color: "bg-primary/60" },
-    { label: "Partnerships & Launch", desc: "Celebrity partnerships, insurance negotiations, grant applications, market launch", pct: 10, color: "bg-accent/60" },
-  ];
-  return (
-    <ScaledSlide>
-      <div className="w-full h-full bg-background flex">
-        <div className="w-[55%] flex flex-col justify-center px-[100px]">
-          {active && (
-            <>
-              <p className="animate-fade-up stagger-1 text-primary font-medium tracking-[0.3em] uppercase text-[14px] mb-4">Use of Funds</p>
-              <h2 className="animate-fade-up stagger-2 text-[60px] font-bold leading-[1] text-foreground mb-14">
-                Where Investment <span className="text-primary">Goes</span>
-              </h2>
-              <div className="animate-fade-up stagger-3 space-y-6">
-                {funds.map((f, i) => (
-                  <div key={i}>
-                    <div className="flex justify-between items-baseline mb-2">
-                      <h3 className="text-foreground text-[20px] font-semibold">{f.label}</h3>
-                      <span className="text-primary text-[24px] font-bold">{f.pct}%</span>
-                    </div>
-                    <div className="w-full h-[10px] bg-secondary rounded-full overflow-hidden mb-1">
-                      <div className={`h-full ${f.color} rounded-full`} style={{ width: `${f.pct}%` }} />
-                    </div>
-                    <p className="text-muted-foreground text-[14px]">{f.desc}</p>
-                  </div>
-                ))}
-              </div>
-            </>
-          )}
-        </div>
-        <div className="w-[45%] h-full flex flex-col">
-          <div className="h-full relative">
-            <img src={heroTechPlatform} alt="Iron Form tech platform" className="absolute inset-0 w-full h-full object-cover" />
-            <div className="absolute inset-0 bg-gradient-to-l from-transparent to-background" />
-          </div>
-        </div>
-      </div>
-    </ScaledSlide>
-  );
-}
 
 function SlideFilmIndustry({ active }: { active: boolean }) {
   const capabilities = [
@@ -553,29 +449,24 @@ const SLIDES = [
   { component: SlideCover, title: "Cover" },
   { component: SlideProblem, title: "Problem" },
   { component: SlideSolution, title: "Solution" },
-  { component: SlideServices, title: "Services" },
-  { component: SlideDifferentiators, title: "Differentiators" },
+  { component: SlideServices, title: "Services & Differentiators" },
   { component: SlideCompetitiveAnalysis, title: "Competitive Analysis" },
   { component: SlideDisciplines, title: "Disciplines" },
   { component: SlideFacilityLayout, title: "Facility Layout" },
   { component: SlideFilmIndustry, title: "Film & Stunt" },
   { component: SlideMarket, title: "Market Opportunity" },
   { component: SlideMarketGrowth, title: "Market Growth" },
-  { component: SlideRevenue, title: "Revenue" },
-  { component: SlideRevenueDetailed, title: "Revenue Detail" },
-  { component: SlideCostBenefit, title: "Cost-Benefit" },
-  { component: SlideFinancialProjections, title: "Financials" },
+  { component: SlideRevenueDetailed, title: "Revenue Breakdown" },
+  { component: SlideFinancialProjections, title: "Financial Overview" },
   { component: SlidePartnerships, title: "Partnerships" },
   { component: SlideEmployeeStructure, title: "Team Structure" },
   { component: SlideTeam, title: "Team" },
   { component: SlideWhyAtlanta, title: "Why Atlanta" },
-  { component: SlideCommunityOutreach, title: "Community" },
-  { component: SlideCommunityEngagement, title: "Engagement Plan" },
+  { component: SlideCommunityOutreach, title: "Community Impact" },
   { component: SlideCampSchedules, title: "Camp Schedules" },
   { component: SlideMarketingStrategy, title: "Marketing" },
   { component: SlideRiskManagement, title: "Risk Management" },
-  { component: SlideUseOfFunds, title: "Use of Funds" },
-  { component: SlideUseOfFundsDetailed, title: "Funds Detail" },
+  { component: SlideUseOfFundsDetailed, title: "Use of Funds" },
   { component: SlideTimeline, title: "Timeline" },
   { component: SlideLongTermVision, title: "Vision" },
   { component: SlideFAQs, title: "FAQs" },
