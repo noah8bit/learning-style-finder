@@ -12,9 +12,9 @@ export default function SlideFinancialProjections({ active }: { active: boolean 
   ];
 
   const projections = [
-    { year: "Year 1", cost: "$600K – $1M", revenue: "$1.09M – $1.69M", net: "$90K – $690K" },
-    { year: "Year 2", cost: "$700K – $1.1M", revenue: "$1.4M – $2.2M", net: "$300K – $1.1M" },
-    { year: "Year 3", cost: "$750K – $1.2M", revenue: "$1.8M – $2.8M", net: "$600K – $1.6M" },
+    { year: "Year 1", cost: 800, revenue: 1390, costLabel: "$600K – $1M", revenueLabel: "$1.09M – $1.69M", netLabel: "$90K – $690K" },
+    { year: "Year 2", cost: 900, revenue: 1800, costLabel: "$700K – $1.1M", revenueLabel: "$1.4M – $2.2M", netLabel: "$300K – $1.1M" },
+    { year: "Year 3", cost: 975, revenue: 2300, costLabel: "$750K – $1.2M", revenueLabel: "$1.8M – $2.8M", netLabel: "$600K – $1.6M" },
   ];
 
   const roi = [
@@ -23,6 +23,8 @@ export default function SlideFinancialProjections({ active }: { active: boolean 
     { label: "5-Year Cumulative", value: "$3.5M – $6M+", icon: "💰" },
     { label: "Payback Period", value: "4–6 years", icon: "🔄" },
   ];
+
+  const maxBar = 2500;
 
   return (
     <ScaledSlide>
@@ -38,7 +40,7 @@ export default function SlideFinancialProjections({ active }: { active: boolean 
             </h2>
             <div className="animate-fade-up stagger-3 flex gap-8 mb-6">
               {/* Startup costs */}
-              <div className="flex-1">
+              <div className="w-[380px] shrink-0">
                 <h3 className="text-primary text-[18px] font-bold mb-4 uppercase tracking-wider">Start-Up Costs</h3>
                 <div className="space-y-3">
                   {startupCosts.map((c, i) => (
@@ -55,30 +57,47 @@ export default function SlideFinancialProjections({ active }: { active: boolean 
                   </div>
                 </div>
               </div>
-              {/* Revenue projections */}
+
+              {/* Visual bar chart + table */}
               <div className="flex-1">
                 <h3 className="text-accent text-[18px] font-bold mb-4 uppercase tracking-wider">Annual Projections</h3>
-                <div className="overflow-hidden rounded-xl border border-border">
-                  <table className="w-full">
-                    <thead>
-                      <tr className="bg-white/5">
-                        <th className="text-left text-foreground text-[13px] font-bold p-3">Year</th>
-                        <th className="text-right text-foreground text-[13px] font-bold p-3">Costs</th>
-                        <th className="text-right text-foreground text-[13px] font-bold p-3">Revenue</th>
-                        <th className="text-right text-primary text-[13px] font-bold p-3">Net</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {projections.map((p, i) => (
-                        <tr key={i} className={i % 2 === 0 ? "bg-white/[0.02]" : ""}>
-                          <td className="text-foreground text-[14px] font-medium p-3 border-t border-white/5">{p.year}</td>
-                          <td className="text-accent text-[14px] font-semibold p-3 border-t border-white/5 text-right">{p.cost}</td>
-                          <td className="text-primary text-[14px] font-semibold p-3 border-t border-white/5 text-right">{p.revenue}</td>
-                          <td className="text-primary text-[14px] font-bold p-3 border-t border-white/5 text-right">{p.net}</td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
+                <div className="space-y-5">
+                  {projections.map((p, i) => (
+                    <div key={i}>
+                      <div className="flex items-center justify-between mb-2">
+                        <span className="text-foreground text-[16px] font-bold w-[70px]">{p.year}</span>
+                        <span className="text-primary text-[14px] font-semibold">Net: {p.netLabel}</span>
+                      </div>
+                      <div className="space-y-1.5">
+                        <div className="flex items-center gap-3">
+                          <span className="text-muted-foreground text-[12px] w-[60px] text-right">Costs</span>
+                          <div className="flex-1 h-[14px] bg-white/5 rounded-full overflow-hidden">
+                            <div className="h-full bg-accent/70 rounded-full flex items-center justify-end pr-2" style={{ width: `${(p.cost / maxBar) * 100}%` }}>
+                              <span className="text-[10px] text-foreground font-semibold">{p.costLabel}</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="flex items-center gap-3">
+                          <span className="text-muted-foreground text-[12px] w-[60px] text-right">Revenue</span>
+                          <div className="flex-1 h-[14px] bg-white/5 rounded-full overflow-hidden">
+                            <div className="h-full bg-primary/70 rounded-full flex items-center justify-end pr-2" style={{ width: `${(p.revenue / maxBar) * 100}%` }}>
+                              <span className="text-[10px] text-foreground font-semibold">{p.revenueLabel}</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                <div className="flex gap-6 mt-4">
+                  <div className="flex items-center gap-2">
+                    <div className="w-3 h-3 bg-accent/70 rounded-sm" />
+                    <span className="text-muted-foreground text-[12px]">Operating Costs (midpoint)</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <div className="w-3 h-3 bg-primary/70 rounded-sm" />
+                    <span className="text-muted-foreground text-[12px]">Revenue (midpoint)</span>
+                  </div>
                 </div>
               </div>
             </div>
