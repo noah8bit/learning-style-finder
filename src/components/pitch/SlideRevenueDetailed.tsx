@@ -17,7 +17,7 @@ export default function SlideRevenueDetailed({ active }: { active: boolean }) {
     { label: "Seminars (6/yr)", low: "$60K", high: "$60K", detail: "6 seminars × 100 attendees × $100 avg" },
     { label: "Corporate Wellness", low: "$72K", high: "$72K", detail: "3 clients × $2K/mo" },
     { label: "Retail Space", low: "$24K", high: "$24K", detail: "~$2K/mo merchandise sales" },
-    { label: "Premium Services", low: "$36K", high: "$36K", detail: "15 PT sessions/week × $75" },
+    { label: "Premium Services", low: "$36K", high: "$36K", detail: "~9 PT sessions/week × $75" },
     { label: "Referral Program", low: "$24K", high: "$24K", detail: "10 new members/mo × $200" },
   ];
 

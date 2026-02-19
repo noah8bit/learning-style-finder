@@ -5,7 +5,7 @@ export default function SlideMarketGrowth({ active }: { active: boolean }) {
   const segments = [
     { label: "Health Clubs & Gyms", value: 35, amount: "$35B" },
     { label: "Functional Training", value: 20, amount: "$20B" },
-    { label: "Sports Medicine", value: 10, amount: "$10B" },
+    { label: "Sports Medicine", value: 8, amount: "$8B" },
     { label: "Recovery & Wellness", value: 15, amount: "$15B" },
     { label: "Digital Fitness", value: 12, amount: "$12B" },
     { label: "Youth Sports", value: 8, amount: "$8B" },
@@ -16,8 +16,8 @@ export default function SlideMarketGrowth({ active }: { active: boolean }) {
     { year: "2021", fitness: 68, medicine: 7 },
     { year: "2022", fitness: 76, medicine: 7.5 },
     { year: "2023", fitness: 84, medicine: 8 },
-    { year: "2024", fitness: 96, medicine: 9 },
-    { year: "2025", fitness: 100, medicine: 10 },
+    { year: "2024", fitness: 96, medicine: 7.5 },
+    { year: "2025", fitness: 100, medicine: 8 },
   ];
 
   const maxVal = 100;

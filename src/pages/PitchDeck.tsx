@@ -242,7 +242,7 @@ function SlideDisciplines({ active }: { active: boolean }) {
 function SlideMarket({ active }: { active: boolean }) {
   const stats = [
     { value: "$100B+", label: "Global Health & Fitness Industry", sub: "Growing at ~7% CAGR" },
-    { value: "$10B", label: "Sports Medicine Market", sub: "Projected to reach $14B by 2035" },
+    { value: "$8B", label: "Sports Medicine Market", sub: "Projected to reach $13B by 2035" },
     { value: "80%", label: "Americans Physically Active", sub: "247M active in 2024 (SFIA)" },
     { value: "6M+", label: "Atlanta Metro Population", sub: "#1 U.S. film production state" },
     { value: "↑", label: "Multi-Training Demand", sub: "Cross-training growth accelerating" },
