@@ -73,6 +73,7 @@ function SlideProblem({ active }: { active: boolean }) {
     { icon: "⚡", title: "Fragmented Resources", desc: "Athletes at every level are forced to cobble together training, rehab, therapy, and recovery across multiple facilities — losing continuity and leaving performance gains on the table." },
     { icon: "🏅", title: "No Cross-Training Hub", desc: "There is no single destination in Atlanta where an athlete can train across multiple disciplines, access neuromuscular therapy, recovery science, and coaching all under one roof." },
     { icon: "💰", title: "Access & Affordability", desc: "Talented aspiring athletes lack access to the elite tools that professionals rely on. Iron Form changes this through grants, sponsorships, and insurance partnerships." },
+    { icon: "🌟", title: "Community Outreach", desc: "Identifying and uplifting gifted athletes in the Atlanta community is central to our mission. Through active outreach, scouting, and mentorship programs, Iron Form ensures raw talent doesn't go unnoticed or unsupported." },
   ];
   return (
     <ScaledSlide>
