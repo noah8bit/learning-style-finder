@@ -115,7 +115,9 @@ function SlideSolution({ active }: { active: boolean }) {
     { icon: "🏋", label: "20+ Sport Disciplines" },
     { icon: "🧠", label: "Neuromuscular Therapy" },
     { icon: "💊", label: "Peptide Wellness Clinic" },
-    { icon: "❄️", label: "Recovery Lounge" },
+    { icon: "❄️", label: "Sauna & Cold Plunge" },
+    { icon: "🏊", label: "Olympic Swimming Lanes" },
+    { icon: "🎤", label: "Athlete & Coach Seminars" },
     { icon: "🤝", label: "Grants & Sponsorships" },
     { icon: "🎬", label: "Film & Stunt Wing" },
   ];
@@ -134,7 +136,7 @@ function SlideSolution({ active }: { active: boolean }) {
               <p className="animate-fade-up stagger-3 text-secondary-foreground text-[22px] max-w-[900px] mb-14 leading-relaxed font-light">
                 A comprehensive high-performance campus built for aspiring and elite athletes across every sport — integrated rehabilitation, recovery science, and medical services, all under one roof.
               </p>
-              <div className="grid grid-cols-3 gap-5">
+              <div className="grid grid-cols-4 gap-4">
                 {features.map((f, i) => (
                   <div key={i} className={`animate-fade-up stagger-${Math.min(i + 3, 6)} bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl px-6 py-5 flex items-center gap-4`}>
                     <span className="text-[32px]">{f.icon}</span>
@@ -153,9 +155,10 @@ function SlideSolution({ active }: { active: boolean }) {
 function SlideServices({ active }: { active: boolean }) {
   const services = [
     "Built for Every Athlete", "Neuromuscular Therapy", "Peptide Wellness Clinic",
-    "Cryotherapy", "Infrared Therapy", "Red & Green Light Therapy",
-    "PEMF Therapy", "Normatec Compression", "Personal Training & Coaching",
-    "Film/Stunt Action Wing", "Cross-Training 20+ Sports", "Athlete Grant Program", "Corporate Packages",
+    "Sauna & Cold Plunge", "Olympic Swimming Lanes", "Cryotherapy", "Infrared Therapy",
+    "Red & Green Light Therapy", "PEMF Therapy", "Normatec Compression",
+    "Personal Training & Coaching", "Film/Stunt Action Wing", "Cross-Training 20+ Sports",
+    "Athlete & Coach Seminars", "Athlete Grant Program", "Corporate Packages",
   ];
   return (
     <ScaledSlide>
@@ -211,7 +214,7 @@ function SlideDisciplines({ active }: { active: boolean }) {
     { title: "Dance", items: ["Ballet", "Hip Hop", "Contemporary", "Jazz", "Tap"], color: "text-primary" },
     { title: "Field & Court", items: ["Basketball", "Soccer", "Volleyball"], color: "text-accent" },
     { title: "Athletic Performance", items: ["Track & Field", "CrossFit", "Hyrox"], color: "text-primary" },
-    { title: "Specialty", items: ["Rock Climbing", "Stunt Training", "Cycling", "Pilates", "Yoga", "Golf Sim", "Swimming*"], color: "text-accent" },
+    { title: "Specialty", items: ["Rock Climbing", "Stunt Training", "Cycling", "Pilates", "Yoga", "Golf Sim", "Olympic Swimming"], color: "text-accent" },
   ];
   return (
     <ScaledSlide>
@@ -239,7 +242,7 @@ function SlideDisciplines({ active }: { active: boolean }) {
                   </div>
                 ))}
               </div>
-              <p className="animate-fade-up stagger-4 text-muted-foreground text-[12px] mt-6">*Swimming pending space availability at build-out</p>
+              <p className="animate-fade-up stagger-4 text-muted-foreground text-[12px] mt-6">Facility also features sauna & cold plunge variations, Olympic swimming lanes, and hosts elite athlete & coaching seminars.</p>
             </>
           )}
         </div>
