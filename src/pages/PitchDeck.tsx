@@ -243,7 +243,7 @@ function SlideDisciplines({ active }: { active: boolean }) {
 function SlideMarket({ active }: { active: boolean }) {
   const stats = [
     { value: "$100B+", label: "Global Health & Fitness Industry", sub: "Growing at ~7% CAGR" },
-    { value: "$8B", label: "Sports Medicine Market", sub: "Projected to reach $13B by 2035" },
+    { value: "$10B+", label: "Sports Medicine Market", sub: "Projected to reach $15B by 2032" },
     { value: "80%", label: "Americans Physically Active", sub: "247M active in 2024 (SFIA)" },
     { value: "6M+", label: "Atlanta Metro Population", sub: "#1 U.S. film production state" },
     { value: "↑", label: "Multi-Training Demand", sub: "Cross-training growth accelerating" },
@@ -318,7 +318,7 @@ function SlideTeam({ active }: { active: boolean }) {
             <div className="animate-fade-up stagger-4 mt-6 flex gap-5">
               <div className="flex-1 bg-primary/10 border border-primary/20 rounded-xl p-5">
                 <p className="text-foreground text-[14px]">
-                  <span className="font-bold text-primary">Partner Equity:</span> Josh Garret & Rick Villanueva hold 5–10% equity each with 3–5 year performance-based vesting, plus 10–20% commission on specialty service revenue.
+                  <span className="font-bold text-primary">Partner Equity:</span> Josh Garret & Rick Villanueva hold 5% equity each (10% total) with 3–5 year performance-based vesting, plus 10–20% commission on specialty service revenue. Partner equity is separate from the investor round.
                 </p>
               </div>
               <div className="flex-1 bg-secondary/50 border border-border rounded-xl p-5">

@@ -3,9 +3,9 @@ import ScaledSlide from "./ScaledSlide";
 
 export default function SlideInvestmentAsk({ active }: { active: boolean }) {
   const milestones = [
-    { phase: "Tranche 1", amount: "$4.5M", trigger: "At close", use: "Land acquisition, construction start, architectural & permitting, core team hiring", color: "text-primary", bg: "bg-primary/10", border: "border-primary/30" },
-    { phase: "Tranche 2", amount: "$4.5M", trigger: "Construction 50%", use: "Equipment procurement, pool & specialty installations, tech platform build, marketing launch", color: "text-accent", bg: "bg-accent/10", border: "border-accent/30" },
-    { phase: "Tranche 3", amount: "$3M", trigger: "Doors open", use: "Year 1 operating runway, final fit-out, contingency buffer, growth initiatives", color: "text-primary", bg: "bg-primary/10", border: "border-primary/30" },
+    { phase: "Tranche 1", amount: "$5M", trigger: "At close", use: "Land acquisition, construction start, architectural & permitting, core team hiring", color: "text-primary", bg: "bg-primary/10", border: "border-primary/30" },
+    { phase: "Tranche 2", amount: "$4.75M", trigger: "Construction 50%", use: "Equipment procurement, pool & specialty installations, tech platform build, marketing launch", color: "text-accent", bg: "bg-accent/10", border: "border-accent/30" },
+    { phase: "Tranche 3", amount: "$2.25M", trigger: "Doors open", use: "Year 1 operating runway, final fit-out, contingency reserve, growth initiatives", color: "text-primary", bg: "bg-primary/10", border: "border-primary/30" },
   ];
 
   const equityTiers = [
@@ -68,7 +68,7 @@ export default function SlideInvestmentAsk({ active }: { active: boolean }) {
                   <div className="bg-primary/10 border border-primary/30 rounded-lg p-5">
                     <h4 className="text-primary text-[15px] font-bold mb-2">Founder Protection</h4>
                     <p className="text-muted-foreground text-[13px] leading-relaxed">
-                      Total outside equity capped at <span className="text-foreground font-bold">20%</span> in this round. No single investor exceeds 18%. Preserves majority control for operations and future growth rounds.
+                      Investor equity capped at <span className="text-foreground font-bold">20%</span> in this round. Partner equity (10%) is separate and performance-vested. Founder retains <span className="text-foreground font-bold">70%+</span> ownership and full operational control.
                     </p>
                   </div>
 
@@ -82,7 +82,7 @@ export default function SlideInvestmentAsk({ active }: { active: boolean }) {
               </div>
 
               <p className="animate-fade-up stagger-5 absolute bottom-6 left-[100px] right-[100px] text-muted-foreground/50 text-[11px]">
-                $12M raise structured across 3 milestone-based tranches for a 60,000+ sq ft facility. Total outside equity capped at 20%. Terms negotiable based on investment size and timing.
+                $12M raise across 3 milestone-based tranches. Investor equity capped at 20%; partner equity (10%) is separate and vested. Founder retains 70%+ ownership. Terms negotiable based on investment size and timing.
               </p>
             </>
           )}

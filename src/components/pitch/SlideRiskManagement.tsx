@@ -20,7 +20,7 @@ export default function SlideRiskManagement({ active }: { active: boolean }) {
       risk: "Construction Delays",
       level: "High",
       levelColor: "text-red-400",
-      mitigation: "Phased build-out plan allows partial operations during construction. Contingency budget of 10–15% built into projections.",
+      mitigation: "Phased build-out plan allows partial operations during construction. Dedicated 6% contingency reserve ($750K) built into budget.",
       icon: "🏗️",
     },
     {

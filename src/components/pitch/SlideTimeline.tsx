@@ -3,11 +3,11 @@ import ScaledSlide from "./ScaledSlide";
 export default function SlideTimeline({ active }: { active: boolean }) {
   const milestones = [
     { quarter: "Q1 2026", title: "Foundation", items: ["Secure land & permits", "Begin architectural design", "Form legal entity & partnerships"], color: "bg-primary", active: true },
-    { quarter: "Q2 2026", title: "Build-Out Begins", items: ["Break ground on facility", "Order equipment & tech", "Launch hiring pipeline"], color: "bg-primary/80", active: false },
-    { quarter: "Q3 2026", title: "Staff & Systems", items: ["Recruit coaches (20+ disciplines)", "Install recovery tech suite", "Beta launch performance app"], color: "bg-accent", active: false },
-    { quarter: "Q4 2026", title: "Soft Launch", items: ["Invite-only memberships", "Partner onboarding", "Community outreach kickoff"], color: "bg-accent/80", active: false },
-    { quarter: "Q1 2027", title: "Grand Opening", items: ["Full public launch", "Marketing campaign rollout", "First camps & seminars"], color: "bg-primary", active: false },
-    { quarter: "Q2–Q4 2027", title: "Scale & Optimize", items: ["Insurance partnerships live", "Film wing rentals active", "Evaluate expansion sites"], color: "bg-primary/80", active: false },
+    { quarter: "Q2–Q3 2026", title: "Build-Out Begins", items: ["Break ground on facility", "Order equipment & tech", "Launch hiring pipeline"], color: "bg-primary/80", active: false },
+    { quarter: "Q4 2026", title: "Construction & Hiring", items: ["Recruit coaches (20+ disciplines)", "Install recovery tech suite", "Beta launch performance app"], color: "bg-accent", active: false },
+    { quarter: "Q1 2027", title: "Fit-Out & Testing", items: ["Equipment installation complete", "Systems testing & safety certs", "Pre-launch marketing blitz"], color: "bg-accent/80", active: false },
+    { quarter: "Q2 2027", title: "Soft Launch", items: ["Invite-only memberships (50)", "Partner & team onboarding", "Community outreach kickoff"], color: "bg-primary", active: false },
+    { quarter: "Q3 2027", title: "Grand Opening", items: ["Full public launch", "First camps & seminars", "Film wing rentals active"], color: "bg-primary/80", active: false },
   ];
 
   return (
