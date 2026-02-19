@@ -1,3 +1,4 @@
+import heroConstruction from "@/assets/pitch/hero-construction.jpg";
 import ScaledSlide from "./ScaledSlide";
 
 export default function SlideFinancialProjections({ active }: { active: boolean }) {
@@ -20,7 +21,10 @@ export default function SlideFinancialProjections({ active }: { active: boolean 
 
   return (
     <ScaledSlide>
-      <div className="w-full h-full bg-background flex flex-col justify-center px-[120px]">
+      <div className="relative w-full h-full">
+        <img src={heroConstruction} alt="Facility under construction" className="absolute inset-0 w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-black/85" />
+        <div className="relative z-10 flex flex-col justify-center h-full px-[120px]">
         {active && (
           <>
             <p className="animate-fade-up stagger-1 text-primary font-medium tracking-[0.3em] uppercase text-[14px] mb-4">Financial Projections</p>
@@ -67,6 +71,7 @@ export default function SlideFinancialProjections({ active }: { active: boolean 
             </div>
           </>
         )}
+        </div>
       </div>
     </ScaledSlide>
   );
