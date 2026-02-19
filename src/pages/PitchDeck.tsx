@@ -446,28 +446,39 @@ function SlideClosing({ active }: { active: boolean }) {
 
 // ─── Slide registry ─────────────────────────────────────────────────────────
 const SLIDES = [
+  // ACT 1: Hook — What & Why
   { component: SlideCover, title: "Cover" },
   { component: SlideProblem, title: "Problem" },
   { component: SlideSolution, title: "Solution" },
+
+  // ACT 2: Market Validation
+  { component: SlideMarket, title: "Market Opportunity" },
+  { component: SlideMarketGrowth, title: "Market Growth" },
+  { component: SlideWhyAtlanta, title: "Why Atlanta" },
+
+  // ACT 3: The Product
   { component: SlideServices, title: "Services & Differentiators" },
-  { component: SlideCompetitiveAnalysis, title: "Competitive Analysis" },
   { component: SlideDisciplines, title: "Disciplines" },
   { component: SlideFacilityLayout, title: "Facility Layout" },
   { component: SlideFilmIndustry, title: "Film & Stunt" },
-  { component: SlideMarket, title: "Market Opportunity" },
-  { component: SlideMarketGrowth, title: "Market Growth" },
+  { component: SlideCampSchedules, title: "Camp Schedules" },
+  { component: SlideCompetitiveAnalysis, title: "Competitive Analysis" },
+
+  // ACT 4: Business Model & Financials
   { component: SlideRevenueDetailed, title: "Revenue Breakdown" },
   { component: SlideFinancialProjections, title: "Financial Overview" },
-  { component: SlidePartnerships, title: "Partnerships" },
-  { component: SlideEmployeeStructure, title: "Team Structure" },
-  { component: SlideTeam, title: "Team" },
-  { component: SlideWhyAtlanta, title: "Why Atlanta" },
-  { component: SlideCommunityOutreach, title: "Community Impact" },
-  { component: SlideCampSchedules, title: "Camp Schedules" },
-  { component: SlideMarketingStrategy, title: "Marketing" },
-  { component: SlideRiskManagement, title: "Risk Management" },
   { component: SlideUseOfFundsDetailed, title: "Use of Funds" },
+  { component: SlidePartnerships, title: "Partnerships" },
+  { component: SlideMarketingStrategy, title: "Marketing" },
+
+  // ACT 5: Team & Execution
+  { component: SlideTeam, title: "Team" },
+  { component: SlideEmployeeStructure, title: "Team Structure" },
   { component: SlideTimeline, title: "Timeline" },
+  { component: SlideRiskManagement, title: "Risk Management" },
+
+  // ACT 6: Impact & Close
+  { component: SlideCommunityOutreach, title: "Community Impact" },
   { component: SlideLongTermVision, title: "Vision" },
   { component: SlideFAQs, title: "FAQs" },
   { component: SlideClosing, title: "Closing" },
