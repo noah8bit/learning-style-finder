@@ -8,6 +8,7 @@ import heroRecovery from "@/assets/pitch/hero-recovery.jpg";
 import heroFacility from "@/assets/pitch/hero-facility.jpg";
 import heroPilates from "@/assets/pitch/hero-pilates.jpg";
 import heroTrack from "@/assets/pitch/hero-track.jpg";
+import heroFilmStudio from "@/assets/pitch/hero-film-studio.jpg";
 
 // ─── ScaledSlide ────────────────────────────────────────────────────────────
 function ScaledSlide({ children, className = "" }: { children: React.ReactNode; className?: string }) {
@@ -464,6 +465,51 @@ function SlideUseOfFunds({ active }: { active: boolean }) {
   );
 }
 
+function SlideFilmIndustry({ active }: { active: boolean }) {
+  const capabilities = [
+    { icon: "🤸", label: "Spring Floors", desc: "Professional spring floor systems for stunts, acrobatics, and fight choreography" },
+    { icon: "🏗️", label: "Gantry Wire Systems", desc: "Overhead gantry rigging for wire work, aerial stunts, and harness training" },
+    { icon: "🟩", label: "Green Screen Stage", desc: "Full-scale green screen setup for VFX compositing and virtual environments" },
+    { icon: "📡", label: "Motion Capture", desc: "Mo-cap capability for digital performance capture and animation pre-production" },
+    { icon: "🎥", label: "Filming & Previz", desc: "On-site filming options for rehearsals, previsualization, and action sequence development" },
+    { icon: "🏢", label: "Production Rentals", desc: "Hourly and project-based space rental for studios, productions, and independent filmmakers" },
+  ];
+  return (
+    <ScaledSlide>
+      <div className="w-full h-full bg-background flex">
+        <div className="w-[50%] h-full relative">
+          <img src={heroFilmStudio} alt="Film & stunt studio" className="absolute inset-0 w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-r from-transparent to-background" />
+        </div>
+        <div className="w-[50%] flex flex-col justify-center px-[80px]">
+          {active && (
+            <>
+              <p className="animate-fade-up stagger-1 text-primary font-medium tracking-[0.3em] uppercase text-[14px] mb-4">Film & Stunt Wing</p>
+              <h2 className="animate-fade-up stagger-2 text-[56px] font-bold leading-[1] text-foreground mb-4">
+                Where Action<br />Meets <span className="text-primary">Production</span>
+              </h2>
+              <p className="animate-fade-up stagger-3 text-muted-foreground text-[16px] mb-10 leading-relaxed max-w-[600px]">
+                Actors and stunt performers train at Iron Form. Productions rent dedicated space for rehearsals, previsualization, and action design — all within Atlanta's booming film ecosystem.
+              </p>
+              <div className="animate-fade-up stagger-4 grid grid-cols-2 gap-4">
+                {capabilities.map((c, i) => (
+                  <div key={i} className="bg-secondary border border-border rounded-xl p-5">
+                    <div className="flex items-center gap-3 mb-2">
+                      <span className="text-[24px]">{c.icon}</span>
+                      <h3 className="text-foreground text-[16px] font-semibold">{c.label}</h3>
+                    </div>
+                    <p className="text-muted-foreground text-[13px] leading-relaxed">{c.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </>
+          )}
+        </div>
+      </div>
+    </ScaledSlide>
+  );
+}
+
 function SlideClosing({ active }: { active: boolean }) {
   return (
     <ScaledSlide>
@@ -501,6 +547,7 @@ const SLIDES = [
   { component: SlideSolution, title: "Solution" },
   { component: SlideServices, title: "Services" },
   { component: SlideDisciplines, title: "Disciplines" },
+  { component: SlideFilmIndustry, title: "Film & Stunt" },
   { component: SlideMarket, title: "Market" },
   { component: SlideRevenue, title: "Revenue" },
   { component: SlideTeam, title: "Team" },
