@@ -81,6 +81,9 @@ export default function SlideCustomerPersonas({ active }: { active: boolean }) {
                   </div>
                 ))}
               </div>
+              <p className="animate-fade-up stagger-4 absolute bottom-6 left-[100px] right-[100px] text-muted-foreground/50 text-[11px] leading-tight">
+                Sources: IHRSA Consumer Survey; Georgia Film Commission Industry Report; SGMA Youth Sports Participation Study; SHRM Corporate Wellness Trends
+              </p>
             </>
           )}
         </div>

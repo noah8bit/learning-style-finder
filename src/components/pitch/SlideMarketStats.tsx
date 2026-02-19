@@ -34,7 +34,10 @@ export default function SlideMarketStats({ active }: { active: boolean }) {
                     <div className="text-muted-foreground text-[13px]">{s.sub}</div>
                   </div>
                 ))}
-              </div>
+            </div>
+            <p className="animate-fade-up stagger-5 absolute bottom-6 left-[120px] right-[120px] text-muted-foreground/50 text-[11px] leading-tight">
+              Sources: IHRSA Global Report 2024; Grand View Research – Sports Medicine Market Analysis; PHIT America Participation Report; Statista U.S. Fitness Industry; U.S. Census Bureau – Atlanta Metro Area
+            </p>
             </>
           )}
         </div>

@@ -35,6 +35,9 @@ export default function SlideDifferentiators({ active }: { active: boolean }) {
                   </div>
                 ))}
               </div>
+              <p className="animate-fade-up stagger-4 absolute bottom-6 left-[120px] right-[120px] text-muted-foreground/50 text-[11px] leading-tight">
+                Sources: IHRSA Competitive Landscape Report; Georgia Film Industry Economic Impact Study; Grand View Research – Cryotherapy & Recovery Market
+              </p>
             </>
           )}
         </div>

@@ -35,6 +35,9 @@ export default function SlideCommunityOutreach({ active }: { active: boolean }) 
                 </div>
               ))}
             </div>
+            <p className="animate-fade-up stagger-5 absolute bottom-6 left-[120px] right-[120px] text-muted-foreground/50 text-[11px] leading-tight">
+              Sources: Aspen Institute – Project Play; Boys & Girls Clubs of America Impact Reports; Atlanta Public Schools Athletics Department
+            </p>
           </>
         )}
         </div>

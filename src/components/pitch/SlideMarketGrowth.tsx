@@ -89,6 +89,9 @@ export default function SlideMarketGrowth({ active }: { active: boolean }) {
                   </div>
                 </div>
               </div>
+            <p className="animate-fade-up stagger-4 absolute bottom-6 left-[120px] right-[120px] text-muted-foreground/50 text-[11px] leading-tight">
+              Sources: IHRSA Global Report 2024; Grand View Research – Fitness & Sports Medicine Market; Statista Digital Fitness Forecast; SGMA Youth Sports Participation Report
+            </p>
             </>
           )}
         </div>
