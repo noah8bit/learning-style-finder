@@ -3,24 +3,24 @@ import ScaledSlide from "./ScaledSlide";
 
 export default function SlideMarketGrowth({ active }: { active: boolean }) {
   const segments = [
-    { label: "Health Clubs", value: 35, amount: "$30B" },
-    { label: "Functional Training", value: 20, amount: "$17B" },
-    { label: "Sports Medicine", value: 18, amount: "$16B" },
-    { label: "Recovery & Wellness", value: 12, amount: "$10B" },
-    { label: "Digital Fitness", value: 10, amount: "$9B" },
-    { label: "Youth Sports", value: 5, amount: "$5B" },
+    { label: "Health Clubs & Gyms", value: 35, amount: "$35B" },
+    { label: "Functional Training", value: 20, amount: "$20B" },
+    { label: "Sports Medicine", value: 10, amount: "$10B" },
+    { label: "Recovery & Wellness", value: 15, amount: "$15B" },
+    { label: "Digital Fitness", value: 12, amount: "$12B" },
+    { label: "Youth Sports", value: 8, amount: "$8B" },
   ];
 
   const growth = [
-    { year: "2020", fitness: 32, medicine: 28 },
-    { year: "2021", fitness: 38, medicine: 31 },
-    { year: "2022", fitness: 48, medicine: 35 },
-    { year: "2023", fitness: 58, medicine: 38 },
-    { year: "2024", fitness: 71, medicine: 42 },
-    { year: "2025", fitness: 87, medicine: 46 },
+    { year: "2020", fitness: 60, medicine: 6 },
+    { year: "2021", fitness: 68, medicine: 7 },
+    { year: "2022", fitness: 76, medicine: 7.5 },
+    { year: "2023", fitness: 84, medicine: 8 },
+    { year: "2024", fitness: 96, medicine: 9 },
+    { year: "2025", fitness: 100, medicine: 10 },
   ];
 
-  const maxVal = 87;
+  const maxVal = 100;
 
   return (
     <ScaledSlide>
@@ -70,7 +70,7 @@ export default function SlideMarketGrowth({ active }: { active: boolean }) {
                 </div>
                 {/* Segment breakdown */}
                 <div className="w-[420px]">
-                  <h3 className="text-foreground text-[18px] font-bold mb-6 uppercase tracking-wider">$87B Market Segments</h3>
+                  <h3 className="text-foreground text-[18px] font-bold mb-6 uppercase tracking-wider">$100B+ Market Segments</h3>
                   <div className="space-y-4">
                     {segments.map((s, i) => (
                       <div key={i}>
