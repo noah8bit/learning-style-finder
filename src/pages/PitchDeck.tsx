@@ -11,7 +11,7 @@ import heroPilates from "@/assets/pitch/hero-pilates.jpg";
 import heroTrack from "@/assets/pitch/hero-track.jpg";
 import heroFilmStudio from "@/assets/pitch/hero-film-studio.jpg";
 import heroTechPlatform from "@/assets/pitch/hero-tech-platform.jpg";
-import heroFacilityInterior from "@/assets/pitch/hero-facility-interior.jpg";
+import heroFacilityInterior from "@/assets/pitch/hero-crosstraining.jpg";
 
 import ScaledSlide from "@/components/pitch/ScaledSlide";
 import SlideMarketStats from "@/components/pitch/SlideMarketStats";
