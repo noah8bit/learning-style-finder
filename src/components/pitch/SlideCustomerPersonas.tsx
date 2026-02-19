@@ -28,8 +28,8 @@ export default function SlideCustomerPersonas({ active }: { active: boolean }) {
       icon: "🏢",
       name: "The Corporate Client",
       age: "25–55",
-      desc: "Businesses investing in employee wellness programs — needs structured group fitness, stress management, and team-building through sport.",
-      needs: ["Corporate wellness packages", "Group training sessions", "Health & productivity ROI"],
+      desc: "Atlanta Fortune 500s and mid-market companies investing $600+/employee/year in wellness — proven $3–$6 ROI per dollar spent through reduced absenteeism and healthcare costs.",
+      needs: ["Tiered wellness packages ($3K–$10K/mo)", "On-site & facility-based programs", "Health metrics & productivity reporting"],
     },
     {
       icon: "🩺",
