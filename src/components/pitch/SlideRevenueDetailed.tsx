@@ -12,7 +12,7 @@ export default function SlideRevenueDetailed({ active }: { active: boolean }) {
   const maxMembers = 300;
 
   const coreStreams = [
-    { label: "Monthly Memberships", value: "$480K – $1.08M", detail: "275 members avg × $200–$300/mo (ramped)" },
+    { label: "Monthly Memberships", value: "$360K – $540K", detail: "~150 avg members (ramped) × $200–$300/mo" },
     { label: "Team Retainments", value: "$100K", detail: "5 teams × $20K/season" },
     { label: "Insurance Partnerships", value: "$50K", detail: "Covered therapy & rehab" },
     { label: "Facility Rentals", value: "$104K", detail: "$2K/week × 52 weeks" },
@@ -24,8 +24,8 @@ export default function SlideRevenueDetailed({ active }: { active: boolean }) {
     { label: "Premium & Retail", value: "$84K", detail: "PT sessions, merch, referrals" },
   ];
 
-  const totalLow = "$1.09M";
-  const totalHigh = "$1.69M";
+  const totalLow = "$866K";
+  const totalHigh = "$1.05M";
 
   return (
     <ScaledSlide>
