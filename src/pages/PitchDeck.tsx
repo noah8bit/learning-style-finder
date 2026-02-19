@@ -5,7 +5,7 @@ import heroGym from "@/assets/pitch/hero-gym.jpg";
 import heroAthlete from "@/assets/pitch/hero-athlete.jpg";
 import heroAtlanta from "@/assets/pitch/hero-atlanta.jpg";
 import heroRecovery from "@/assets/pitch/hero-recovery.jpg";
-import heroFacility from "@/assets/pitch/hero-facility.jpg";
+import heroFacility from "@/assets/pitch/hero-facility-v2.jpg";
 import heroPilates from "@/assets/pitch/hero-pilates.jpg";
 import heroTrack from "@/assets/pitch/hero-track.jpg";
 import heroFilmStudio from "@/assets/pitch/hero-film-studio.jpg";
