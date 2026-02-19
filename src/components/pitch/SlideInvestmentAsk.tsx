@@ -1,4 +1,4 @@
-import heroPartnerships from "@/assets/pitch/hero-partnerships.jpg";
+import heroConstruction from "@/assets/pitch/hero-construction.jpg";
 import ScaledSlide from "./ScaledSlide";
 
 export default function SlideInvestmentAsk({ active }: { active: boolean }) {
@@ -20,7 +20,7 @@ export default function SlideInvestmentAsk({ active }: { active: boolean }) {
   return (
     <ScaledSlide>
       <div className="relative w-full h-full">
-        <img src={heroPartnerships} alt="" className="absolute inset-0 w-full h-full object-cover" />
+        <img src={heroConstruction} alt="Facility under construction" className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 bg-black/90" />
         <div className="relative z-10 flex flex-col justify-center h-full px-[100px]">
           {active && (
