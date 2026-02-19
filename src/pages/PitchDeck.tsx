@@ -14,7 +14,7 @@ import heroTechPlatform from "@/assets/pitch/hero-tech-platform.jpg";
 import heroFacilityInterior from "@/assets/pitch/hero-crosstraining.jpg";
 
 import ScaledSlide from "@/components/pitch/ScaledSlide";
-import SlideMarketStats from "@/components/pitch/SlideMarketStats";
+
 import SlideFinancialProjections from "@/components/pitch/SlideFinancialProjections";
 import SlideRevenueDetailed from "@/components/pitch/SlideRevenueDetailed";
 import SlidePartnerships from "@/components/pitch/SlidePartnerships";
@@ -259,43 +259,34 @@ function SlideDisciplines({ active }: { active: boolean }) {
 
 function SlideMarket({ active }: { active: boolean }) {
   const stats = [
-    { value: "$87B", label: "U.S. Health & Fitness Industry" },
-    { value: "$46B", label: "Sports Medicine & Rehab (Global)" },
-    { value: "#2", label: "Atlanta Film Market Rank" },
-    { value: "7M+", label: "Atlanta Metro Population" },
+    { value: "$87B", label: "U.S. Health & Fitness Industry", sub: "Growing at 23% CAGR" },
+    { value: "$46B", label: "Sports Medicine & Rehab", sub: "Recovery & therapy focus" },
+    { value: "73%", label: "Americans in Fitness Activities", sub: "Strong facility demand" },
+    { value: "7M+", label: "Atlanta Metro Population", sub: "#2 U.S. film market" },
+    { value: "70%", label: "Prefer Multi-Training", sub: "Cross-training demand" },
+    { value: "#1", label: "First-Mover Advantage", sub: "No SE competitor matches" },
   ];
   return (
     <ScaledSlide>
       <div className="relative w-full h-full">
         <img src={heroAtlanta} alt="" className="absolute inset-0 w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-black/80" />
+        <div className="absolute inset-0 bg-black/85" />
         <div className="relative z-10 flex flex-col justify-center h-full px-[120px]">
           {active && (
             <>
               <p className="animate-fade-up stagger-1 text-primary font-medium tracking-[0.3em] uppercase text-[14px] mb-4">Market Opportunity</p>
-              <h2 className="animate-fade-up stagger-2 text-[60px] font-bold leading-[1] text-foreground mb-14">
+              <h2 className="animate-fade-up stagger-2 text-[60px] font-bold leading-[1] text-foreground mb-6">
                 A Massive, Underserved<br /><span className="text-primary">Athletic Performance Market</span>
               </h2>
-              <div className="animate-fade-up stagger-3 grid grid-cols-4 gap-6 mb-14">
+              <p className="animate-fade-up stagger-3 text-muted-foreground text-[18px] max-w-[800px] mb-12 leading-relaxed">
+                Explosive market growth, rising participation, and increasing demand for integrated training facilities confirm the opportunity.
+              </p>
+              <div className="animate-fade-up stagger-4 grid grid-cols-3 gap-6">
                 {stats.map((s, i) => (
                   <div key={i} className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 text-center">
-                    <div className="text-primary text-[52px] font-bold leading-none mb-3">{s.value}</div>
-                    <div className="text-muted-foreground text-[14px]">{s.label}</div>
-                  </div>
-                ))}
-              </div>
-              <div className="animate-fade-up stagger-4 grid grid-cols-3 gap-8">
-                {[
-                  { icon: "📍", title: "Ideal Launch Market", desc: "7M+ metro with major pro sports franchises and one of the largest film ecosystems in the country." },
-                  { icon: "📈", title: "Explosive Growth", desc: "Functional fitness, sports recovery, and peptide clinics growing 7%+ annually through 2030." },
-                  { icon: "🏆", title: "First-Mover Advantage", desc: "No facility in the Southeast combines 30+ sports with integrated medical and a film/stunt wing." },
-                ].map((item, i) => (
-                  <div key={i} className="flex gap-4">
-                    <span className="text-[28px]">{item.icon}</span>
-                    <div>
-                      <h3 className="text-foreground text-[18px] font-semibold mb-1">{item.title}</h3>
-                      <p className="text-muted-foreground text-[14px] leading-relaxed">{item.desc}</p>
-                    </div>
+                    <div className="text-primary text-[48px] font-bold leading-none mb-3">{s.value}</div>
+                    <div className="text-foreground text-[16px] font-semibold mb-1">{s.label}</div>
+                    <div className="text-muted-foreground text-[13px]">{s.sub}</div>
                   </div>
                 ))}
               </div>
@@ -568,8 +559,7 @@ const SLIDES = [
   { component: SlideDisciplines, title: "Disciplines" },
   { component: SlideFacilityLayout, title: "Facility Layout" },
   { component: SlideFilmIndustry, title: "Film & Stunt" },
-  { component: SlideMarket, title: "Market" },
-  { component: SlideMarketStats, title: "Market Data" },
+  { component: SlideMarket, title: "Market Opportunity" },
   { component: SlideMarketGrowth, title: "Market Growth" },
   { component: SlideRevenue, title: "Revenue" },
   { component: SlideRevenueDetailed, title: "Revenue Detail" },
