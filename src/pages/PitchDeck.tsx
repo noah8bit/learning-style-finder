@@ -71,7 +71,7 @@ function SlideCover({ active }: { active: boolean }) {
 function SlideProblem({ active }: { active: boolean }) {
   const problems = [
     { icon: "⚡", title: "Fragmented Resources", desc: "Athletes are forced to travel between multiple facilities for training, rehab, therapy, and recovery — wasting valuable time and disrupting tight schedules. Consolidating everything under one roof gives athletes back the hours that matter most." },
-    { icon: "🏅", title: "No Cross-Training Hub", desc: "There is no single destination in Atlanta where an athlete can train across multiple disciplines, access neuromuscular therapy, recovery science, and coaching all under one roof." },
+    { icon: "🏅", title: "No Cross-Training Hub", desc: "There is no single destination in Atlanta where an athlete can train across multiple disciplines, access neuromuscular therapy, recovery science, and coaching all under one roof — with the flexibility to train as publicly or as privately as their needs require." },
     { icon: "💰", title: "Access & Affordability", desc: "Talented aspiring athletes lack access to the elite tools that professionals rely on. Iron Form changes this through grants, sponsorships, and insurance partnerships." },
     { icon: "🌟", title: "Community Outreach", desc: "Financial barriers should never prevent a gifted athlete from reaching their full potential. Through outreach, scouting, and mentorship in the Atlanta community, Iron Form is committed to ensuring talent rises — regardless of circumstance." },
   ];
