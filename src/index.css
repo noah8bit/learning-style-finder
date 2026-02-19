@@ -118,3 +118,68 @@
 .stagger-4 { animation-delay: 0.4s; opacity: 0; }
 .stagger-5 { animation-delay: 0.5s; opacity: 0; }
 .stagger-6 { animation-delay: 0.6s; opacity: 0; }
+
+/* Print styles for PDF export */
+@media print {
+  @page {
+    size: 1920px 1080px;
+    margin: 0;
+  }
+
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    color-adjust: exact !important;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background: #0f0f0f !important;
+  }
+
+  .print-slide {
+    width: 1920px;
+    height: 1080px;
+    page-break-after: always;
+    page-break-inside: avoid;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .print-slide:last-child {
+    page-break-after: auto;
+  }
+
+  /* In print, render slides at native 1920x1080 without scaling */
+  .print-slide .slide-container {
+    width: 1920px;
+    height: 1080px;
+  }
+
+  .print-slide .slide-wrapper {
+    position: relative;
+    left: 0;
+    top: 0;
+    margin: 0;
+    transform: none !important;
+  }
+
+  /* Remove animation delays in print */
+  .print-slide .stagger-1,
+  .print-slide .stagger-2,
+  .print-slide .stagger-3,
+  .print-slide .stagger-4,
+  .print-slide .stagger-5,
+  .print-slide .stagger-6 {
+    opacity: 1 !important;
+    animation: none !important;
+  }
+
+  .print-slide .animate-fade-up,
+  .print-slide .animate-slide-in {
+    opacity: 1 !important;
+    animation: none !important;
+    transform: none !important;
+  }
+}
