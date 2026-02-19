@@ -26,6 +26,8 @@ import SlideFacilityLayout from "@/components/pitch/SlideFacilityLayout";
 import SlideRiskManagement from "@/components/pitch/SlideRiskManagement";
 import SlideMarketingStrategy from "@/components/pitch/SlideMarketingStrategy";
 import SlideFAQs from "@/components/pitch/SlideFAQs";
+import SlideCustomerPersonas from "@/components/pitch/SlideCustomerPersonas";
+import SlideCostBenefit from "@/components/pitch/SlideCostBenefit";
 
 // ─── Slide Components ───────────────────────────────────────────────────────
 
@@ -456,6 +458,9 @@ const SLIDES = [
   { component: SlideMarketGrowth, title: "Market Growth" },
   { component: SlideWhyAtlanta, title: "Why Atlanta" },
 
+  // ACT 2b: Target Audience
+  { component: SlideCustomerPersonas, title: "Customer Personas" },
+
   // ACT 3: The Product
   { component: SlideServices, title: "Services & Differentiators" },
   { component: SlideDisciplines, title: "Disciplines" },
@@ -467,6 +472,7 @@ const SLIDES = [
   // ACT 4: Business Model & Financials
   { component: SlideRevenueDetailed, title: "Revenue Breakdown" },
   { component: SlideFinancialProjections, title: "Financial Overview" },
+  { component: SlideCostBenefit, title: "Cost vs. Benefit" },
   { component: SlideUseOfFundsDetailed, title: "Use of Funds" },
   { component: SlidePartnerships, title: "Partnerships" },
   { component: SlideMarketingStrategy, title: "Marketing" },
