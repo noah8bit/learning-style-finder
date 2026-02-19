@@ -1,4 +1,4 @@
-import heroRecovery from "@/assets/pitch/hero-recovery.jpg";
+import heroSwimmingPool from "@/assets/pitch/hero-swimming-pool.jpg";
 import ScaledSlide from "./ScaledSlide";
 
 export default function SlideDifferentiators({ active }: { active: boolean }) {
@@ -15,7 +15,7 @@ export default function SlideDifferentiators({ active }: { active: boolean }) {
   return (
     <ScaledSlide>
       <div className="relative w-full h-full">
-        <img src={heroRecovery} alt="" className="absolute inset-0 w-full h-full object-cover" />
+        <img src={heroSwimmingPool} alt="Olympic swimming pool" className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 bg-black/85" />
         <div className="relative z-10 flex flex-col justify-center h-full px-[120px]">
           {active && (

@@ -238,7 +238,7 @@ function SlideDisciplines({ active }: { active: boolean }) {
         </div>
         {/* Right: facility image */}
         <div className="w-[45%] h-full relative">
-          <img src={heroSwimmingPool} alt="Olympic swimming pool" className="absolute inset-0 w-full h-full object-cover" />
+          <img src={heroFacility} alt="Multi-sport training facility" className="absolute inset-0 w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-l from-transparent to-background" />
         </div>
       </div>
