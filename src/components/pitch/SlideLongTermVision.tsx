@@ -7,8 +7,12 @@ export default function SlideLongTermVision({ active }: { active: boolean }) {
     { icon: "🏕️", title: "Seasonal Camps & Youth Programs", desc: "Pro athlete-led camps, structured youth development programs with mentorship and resources." },
     { icon: "🧬", title: "Holistic Wellness Integration", desc: "Nutrition counseling, mental health resources, biofeedback, and personalized recovery plans." },
     { icon: "🎓", title: "Grants & Scholarships", desc: "Financial support programs for underserved athletes — ensuring access to top-tier training." },
-    { icon: "🏆", title: "Annual Tournaments & Festivals", desc: "Inter-facility competitions, health festivals with workshops, demonstrations, and vendor opportunities." },
-    { icon: "🏛️", title: "Corporate Wellness Programs", desc: "Tailored wellness programs for businesses — team-building, health assessments, and discounted memberships." },
+  ];
+
+  const exitPaths = [
+    { icon: "🔁", title: "Franchise Model", desc: "Proven playbook replicated across 10+ metro areas by Year 7 — each location generating $1.5M–$2.5M annually." },
+    { icon: "🏦", title: "Strategic Acquisition", desc: "Positioned as an acquisition target for national fitness brands, sports media companies, or healthcare networks." },
+    { icon: "💸", title: "Investor Returns", desc: "Projected 3–5x return within 5–7 years through profit distributions, equity appreciation, and potential exit event." },
   ];
 
   return (
@@ -26,14 +30,27 @@ export default function SlideLongTermVision({ active }: { active: boolean }) {
               <p className="animate-fade-up stagger-3 text-muted-foreground text-[18px] max-w-[800px] mb-12 leading-relaxed">
                 Iron Form will establish itself not only as a premier training facility but as an integral part of the athletic community in Atlanta and beyond.
               </p>
-              <div className="animate-fade-up stagger-4 grid grid-cols-3 gap-5">
+              <div className="animate-fade-up stagger-4 grid grid-cols-4 gap-5 mb-8">
                 {visions.map((v, i) => (
                   <div key={i} className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6">
                     <span className="text-[28px] mb-3 block">{v.icon}</span>
-                    <h3 className="text-foreground text-[18px] font-semibold mb-2">{v.title}</h3>
-                    <p className="text-muted-foreground text-[14px] leading-relaxed">{v.desc}</p>
+                    <h3 className="text-foreground text-[16px] font-semibold mb-2">{v.title}</h3>
+                    <p className="text-muted-foreground text-[13px] leading-relaxed">{v.desc}</p>
                   </div>
                 ))}
+              </div>
+
+              <div className="animate-fade-up stagger-5">
+                <h3 className="text-accent text-[16px] font-bold mb-4 uppercase tracking-wider">Exit Strategy & Investor Returns</h3>
+                <div className="grid grid-cols-3 gap-5">
+                  {exitPaths.map((e, i) => (
+                    <div key={i} className="bg-accent/10 border border-accent/30 rounded-xl p-6">
+                      <span className="text-[28px] mb-3 block">{e.icon}</span>
+                      <h3 className="text-accent text-[16px] font-semibold mb-2">{e.title}</h3>
+                      <p className="text-muted-foreground text-[13px] leading-relaxed">{e.desc}</p>
+                    </div>
+                  ))}
+                </div>
               </div>
             </>
           )}
