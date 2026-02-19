@@ -1,7 +1,5 @@
 import { useState, useEffect, useCallback, useRef } from "react";
 import { ChevronLeft, ChevronRight, Maximize, Minimize, Grid3X3, Download, Loader2 } from "lucide-react";
-import html2canvas from "html2canvas";
-import { jsPDF } from "jspdf";
 
 import heroGym from "@/assets/pitch/hero-gym.jpg";
 import heroAthlete from "@/assets/pitch/hero-athlete.jpg";
@@ -515,53 +513,14 @@ export default function PitchDeck() {
   const [showUI, setShowUI] = useState(true);
   const [exporting, setExporting] = useState(false);
   const uiTimeout = useRef<number>();
-  const slideRef = useRef<HTMLDivElement>(null);
 
-  const exportPDF = useCallback(async () => {
+  const exportPDF = useCallback(() => {
     setExporting(true);
-    const savedSlide = current;
-
-    try {
-      const pdf = new jsPDF({ orientation: "landscape", unit: "px", format: [1920, 1080] });
-
-      for (let i = 0; i < SLIDES.length; i++) {
-        // Navigate to slide and wait for render + animations
-        setCurrent(i);
-        await new Promise((r) => setTimeout(r, 1200));
-
-        // Find the slide wrapper (the 1920x1080 element)
-        const slideWrapper = document.querySelector(".slide-wrapper") as HTMLElement;
-        if (!slideWrapper) continue;
-
-        // Temporarily remove the scale transform for a clean 1920x1080 capture
-        const originalTransform = slideWrapper.style.transform;
-        slideWrapper.style.transform = "none";
-
-        const canvas = await html2canvas(slideWrapper, {
-          width: 1920,
-          height: 1080,
-          scale: 1,
-          useCORS: true,
-          backgroundColor: "#0f0f0f",
-          logging: false,
-          allowTaint: true,
-        });
-
-        // Restore the transform
-        slideWrapper.style.transform = originalTransform;
-
-        if (i > 0) pdf.addPage();
-        pdf.addImage(canvas.toDataURL("image/jpeg", 0.95), "JPEG", 0, 0, 1920, 1080);
-      }
-
-      pdf.save("IronForm_PitchDeck.pdf");
-    } catch (err) {
-      console.error("PDF export failed:", err);
-    } finally {
-      setCurrent(savedSlide);
+    setTimeout(() => {
+      window.print();
       setExporting(false);
-    }
-  }, [current]);
+    }, 100);
+  }, []);
 
   const go = useCallback((dir: number) => {
     setCurrent((prev) => Math.max(0, Math.min(SLIDES.length - 1, prev + dir)));
@@ -640,15 +599,27 @@ export default function PitchDeck() {
   const Slide = SLIDES[current].component;
 
   return (
-    <div className="fixed inset-0 bg-background">
-      {/* Main slide */}
-      <div className="w-full h-full" key={current}>
+    <div className="fixed inset-0 bg-background print:static print:bg-transparent">
+      {/* Print layout: all slides rendered for printing */}
+      <div className="hidden print:block">
+        {SLIDES.map((slide, i) => {
+          const Comp = slide.component;
+          return (
+            <div key={i} className="print-slide">
+              <Comp active={true} />
+            </div>
+          );
+        })}
+      </div>
+
+      {/* Screen layout: single slide */}
+      <div className="w-full h-full print:hidden" key={current}>
         <Slide active={true} />
       </div>
 
       {/* Navigation UI */}
       <div
-        className={`fixed bottom-8 left-1/2 -translate-x-1/2 flex items-center gap-3 bg-black/60 backdrop-blur-xl border border-white/10 rounded-full px-6 py-3 transition-opacity duration-500 z-50 ${
+        className={`print:hidden fixed bottom-8 left-1/2 -translate-x-1/2 flex items-center gap-3 bg-black/60 backdrop-blur-xl border border-white/10 rounded-full px-6 py-3 transition-opacity duration-500 z-50 ${
           showUI ? "opacity-100" : "opacity-0"
         }`}
       >
