@@ -314,10 +314,17 @@ function SlideTeam({ active }: { active: boolean }) {
                 </div>
               ))}
             </div>
-            <div className="animate-fade-up stagger-4 mt-6 bg-secondary/50 border border-border rounded-xl p-6">
-              <p className="text-muted-foreground text-[15px]">
-                <span className="text-foreground font-semibold">Coaches & Trainers:</span> Specialists across 20+ athletic disciplines, martial arts, dance, conditioning, personal trainers, and film stunt coordinator partnerships — to be recruited.
-              </p>
+            <div className="animate-fade-up stagger-4 mt-6 flex gap-5">
+              <div className="flex-1 bg-primary/10 border border-primary/20 rounded-xl p-5">
+                <p className="text-foreground text-[14px]">
+                  <span className="font-bold text-primary">Partner Equity:</span> Josh Garret & Rick Villanueva hold 5–10% equity each with 3–5 year performance-based vesting, plus 10–20% commission on specialty service revenue.
+                </p>
+              </div>
+              <div className="flex-1 bg-secondary/50 border border-border rounded-xl p-5">
+                <p className="text-foreground text-[14px]">
+                  <span className="font-semibold">Coaches & Trainers:</span> Specialists across 20+ disciplines, martial arts, dance, conditioning, and film stunt coordination — to be recruited.
+                </p>
+              </div>
             </div>
           </>
         )}
@@ -456,39 +463,30 @@ const SLIDES = [
 
   // ACT 2: Market Validation
   { component: SlideMarket, title: "Market Opportunity" },
-  { component: SlideMarketGrowth, title: "Market Growth" },
   { component: SlideWhyAtlanta, title: "Why Atlanta" },
-
-  // ACT 2b: Target Audience
-  { component: SlideCustomerPersonas, title: "Customer Personas" },
 
   // ACT 3: The Product
   { component: SlideServices, title: "Services & Differentiators" },
   { component: SlideDisciplines, title: "Disciplines" },
   { component: SlideFacilityLayout, title: "Facility Layout" },
   { component: SlideFilmIndustry, title: "Film & Stunt" },
-  { component: SlideCampSchedules, title: "Camp Schedules" },
   { component: SlideCompetitiveAnalysis, title: "Competitive Analysis" },
 
   // ACT 4: Business Model & Financials
   { component: SlideRevenueDetailed, title: "Revenue Breakdown" },
   { component: SlideFinancialProjections, title: "Financial Overview" },
-  { component: SlideCostBenefit, title: "Cost vs. Benefit" },
   { component: SlideUseOfFundsDetailed, title: "Use of Funds" },
   { component: SlideInvestmentAsk, title: "The Ask" },
-  { component: SlidePartnerships, title: "Partnerships" },
   { component: SlideMarketingStrategy, title: "Marketing" },
 
   // ACT 5: Team & Execution
   { component: SlideTeam, title: "Team" },
-  { component: SlideEmployeeStructure, title: "Team Structure" },
   { component: SlideTimeline, title: "Timeline" },
   { component: SlideRiskManagement, title: "Risk Management" },
 
   // ACT 6: Impact & Close
   { component: SlideCommunityOutreach, title: "Community Impact" },
   { component: SlideLongTermVision, title: "Vision" },
-  { component: SlideFAQs, title: "FAQs" },
   { component: SlideClosing, title: "Closing" },
 ];
 
