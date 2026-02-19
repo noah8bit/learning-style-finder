@@ -28,6 +28,7 @@ import SlideMarketingStrategy from "@/components/pitch/SlideMarketingStrategy";
 import SlideFAQs from "@/components/pitch/SlideFAQs";
 import SlideCustomerPersonas from "@/components/pitch/SlideCustomerPersonas";
 import SlideCostBenefit from "@/components/pitch/SlideCostBenefit";
+import SlideInvestmentAsk from "@/components/pitch/SlideInvestmentAsk";
 
 // ─── Slide Components ───────────────────────────────────────────────────────
 
@@ -474,6 +475,7 @@ const SLIDES = [
   { component: SlideFinancialProjections, title: "Financial Overview" },
   { component: SlideCostBenefit, title: "Cost vs. Benefit" },
   { component: SlideUseOfFundsDetailed, title: "Use of Funds" },
+  { component: SlideInvestmentAsk, title: "The Ask" },
   { component: SlidePartnerships, title: "Partnerships" },
   { component: SlideMarketingStrategy, title: "Marketing" },
 
