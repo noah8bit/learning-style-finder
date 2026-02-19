@@ -456,36 +456,36 @@ function SlideClosing({ active }: { active: boolean }) {
 
 // ─── Slide registry ─────────────────────────────────────────────────────────
 const SLIDES = [
-  // ACT 1: Hook — What & Why
+  // ACT 1: Hook — Who & Why
   { component: SlideCover, title: "Cover" },
   { component: SlideProblem, title: "Problem" },
   { component: SlideSolution, title: "Solution" },
+  { component: SlideTeam, title: "Team" },
 
   // ACT 2: Market Validation
   { component: SlideMarket, title: "Market Opportunity" },
   { component: SlideWhyAtlanta, title: "Why Atlanta" },
+  { component: SlideCompetitiveAnalysis, title: "Competitive Analysis" },
 
   // ACT 3: The Product
   { component: SlideServices, title: "Services & Differentiators" },
   { component: SlideDisciplines, title: "Disciplines" },
   { component: SlideFacilityLayout, title: "Facility Layout" },
   { component: SlideFilmIndustry, title: "Film & Stunt" },
-  { component: SlideCompetitiveAnalysis, title: "Competitive Analysis" },
 
   // ACT 4: Business Model & Financials
   { component: SlideRevenueDetailed, title: "Revenue Breakdown" },
   { component: SlideFinancialProjections, title: "Financial Overview" },
   { component: SlideUseOfFundsDetailed, title: "Use of Funds" },
-  { component: SlideInvestmentAsk, title: "The Ask" },
   { component: SlideMarketingStrategy, title: "Marketing" },
 
-  // ACT 5: Team & Execution
-  { component: SlideTeam, title: "Team" },
+  // ACT 5: Impact & The Ask
+  { component: SlideCommunityOutreach, title: "Community Impact" },
+  { component: SlideInvestmentAsk, title: "The Ask" },
+
+  // ACT 6: Execution & Close
   { component: SlideTimeline, title: "Timeline" },
   { component: SlideRiskManagement, title: "Risk Management" },
-
-  // ACT 6: Impact & Close
-  { component: SlideCommunityOutreach, title: "Community Impact" },
   { component: SlideLongTermVision, title: "Vision" },
   { component: SlideClosing, title: "Closing" },
 ];
