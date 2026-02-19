@@ -11,30 +11,16 @@ import heroTrack from "@/assets/pitch/hero-track.jpg";
 import heroFilmStudio from "@/assets/pitch/hero-film-studio.jpg";
 import heroTechPlatform from "@/assets/pitch/hero-tech-platform.jpg";
 
-// ─── ScaledSlide ────────────────────────────────────────────────────────────
-function ScaledSlide({ children, className = "" }: { children: React.ReactNode; className?: string }) {
-  const containerRef = useRef<HTMLDivElement>(null);
-  const [scale, setScale] = useState(1);
-
-  useEffect(() => {
-    const resize = () => {
-      if (!containerRef.current) return;
-      const { clientWidth: w, clientHeight: h } = containerRef.current;
-      setScale(Math.min(w / 1920, h / 1080));
-    };
-    resize();
-    window.addEventListener("resize", resize);
-    return () => window.removeEventListener("resize", resize);
-  }, []);
-
-  return (
-    <div ref={containerRef} className="slide-container w-full h-full">
-      <div className="slide-wrapper" style={{ transform: `scale(${scale})` }}>
-        <div className={`w-full h-full overflow-hidden ${className}`}>{children}</div>
-      </div>
-    </div>
-  );
-}
+import ScaledSlide from "@/components/pitch/ScaledSlide";
+import SlideMarketStats from "@/components/pitch/SlideMarketStats";
+import SlideFinancialProjections from "@/components/pitch/SlideFinancialProjections";
+import SlideRevenueDetailed from "@/components/pitch/SlideRevenueDetailed";
+import SlidePartnerships from "@/components/pitch/SlidePartnerships";
+import SlideEmployeeStructure from "@/components/pitch/SlideEmployeeStructure";
+import SlideDifferentiators from "@/components/pitch/SlideDifferentiators";
+import SlideCommunityOutreach from "@/components/pitch/SlideCommunityOutreach";
+import SlideLongTermVision from "@/components/pitch/SlideLongTermVision";
+import SlideUseOfFundsDetailed from "@/components/pitch/SlideUseOfFundsDetailed";
 
 // ─── Slide Components ───────────────────────────────────────────────────────
 
@@ -535,10 +521,16 @@ function SlideClosing({ active }: { active: boolean }) {
               <p className="animate-fade-up stagger-3 text-[32px] text-secondary-foreground font-light max-w-[800px] leading-relaxed">
                 Forging Elite Performers.<br />Empowering Every Athlete.
               </p>
-              <p className="animate-fade-up stagger-4 text-muted-foreground text-[18px] mt-8">
-                Ready to discuss? Let's connect.
-              </p>
-              <p className="animate-fade-up stagger-5 text-primary text-[16px] mt-4 tracking-[0.2em] uppercase">
+              <div className="animate-fade-up stagger-4 mt-10 bg-primary/20 border border-primary/40 rounded-2xl px-12 py-8 max-w-[700px]">
+                <p className="text-foreground text-[24px] font-bold mb-3">Let's Build This Together</p>
+                <p className="text-secondary-foreground text-[18px] leading-relaxed mb-4">
+                  We invite you to schedule a meeting to discuss partnership opportunities, investment details, and the future of Iron Form.
+                </p>
+                <p className="text-primary text-[20px] font-semibold tracking-wide">
+                  Ready to forge the future of athletic training?
+                </p>
+              </div>
+              <p className="animate-fade-up stagger-5 text-primary text-[16px] mt-8 tracking-[0.2em] uppercase">
                 Atlanta, Georgia · 2026 · Concept Stage
               </p>
             </>
@@ -555,13 +547,22 @@ const SLIDES = [
   { component: SlideProblem, title: "Problem" },
   { component: SlideSolution, title: "Solution" },
   { component: SlideServices, title: "Services" },
+  { component: SlideDifferentiators, title: "Differentiators" },
   { component: SlideDisciplines, title: "Disciplines" },
   { component: SlideFilmIndustry, title: "Film & Stunt" },
   { component: SlideMarket, title: "Market" },
+  { component: SlideMarketStats, title: "Market Data" },
   { component: SlideRevenue, title: "Revenue" },
+  { component: SlideRevenueDetailed, title: "Revenue Detail" },
+  { component: SlideFinancialProjections, title: "Financials" },
+  { component: SlidePartnerships, title: "Partnerships" },
+  { component: SlideEmployeeStructure, title: "Team Structure" },
   { component: SlideTeam, title: "Team" },
   { component: SlideWhyAtlanta, title: "Why Atlanta" },
+  { component: SlideCommunityOutreach, title: "Community" },
   { component: SlideUseOfFunds, title: "Use of Funds" },
+  { component: SlideUseOfFundsDetailed, title: "Funds Detail" },
+  { component: SlideLongTermVision, title: "Vision" },
   { component: SlideClosing, title: "Closing" },
 ];
 
