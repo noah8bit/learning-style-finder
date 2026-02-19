@@ -20,12 +20,12 @@ export default function SlideRevenueDetailed({ active }: { active: boolean }) {
 
   const enhancedStreams = [
     { label: "Camps & Seminars", value: "$96K", detail: "4 camps + 6 seminars annually" },
-    { label: "Corporate Wellness", value: "$72K", detail: "3 clients × $2K/mo" },
+    { label: "Corporate Wellness", value: "$300K", detail: "5 clients × $5K/mo avg" },
     { label: "Premium & Retail", value: "$84K", detail: "PT sessions, merch, referrals" },
   ];
 
-  const totalLow = "$866K";
-  const totalHigh = "$1.05M";
+  const totalLow = "$1.09M";
+  const totalHigh = "$1.27M";
 
   return (
     <ScaledSlide>
