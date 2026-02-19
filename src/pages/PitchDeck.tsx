@@ -23,6 +23,16 @@ import SlideDifferentiators from "@/components/pitch/SlideDifferentiators";
 import SlideCommunityOutreach from "@/components/pitch/SlideCommunityOutreach";
 import SlideLongTermVision from "@/components/pitch/SlideLongTermVision";
 import SlideUseOfFundsDetailed from "@/components/pitch/SlideUseOfFundsDetailed";
+import SlideMarketGrowth from "@/components/pitch/SlideMarketGrowth";
+import SlideCompetitiveAnalysis from "@/components/pitch/SlideCompetitiveAnalysis";
+import SlideTimeline from "@/components/pitch/SlideTimeline";
+import SlideCampSchedules from "@/components/pitch/SlideCampSchedules";
+import SlideFacilityLayout from "@/components/pitch/SlideFacilityLayout";
+import SlideCostBenefit from "@/components/pitch/SlideCostBenefit";
+import SlideCommunityEngagement from "@/components/pitch/SlideCommunityEngagement";
+import SlideRiskManagement from "@/components/pitch/SlideRiskManagement";
+import SlideMarketingStrategy from "@/components/pitch/SlideMarketingStrategy";
+import SlideFAQs from "@/components/pitch/SlideFAQs";
 
 // ─── Slide Components ───────────────────────────────────────────────────────
 
@@ -554,21 +564,31 @@ const SLIDES = [
   { component: SlideSolution, title: "Solution" },
   { component: SlideServices, title: "Services" },
   { component: SlideDifferentiators, title: "Differentiators" },
+  { component: SlideCompetitiveAnalysis, title: "Competitive Analysis" },
   { component: SlideDisciplines, title: "Disciplines" },
+  { component: SlideFacilityLayout, title: "Facility Layout" },
   { component: SlideFilmIndustry, title: "Film & Stunt" },
   { component: SlideMarket, title: "Market" },
   { component: SlideMarketStats, title: "Market Data" },
+  { component: SlideMarketGrowth, title: "Market Growth" },
   { component: SlideRevenue, title: "Revenue" },
   { component: SlideRevenueDetailed, title: "Revenue Detail" },
+  { component: SlideCostBenefit, title: "Cost-Benefit" },
   { component: SlideFinancialProjections, title: "Financials" },
   { component: SlidePartnerships, title: "Partnerships" },
   { component: SlideEmployeeStructure, title: "Team Structure" },
   { component: SlideTeam, title: "Team" },
   { component: SlideWhyAtlanta, title: "Why Atlanta" },
   { component: SlideCommunityOutreach, title: "Community" },
+  { component: SlideCommunityEngagement, title: "Engagement Plan" },
+  { component: SlideCampSchedules, title: "Camp Schedules" },
+  { component: SlideMarketingStrategy, title: "Marketing" },
+  { component: SlideRiskManagement, title: "Risk Management" },
   { component: SlideUseOfFunds, title: "Use of Funds" },
   { component: SlideUseOfFundsDetailed, title: "Funds Detail" },
+  { component: SlideTimeline, title: "Timeline" },
   { component: SlideLongTermVision, title: "Vision" },
+  { component: SlideFAQs, title: "FAQs" },
   { component: SlideClosing, title: "Closing" },
 ];
 
