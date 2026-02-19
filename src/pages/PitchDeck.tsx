@@ -9,6 +9,7 @@ import heroFacility from "@/assets/pitch/hero-facility-v2.jpg";
 import heroPilates from "@/assets/pitch/hero-pilates.jpg";
 import heroTrack from "@/assets/pitch/hero-track.jpg";
 import heroFilmStudio from "@/assets/pitch/hero-film-studio.jpg";
+import heroTechPlatform from "@/assets/pitch/hero-tech-platform.jpg";
 
 // ─── ScaledSlide ────────────────────────────────────────────────────────────
 function ScaledSlide({ children, className = "" }: { children: React.ReactNode; className?: string }) {
@@ -437,29 +438,37 @@ function SlideUseOfFunds({ active }: { active: boolean }) {
   ];
   return (
     <ScaledSlide>
-      <div className="w-full h-full bg-background flex flex-col justify-center px-[120px]">
-        {active && (
-          <>
-            <p className="animate-fade-up stagger-1 text-primary font-medium tracking-[0.3em] uppercase text-[14px] mb-4">Use of Funds</p>
-            <h2 className="animate-fade-up stagger-2 text-[60px] font-bold leading-[1] text-foreground mb-14">
-              Where Investment <span className="text-primary">Goes</span>
-            </h2>
-            <div className="animate-fade-up stagger-3 space-y-8">
-              {funds.map((f, i) => (
-                <div key={i}>
-                  <div className="flex justify-between items-baseline mb-2">
-                    <h3 className="text-foreground text-[22px] font-semibold">{f.label}</h3>
-                    <span className="text-primary text-[28px] font-bold">{f.pct}%</span>
+      <div className="w-full h-full bg-background flex">
+        <div className="w-[55%] flex flex-col justify-center px-[100px]">
+          {active && (
+            <>
+              <p className="animate-fade-up stagger-1 text-primary font-medium tracking-[0.3em] uppercase text-[14px] mb-4">Use of Funds</p>
+              <h2 className="animate-fade-up stagger-2 text-[60px] font-bold leading-[1] text-foreground mb-14">
+                Where Investment <span className="text-primary">Goes</span>
+              </h2>
+              <div className="animate-fade-up stagger-3 space-y-6">
+                {funds.map((f, i) => (
+                  <div key={i}>
+                    <div className="flex justify-between items-baseline mb-2">
+                      <h3 className="text-foreground text-[20px] font-semibold">{f.label}</h3>
+                      <span className="text-primary text-[24px] font-bold">{f.pct}%</span>
+                    </div>
+                    <div className="w-full h-[10px] bg-secondary rounded-full overflow-hidden mb-1">
+                      <div className={`h-full ${f.color} rounded-full`} style={{ width: `${f.pct}%` }} />
+                    </div>
+                    <p className="text-muted-foreground text-[14px]">{f.desc}</p>
                   </div>
-                  <div className="w-full h-[12px] bg-secondary rounded-full overflow-hidden mb-2">
-                    <div className={`h-full ${f.color} rounded-full`} style={{ width: `${f.pct}%` }} />
-                  </div>
-                  <p className="text-muted-foreground text-[15px]">{f.desc}</p>
-                </div>
-              ))}
-            </div>
-          </>
-        )}
+                ))}
+              </div>
+            </>
+          )}
+        </div>
+        <div className="w-[45%] h-full flex flex-col">
+          <div className="h-full relative">
+            <img src={heroTechPlatform} alt="Iron Form tech platform" className="absolute inset-0 w-full h-full object-cover" />
+            <div className="absolute inset-0 bg-gradient-to-l from-transparent to-background" />
+          </div>
+        </div>
       </div>
     </ScaledSlide>
   );
