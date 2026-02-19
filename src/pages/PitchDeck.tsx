@@ -114,7 +114,7 @@ function SlideProblem({ active }: { active: boolean }) {
 
 function SlideSolution({ active }: { active: boolean }) {
   const features = [
-    { icon: "🏋", label: "20+ Sport Disciplines" },
+    { icon: "🏋", label: "30+ Sport Disciplines" },
     { icon: "🧠", label: "Neuromuscular Therapy" },
     { icon: "💊", label: "Peptide Wellness Clinic" },
     { icon: "❄️", label: "Sauna & Cold Plunge" },
@@ -159,7 +159,7 @@ function SlideServices({ active }: { active: boolean }) {
     "Built for Every Athlete", "Neuromuscular Therapy", "Peptide Wellness Clinic",
     "Sauna & Cold Plunge", "Olympic Swimming Lanes", "Cryotherapy", "Infrared Therapy",
     "Red & Green Light Therapy", "PEMF Therapy", "Normatec Compression",
-    "Personal Training & Coaching", "Film/Stunt Action Wing", "Cross-Training 20+ Sports",
+    "Personal Training & Coaching", "Film/Stunt Action Wing", "Cross-Training 30+ Sports",
     "Athlete & Coach Seminars", "Athlete Grant Program", "Corporate Packages",
   ];
   return (
@@ -211,11 +211,11 @@ function SlideServices({ active }: { active: boolean }) {
 
 function SlideDisciplines({ active }: { active: boolean }) {
   const categories = [
-    { title: "Martial Arts", items: ["Tae Kwon Do", "Karate", "Jiu-Jitsu", "Muay Thai", "Kickboxing", "Wing Chun", "Boxing", "Silat", "Jeet Kune Do"], color: "text-primary" },
+    { title: "Martial Arts & Combat", items: ["Tae Kwon Do", "Karate", "Jiu-Jitsu", "Muay Thai", "Kickboxing", "Wing Chun", "Boxing", "Silat", "Jeet Kune Do", "Wrestling"], color: "text-primary" },
     { title: "Weapons & Combat", items: ["Fencing", "Kendo", "HEMA Sword Fighting"], color: "text-accent" },
-    { title: "Dance", items: ["Ballet", "Hip Hop", "Contemporary", "Jazz", "Tap"], color: "text-primary" },
-    { title: "Field & Court", items: ["Basketball", "Soccer", "Volleyball"], color: "text-accent" },
-    { title: "Athletic Performance", items: ["Track & Field", "CrossFit", "Hyrox"], color: "text-primary" },
+    { title: "Dance & Acrobatics", items: ["Ballet", "Hip Hop", "Contemporary", "Jazz", "Tap", "Gymnastics & Tumbling"], color: "text-primary" },
+    { title: "Field & Court", items: ["Basketball", "Soccer", "Volleyball", "Football Training", "Baseball & Softball", "Lacrosse"], color: "text-accent" },
+    { title: "Athletic Performance", items: ["Track & Field", "CrossFit", "Hyrox", "Rowing & Erging"], color: "text-primary" },
     { title: "Specialty", items: ["Rock Climbing", "Stunt Training", "Cycling", "Pilates", "Yoga", "Golf Sim", "Olympic Swimming"], color: "text-accent" },
   ];
   return (
@@ -227,7 +227,7 @@ function SlideDisciplines({ active }: { active: boolean }) {
             <>
               <p className="animate-fade-up stagger-1 text-primary font-medium tracking-[0.3em] uppercase text-[14px] mb-4">Cross-Training Mediums</p>
               <h2 className="animate-fade-up stagger-2 text-[56px] font-bold leading-[1] text-foreground mb-10">
-                <span className="text-primary">20+</span> Disciplines<br />Under One Roof
+                <span className="text-primary">30+</span> Disciplines<br />Under One Roof
               </h2>
               <div className="animate-fade-up stagger-3 grid grid-cols-2 gap-x-12 gap-y-6">
                 {categories.map((cat, i) => (
@@ -289,7 +289,7 @@ function SlideMarket({ active }: { active: boolean }) {
                 {[
                   { icon: "📍", title: "Ideal Launch Market", desc: "7M+ metro with major pro sports franchises and one of the largest film ecosystems in the country." },
                   { icon: "📈", title: "Explosive Growth", desc: "Functional fitness, sports recovery, and peptide clinics growing 7%+ annually through 2030." },
-                  { icon: "🏆", title: "First-Mover Advantage", desc: "No facility in the Southeast combines 20+ sports with integrated medical and a film/stunt wing." },
+                  { icon: "🏆", title: "First-Mover Advantage", desc: "No facility in the Southeast combines 30+ sports with integrated medical and a film/stunt wing." },
                 ].map((item, i) => (
                   <div key={i} className="flex gap-4">
                     <span className="text-[28px]">{item.icon}</span>
