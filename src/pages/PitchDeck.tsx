@@ -6,6 +6,7 @@ import heroAthlete from "@/assets/pitch/hero-athlete.jpg";
 import heroAtlanta from "@/assets/pitch/hero-atlanta.jpg";
 import heroRecovery from "@/assets/pitch/hero-recovery.jpg";
 import heroFacility from "@/assets/pitch/hero-facility-v2.jpg";
+import heroSwimmingPool from "@/assets/pitch/hero-swimming-pool.jpg";
 import heroPilates from "@/assets/pitch/hero-pilates.jpg";
 import heroTrack from "@/assets/pitch/hero-track.jpg";
 import heroFilmStudio from "@/assets/pitch/hero-film-studio.jpg";
@@ -237,7 +238,7 @@ function SlideDisciplines({ active }: { active: boolean }) {
         </div>
         {/* Right: facility image */}
         <div className="w-[45%] h-full relative">
-          <img src={heroFacility} alt="Multi-sport training facility" className="absolute inset-0 w-full h-full object-cover" />
+          <img src={heroSwimmingPool} alt="Olympic swimming pool" className="absolute inset-0 w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-l from-transparent to-background" />
         </div>
       </div>
