@@ -13,8 +13,8 @@ export default function SlideRevenueDetailed({ active }: { active: boolean }) {
   ];
 
   const enhancedStreams = [
-    { label: "Camps (4/yr)", low: "$9K", high: "$9K", detail: "30 participants × $300 avg" },
-    { label: "Seminars (6/yr)", low: "$10K", high: "$10K", detail: "100 attendees × $100 avg" },
+    { label: "Camps (4/yr)", low: "$36K", high: "$36K", detail: "4 camps × 30 participants × $300 avg" },
+    { label: "Seminars (6/yr)", low: "$60K", high: "$60K", detail: "6 seminars × 100 attendees × $100 avg" },
     { label: "Corporate Wellness", low: "$72K", high: "$72K", detail: "3 clients × $2K/mo" },
     { label: "Retail Space", low: "$24K", high: "$24K", detail: "~$2K/mo merchandise sales" },
     { label: "Premium Services", low: "$36K", high: "$36K", detail: "15 PT sessions/week × $75" },
@@ -23,8 +23,8 @@ export default function SlideRevenueDetailed({ active }: { active: boolean }) {
 
   const streams = [...coreStreams, ...enhancedStreams];
 
-  const totalLow = "$1.01M";
-  const totalHigh = "$1.61M";
+  const totalLow = "$1.09M";
+  const totalHigh = "$1.69M";
 
   return (
     <ScaledSlide>
