@@ -29,6 +29,7 @@ import SlideFAQs from "@/components/pitch/SlideFAQs";
 import SlideCustomerPersonas from "@/components/pitch/SlideCustomerPersonas";
 import SlideCostBenefit from "@/components/pitch/SlideCostBenefit";
 import SlideInvestmentAsk from "@/components/pitch/SlideInvestmentAsk";
+import SlideTraction from "@/components/pitch/SlideTraction";
 
 // ─── Slide Components ───────────────────────────────────────────────────────
 
@@ -461,6 +462,7 @@ const SLIDES = [
   { component: SlideProblem, title: "Problem" },
   { component: SlideSolution, title: "Solution" },
   { component: SlideTeam, title: "Team" },
+  { component: SlideTraction, title: "Traction" },
 
   // ACT 2: Market Validation
   { component: SlideMarket, title: "Market Opportunity" },
