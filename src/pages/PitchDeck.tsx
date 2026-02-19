@@ -515,55 +515,53 @@ export default function PitchDeck() {
   const [showUI, setShowUI] = useState(true);
   const [exporting, setExporting] = useState(false);
   const uiTimeout = useRef<number>();
-  const exportRef = useRef<HTMLDivElement>(null);
+  const slideRef = useRef<HTMLDivElement>(null);
 
   const exportPDF = useCallback(async () => {
     setExporting(true);
+    const savedSlide = current;
+
     try {
       const pdf = new jsPDF({ orientation: "landscape", unit: "px", format: [1920, 1080] });
 
-      // Create an off-screen container for rendering each slide
-      const container = document.createElement("div");
-      container.style.cssText = "position:fixed;top:0;left:0;width:1920px;height:1080px;z-index:-9999;opacity:0;pointer-events:none;";
-      document.body.appendChild(container);
-
       for (let i = 0; i < SLIDES.length; i++) {
-        // Render slide into container
-        const { createRoot } = await import("react-dom/client");
-        const slideEl = document.createElement("div");
-        slideEl.style.cssText = "width:1920px;height:1080px;";
-        container.innerHTML = "";
-        container.appendChild(slideEl);
+        // Navigate to slide and wait for render + animations
+        setCurrent(i);
+        await new Promise((r) => setTimeout(r, 1200));
 
-        const Comp = SLIDES[i].component;
-        const root = createRoot(slideEl);
-        root.render(<Comp active={true} />);
+        // Find the slide wrapper (the 1920x1080 element)
+        const slideWrapper = document.querySelector(".slide-wrapper") as HTMLElement;
+        if (!slideWrapper) continue;
 
-        // Wait for images and animations
-        await new Promise((r) => setTimeout(r, 800));
+        // Temporarily remove the scale transform for a clean 1920x1080 capture
+        const originalTransform = slideWrapper.style.transform;
+        slideWrapper.style.transform = "none";
 
-        const canvas = await html2canvas(slideEl, {
+        const canvas = await html2canvas(slideWrapper, {
           width: 1920,
           height: 1080,
           scale: 1,
           useCORS: true,
           backgroundColor: "#0f0f0f",
+          logging: false,
+          allowTaint: true,
         });
 
-        root.unmount();
+        // Restore the transform
+        slideWrapper.style.transform = originalTransform;
 
         if (i > 0) pdf.addPage();
-        pdf.addImage(canvas.toDataURL("image/jpeg", 0.92), "JPEG", 0, 0, 1920, 1080);
+        pdf.addImage(canvas.toDataURL("image/jpeg", 0.95), "JPEG", 0, 0, 1920, 1080);
       }
 
-      document.body.removeChild(container);
       pdf.save("IronForm_PitchDeck.pdf");
     } catch (err) {
       console.error("PDF export failed:", err);
     } finally {
+      setCurrent(savedSlide);
       setExporting(false);
     }
-  }, []);
+  }, [current]);
 
   const go = useCallback((dir: number) => {
     setCurrent((prev) => Math.max(0, Math.min(SLIDES.length - 1, prev + dir)));
