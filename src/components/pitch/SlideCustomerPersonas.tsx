@@ -51,7 +51,7 @@ export default function SlideCustomerPersonas({ active }: { active: boolean }) {
     <ScaledSlide>
       <div className="relative w-full h-full">
         <img src={heroPersonalTraining} alt="" className="absolute inset-0 w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-black/88" />
+        <div className="absolute inset-0 bg-black/93" />
         <div className="relative z-10 flex flex-col justify-center h-full px-[100px]">
           {active && (
             <>
@@ -61,7 +61,7 @@ export default function SlideCustomerPersonas({ active }: { active: boolean }) {
               </h2>
               <div className="animate-fade-up stagger-3 grid grid-cols-3 gap-5">
                 {personas.map((p, i) => (
-                  <div key={i} className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6">
+                  <div key={i} className="bg-white/10 backdrop-blur-md border border-white/15 rounded-xl p-6">
                     <div className="flex items-center gap-3 mb-3">
                       <span className="text-[28px]">{p.icon}</span>
                       <div>
@@ -69,7 +69,7 @@ export default function SlideCustomerPersonas({ active }: { active: boolean }) {
                         <span className="text-muted-foreground text-[12px]">Age {p.age}</span>
                       </div>
                     </div>
-                    <p className="text-muted-foreground text-[13px] leading-relaxed mb-3">{p.desc}</p>
+                    <p className="text-secondary-foreground text-[13px] leading-relaxed mb-3">{p.desc}</p>
                     <div className="space-y-1">
                       {p.needs.map((n, j) => (
                         <div key={j} className="flex items-center gap-2">
