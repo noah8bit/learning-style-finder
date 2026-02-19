@@ -76,6 +76,9 @@ export default function SlideRevenueDetailed({ active }: { active: boolean }) {
                   </div>
                 </div>
               </div>
+              <p className="animate-fade-up stagger-4 absolute bottom-6 left-[120px] right-[120px] text-muted-foreground/50 text-[11px] leading-tight">
+                Sources: Iron Form internal financial model; IHRSA membership pricing benchmarks; Atlanta commercial rental market data
+              </p>
             </>
           )}
         </div>

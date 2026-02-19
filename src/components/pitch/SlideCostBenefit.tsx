@@ -25,7 +25,7 @@ export default function SlideCostBenefit({ active }: { active: boolean }) {
 
   return (
     <ScaledSlide>
-      <div className="w-full h-full bg-background flex flex-col justify-center px-[100px]">
+      <div className="relative w-full h-full bg-background flex flex-col justify-center px-[100px]">
         {active && (
           <>
             <p className="animate-fade-up stagger-1 text-primary font-medium tracking-[0.3em] uppercase text-[14px] mb-4">Investment Analysis</p>
@@ -83,6 +83,9 @@ export default function SlideCostBenefit({ active }: { active: boolean }) {
                 ))}
               </div>
             </div>
+            <p className="animate-fade-up stagger-5 absolute bottom-6 left-[100px] right-[100px] text-muted-foreground/50 text-[11px] leading-tight">
+              Sources: RSMeans Construction Cost Data; IHRSA Industry Benchmark Reports; Georgia Film Commission Economic Impact Study; Iron Form internal projections
+            </p>
           </>
         )}
       </div>

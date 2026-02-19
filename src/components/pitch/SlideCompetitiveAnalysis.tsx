@@ -22,7 +22,7 @@ export default function SlideCompetitiveAnalysis({ active }: { active: boolean }
 
   return (
     <ScaledSlide>
-      <div className="w-full h-full bg-background flex flex-col justify-center px-[100px]">
+      <div className="relative w-full h-full bg-background flex flex-col justify-center px-[100px]">
         {active && (
           <>
             <p className="animate-fade-up stagger-1 text-primary font-medium tracking-[0.3em] uppercase text-[14px] mb-4">Competitive Landscape</p>
@@ -67,6 +67,9 @@ export default function SlideCompetitiveAnalysis({ active }: { active: boolean }
                 <span className="font-bold text-primary">Iron Form Advantage:</span> The only facility combining elite multi-sport training, integrated medical services, cutting-edge recovery tech, and a film & stunt wing — creating a truly unmatched athletic ecosystem.
               </p>
             </div>
+            <p className="animate-fade-up stagger-6 absolute bottom-6 left-[100px] right-[100px] text-muted-foreground/50 text-[11px] leading-tight">
+              Sources: IMG Academy public offerings; EXOS facility overview; D1 Training franchise model; Plex facility services; Iron Form internal analysis
+            </p>
           </>
         )}
       </div>
