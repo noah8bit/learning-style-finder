@@ -345,7 +345,7 @@ function SlideRevenue({ active }: { active: boolean }) {
 function SlideTeam({ active }: { active: boolean }) {
   const team = [
     { name: "Noah Garret", role: "Founder & Director", highlights: "3° Black Belt ITF TKD · 2° American Karate · 10+ yrs running martial arts schools · Filmmaker & Action Designer" },
-    { name: "Rick Villanueva", role: "Neuromuscular Therapy Director", highlights: "Elite athlete injury prevention · Stunt & film performer specialist · Functional movement restoration" },
+    { name: "Rick Villanueva, LMT", role: "Neuromuscular Therapy Director", highlights: "18+ years as a Neuromuscular Therapist · Specializes in Neuromuscular, Medical Massage, Cranio-structural, & Deep Tissue techniques · Root-cause methodology accelerating the body's natural healing · Proven with pro athletes, Hollywood stunt performers, actors & CrossFit competitors · Holistic approach to rehabilitation & pain management" },
     { name: "Josh Garret", role: "Peptide Clinic Director", highlights: "Performance wellness & recovery protocols · Sports medicine & recovery science background" },
     { name: "Operations Manager", role: "Target Hire", highlights: "Grant writing & acquisition · Insurance partnership negotiation · Athlete sponsorship management" },
   ];
