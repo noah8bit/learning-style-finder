@@ -1,3 +1,4 @@
+import heroYouthSports from "@/assets/pitch/hero-youth-sports.jpg";
 import ScaledSlide from "./ScaledSlide";
 
 export default function SlideCommunityOutreach({ active }: { active: boolean }) {
@@ -16,7 +17,10 @@ export default function SlideCommunityOutreach({ active }: { active: boolean }) 
 
   return (
     <ScaledSlide>
-      <div className="w-full h-full bg-background flex flex-col items-center justify-center px-[160px] text-center">
+      <div className="relative w-full h-full">
+        <img src={heroYouthSports} alt="Youth sports program" className="absolute inset-0 w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-black/80" />
+        <div className="relative z-10 flex flex-col items-center justify-center h-full px-[160px] text-center">
         {active && (
           <>
             <p className="animate-fade-up stagger-1 text-primary font-medium tracking-[0.3em] uppercase text-[14px] mb-8">Community Impact</p>
@@ -40,6 +44,7 @@ export default function SlideCommunityOutreach({ active }: { active: boolean }) 
             <div className="animate-fade-up stagger-5 mt-14 w-[80px] h-[3px] bg-primary/40 rounded-full" />
           </>
         )}
+        </div>
       </div>
     </ScaledSlide>
   );
