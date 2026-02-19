@@ -3,21 +3,30 @@ import ScaledSlide from "./ScaledSlide";
 export default function SlidePartnerships({ active }: { active: boolean }) {
   const structure = [
     {
-      icon: "💰",
-      title: "Revenue Sharing",
+      icon: "📊",
+      title: "Equity Structure",
       items: [
-        "10–20% commission on neuromuscular therapy & peptide revenue",
-        "Incentivizes promotion and client attraction",
-        "Ensures facility benefits from partner space usage",
+        "5–10% equity per partner (10–20% total allocated)",
+        "Reflects vital expertise while preserving investor equity",
+        "Clear roles & expectations defined at inception",
       ],
     },
     {
-      icon: "📊",
-      title: "Equity Partnership",
+      icon: "📅",
+      title: "Performance-Based Vesting",
       items: [
-        "5–15% ownership stake per partner",
-        "Aligns interests with Iron Form's overall success",
-        "Defined roles in marketing, service delivery & operations",
+        "3–5 year vesting schedule tied to contribution",
+        "Example: 10% vests at 2% per year over 5 years",
+        "Promotes loyalty, alignment & long-term commitment",
+      ],
+    },
+    {
+      icon: "💰",
+      title: "Revenue Sharing & Bonuses",
+      items: [
+        "10–20% commission on therapy & peptide revenue",
+        "Performance bonuses & milestone rewards",
+        "Well-rounded compensation beyond equity alone",
       ],
     },
     {
@@ -25,17 +34,8 @@ export default function SlidePartnerships({ active }: { active: boolean }) {
       title: "Brand Integration",
       items: [
         "Jointly branded services within the facility",
-        "Cohesive brand image reflecting high-quality offerings",
         "Collaborative marketing reaching wider audiences",
-      ],
-    },
-    {
-      icon: "📈",
-      title: "Performance & Tracking",
-      items: [
-        "KPIs to evaluate service performance",
-        "Client tracking system for accurate revenue splits",
-        "Regular meetings for strategy alignment",
+        "KPIs & tracking for accurate revenue splits",
       ],
     },
   ];
@@ -47,10 +47,10 @@ export default function SlidePartnerships({ active }: { active: boolean }) {
           <>
             <p className="animate-fade-up stagger-1 text-primary font-medium tracking-[0.3em] uppercase text-[14px] mb-4">Strategic Partnerships</p>
             <h2 className="animate-fade-up stagger-2 text-[56px] font-bold leading-[1] text-foreground mb-4">
-              Revenue Sharing & <span className="text-primary">Equity Model</span>
+              Equity & <span className="text-primary">Vesting Model</span>
             </h2>
             <p className="animate-fade-up stagger-3 text-muted-foreground text-[18px] mb-12 max-w-[900px]">
-              Combined partnership structure with Josh Garret & Rick Villanueva — incentivizing performance, sharing risk and reward, and fostering collaborative growth.
+              Structured partnership with Josh Garret & Rick Villanueva — 5–10% equity each with performance-based vesting, complemented by revenue sharing and milestone incentives.
             </p>
             <div className="animate-fade-up stagger-4 grid grid-cols-2 gap-6">
               {structure.map((s, i) => (
@@ -72,7 +72,7 @@ export default function SlidePartnerships({ active }: { active: boolean }) {
             </div>
             <div className="animate-fade-up stagger-5 mt-6 bg-primary/10 border border-primary/20 rounded-xl p-5">
               <p className="text-foreground text-[15px]">
-                <span className="font-bold text-primary">Win-Win Outcome:</span> Incentivizes performance, shares risk/reward, and creates a collaborative environment supporting growth for all parties.
+                <span className="font-bold text-primary">Founder Retains Control:</span> 5–10% per partner preserves majority ownership for future investors while aligning partner interests with Iron Form's long-term success through vesting and performance incentives.
               </p>
             </div>
           </>
