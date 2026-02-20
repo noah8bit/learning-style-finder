@@ -76,11 +76,11 @@ export default function SlidePricingRateCard({ active }: { active: boolean }) {
   ];
 
   const ptAndPrivates = [
-    { label: "1:1 Skill Private (Standard)", price: "$70–$120/session" },
-    { label: "1:1 Skill Private (Specialty)", price: "$100–$180/session" },
-    { label: "Small Group (2–4 ppl)", price: "$40–$80/person" },
-    { label: "General PT (1:1)", price: "$80–$140/session" },
-    { label: "Performance Specialist (1:1)", price: "$100–$180/session" },
+    { label: "1:1 Skill Private (Standard, 1 hr)", price: "$70–$120/hr" },
+    { label: "1:1 Skill Private (Specialty, 1 hr)", price: "$100–$200/hr" },
+    { label: "Small Group (2–4 ppl, 1 hr)", price: "$40–$80/person" },
+    { label: "General PT (1:1, 1 hr)", price: "$80–$140/hr" },
+    { label: "Performance Specialist (1:1, 1 hr)", price: "$100–$200/hr" },
   ];
 
   return (

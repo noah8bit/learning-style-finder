@@ -21,11 +21,11 @@ export default function SlidePricingAppendix({ active }: { active: boolean }) {
   ];
 
   const privatePricing = [
-    { label: "1:1 Skill Private (Standard)", value: "$70–$120 / session" },
-    { label: "1:1 Skill Private (Specialty)", value: "$100–$180 / session" },
-    { label: "Small Group (2–4 athletes)", value: "$40–$80 / person / session" },
-    { label: "General PT (1:1)", value: "$80–$140 / session" },
-    { label: "Performance Specialist PT", value: "$100–$180 / session" },
+    { label: "1:1 Skill Private (Standard, 1 hr)", value: "$70–$120 / hr" },
+    { label: "1:1 Skill Private (Specialty, 1 hr)", value: "$100–$200 / hr" },
+    { label: "Small Group (2–4 athletes, 1 hr)", value: "$40–$80 / person" },
+    { label: "General PT (1:1, 1 hr)", value: "$80–$140 / hr" },
+    { label: "Performance Specialist PT (1 hr)", value: "$100–$200 / hr" },
     { label: "PT 2x/wk General (monthly)", value: "$560–$1,000" },
     { label: "PT 3x/wk Specialist (monthly)", value: "$1,050–$2,000" },
   ];
