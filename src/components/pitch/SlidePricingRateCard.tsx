@@ -9,7 +9,7 @@ export default function SlidePricingRateCard({ active }: { active: boolean }) {
       items: [
         { freq: "2x/wk", price: "$175" },
         { freq: "3x/wk", price: "$205" },
-        { freq: "Unlimited", price: "$270" },
+        { freq: "Unlimited", price: "$310" },
       ],
     },
     {
@@ -29,7 +29,7 @@ export default function SlidePricingRateCard({ active }: { active: boolean }) {
       items: [
         { freq: "2x/wk", price: "$170" },
         { freq: "3x/wk", price: "$190" },
-        { freq: "Unlimited", price: "$225" },
+        { freq: "Unlimited", price: "$310" },
       ],
     },
     {

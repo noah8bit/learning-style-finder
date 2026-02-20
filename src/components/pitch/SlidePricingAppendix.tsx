@@ -7,9 +7,9 @@ export default function SlidePricingAppendix({ active }: { active: boolean }) {
       color: "text-primary",
       border: "border-primary/20",
       rows: [
-        { label: "Martial Arts / Combat", col1: "$175", col2: "$205", col3: "$245", col4: "$270" },
+        { label: "Martial Arts / Combat", col1: "$175", col2: "$205", col3: "$245", col4: "$310" },
         { label: "Weapons / HEMA", col1: "$205", col2: "$235", col3: "$280", col4: "$310" },
-        { label: "Dance & Acrobatics", col1: "$170", col2: "$190", col3: "$215", col4: "$225" },
+        { label: "Dance & Acrobatics", col1: "$170", col2: "$190", col3: "$215", col4: "$310" },
         { label: "Aerial / Circus", col1: "$205", col2: "$230", col3: "$270", col4: "$300" },
         { label: "Field & Court", col1: "$185", col2: "$210", col3: "$250", col4: "$265" },
         { label: "Track & Field (Standard)", col1: "$220", col2: "$245", col3: "$290", col4: "$310" },
