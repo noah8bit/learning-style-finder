@@ -1,4 +1,4 @@
-import heroYouthSports from "@/assets/pitch/hero-youth-sports.jpg";
+import heroCommunity from "@/assets/pitch/hero-community.jpg";
 import ScaledSlide from "./ScaledSlide";
 
 export default function SlideCommunityEngagement({ active }: { active: boolean }) {
@@ -38,7 +38,7 @@ export default function SlideCommunityEngagement({ active }: { active: boolean }
   return (
     <ScaledSlide>
       <div className="relative w-full h-full">
-        <img src={heroYouthSports} alt="" className="absolute inset-0 w-full h-full object-cover" />
+        <img src={heroCommunity} alt="" className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 bg-black/85" />
         <div className="relative z-10 flex flex-col justify-center h-full px-[120px]">
           {active && (

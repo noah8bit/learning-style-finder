@@ -1,4 +1,4 @@
-import heroPersonalTraining from "@/assets/pitch/hero-personal-training.jpg";
+import heroPersonas from "@/assets/pitch/hero-personas.jpg";
 import ScaledSlide from "./ScaledSlide";
 
 export default function SlideCustomerPersonas({ active }: { active: boolean }) {
@@ -14,7 +14,7 @@ export default function SlideCustomerPersonas({ active }: { active: boolean }) {
   return (
     <ScaledSlide>
       <div className="relative w-full h-full">
-        <img src={heroPersonalTraining} alt="" className="absolute inset-0 w-full h-full object-cover" />
+        <img src={heroPersonas} alt="" className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 bg-black/92" />
         <div className="relative z-10 flex flex-col justify-center h-full px-[100px]">
           {active && (

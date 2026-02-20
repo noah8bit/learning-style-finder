@@ -1,10 +1,6 @@
 import heroGym from "@/assets/pitch/hero-gym.jpg";
-import heroRecovery from "@/assets/pitch/hero-recovery.jpg";
 import heroTrack from "@/assets/pitch/hero-track.jpg";
 import heroPersonalTraining from "@/assets/pitch/hero-personal-training.jpg";
-import heroConstruction from "@/assets/pitch/hero-construction.jpg";
-import heroSwimmingPool from "@/assets/pitch/hero-swimming-pool.jpg";
-import heroFacility from "@/assets/pitch/hero-facility-v2.jpg";
 import heroFilmStudio from "@/assets/pitch/hero-film-studio.jpg";
 import heroPilates from "@/assets/pitch/hero-pilates.jpg";
 import heroRockClimbing from "@/assets/pitch/hero-rockclimbing.jpg";
@@ -15,6 +11,9 @@ import heroIvClinic from "@/assets/pitch/hero-iv-clinic.jpg";
 import heroCorporateWellness from "@/assets/pitch/hero-corporate-wellness.jpg";
 import heroProshop from "@/assets/pitch/hero-proshop.jpg";
 import heroEventSpace from "@/assets/pitch/hero-event-space.jpg";
+import heroInsurance from "@/assets/pitch/hero-insurance.jpg";
+import heroNmt from "@/assets/pitch/hero-nmt.jpg";
+import heroSponsorship from "@/assets/pitch/hero-sponsorship.jpg";
 import type { RevenueStreamData } from "./SlideRevenueStream";
 
 export const revenueStreams: RevenueStreamData[] = [
@@ -62,7 +61,7 @@ export const revenueStreams: RevenueStreamData[] = [
     subtitle: "Workers' comp referrals and insurer-funded programs",
     total: "$125K",
     type: "core",
-    heroImage: heroRecovery,
+    heroImage: heroInsurance,
     assumptions: [
       { label: "Workers' Comp Referrals/Week", value: "20" },
       { label: "Avg Session Rate", value: "$100" },
@@ -81,7 +80,7 @@ export const revenueStreams: RevenueStreamData[] = [
     subtitle: "Direct NMT sessions, rehab programs, and clinical revenue",
     total: "$150K",
     type: "core",
-    heroImage: heroRecovery,
+    heroImage: heroNmt,
     assumptions: [
       { label: "Director", value: "Rick Villanueva, LMT" },
       { label: "Single Session Rate", value: "$110–$150" },
@@ -176,7 +175,7 @@ export const revenueStreams: RevenueStreamData[] = [
     subtitle: "Facility branding, signage, and sponsor integrations",
     total: "$200K",
     type: "enhanced",
-    heroImage: heroFacility,
+    heroImage: heroSponsorship,
     assumptions: [
       { label: "Naming Rights (Main Facility)", value: "$80K/yr" },
       { label: "Zone Sponsorships (5 zones)", value: "$12K each" },
