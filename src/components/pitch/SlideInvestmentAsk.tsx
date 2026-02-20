@@ -3,9 +3,9 @@ import ScaledSlide from "./ScaledSlide";
 
 export default function SlideInvestmentAsk({ active }: { active: boolean }) {
   const milestones = [
-    { phase: "Tranche 1", amount: "$5M", trigger: "At close", use: "Land acquisition, construction start, permitting, core team hires", color: "text-primary", bg: "bg-primary/10", border: "border-primary/30" },
-    { phase: "Tranche 2", amount: "$4.75M", trigger: "Construction 50%", use: "Equipment, pool infrastructure, tech platform, marketing launch, café build-out", color: "text-accent", bg: "bg-accent/10", border: "border-accent/30" },
-    { phase: "Tranche 3", amount: "$2.25M", trigger: "Doors open", use: "Year 1 operating runway, final fit-out, contingency reserve", color: "text-primary", bg: "bg-primary/10", border: "border-primary/30" },
+    { phase: "Tranche 1", amount: "$6.5M", trigger: "At close", use: "Land acquisition, construction start, permitting, core team hires", color: "text-primary", bg: "bg-primary/10", border: "border-primary/30" },
+    { phase: "Tranche 2", amount: "$5.5M", trigger: "Construction 50%", use: "Equipment, pool infrastructure, tech platform, marketing launch, café build-out", color: "text-accent", bg: "bg-accent/10", border: "border-accent/30" },
+    { phase: "Tranche 3", amount: "$3M", trigger: "Doors open", use: "Year 1 operating runway, final fit-out, contingency reserve", color: "text-primary", bg: "bg-primary/10", border: "border-primary/30" },
   ];
 
   const noteTerms = [
@@ -27,7 +27,7 @@ export default function SlideInvestmentAsk({ active }: { active: boolean }) {
             <>
               <p className="animate-fade-up stagger-1 text-primary font-medium tracking-[0.3em] uppercase text-[20px] mb-3">The Ask</p>
               <h2 className="animate-fade-up stagger-2 text-[60px] font-bold leading-[1] text-white mb-3">
-                Raising <span className="text-primary">$12M</span>
+                Raising <span className="text-primary">$15M</span>
               </h2>
               <p className="animate-fade-up stagger-3 text-muted-foreground text-[24px] mb-8 max-w-[900px] leading-relaxed">
                 Convertible note with milestone-gated tranches — no valuation debate today, full upside protection for investors.

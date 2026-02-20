@@ -3,12 +3,12 @@ import ScaledSlide from "./ScaledSlide";
 
 export default function SlideFinancialProjections({ active }: { active: boolean }) {
   const startupCosts = [
-    { label: "Land (8–12 acres)", range: "$1.5M – $2.5M" },
-    { label: "Construction (60K sq ft)", range: "$5M – $6.5M" },
-    { label: "Equipment & Install", range: "$1.5M – $2M" },
+    { label: "Land (8–12 acres)", range: "$2M – $3M" },
+    { label: "Construction (60K sq ft)", range: "$5.5M – $7M" },
+    { label: "Equipment & Install", range: "$2M – $2.5M" },
     { label: "Year 1 Operations", range: "$1.5M" },
     { label: "Tech, Marketing & Legal", range: "$1.5M" },
-    { label: "Contingency (~11%)", range: "$1.5M" },
+    { label: "Contingency (~12%)", range: "$1.5M – $2M" },
   ];
 
   const projections = [
@@ -53,7 +53,7 @@ export default function SlideFinancialProjections({ active }: { active: boolean 
                 <div className="mt-4 bg-primary/10 border border-primary/30 rounded-xl p-5">
                   <div className="flex justify-between items-center">
                     <span className="text-foreground text-[24px] font-bold">Total</span>
-                    <span className="text-primary text-[28px] font-bold">$11M – $14M</span>
+                    <span className="text-primary text-[28px] font-bold">$13M – $16M</span>
                   </div>
                 </div>
               </div>
