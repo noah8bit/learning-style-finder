@@ -93,6 +93,12 @@ export default function SlideSmartBuild({ active }: { active: boolean }) {
                     </div>
                   ))}
                 </div>
+                {/* Phase 2 upgrade callout */}
+                <div className="mt-4 bg-primary/10 border border-primary/30 rounded-lg p-4">
+                  <p className="text-foreground text-[16px] leading-relaxed">
+                    <span className="text-primary font-bold">Phase 2 Upgrades:</span> Pre-engineered steel allows easy interior upgrades — premium cladding, glass facades, branded exteriors, and expanded amenities can be added as profits grow, without structural changes.
+                  </p>
+                </div>
               </div>
             )}
           </div>
