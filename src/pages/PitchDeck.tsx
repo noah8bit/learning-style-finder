@@ -28,6 +28,8 @@ import SlideMarketGrowth from "@/components/pitch/SlideMarketGrowth";
 import SlideCompetitiveAnalysis from "@/components/pitch/SlideCompetitiveAnalysis";
 import SlideTimeline from "@/components/pitch/SlideTimeline";
 import SlideCampSchedules from "@/components/pitch/SlideCampSchedules";
+import SlidePricingRateCard from "@/components/pitch/SlidePricingRateCard";
+import SlidePricingAppendix from "@/components/pitch/SlidePricingAppendix";
 import SlideFacilityLayout from "@/components/pitch/SlideFacilityLayout";
 import SlideRiskManagement from "@/components/pitch/SlideRiskManagement";
 import SlideMarketingStrategy from "@/components/pitch/SlideMarketingStrategy";
@@ -490,6 +492,7 @@ const SLIDES = [
   // ACT 3: The Product
   { component: SlideServices, title: "Services & Differentiators" },
   { component: SlideDisciplines, title: "Disciplines" },
+  { component: SlidePricingRateCard, title: "Service Rate Card" },
   { component: SlideFacilityLayout, title: "Facility Layout" },
   { component: SlideFilmIndustry, title: "Film & Stunt" },
 
@@ -515,6 +518,7 @@ const SLIDES = [
   { component: SlideTimeline, title: "Timeline" },
   { component: SlideRiskManagement, title: "Risk Management" },
   { component: SlideLongTermVision, title: "Vision" },
+  { component: SlidePricingAppendix, title: "Pricing Benchmarks (Appendix)" },
   { component: SlideClosing, title: "Closing" },
 ];
 

@@ -35,10 +35,10 @@ export default function SlideCampSchedules({ active }: { active: boolean }) {
   ];
 
   const upcoming = [
-    { name: "Summer Youth Combine", date: "June 2027", spots: "60 athletes" },
-    { name: "Stunt Performer Bootcamp", date: "July 2027", spots: "25 performers" },
-    { name: "Recovery Science Summit", date: "Sept 2027", spots: "100 attendees" },
-    { name: "Community Outreach Camp", date: "Oct 2027", spots: "40 scholars" },
+    { name: "Summer Youth Combine", date: "June 2027", spots: "60 athletes · $500/wk" },
+    { name: "Stunt Performer Bootcamp", date: "July 2027", spots: "25 performers · $800/wk" },
+    { name: "Recovery Science Summit", date: "Sept 2027", spots: "100 attendees · $250/person" },
+    { name: "Community Outreach Camp", date: "Oct 2027", spots: "40 scholars · Free" },
   ];
 
   return (
