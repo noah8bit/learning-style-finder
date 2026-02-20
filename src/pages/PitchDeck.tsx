@@ -155,7 +155,7 @@ function SlideServices({ active }: { active: boolean }) {
   const diffs = [
     { icon: "🏥", title: "Integrated Medical & Recovery", benefit: "Neuromuscular therapy and peptide clinics on-site — elite sports medicine with everyday training." },
     { icon: "🏋", title: "30+ Training Disciplines", benefit: "One-stop hub — martial arts, track & field, swimming, dance, and more." },
-    { icon: "🎬", title: "Film, Stunt & Circus Wing", benefit: "Aerial training and circus arts in Georgia's #1 film production market." },
+    { icon: "🎪", title: "Film, Stunt & Circus Wing", benefit: "Aerial training and circus arts — conditioning hub for Cirque du Soleil performers during Atlanta tours." },
     { icon: "🏆", title: "Competition Hosting", benefit: "Purpose-built for Hyrox, CrossFit, strongman, and multi-sport fitness events." },
     { icon: "⚡", title: "Recovery Tech Suite", benefit: "Cryotherapy, infrared, PEMF, Normatec, sauna & cold plunge." },
     { icon: "🏃", title: "Olympic Track & Field", benefit: "Sprint lanes, jumping pits, throwing cages, and hurdle training." },
@@ -385,9 +385,9 @@ function SlideFilmIndustry({ active }: { active: boolean }) {
   const capabilities = [
     { icon: "🤸", label: "Spring Floors", desc: "Professional spring floor systems for stunts, acrobatics, and fight choreography" },
     { icon: "🏗️", label: "Gantry Wire Systems", desc: "Overhead gantry rigging for wire work, aerial stunts, and harness training" },
-    { icon: "🟩", label: "Green Screen Stage", desc: "Full-scale green screen setup for VFX compositing and virtual environments" },
+    { icon: "🎪", label: "Aerial & Circus Arts", desc: "Silks, trapeze, and acrobatic training — supporting Cirque du Soleil performers during Atlanta residencies" },
     { icon: "📡", label: "Motion Capture", desc: "Mo-cap capability for digital performance capture and animation pre-production" },
-    { icon: "🎥", label: "Filming & Previz", desc: "On-site filming options for rehearsals, previsualization, and action sequence development" },
+    { icon: "🎥", label: "Filming & Previz", desc: "On-site filming for rehearsals, previsualization, and action sequence development" },
     { icon: "🏢", label: "Production Rentals", desc: "Hourly and project-based space rental for studios, productions, and independent filmmakers" },
   ];
   return (
@@ -400,12 +400,12 @@ function SlideFilmIndustry({ active }: { active: boolean }) {
         <div className="w-[50%] flex flex-col justify-center px-[80px]">
           {active && (
             <>
-              <p className="animate-fade-up stagger-1 text-primary font-medium tracking-[0.3em] uppercase text-[20px] mb-4">Film & Stunt Wing</p>
+              <p className="animate-fade-up stagger-1 text-primary font-medium tracking-[0.3em] uppercase text-[20px] mb-4">Film, Stunt & Circus Wing</p>
               <h2 className="animate-fade-up stagger-2 text-[56px] font-bold leading-[1] text-foreground mb-4">
                 Where Action<br />Meets <span className="text-primary">Production</span>
               </h2>
               <p className="animate-fade-up stagger-3 text-muted-foreground text-[22px] mb-10 leading-relaxed max-w-[650px]">
-                Actors, stunt performers, and circus artists train at Iron Form. We're exploring partnerships with Cirque du Soleil for training residencies during their Atlanta shows.
+                Georgia is the <span className="text-foreground font-semibold">#1 U.S. film production state</span>. Cirque du Soleil regularly performs in Atlanta, and our facility offers dedicated aerial training, rehearsal space, and conditioning for touring performers — a pipeline no competitor provides.
               </p>
               <div className="animate-fade-up stagger-4 grid grid-cols-2 gap-5">
                 {capabilities.map((c, i) => (
