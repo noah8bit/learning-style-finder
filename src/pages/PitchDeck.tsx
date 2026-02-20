@@ -13,6 +13,7 @@ import heroFacilityInterior from "@/assets/pitch/hero-crosstraining.jpg";
 
 import ScaledSlide from "@/components/pitch/ScaledSlide";
 import SlideFinancialProjections from "@/components/pitch/SlideFinancialProjections";
+import SlideOperatingCosts from "@/components/pitch/SlideOperatingCosts";
 import SlideRevenueDetailed from "@/components/pitch/SlideRevenueDetailed";
 import SlideRevenueStream from "@/components/pitch/SlideRevenueStream";
 import { revenueStreams } from "@/components/pitch/revenueStreamData";
@@ -491,6 +492,7 @@ const SLIDES = [
     title: stream.title,
   })),
   { component: SlideFinancialProjections, title: "Financial Overview" },
+  { component: SlideOperatingCosts, title: "Operating Costs" },
   { component: SlideUseOfFundsDetailed, title: "Use of Funds" },
   { component: SlideMarketingStrategy, title: "Marketing" },
 
