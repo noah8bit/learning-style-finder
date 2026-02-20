@@ -14,6 +14,8 @@ import heroFacilityInterior from "@/assets/pitch/hero-crosstraining.jpg";
 import ScaledSlide from "@/components/pitch/ScaledSlide";
 import SlideFinancialProjections from "@/components/pitch/SlideFinancialProjections";
 import SlideRevenueDetailed from "@/components/pitch/SlideRevenueDetailed";
+import SlideRevenueStream from "@/components/pitch/SlideRevenueStream";
+import { revenueStreams } from "@/components/pitch/revenueStreamData";
 import SlidePartnerships from "@/components/pitch/SlidePartnerships";
 import SlideEmployeeStructure from "@/components/pitch/SlideEmployeeStructure";
 import SlideCommunityOutreach from "@/components/pitch/SlideCommunityOutreach";
@@ -484,6 +486,10 @@ const SLIDES = [
 
   // ACT 4: Business Model & Financials
   { component: SlideRevenueDetailed, title: "Revenue Breakdown" },
+  ...revenueStreams.map((stream) => ({
+    component: ({ active }: { active: boolean }) => <SlideRevenueStream active={active} data={stream} />,
+    title: stream.title,
+  })),
   { component: SlideFinancialProjections, title: "Financial Overview" },
   { component: SlideUseOfFundsDetailed, title: "Use of Funds" },
   { component: SlideMarketingStrategy, title: "Marketing" },
