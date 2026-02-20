@@ -33,25 +33,25 @@ export default function SlideRevenueDetailed({ active }: { active: boolean }) {
         <div className="relative z-10 flex flex-col justify-center h-full px-[100px]" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.9), 0 0 2px rgba(0,0,0,1)' }}>
           {active && (
             <>
-              <p className="animate-fade-up stagger-1 text-primary font-medium tracking-[0.3em] uppercase text-[20px] mb-3">Revenue Breakdown</p>
-              <h2 className="animate-fade-up stagger-2 text-[60px] font-bold leading-[1] text-white mb-8">
+              <p className="animate-fade-up stagger-1 text-primary font-medium tracking-[0.3em] uppercase text-[18px] mb-2">Revenue Breakdown</p>
+              <h2 className="animate-fade-up stagger-2 text-[50px] font-bold leading-[1] text-white mb-6">
                 Projected Annual <span className="text-primary">Revenue</span>
               </h2>
-              <div className="animate-fade-up stagger-3 flex gap-10">
+              <div className="animate-fade-up stagger-3 flex gap-8">
                 {/* Left: Membership ramp-up */}
-                <div className="w-[500px] shrink-0">
-                  <h3 className="text-primary text-[24px] font-bold mb-5 uppercase tracking-wider">Year 1 Ramp-Up</h3>
-                  <div className="space-y-5">
+                <div className="w-[460px] shrink-0">
+                  <h3 className="text-primary text-[20px] font-bold mb-4 uppercase tracking-wider">Year 1 Ramp-Up</h3>
+                  <div className="space-y-3">
                     {rampUp.map((r, i) => (
-                      <div key={i} className="flex items-center gap-5">
-                        <span className="text-foreground text-[24px] font-bold w-[55px]">{r.month}</span>
-                        <div className="flex-1 h-[40px] bg-black/80 border border-white/15 rounded-full overflow-hidden relative">
+                      <div key={i} className="flex items-center gap-4">
+                        <span className="text-foreground text-[20px] font-bold w-[48px]">{r.month}</span>
+                        <div className="flex-1 h-[32px] bg-black/80 border border-white/15 rounded-full overflow-hidden relative">
                           <div className="h-full bg-primary/80 rounded-full transition-all" style={{ width: `${Math.max((r.members / maxMembers) * 100, 18)}%` }} />
-                          <span className="absolute inset-0 flex items-center justify-center text-[20px] text-white font-bold drop-shadow-md">
+                          <span className="absolute inset-0 flex items-center justify-center text-[17px] text-white font-bold drop-shadow-md">
                             {r.members} members
                           </span>
                         </div>
-                        <span className="text-accent text-[24px] font-bold w-[85px] text-right">{r.revenue}</span>
+                        <span className="text-accent text-[20px] font-bold w-[75px] text-right">{r.revenue}</span>
                       </div>
                     ))}
                   </div>
@@ -59,33 +59,33 @@ export default function SlideRevenueDetailed({ active }: { active: boolean }) {
 
                 {/* Right: Revenue streams */}
                 <div className="flex-1">
-                  <h3 className="text-accent text-[24px] font-bold mb-5 uppercase tracking-wider">Revenue Streams</h3>
-                  <div className="space-y-3">
+                  <h3 className="text-accent text-[20px] font-bold mb-4 uppercase tracking-wider">Revenue Streams</h3>
+                  <div className="space-y-1.5">
                     {streams.map((s, i) => (
-                      <div key={i} className={`flex justify-between items-center rounded-lg p-3 backdrop-blur-md ${s.type === "core" ? "bg-black/70 border border-primary/40" : "bg-black/70 border border-accent/40"}`}>
-                        <span className="text-white text-[20px] font-medium">{s.label}</span>
-                        <span className={`${s.type === "core" ? "text-primary" : "text-accent"} text-[20px] font-bold shrink-0 ml-4`}>{s.value}</span>
+                      <div key={i} className={`flex justify-between items-center rounded-lg px-4 py-2 backdrop-blur-md ${s.type === "core" ? "bg-black/70 border border-primary/40" : "bg-black/70 border border-accent/40"}`}>
+                        <span className="text-white text-[18px] font-medium">{s.label}</span>
+                        <span className={`${s.type === "core" ? "text-primary" : "text-accent"} text-[18px] font-bold shrink-0 ml-4`}>{s.value}</span>
                       </div>
                     ))}
                   </div>
-                  <div className="mt-3 flex justify-between items-center bg-black/80 border border-primary/30 rounded-lg p-3">
-                    <span className="text-white text-[20px] font-semibold">Core Subtotal</span>
-                    <span className="text-primary text-[22px] font-bold">$614K – $794K</span>
+                  <div className="mt-2 flex justify-between items-center bg-black/80 border border-primary/30 rounded-lg px-4 py-2">
+                    <span className="text-white text-[18px] font-semibold">Core Subtotal</span>
+                    <span className="text-primary text-[20px] font-bold">$614K – $794K</span>
                   </div>
-                  <div className="mt-2 flex justify-between items-center bg-black/80 border border-accent/30 rounded-lg p-3">
-                    <span className="text-white text-[20px] font-semibold">Enhanced Subtotal</span>
-                    <span className="text-accent text-[22px] font-bold">$981K</span>
+                  <div className="mt-1.5 flex justify-between items-center bg-black/80 border border-accent/30 rounded-lg px-4 py-2">
+                    <span className="text-white text-[18px] font-semibold">Enhanced Subtotal</span>
+                    <span className="text-accent text-[20px] font-bold">$981K</span>
                   </div>
                 </div>
               </div>
 
               {/* Total bar */}
-              <div className="animate-fade-up stagger-4 mt-4 bg-black/70 backdrop-blur-md border border-white/20 rounded-xl p-6 flex items-center justify-between">
-                <span className="text-foreground text-[28px] font-bold uppercase tracking-wider">Year 1 Total Revenue</span>
+              <div className="animate-fade-up stagger-4 mt-4 bg-black/70 backdrop-blur-md border border-white/20 rounded-xl p-5 flex items-center justify-between">
+                <span className="text-foreground text-[24px] font-bold uppercase tracking-wider">Year 1 Total Revenue</span>
                 <div className="flex items-center gap-4">
-                  <span className="text-primary text-[44px] font-bold">$1.60M</span>
-                  <span className="text-muted-foreground text-[36px]">–</span>
-                  <span className="text-accent text-[44px] font-bold">$1.78M</span>
+                  <span className="text-primary text-[38px] font-bold">$1.60M</span>
+                  <span className="text-muted-foreground text-[30px]">–</span>
+                  <span className="text-accent text-[38px] font-bold">$1.78M</span>
                 </div>
               </div>
             </>
