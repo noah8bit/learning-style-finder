@@ -26,19 +26,16 @@ export default function SlideCompetitiveAnalysis({ active }: { active: boolean }
         {active && (
           <>
             <p className="animate-fade-up stagger-1 text-primary font-medium tracking-[0.3em] uppercase text-[20px] mb-3">Competitive Landscape</p>
-            <h2 className="animate-fade-up stagger-2 text-[60px] font-bold leading-[1] text-foreground mb-4">
+            <h2 className="animate-fade-up stagger-2 text-[60px] font-bold leading-[1] text-foreground mb-10">
               How Iron Form <span className="text-primary">Stands Apart</span>
             </h2>
-            <p className="animate-fade-up stagger-3 text-muted-foreground text-[22px] mb-10 max-w-[1000px]">
-              No competitor offers a fully integrated training, recovery, medical, and entertainment ecosystem.
-            </p>
-            <div className="animate-fade-up stagger-4 overflow-hidden rounded-2xl border border-border">
+            <div className="animate-fade-up stagger-3 overflow-hidden rounded-2xl border border-border">
               <table className="w-full">
                 <thead>
                   <tr className="bg-secondary">
-                    <th className="text-left text-foreground text-[20px] font-bold p-5 w-[200px]">Feature</th>
+                    <th className="text-left text-foreground text-[24px] font-bold p-6 w-[220px]">Feature</th>
                     {competitors.map((c, i) => (
-                      <th key={i} className={`text-center text-[20px] font-bold p-5 ${i === 0 ? "text-primary bg-primary/10" : "text-foreground"}`}>
+                      <th key={i} className={`text-center text-[24px] font-bold p-6 ${i === 0 ? "text-primary bg-primary/10" : "text-foreground"}`}>
                         {c.name}
                       </th>
                     ))}
@@ -47,11 +44,11 @@ export default function SlideCompetitiveAnalysis({ active }: { active: boolean }
                 <tbody>
                   {features.map((feat, fi) => (
                     <tr key={fi} className={fi % 2 === 0 ? "bg-white/[0.02]" : ""}>
-                      <td className="text-foreground text-[20px] font-medium p-4 border-t border-border">{feat}</td>
+                      <td className="text-foreground text-[22px] font-medium p-5 border-t border-border">{feat}</td>
                       {competitors.map((c, ci) => (
-                        <td key={ci} className={`text-center p-4 border-t border-border text-[26px] ${ci === 0 ? "bg-primary/5" : ""}`}>
+                        <td key={ci} className={`text-center p-5 border-t border-border text-[30px] ${ci === 0 ? "bg-primary/5" : ""}`}>
                           {c.scores[fi] ? (
-                            <span className="text-primary">✓</span>
+                            <span className="text-primary font-bold">✓</span>
                           ) : (
                             <span className="text-muted-foreground/40">✕</span>
                           )}
@@ -62,8 +59,8 @@ export default function SlideCompetitiveAnalysis({ active }: { active: boolean }
                 </tbody>
               </table>
             </div>
-            <div className="animate-fade-up stagger-5 mt-6 bg-primary/10 border border-primary/20 rounded-xl p-5">
-              <p className="text-foreground text-[20px]">
+            <div className="animate-fade-up stagger-4 mt-6 bg-primary/10 border border-primary/30 rounded-xl p-6">
+              <p className="text-foreground text-[22px]">
                 <span className="font-bold text-primary">Iron Form Advantage:</span> The only facility combining elite multi-sport training, integrated medical, recovery tech, and a film & stunt wing.
               </p>
             </div>

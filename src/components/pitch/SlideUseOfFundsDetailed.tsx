@@ -4,17 +4,17 @@ import ScaledSlide from "./ScaledSlide";
 export default function SlideUseOfFundsDetailed({ active }: { active: boolean }) {
   const funds = [
     { pct: "38%", dollar: "$4.5M", title: "Construction & Land", desc: "8–12 acre campus, 60,000+ sq ft ground-up build", color: "text-primary", borderColor: "border-primary/30", bgColor: "bg-primary/10" },
-    { pct: "22%", dollar: "$2.7M", title: "Equipment & Installations", desc: "Pool, climbing walls, cryotherapy, stunt rigging systems", color: "text-accent", borderColor: "border-accent/30", bgColor: "bg-accent/10" },
+    { pct: "22%", dollar: "$2.7M", title: "Equipment & Installations", desc: "Pool, climbing walls, cryotherapy, stunt rigging", color: "text-accent", borderColor: "border-accent/30", bgColor: "bg-accent/10" },
     { pct: "11%", dollar: "$1.35M", title: "Year 1 Operations", desc: "Coaches, medical staff, utilities, insurance", color: "text-primary", borderColor: "border-primary/30", bgColor: "bg-primary/10" },
-    { pct: "7%", dollar: "$850K", title: "App & Technology", desc: "Performance tracking, biometrics, member management", color: "text-accent", borderColor: "border-accent/30", bgColor: "bg-accent/10" },
-    { pct: "6%", dollar: "$750K", title: "Marketing & Launch", desc: "Grand opening, digital presence, sponsorship activations", color: "text-primary", borderColor: "border-primary/30", bgColor: "bg-primary/10" },
-    { pct: "15%", dollar: "$1.8M", title: "Contingency Reserve", desc: "Buffer for delays, overruns, and regulatory expenses", color: "text-accent", borderColor: "border-accent/30", bgColor: "bg-accent/10" },
+    { pct: "7%", dollar: "$850K", title: "App & Technology", desc: "Performance tracking, biometrics, member mgmt", color: "text-accent", borderColor: "border-accent/30", bgColor: "bg-accent/10" },
+    { pct: "6%", dollar: "$750K", title: "Marketing & Launch", desc: "Grand opening, digital presence, sponsorships", color: "text-primary", borderColor: "border-primary/30", bgColor: "bg-primary/10" },
+    { pct: "15%", dollar: "$1.8M", title: "Contingency Reserve", desc: "Buffer for delays, overruns, regulatory costs", color: "text-accent", borderColor: "border-accent/30", bgColor: "bg-accent/10" },
   ];
 
   return (
     <ScaledSlide>
       <div className="w-full h-full bg-background flex">
-        <div className="w-[55%] flex flex-col justify-center px-[80px]">
+        <div className="w-[58%] flex flex-col justify-center px-[80px]">
           {active && (
             <>
               <p className="animate-fade-up stagger-1 text-primary font-medium tracking-[0.3em] uppercase text-[20px] mb-3">Investment Allocation</p>
@@ -24,13 +24,13 @@ export default function SlideUseOfFundsDetailed({ active }: { active: boolean })
               <div className="animate-fade-up stagger-3 space-y-4">
                 {funds.map((f, i) => (
                   <div key={i} className={`${f.bgColor} border ${f.borderColor} rounded-xl p-6 flex gap-6 items-center`}>
-                    <span className={`${f.color} text-[40px] font-bold shrink-0 min-w-[80px]`}>{f.pct}</span>
+                    <span className={`${f.color} text-[48px] font-bold shrink-0 min-w-[90px]`}>{f.pct}</span>
                     <div className="flex-1">
                       <div className="flex justify-between items-center">
-                        <h3 className={`${f.color} text-[24px] font-bold`}>{f.title}</h3>
-                        <span className={`${f.color} text-[24px] font-bold`}>{f.dollar}</span>
+                        <h3 className={`${f.color} text-[26px] font-bold`}>{f.title}</h3>
+                        <span className={`${f.color} text-[26px] font-bold`}>{f.dollar}</span>
                       </div>
-                      <p className="text-muted-foreground text-[18px] leading-relaxed mt-1">{f.desc}</p>
+                      <p className="text-muted-foreground text-[22px] leading-relaxed mt-1">{f.desc}</p>
                     </div>
                   </div>
                 ))}
@@ -38,7 +38,7 @@ export default function SlideUseOfFundsDetailed({ active }: { active: boolean })
             </>
           )}
         </div>
-        <div className="w-[45%] h-full relative">
+        <div className="w-[42%] h-full relative">
           <img src={heroTechPlatform} alt="" className="absolute inset-0 w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-l from-transparent to-background" />
         </div>

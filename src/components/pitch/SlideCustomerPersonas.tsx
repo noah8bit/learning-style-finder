@@ -3,48 +3,12 @@ import ScaledSlide from "./ScaledSlide";
 
 export default function SlideCustomerPersonas({ active }: { active: boolean }) {
   const personas = [
-    {
-      icon: "🏆",
-      name: "The Competitive Athlete",
-      age: "16–35",
-      desc: "Aspiring or professional athletes — needs world-class coaching, recovery tech, and performance analytics.",
-      needs: ["Multi-sport cross-training", "Injury rehab & prevention", "Performance tracking"],
-    },
-    {
-      icon: "🎬",
-      name: "Film, Stunt & Circus Pro",
-      age: "22–45",
-      desc: "Stunt performers, circus artists, and actors — including Cirque du Soleil training residencies.",
-      needs: ["Stunt training & rigging", "Aerial silks & trapeze", "Cirque rehearsal space"],
-    },
-    {
-      icon: "👨‍👩‍👧‍👦",
-      name: "The Active Family",
-      age: "30–55",
-      desc: "Parents enrolling kids in youth sports while accessing their own fitness and wellness services.",
-      needs: ["Youth development", "Family memberships", "Convenient scheduling"],
-    },
-    {
-      icon: "🏢",
-      name: "The Corporate Client",
-      age: "25–55",
-      desc: "Atlanta Fortune 500s investing $600+/employee/year — proven $3–$6 ROI per dollar spent.",
-      needs: ["Packages $3K–$10K/mo", "On-site programs", "Productivity reporting"],
-    },
-    {
-      icon: "🩺",
-      name: "The Recovery Patient",
-      age: "18–65",
-      desc: "Individuals seeking neuromuscular therapy, peptide wellness, or post-injury rehab.",
-      needs: ["Insurance-covered therapy", "Personalized rehab", "Ongoing wellness"],
-    },
-    {
-      icon: "🌱",
-      name: "The Community Youth",
-      age: "8–18",
-      desc: "Talented young athletes from underserved communities — accessed through outreach and scholarships.",
-      needs: ["Scholarships & grants", "Mentorship programs", "Elite training pathway"],
-    },
+    { icon: "🏆", name: "Competitive Athlete", age: "16–35", desc: "Elite coaching, recovery tech & performance analytics", needs: ["Multi-sport cross-training", "Injury rehab & prevention"] },
+    { icon: "🎬", name: "Film, Stunt & Circus", age: "22–45", desc: "Stunt training, aerial arts, Cirque du Soleil residencies", needs: ["Stunt rigging & choreography", "Aerial silks & trapeze"] },
+    { icon: "👨‍👩‍👧‍👦", name: "Active Family", age: "30–55", desc: "Youth sports + parent fitness & wellness", needs: ["Youth development", "Family memberships"] },
+    { icon: "🏢", name: "Corporate Client", age: "25–55", desc: "$600+/employee/yr spend — $3–$6 ROI per dollar", needs: ["Packages $3K–$10K/mo", "Productivity reporting"] },
+    { icon: "🩺", name: "Recovery Patient", age: "18–65", desc: "Neuromuscular therapy, peptide wellness, post-injury rehab", needs: ["Insurance-covered therapy", "Personalized rehab"] },
+    { icon: "🌱", name: "Community Youth", age: "8–18", desc: "Talented athletes from underserved communities", needs: ["Scholarships & grants", "Elite training pathway"] },
   ];
 
   return (
@@ -61,20 +25,20 @@ export default function SlideCustomerPersonas({ active }: { active: boolean }) {
               </h2>
               <div className="animate-fade-up stagger-3 grid grid-cols-3 gap-5">
                 {personas.map((p, i) => (
-                  <div key={i} className="bg-black/70 backdrop-blur-md border border-white/20 rounded-xl p-6">
-                    <div className="flex items-center gap-3 mb-3">
-                      <span className="text-[32px]">{p.icon}</span>
+                  <div key={i} className="bg-white/8 backdrop-blur-md border border-white/15 rounded-xl p-7">
+                    <div className="flex items-center gap-4 mb-4">
+                      <span className="text-[40px]">{p.icon}</span>
                       <div>
-                        <h3 className="text-foreground text-[20px] font-bold leading-tight">{p.name}</h3>
-                        <span className="text-muted-foreground text-[16px]">Age {p.age}</span>
+                        <h3 className="text-foreground text-[24px] font-bold leading-tight">{p.name}</h3>
+                        <span className="text-muted-foreground text-[20px]">Age {p.age}</span>
                       </div>
                     </div>
-                    <p className="text-secondary-foreground text-[17px] leading-relaxed mb-3">{p.desc}</p>
-                    <div className="space-y-1.5">
+                    <p className="text-secondary-foreground text-[20px] leading-relaxed mb-4">{p.desc}</p>
+                    <div className="space-y-2">
                       {p.needs.map((n, j) => (
-                        <div key={j} className="flex items-center gap-2">
-                          <span className="w-2 h-2 rounded-full bg-primary shrink-0" />
-                          <span className="text-foreground text-[16px]">{n}</span>
+                        <div key={j} className="flex items-center gap-3">
+                          <span className="w-2.5 h-2.5 rounded-full bg-primary shrink-0" />
+                          <span className="text-foreground text-[20px]">{n}</span>
                         </div>
                       ))}
                     </div>

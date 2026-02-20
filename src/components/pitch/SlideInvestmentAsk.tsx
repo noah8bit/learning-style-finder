@@ -4,7 +4,7 @@ import ScaledSlide from "./ScaledSlide";
 export default function SlideInvestmentAsk({ active }: { active: boolean }) {
   const milestones = [
     { phase: "Tranche 1", amount: "$5M", trigger: "At close", use: "Land acquisition, construction start, permitting, core team", color: "text-primary", bg: "bg-primary/10", border: "border-primary/30" },
-    { phase: "Tranche 2", amount: "$4.75M", trigger: "Construction 50%", use: "Equipment, pool, tech platform build, marketing launch", color: "text-accent", bg: "bg-accent/10", border: "border-accent/30" },
+    { phase: "Tranche 2", amount: "$4.75M", trigger: "Construction 50%", use: "Equipment, pool, tech platform, marketing launch", color: "text-accent", bg: "bg-accent/10", border: "border-accent/30" },
     { phase: "Tranche 3", amount: "$2.25M", trigger: "Doors open", use: "Year 1 operating runway, final fit-out, contingency", color: "text-primary", bg: "bg-primary/10", border: "border-primary/30" },
   ];
 
@@ -26,48 +26,48 @@ export default function SlideInvestmentAsk({ active }: { active: boolean }) {
               <h2 className="animate-fade-up stagger-2 text-[60px] font-bold leading-[1] text-foreground mb-3">
                 Raising <span className="text-primary">$12M</span>
               </h2>
-              <p className="animate-fade-up stagger-3 text-muted-foreground text-[22px] mb-8 max-w-[900px]">
+              <p className="animate-fade-up stagger-3 text-muted-foreground text-[24px] mb-8 max-w-[900px] leading-relaxed">
                 Full capital for a 60,000+ sq ft facility on an 8–12 acre campus — milestone-gated tranches that de-risk your investment.
               </p>
 
               <div className="animate-fade-up stagger-4 flex gap-10">
                 {/* Left: Tranches */}
                 <div className="flex-1">
-                  <h3 className="text-primary text-[22px] font-bold mb-4 uppercase tracking-wider">Milestone Tranches</h3>
-                  <div className="space-y-4">
+                  <h3 className="text-primary text-[24px] font-bold mb-5 uppercase tracking-wider">Milestone Tranches</h3>
+                  <div className="space-y-5">
                     {milestones.map((m, i) => (
-                      <div key={i} className={`${m.bg} border ${m.border} rounded-lg p-6`}>
-                        <div className="flex justify-between items-center mb-2">
-                          <span className={`${m.color} text-[24px] font-bold`}>{m.phase}</span>
-                          <span className={`${m.color} text-[32px] font-bold`}>{m.amount}</span>
+                      <div key={i} className={`${m.bg} border ${m.border} rounded-xl p-7`}>
+                        <div className="flex justify-between items-center mb-3">
+                          <span className={`${m.color} text-[28px] font-bold`}>{m.phase}</span>
+                          <span className={`${m.color} text-[36px] font-bold`}>{m.amount}</span>
                         </div>
-                        <p className="text-muted-foreground text-[18px]"><span className="text-foreground font-semibold">Trigger:</span> {m.trigger}</p>
-                        <p className="text-muted-foreground text-[18px]">{m.use}</p>
+                        <p className="text-muted-foreground text-[22px]"><span className="text-foreground font-semibold">Trigger:</span> {m.trigger}</p>
+                        <p className="text-muted-foreground text-[22px]">{m.use}</p>
                       </div>
                     ))}
                   </div>
                 </div>
 
                 {/* Right: Equity */}
-                <div className="w-[440px] shrink-0 flex flex-col gap-5">
+                <div className="w-[480px] shrink-0 flex flex-col gap-5">
                   <div>
-                    <h3 className="text-accent text-[22px] font-bold mb-4 uppercase tracking-wider">Equity Structure</h3>
-                    <div className="space-y-3">
+                    <h3 className="text-accent text-[24px] font-bold mb-5 uppercase tracking-wider">Equity Structure</h3>
+                    <div className="space-y-4">
                       {equityTiers.map((t, i) => (
-                        <div key={i} className="bg-white/5 border border-white/10 rounded-lg p-5">
+                        <div key={i} className="bg-white/8 border border-white/15 rounded-xl p-6">
                           <div className="flex justify-between items-center mb-2">
-                            <span className="text-foreground text-[20px] font-bold">{t.range}</span>
-                            <span className="text-primary text-[24px] font-bold">{t.equity}</span>
+                            <span className="text-foreground text-[24px] font-bold">{t.range}</span>
+                            <span className="text-primary text-[28px] font-bold">{t.equity}</span>
                           </div>
-                          <p className="text-muted-foreground text-[18px]">{t.perks}</p>
+                          <p className="text-muted-foreground text-[22px]">{t.perks}</p>
                         </div>
                       ))}
                     </div>
                   </div>
 
-                  <div className="bg-primary/10 border border-primary/30 rounded-lg p-5">
-                    <h4 className="text-primary text-[20px] font-bold mb-2">Founder Protection</h4>
-                    <p className="text-muted-foreground text-[18px] leading-relaxed">
+                  <div className="bg-primary/10 border border-primary/30 rounded-xl p-6">
+                    <h4 className="text-primary text-[24px] font-bold mb-2">Founder Protection</h4>
+                    <p className="text-muted-foreground text-[22px] leading-relaxed">
                       Investor equity capped at <span className="text-foreground font-bold">20%</span>. Founder retains <span className="text-foreground font-bold">70%+</span> ownership and full operational control.
                     </p>
                   </div>

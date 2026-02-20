@@ -35,53 +35,53 @@ export default function SlideFinancialProjections({ active }: { active: boolean 
         {active && (
           <>
             <p className="animate-fade-up stagger-1 text-primary font-medium tracking-[0.3em] uppercase text-[20px] mb-3">Financial Overview</p>
-            <h2 className="animate-fade-up stagger-2 text-[52px] font-bold leading-[1] text-foreground mb-8">
+            <h2 className="animate-fade-up stagger-2 text-[56px] font-bold leading-[1] text-foreground mb-8">
               Investment & <span className="text-primary">Projected Returns</span>
             </h2>
             <div className="animate-fade-up stagger-3 flex gap-10 mb-6">
               {/* Startup costs */}
-              <div className="w-[420px] shrink-0">
-                <h3 className="text-primary text-[22px] font-bold mb-4 uppercase tracking-wider">Start-Up Costs</h3>
+              <div className="w-[450px] shrink-0">
+                <h3 className="text-primary text-[24px] font-bold mb-4 uppercase tracking-wider">Start-Up Costs</h3>
                 <div className="space-y-3">
                   {startupCosts.map((c, i) => (
-                    <div key={i} className="flex justify-between items-center border-b border-white/10 pb-3">
-                      <span className="text-foreground text-[20px]">{c.label}</span>
-                      <span className="text-primary font-bold text-[20px]">{c.range}</span>
+                    <div key={i} className="flex justify-between items-center bg-white/5 border border-white/10 rounded-lg p-4">
+                      <span className="text-foreground text-[22px]">{c.label}</span>
+                      <span className="text-primary font-bold text-[22px]">{c.range}</span>
                     </div>
                   ))}
                 </div>
-                <div className="mt-5 bg-primary/10 border border-primary/30 rounded-xl p-5">
+                <div className="mt-4 bg-primary/10 border border-primary/30 rounded-xl p-5">
                   <div className="flex justify-between items-center">
-                    <span className="text-foreground text-[22px] font-bold">Total</span>
-                    <span className="text-primary text-[26px] font-bold">$12M – $15M</span>
+                    <span className="text-foreground text-[24px] font-bold">Total</span>
+                    <span className="text-primary text-[28px] font-bold">$12M – $15M</span>
                   </div>
                 </div>
               </div>
 
               {/* Projections */}
               <div className="flex-1">
-                <h3 className="text-accent text-[22px] font-bold mb-4 uppercase tracking-wider">Annual Projections</h3>
+                <h3 className="text-accent text-[24px] font-bold mb-4 uppercase tracking-wider">Annual Projections</h3>
                 <div className="space-y-5">
                   {projections.map((p, i) => (
-                    <div key={i}>
-                      <div className="flex items-center justify-between mb-2">
-                        <span className="text-foreground text-[22px] font-bold">{p.year}</span>
-                        <span className="text-primary text-[20px] font-bold">Net: {p.netLabel}</span>
+                    <div key={i} className="bg-white/5 border border-white/10 rounded-lg p-5">
+                      <div className="flex items-center justify-between mb-3">
+                        <span className="text-foreground text-[24px] font-bold">{p.year}</span>
+                        <span className="text-primary text-[22px] font-bold">Net: {p.netLabel}</span>
                       </div>
                       <div className="space-y-2">
                         <div className="flex items-center gap-3">
-                          <span className="text-muted-foreground text-[18px] w-[80px] text-right">Costs</span>
-                          <div className="flex-1 h-[22px] bg-white/5 rounded-full overflow-hidden">
+                          <span className="text-muted-foreground text-[20px] w-[90px] text-right">Costs</span>
+                          <div className="flex-1 h-[28px] bg-white/5 rounded-full overflow-hidden">
                             <div className="h-full bg-accent/70 rounded-full flex items-center justify-end pr-3" style={{ width: `${(p.cost / maxBar) * 100}%` }}>
-                              <span className="text-[14px] text-foreground font-bold">{p.costLabel}</span>
+                              <span className="text-[16px] text-foreground font-bold">{p.costLabel}</span>
                             </div>
                           </div>
                         </div>
                         <div className="flex items-center gap-3">
-                          <span className="text-muted-foreground text-[18px] w-[80px] text-right">Revenue</span>
-                          <div className="flex-1 h-[22px] bg-white/5 rounded-full overflow-hidden">
+                          <span className="text-muted-foreground text-[20px] w-[90px] text-right">Revenue</span>
+                          <div className="flex-1 h-[28px] bg-white/5 rounded-full overflow-hidden">
                             <div className="h-full bg-primary/70 rounded-full flex items-center justify-end pr-3" style={{ width: `${(p.revenue / maxBar) * 100}%` }}>
-                              <span className="text-[14px] text-foreground font-bold">{p.revenueLabel}</span>
+                              <span className="text-[16px] text-foreground font-bold">{p.revenueLabel}</span>
                             </div>
                           </div>
                         </div>
@@ -93,10 +93,10 @@ export default function SlideFinancialProjections({ active }: { active: boolean 
             </div>
             <div className="animate-fade-up stagger-4 grid grid-cols-4 gap-4">
               {roi.map((r, i) => (
-                <div key={i} className="bg-white/5 border border-white/10 rounded-xl p-5 text-center">
-                  <span className="text-[32px] mb-2 block">{r.icon}</span>
-                  <div className="text-primary text-[26px] font-bold mb-1">{r.value}</div>
-                  <div className="text-muted-foreground text-[18px]">{r.label}</div>
+                <div key={i} className="bg-white/8 border border-white/15 rounded-xl p-6 text-center">
+                  <span className="text-[36px] mb-2 block">{r.icon}</span>
+                  <div className="text-primary text-[28px] font-bold mb-1">{r.value}</div>
+                  <div className="text-muted-foreground text-[20px]">{r.label}</div>
                 </div>
               ))}
             </div>
