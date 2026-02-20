@@ -192,14 +192,20 @@ function SlideServices({ active }: { active: boolean }) {
 }
 
 function SlideDisciplines({ active }: { active: boolean }) {
-  const categories = [
+  const leftCol = [
     { title: "Martial Arts & Combat", items: ["Tae Kwon Do", "Karate", "Jiu-Jitsu", "Muay Thai", "Boxing", "Wrestling", "Kickboxing", "Wing Chun"], color: "text-primary" },
-    { title: "Weapons & Combat", items: ["Fencing", "Kendo", "HEMA Sword Fighting"], color: "text-accent" },
+    { title: "Weapons", items: ["Fencing", "Kendo", "HEMA Sword Fighting"], color: "text-accent" },
+  ];
+  const midCol = [
     { title: "Dance & Acrobatics", items: ["Ballet", "Hip Hop", "Contemporary", "Gymnastics & Tumbling", "Aerial Silks & Trapeze", "Circus Performance"], color: "text-primary" },
     { title: "Field & Court", items: ["Basketball", "Soccer", "Volleyball", "Football Training", "Baseball & Softball", "Lacrosse"], color: "text-accent" },
-    { title: "Track & Field (Olympic)", items: ["Sprints (100m–400m)", "Distance (800m–5K)", "Hurdles", "High/Long/Triple Jump", "Pole Vault", "Shot Put & Discus", "Javelin"], color: "text-primary" },
+  ];
+  const rightCol = [
+    { title: "Track & Field", items: ["Sprints (100m–400m)", "Distance (800m–5K)", "Hurdles", "High/Long/Triple Jump", "Pole Vault", "Shot Put & Discus", "Javelin"], color: "text-primary" },
     { title: "Specialty", items: ["Rock Climbing", "Stunt Training", "Olympic Swimming", "Hyrox / CrossFit", "Pilates & Yoga", "Golf Sim", "Rowing"], color: "text-accent" },
   ];
+  const columns = [leftCol, midCol, rightCol];
+
   return (
     <ScaledSlide>
       <div className="w-full h-full bg-background flex">
@@ -210,18 +216,22 @@ function SlideDisciplines({ active }: { active: boolean }) {
               <h2 className="animate-fade-up stagger-2 text-[52px] font-bold leading-[1] text-foreground mb-8">
                 <span className="text-primary">30+</span> Disciplines Under One Roof
               </h2>
-              <div className="animate-fade-up stagger-3 grid grid-cols-3 gap-x-10 gap-y-5">
-                {categories.map((cat, i) => (
-                  <div key={i}>
-                    <h3 className={`${cat.color} text-[22px] font-bold uppercase tracking-wide mb-2`}>{cat.title}</h3>
-                    <ul className="space-y-1">
-                      {cat.items.map((item, j) => (
-                        <li key={j} className="text-secondary-foreground text-[18px] flex items-center gap-2">
-                          <span className="w-1.5 h-1.5 rounded-full bg-muted-foreground shrink-0" />
-                          {item}
-                        </li>
-                      ))}
-                    </ul>
+              <div className="animate-fade-up stagger-3 grid grid-cols-3 gap-x-10">
+                {columns.map((col, ci) => (
+                  <div key={ci} className="flex flex-col gap-6">
+                    {col.map((cat, i) => (
+                      <div key={i}>
+                        <h3 className={`${cat.color} text-[20px] font-bold uppercase tracking-wide mb-2`}>{cat.title}</h3>
+                        <ul className="space-y-1">
+                          {cat.items.map((item, j) => (
+                            <li key={j} className="text-secondary-foreground text-[17px] flex items-center gap-2">
+                              <span className="w-1.5 h-1.5 rounded-full bg-muted-foreground shrink-0" />
+                              {item}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    ))}
                   </div>
                 ))}
               </div>
