@@ -2,18 +2,18 @@ import ScaledSlide from "./ScaledSlide";
 
 export default function SlideCostBenefit({ active }: { active: boolean }) {
   const costs = [
-    { label: "Land & Construction", amount: "$6.5M – $9M", pct: 54 },
-    { label: "Equipment & Install", amount: "$1.5M – $2M", pct: 14 },
-    { label: "Year 1 Operations", amount: "$1.5M", pct: 11 },
+    { label: "Land & Construction", amount: "$7.5M", pct: 50 },
+    { label: "Equipment & Install", amount: "$2.25M", pct: 15 },
+    { label: "Year 1 Operations", amount: "$1.5M", pct: 10 },
     { label: "Tech & Marketing", amount: "$1.5M", pct: 10 },
-    { label: "Contingency (~11%)", amount: "$1.5M", pct: 11 },
+    { label: "Contingency (~15%)", amount: "$2.25M", pct: 15 },
   ];
 
   const benefits = [
     { label: "Year 1 Revenue", amount: "$2.68M – $2.87M", icon: "💰" },
-    { label: "Year 3 Net Profit", amount: "$3.4M – $4.2M", icon: "📈" },
-    { label: "5-Year Cumulative", amount: "$15M – $20M", icon: "🏦" },
-    { label: "Break-Even", amount: "9–13 Months", icon: "⏱️" },
+    { label: "Year 3 Net Profit", amount: "$1.4M – $2.0M", icon: "📈" },
+    { label: "5-Year Cumulative Profit", amount: "$5M – $8M", icon: "🏦" },
+    { label: "Break-Even", amount: "18–24 Months", icon: "⏱️" },
   ];
 
   const intangibles = [
@@ -51,7 +51,7 @@ export default function SlideCostBenefit({ active }: { active: boolean }) {
                 </div>
                 <div className="mt-5 bg-accent/10 border border-accent/30 rounded-xl p-4 flex justify-between items-center">
                   <span className="text-foreground text-[16px] font-bold">Total Start-Up</span>
-                  <span className="text-accent text-[18px] font-bold">$12M – $15M</span>
+                  <span className="text-accent text-[18px] font-bold">~$15M</span>
                 </div>
               </div>
 
