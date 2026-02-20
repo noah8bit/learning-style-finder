@@ -2,18 +2,18 @@ import ScaledSlide from "./ScaledSlide";
 
 export default function SlideCostBenefit({ active }: { active: boolean }) {
   const costs = [
-    { label: "Land & Construction", amount: "$3.5M – $7M", pct: 78 },
-    { label: "Equipment & Tech", amount: "$500K – $1.5M", pct: 15 },
-    { label: "Marketing & Launch", amount: "$100K", pct: 3 },
-    { label: "Legal & Permitting", amount: "$50K – $100K", pct: 2 },
-    { label: "Misc (Furniture, IT)", amount: "$200K", pct: 2 },
+    { label: "Land & Construction", amount: "$7.5M – $10.5M", pct: 68 },
+    { label: "Equipment & Install", amount: "$2M – $2.5M", pct: 16 },
+    { label: "Tech & App Platform", amount: "$750K – $1M", pct: 6 },
+    { label: "Marketing & Legal", amount: "$500K – $750K", pct: 4 },
+    { label: "Contingency (15%)", amount: "$1.8M", pct: 6 },
   ];
 
   const benefits = [
-    { label: "Year 1 Revenue", amount: "$1.09M – $1.69M", icon: "💰" },
-    { label: "Year 3 Net Profit", amount: "$600K – $1.6M", icon: "📈" },
-    { label: "5-Year Cumulative", amount: "$3.5M – $6M+", icon: "🏦" },
-    { label: "Break-Even", amount: "3–5 Years", icon: "⏱️" },
+    { label: "Year 1 Revenue", amount: "$2.54M – $2.72M", icon: "💰" },
+    { label: "Year 3 Net Profit", amount: "$3.1M – $3.9M", icon: "📈" },
+    { label: "5-Year Cumulative", amount: "$14M – $18M", icon: "🏦" },
+    { label: "Break-Even", amount: "10–14 Months", icon: "⏱️" },
   ];
 
   const intangibles = [
@@ -51,7 +51,7 @@ export default function SlideCostBenefit({ active }: { active: boolean }) {
                 </div>
                 <div className="mt-5 bg-accent/10 border border-accent/30 rounded-xl p-4 flex justify-between items-center">
                   <span className="text-foreground text-[16px] font-bold">Total Start-Up</span>
-                  <span className="text-accent text-[18px] font-bold">$4.35M – $8.9M</span>
+                  <span className="text-accent text-[18px] font-bold">$12M – $15M</span>
                 </div>
               </div>
 
