@@ -13,13 +13,13 @@ export default function SlideRevenueDetailed({ active }: { active: boolean }) {
 
   const streams = [
     { label: "Monthly Memberships", value: "$360K – $540K", type: "core" },
-    { label: "Team Retainments", value: "$100K", type: "core" },
+    { label: "Team Retainments", value: "$180K", type: "core" },
     { label: "Insurance Partnerships", value: "$50K", type: "core" },
     { label: "Facility Rentals", value: "$104K", type: "core" },
     { label: "Corporate Wellness", value: "$300K", type: "enhanced" },
     { label: "Camps & Seminars", value: "$96K", type: "enhanced" },
     { label: "Digital Memberships", value: "$150K", type: "enhanced" },
-    { label: "Naming Rights & Sponsorships", value: "$200K", type: "enhanced" },
+    { label: "Naming Rights & Sponsorships", value: "$350K", type: "enhanced" },
     { label: "Event Hosting", value: "$100K", type: "enhanced" },
     { label: "Recovery Drop-Ins", value: "$75K", type: "enhanced" },
     { label: "Content & Media", value: "$60K", type: "enhanced" },
@@ -70,11 +70,11 @@ export default function SlideRevenueDetailed({ active }: { active: boolean }) {
                   </div>
                   <div className="mt-2 flex justify-between items-center bg-black/80 border border-primary/30 rounded-lg px-4 py-2">
                     <span className="text-white text-[18px] font-semibold">Core Subtotal</span>
-                    <span className="text-primary text-[20px] font-bold">$614K – $794K</span>
+                    <span className="text-primary text-[20px] font-bold">$694K – $874K</span>
                   </div>
                   <div className="mt-1.5 flex justify-between items-center bg-black/80 border border-accent/30 rounded-lg px-4 py-2">
                     <span className="text-white text-[18px] font-semibold">Enhanced Subtotal</span>
-                    <span className="text-accent text-[20px] font-bold">$981K</span>
+                    <span className="text-accent text-[20px] font-bold">$1.13M</span>
                   </div>
                 </div>
               </div>
@@ -83,9 +83,9 @@ export default function SlideRevenueDetailed({ active }: { active: boolean }) {
               <div className="animate-fade-up stagger-4 mt-4 bg-black/70 backdrop-blur-md border border-white/20 rounded-xl p-5 flex items-center justify-between">
                 <span className="text-foreground text-[24px] font-bold uppercase tracking-wider">Year 1 Total Revenue</span>
                 <div className="flex items-center gap-4">
-                  <span className="text-primary text-[38px] font-bold">$1.60M</span>
+                  <span className="text-primary text-[38px] font-bold">$1.83M</span>
                   <span className="text-muted-foreground text-[30px]">–</span>
-                  <span className="text-accent text-[38px] font-bold">$1.78M</span>
+                  <span className="text-accent text-[38px] font-bold">$2.0M</span>
                 </div>
               </div>
             </>
