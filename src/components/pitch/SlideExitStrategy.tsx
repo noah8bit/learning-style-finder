@@ -41,15 +41,15 @@ export default function SlideExitStrategy({ active }: { active: boolean }) {
                       </div>
                       <div className="flex justify-between items-center">
                         <span className="text-muted-foreground text-[17px]">Year 3 distributions</span>
-                        <span className="text-white text-[20px] font-bold">~$90K</span>
+                        <span className="text-white text-[20px] font-bold">~$110K</span>
                       </div>
                       <div className="flex justify-between items-center">
                         <span className="text-muted-foreground text-[17px]">Year 5 cumulative</span>
-                        <span className="text-white text-[20px] font-bold">~$400K</span>
+                        <span className="text-white text-[20px] font-bold">~$500K</span>
                       </div>
                       <div className="flex justify-between items-center">
                         <span className="text-muted-foreground text-[17px]">Year 7 cumulative</span>
-                        <span className="text-accent text-[22px] font-bold">~$800K–$1.2M</span>
+                        <span className="text-accent text-[22px] font-bold">~$1M–$1.5M</span>
                       </div>
                       <div className="border-t border-accent/20 pt-3 mt-1">
                         <p className="text-foreground text-[16px] leading-relaxed">
@@ -104,7 +104,7 @@ export default function SlideExitStrategy({ active }: { active: boolean }) {
                       <div className="text-muted-foreground text-[12px]">Conversion ceiling</div>
                     </div>
                     <div className="bg-black/70 backdrop-blur-md border border-white/20 rounded-xl p-4 text-center">
-                      <div className="text-primary text-[26px] font-bold mb-0.5">5–6 yrs</div>
+                      <div className="text-primary text-[26px] font-bold mb-0.5">3.5–4.5 yrs</div>
                       <div className="text-foreground text-[14px] font-semibold">Projected Payback</div>
                       <div className="text-muted-foreground text-[12px]">Via distributions</div>
                     </div>
