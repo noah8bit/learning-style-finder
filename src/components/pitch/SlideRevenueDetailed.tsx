@@ -41,7 +41,7 @@ export default function SlideRevenueDetailed({ active }: { active: boolean }) {
                     {rampUp.map((r, i) => (
                       <div key={i} className="flex items-center gap-5">
                         <span className="text-foreground text-[24px] font-bold w-[55px]">{r.month}</span>
-                        <div className="flex-1 h-[40px] bg-white/5 rounded-full overflow-hidden relative">
+                        <div className="flex-1 h-[40px] bg-black/50 rounded-full overflow-hidden relative">
                           <div className="h-full bg-primary/70 rounded-full transition-all" style={{ width: `${Math.max((r.members / maxMembers) * 100, 18)}%` }} />
                           <span className="absolute inset-0 flex items-center justify-center text-[20px] text-foreground font-bold">
                             {r.members} members
@@ -64,11 +64,11 @@ export default function SlideRevenueDetailed({ active }: { active: boolean }) {
                       </div>
                     ))}
                   </div>
-                  <div className="mt-4 flex justify-between items-center bg-white/5 border border-white/10 rounded-lg p-4">
+                  <div className="mt-4 flex justify-between items-center bg-black/60 border border-white/15 rounded-lg p-4">
                     <span className="text-muted-foreground text-[22px] font-semibold">Core Subtotal</span>
                     <span className="text-primary text-[24px] font-bold">$614K – $794K</span>
                   </div>
-                  <div className="mt-2 flex justify-between items-center bg-white/5 border border-white/10 rounded-lg p-4">
+                  <div className="mt-2 flex justify-between items-center bg-black/60 border border-white/15 rounded-lg p-4">
                     <span className="text-muted-foreground text-[22px] font-semibold">Enhanced Subtotal</span>
                     <span className="text-accent text-[24px] font-bold">$480K</span>
                   </div>
@@ -76,7 +76,7 @@ export default function SlideRevenueDetailed({ active }: { active: boolean }) {
               </div>
 
               {/* Total bar */}
-              <div className="animate-fade-up stagger-4 mt-6 bg-white/8 border border-white/15 rounded-xl p-7 flex items-center justify-between">
+              <div className="animate-fade-up stagger-4 mt-6 bg-black/70 backdrop-blur-md border border-white/20 rounded-xl p-7 flex items-center justify-between">
                 <span className="text-foreground text-[28px] font-bold uppercase tracking-wider">Year 1 Total Revenue</span>
                 <div className="flex items-center gap-4">
                   <span className="text-primary text-[44px] font-bold">$1.09M</span>

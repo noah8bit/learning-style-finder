@@ -29,7 +29,7 @@ export default function SlideLongTermVision({ active }: { active: boolean }) {
               </h2>
               <div className="animate-fade-up stagger-3 grid grid-cols-4 gap-5 mb-10">
                 {visions.map((v, i) => (
-                  <div key={i} className="bg-white/8 backdrop-blur-sm border border-white/15 rounded-xl p-7">
+                  <div key={i} className="bg-black/70 backdrop-blur-md border border-white/20 rounded-xl p-7">
                     <span className="text-[40px] mb-3 block">{v.icon}</span>
                     <h3 className="text-foreground text-[24px] font-bold mb-2">{v.title}</h3>
                     <p className="text-muted-foreground text-[20px] leading-relaxed">{v.desc}</p>
