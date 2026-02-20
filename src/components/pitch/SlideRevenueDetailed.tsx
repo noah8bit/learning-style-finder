@@ -17,6 +17,7 @@ export default function SlideRevenueDetailed({ active }: { active: boolean }) {
     { label: "Insurance Partnerships", value: "$125K", type: "core" },
     { label: "Facility Rentals", value: "$156K", type: "core" },
     { label: "Personal Training", value: "$300K", type: "core" },
+    { label: "Neuromuscular Therapy", value: "$150K", type: "core" },
     { label: "Corporate Wellness", value: "$180K", type: "enhanced" },
     { label: "Camps & Seminars", value: "$144K", type: "enhanced" },
     { label: "Digital Memberships", value: "$84K", type: "enhanced" },
@@ -74,7 +75,7 @@ export default function SlideRevenueDetailed({ active }: { active: boolean }) {
                   </div>
                   <div className="mt-1.5 flex justify-between items-center bg-black/80 border border-primary/30 rounded-lg px-3 py-1.5">
                     <span className="text-white text-[16px] font-semibold">Core Subtotal</span>
-                    <span className="text-primary text-[18px] font-bold">$1.12M – $1.30M</span>
+                    <span className="text-primary text-[18px] font-bold">$1.27M – $1.45M</span>
                   </div>
                   <div className="mt-1 flex justify-between items-center bg-black/80 border border-accent/30 rounded-lg px-3 py-1.5">
                     <span className="text-white text-[16px] font-semibold">Enhanced Subtotal</span>
@@ -87,9 +88,9 @@ export default function SlideRevenueDetailed({ active }: { active: boolean }) {
               <div className="animate-fade-up stagger-4 mt-3 bg-black/70 backdrop-blur-md border border-white/20 rounded-xl p-4 flex items-center justify-between">
                 <span className="text-foreground text-[22px] font-bold uppercase tracking-wider">Year 1 Total Revenue</span>
                 <div className="flex items-center gap-4">
-                  <span className="text-primary text-[34px] font-bold">$2.54M</span>
+                  <span className="text-primary text-[34px] font-bold">$2.68M</span>
                   <span className="text-muted-foreground text-[26px]">–</span>
-                  <span className="text-accent text-[34px] font-bold">$2.72M</span>
+                  <span className="text-accent text-[34px] font-bold">$2.87M</span>
                 </div>
               </div>
             </>
