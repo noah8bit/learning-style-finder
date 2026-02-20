@@ -56,7 +56,7 @@ export default function SlidePricingAppendix({ active }: { active: boolean }) {
           <>
             <p className="animate-fade-up stagger-1 text-primary font-medium tracking-[0.3em] uppercase text-[12px] mb-2">Appendix</p>
             <h2 className="animate-fade-up stagger-2 text-[40px] font-bold leading-[1] text-foreground mb-5">
-              Full <span className="text-primary">Pricing Benchmarks</span>
+              Full Preliminary <span className="text-primary">Pricing Benchmarks</span>
             </h2>
 
             <div className="animate-fade-up stagger-3 flex gap-5">
