@@ -53,7 +53,7 @@ export default function SlideFinancialProjections({ active }: { active: boolean 
                 <div className="mt-4 bg-primary/10 border border-primary/30 rounded-xl p-5">
                   <div className="flex justify-between items-center">
                     <span className="text-foreground text-[24px] font-bold">Total</span>
-                    <span className="text-primary text-[28px] font-bold">$12M – $15M</span>
+                    <span className="text-primary text-[28px] font-bold">$11M – $14M</span>
                   </div>
                 </div>
               </div>
