@@ -83,7 +83,7 @@ function SlideProblem({ active }: { active: boolean }) {
         <div className="w-[55%] flex flex-col justify-center px-[80px]">
           {active && (
             <>
-              <p className="animate-fade-up stagger-1 text-primary font-medium tracking-[0.3em] uppercase text-[14px] mb-4">The Problem</p>
+              <p className="animate-fade-up stagger-1 text-primary font-medium tracking-[0.3em] uppercase text-[20px] mb-4">The Problem</p>
               <h2 className="animate-fade-up stagger-2 text-[64px] font-bold leading-[1] text-foreground mb-12">
                 Every Athlete Deserves<br />
                 <span className="text-primary">Elite-Level Support</span>
@@ -95,8 +95,8 @@ function SlideProblem({ active }: { active: boolean }) {
                       {p.icon}
                     </div>
                     <div>
-                      <h3 className="text-[22px] font-semibold text-foreground mb-1">{p.title}</h3>
-                      <p className="text-muted-foreground text-[16px] leading-relaxed">{p.desc}</p>
+                      <h3 className="text-[24px] font-semibold text-foreground mb-1">{p.title}</h3>
+                      <p className="text-muted-foreground text-[18px] leading-relaxed">{p.desc}</p>
                     </div>
                   </div>
                 ))}
@@ -128,7 +128,7 @@ function SlideSolution({ active }: { active: boolean }) {
         <div className="relative z-10 flex flex-col justify-center h-full px-[120px]">
           {active && (
             <>
-              <p className="animate-fade-up stagger-1 text-primary font-medium tracking-[0.3em] uppercase text-[14px] mb-4">The Solution</p>
+              <p className="animate-fade-up stagger-1 text-primary font-medium tracking-[0.3em] uppercase text-[20px] mb-4">The Solution</p>
               <h2 className="animate-fade-up stagger-2 text-[72px] font-bold leading-[1] text-foreground mb-4">
                 Train Better. Recover Faster.<br /><span className="text-primary">Go Further.</span>
               </h2>
@@ -139,7 +139,7 @@ function SlideSolution({ active }: { active: boolean }) {
                 {features.map((f, i) => (
                   <div key={i} className={`animate-fade-up stagger-${Math.min(i + 3, 6)} bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl px-6 py-5 flex items-center gap-4`}>
                     <span className="text-[32px]">{f.icon}</span>
-                    <span className="text-foreground text-[18px] font-medium">{f.label}</span>
+                    <span className="text-foreground text-[22px] font-medium">{f.label}</span>
                   </div>
                 ))}
               </div>
@@ -169,7 +169,7 @@ function SlideServices({ active }: { active: boolean }) {
         <div className="relative z-10 flex flex-col justify-center h-full px-[120px]">
           {active && (
             <>
-              <p className="animate-fade-up stagger-1 text-primary font-medium tracking-[0.3em] uppercase text-[14px] mb-4">Services & Differentiators</p>
+              <p className="animate-fade-up stagger-1 text-primary font-medium tracking-[0.3em] uppercase text-[20px] mb-4">Services & Differentiators</p>
               <h2 className="animate-fade-up stagger-2 text-[56px] font-bold leading-[1] text-foreground mb-12">
                 What Makes Iron Form <span className="text-primary">Different</span>
               </h2>
@@ -178,8 +178,8 @@ function SlideServices({ active }: { active: boolean }) {
                   <div key={i} className="flex gap-5 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-5">
                     <span className="text-[30px] shrink-0">{d.icon}</span>
                     <div>
-                      <h3 className="text-foreground text-[18px] font-bold mb-1">{d.title}</h3>
-                      <p className="text-muted-foreground text-[14px] leading-relaxed">{d.benefit}</p>
+                      <h3 className="text-foreground text-[22px] font-bold mb-1">{d.title}</h3>
+                      <p className="text-muted-foreground text-[18px] leading-relaxed">{d.benefit}</p>
                     </div>
                   </div>
                 ))}
@@ -208,18 +208,18 @@ function SlideDisciplines({ active }: { active: boolean }) {
         <div className="w-[55%] flex flex-col justify-center px-[80px] pl-[100px]">
           {active && (
             <>
-              <p className="animate-fade-up stagger-1 text-primary font-medium tracking-[0.3em] uppercase text-[14px] mb-4">Cross-Training Mediums</p>
+              <p className="animate-fade-up stagger-1 text-primary font-medium tracking-[0.3em] uppercase text-[20px] mb-4">Cross-Training Mediums</p>
               <h2 className="animate-fade-up stagger-2 text-[56px] font-bold leading-[1] text-foreground mb-10">
                 <span className="text-primary">30+</span> Disciplines<br />Under One Roof
               </h2>
               <div className="animate-fade-up stagger-3 grid grid-cols-2 gap-x-12 gap-y-6">
                 {categories.map((cat, i) => (
                   <div key={i}>
-                    <h3 className={`${cat.color} text-[18px] font-bold uppercase tracking-wide mb-2`}>{cat.title}</h3>
-                    <ul className="space-y-0.5">
+                    <h3 className={`${cat.color} text-[22px] font-bold uppercase tracking-wide mb-2`}>{cat.title}</h3>
+                    <ul className="space-y-1">
                       {cat.items.map((item, j) => (
-                        <li key={j} className="text-secondary-foreground text-[14px] flex items-center gap-2">
-                          <span className="w-1 h-1 rounded-full bg-muted-foreground" />
+                        <li key={j} className="text-secondary-foreground text-[18px] flex items-center gap-2">
+                          <span className="w-1.5 h-1.5 rounded-full bg-muted-foreground" />
                           {item}
                         </li>
                       ))}
@@ -258,19 +258,19 @@ function SlideMarket({ active }: { active: boolean }) {
         <div className="relative z-10 flex flex-col justify-center h-full px-[120px]">
           {active && (
             <>
-              <p className="animate-fade-up stagger-1 text-primary font-medium tracking-[0.3em] uppercase text-[14px] mb-4">Market Opportunity</p>
+              <p className="animate-fade-up stagger-1 text-primary font-medium tracking-[0.3em] uppercase text-[20px] mb-4">Market Opportunity</p>
               <h2 className="animate-fade-up stagger-2 text-[60px] font-bold leading-[1] text-foreground mb-6">
                 A Massive, Underserved<br /><span className="text-primary">Athletic Performance Market</span>
               </h2>
-              <p className="animate-fade-up stagger-3 text-muted-foreground text-[18px] max-w-[800px] mb-12 leading-relaxed">
+              <p className="animate-fade-up stagger-3 text-muted-foreground text-[22px] max-w-[900px] mb-12 leading-relaxed">
                 Explosive market growth, rising participation, and increasing demand for integrated training facilities confirm the opportunity.
               </p>
               <div className="animate-fade-up stagger-4 grid grid-cols-3 gap-6">
                 {stats.map((s, i) => (
                   <div key={i} className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 text-center">
-                    <div className="text-primary text-[48px] font-bold leading-none mb-3">{s.value}</div>
-                    <div className="text-foreground text-[16px] font-semibold mb-1">{s.label}</div>
-                    <div className="text-muted-foreground text-[13px]">{s.sub}</div>
+                    <div className="text-primary text-[56px] font-bold leading-none mb-3">{s.value}</div>
+                    <div className="text-foreground text-[22px] font-semibold mb-1">{s.label}</div>
+                    <div className="text-muted-foreground text-[18px]">{s.sub}</div>
                   </div>
                 ))}
               </div>
@@ -298,7 +298,7 @@ function SlideTeam({ active }: { active: boolean }) {
         <div className="relative z-10 flex flex-col justify-center h-full px-[120px]">
         {active && (
           <>
-            <p className="animate-fade-up stagger-1 text-primary font-medium tracking-[0.3em] uppercase text-[14px] mb-4">Team & Credentials</p>
+            <p className="animate-fade-up stagger-1 text-primary font-medium tracking-[0.3em] uppercase text-[20px] mb-4">Team & Credentials</p>
             <h2 className="animate-fade-up stagger-2 text-[60px] font-bold leading-[1] text-foreground mb-12">
               The Team Behind <span className="text-primary">Iron Form</span>
             </h2>
@@ -310,21 +310,21 @@ function SlideTeam({ active }: { active: boolean }) {
                   </div>
                   <div>
                     <h3 className="text-foreground text-[22px] font-bold">{t.name}</h3>
-                    <p className="text-primary text-[14px] font-medium uppercase tracking-wider mb-3">{t.role}</p>
-                    <p className="text-muted-foreground text-[15px] leading-relaxed">{t.highlights}</p>
+                    <p className="text-primary text-[16px] font-medium uppercase tracking-wider mb-3">{t.role}</p>
+                    <p className="text-muted-foreground text-[17px] leading-relaxed">{t.highlights}</p>
                   </div>
                 </div>
               ))}
             </div>
             <div className="animate-fade-up stagger-4 mt-6 flex gap-5">
               <div className="flex-1 bg-primary/10 border border-primary/20 rounded-xl p-5">
-                <p className="text-foreground text-[14px]">
-                  <span className="font-bold text-primary">Partner Equity:</span> Josh Garret & Rick Villanueva hold 5% equity each (10% total) with 3–5 year performance-based vesting, plus 10–20% commission on specialty service revenue. Partner equity is separate from the investor round.
+                <p className="text-foreground text-[17px]">
+                  <span className="font-bold text-primary">Partner Equity:</span> Josh Garret & Rick Villanueva hold 5% equity each (10% total) with 3–5 year performance-based vesting. Partner equity is separate from the investor round.
                 </p>
               </div>
               <div className="flex-1 bg-secondary/50 border border-border rounded-xl p-5">
-                <p className="text-foreground text-[14px]">
-                  <span className="font-semibold">Coaches & Trainers:</span> Specialists across 20+ disciplines, martial arts, dance, conditioning, and film stunt coordination — to be recruited.
+                <p className="text-foreground text-[17px]">
+                  <span className="font-semibold">Coaches & Trainers:</span> Specialists across 20+ disciplines — to be recruited.
                 </p>
               </div>
             </div>
@@ -351,7 +351,7 @@ function SlideWhyAtlanta({ active }: { active: boolean }) {
         <div className="relative z-10 flex flex-col justify-center h-full px-[120px]">
           {active && (
             <>
-              <p className="animate-fade-up stagger-1 text-primary font-medium tracking-[0.3em] uppercase text-[14px] mb-4">Why Atlanta</p>
+              <p className="animate-fade-up stagger-1 text-primary font-medium tracking-[0.3em] uppercase text-[20px] mb-4">Why Atlanta</p>
               <h2 className="animate-fade-up stagger-2 text-[64px] font-bold leading-[1] text-foreground mb-14">
                 The Perfect City to<br />Launch <span className="text-primary">Iron Form</span>
               </h2>
@@ -360,8 +360,8 @@ function SlideWhyAtlanta({ active }: { active: boolean }) {
                   <div key={i} className="flex gap-6">
                     <span className="text-primary text-[48px] font-bold leading-none opacity-50">{r.num}</span>
                     <div>
-                      <h3 className="text-foreground text-[22px] font-bold mb-2">{r.title}</h3>
-                      <p className="text-muted-foreground text-[15px] leading-relaxed">{r.desc}</p>
+                      <h3 className="text-foreground text-[26px] font-bold mb-2">{r.title}</h3>
+                      <p className="text-muted-foreground text-[18px] leading-relaxed">{r.desc}</p>
                     </div>
                   </div>
                 ))}
@@ -394,21 +394,21 @@ function SlideFilmIndustry({ active }: { active: boolean }) {
         <div className="w-[50%] flex flex-col justify-center px-[80px]">
           {active && (
             <>
-              <p className="animate-fade-up stagger-1 text-primary font-medium tracking-[0.3em] uppercase text-[14px] mb-4">Film & Stunt Wing</p>
+              <p className="animate-fade-up stagger-1 text-primary font-medium tracking-[0.3em] uppercase text-[20px] mb-4">Film & Stunt Wing</p>
               <h2 className="animate-fade-up stagger-2 text-[56px] font-bold leading-[1] text-foreground mb-4">
                 Where Action<br />Meets <span className="text-primary">Production</span>
               </h2>
-              <p className="animate-fade-up stagger-3 text-muted-foreground text-[16px] mb-10 leading-relaxed max-w-[600px]">
-                Actors, stunt performers, and circus artists train at Iron Form. Productions rent dedicated space for rehearsals, previsualization, and action design. We're also exploring partnerships with Cirque du Soleil for training residencies during their Atlanta shows.
+              <p className="animate-fade-up stagger-3 text-muted-foreground text-[20px] mb-10 leading-relaxed max-w-[600px]">
+                Actors, stunt performers, and circus artists train at Iron Form. We're exploring partnerships with Cirque du Soleil for training residencies during their Atlanta shows.
               </p>
               <div className="animate-fade-up stagger-4 grid grid-cols-2 gap-4">
                 {capabilities.map((c, i) => (
                   <div key={i} className="bg-secondary border border-border rounded-xl p-5">
                     <div className="flex items-center gap-3 mb-2">
-                      <span className="text-[24px]">{c.icon}</span>
-                      <h3 className="text-foreground text-[16px] font-semibold">{c.label}</h3>
+                      <span className="text-[28px]">{c.icon}</span>
+                      <h3 className="text-foreground text-[20px] font-semibold">{c.label}</h3>
                     </div>
-                    <p className="text-muted-foreground text-[13px] leading-relaxed">{c.desc}</p>
+                    <p className="text-muted-foreground text-[16px] leading-relaxed">{c.desc}</p>
                   </div>
                 ))}
               </div>
