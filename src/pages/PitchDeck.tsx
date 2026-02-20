@@ -22,6 +22,7 @@ import SlideEmployeeStructure from "@/components/pitch/SlideEmployeeStructure";
 import SlideCommunityOutreach from "@/components/pitch/SlideCommunityOutreach";
 import SlideLongTermVision from "@/components/pitch/SlideLongTermVision";
 import SlideUseOfFundsDetailed from "@/components/pitch/SlideUseOfFundsDetailed";
+import SlideSmartBuild from "@/components/pitch/SlideSmartBuild";
 import SlideMarketGrowth from "@/components/pitch/SlideMarketGrowth";
 import SlideCompetitiveAnalysis from "@/components/pitch/SlideCompetitiveAnalysis";
 import SlideTimeline from "@/components/pitch/SlideTimeline";
@@ -494,6 +495,7 @@ const SLIDES = [
   { component: SlideFinancialProjections, title: "Financial Overview" },
   { component: SlideOperatingCosts, title: "Operating Costs" },
   { component: SlideUseOfFundsDetailed, title: "Use of Funds" },
+  { component: SlideSmartBuild, title: "Smart Build Strategy" },
   { component: SlideMarketingStrategy, title: "Marketing" },
 
   // ACT 5: Impact & The Ask
