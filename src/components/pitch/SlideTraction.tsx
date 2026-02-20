@@ -71,6 +71,9 @@ export default function SlideTraction({ active }: { active: boolean }) {
                   </div>
                 </div>
               </div>
+              <p className="animate-fade-up stagger-5 absolute bottom-6 left-[100px] right-[100px] text-muted-foreground/50 text-[11px] leading-tight">
+                Sources: Growjo – IMG Academy Revenue Estimate 2024; Life Time Group Holdings SEC Filing (Feb 2025); F45 Training Press Release 2024; IHRSA Industry Benchmark Reports
+              </p>
             </>
           )}
         </div>

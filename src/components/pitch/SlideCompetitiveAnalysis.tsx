@@ -64,6 +64,9 @@ export default function SlideCompetitiveAnalysis({ active }: { active: boolean }
                 <span className="font-bold text-primary">Iron Form Advantage:</span> The only facility combining elite multi-sport training, integrated medical, recovery tech, and a film & stunt wing.
               </p>
             </div>
+            <p className="animate-fade-up stagger-5 absolute bottom-6 left-[100px] right-[100px] text-muted-foreground/50 text-[11px] leading-tight">
+              Sources: IMG Academy public program listings; EXOS corporate training site; D1 Training franchise overview; Plex facility site; Iron Form internal competitive research
+            </p>
           </>
         )}
       </div>

@@ -93,6 +93,9 @@ export default function SlideRevenueDetailed({ active }: { active: boolean }) {
                   <span className="text-accent text-[34px] font-bold">$2.87M</span>
                 </div>
               </div>
+              <p className="animate-fade-up stagger-5 absolute bottom-6 left-[100px] right-[100px] text-muted-foreground/50 text-[11px] leading-tight">
+                Sources: IHRSA Membership Pricing Benchmarks 2024; Iron Form internal financial models; comparable facility revenue data (IMG Academy, Life Time, F45)
+              </p>
             </>
           )}
         </div>
