@@ -30,12 +30,12 @@ export default function SlideFinancialProjections({ active }: { active: boolean 
     <ScaledSlide>
       <div className="relative w-full h-full">
         <img src={heroConstruction} alt="" className="absolute inset-0 w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-black/92" />
-        <div className="relative z-10 flex flex-col justify-center h-full px-[100px]">
+        <div className="absolute inset-0 bg-black/75" />
+        <div className="relative z-10 flex flex-col justify-center h-full px-[100px]" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.9), 0 0 2px rgba(0,0,0,1)' }}>
         {active && (
           <>
             <p className="animate-fade-up stagger-1 text-primary font-medium tracking-[0.3em] uppercase text-[20px] mb-3">Financial Overview</p>
-            <h2 className="animate-fade-up stagger-2 text-[56px] font-bold leading-[1] text-foreground mb-8">
+            <h2 className="animate-fade-up stagger-2 text-[56px] font-bold leading-[1] text-white mb-8">
               Investment & <span className="text-primary">Projected Returns</span>
             </h2>
             <div className="animate-fade-up stagger-3 flex gap-10 mb-6">
