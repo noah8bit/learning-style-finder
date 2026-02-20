@@ -11,7 +11,7 @@ export default function SlideMarketingStrategy({ active }: { active: boolean }) 
   ];
 
   const campaigns = [
-    { phase: "Pre-Launch (6 mo)", items: ["Social media teaser campaign with construction updates", "Email waitlist with early-bird pricing ($150/mo vs $200)", "Influencer facility walk-through videos (500K+ reach)"], color: "text-accent", dot: "bg-accent" },
+    { phase: "Pre-Launch (6 mo)", items: ["Social media teaser campaign with construction updates", "Email waitlist with founding member pricing ($149/mo vs $199 Core Access)", "Influencer facility walk-through videos (500K+ reach)"], color: "text-accent", dot: "bg-accent" },
     { phase: "Launch Month", items: ["Invite-only soft launch for 50 founding members", "Grand opening event with local celebrity athlete", "Free community fitness day — 500+ attendees target"], color: "text-primary", dot: "bg-primary" },
     { phase: "Growth (Year 1)", items: ["Referral program: free month for each sign-up", "Corporate wellness pilot with 3 Atlanta companies", "Monthly athlete spotlight on YouTube & Instagram"], color: "text-foreground", dot: "bg-foreground/50" },
   ];
