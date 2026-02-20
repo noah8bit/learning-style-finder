@@ -25,12 +25,12 @@ export default function SlideRevenueDetailed({ active }: { active: boolean }) {
     <ScaledSlide>
       <div className="relative w-full h-full">
         <img src={heroTrack} alt="" className="absolute inset-0 w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-black/92" />
+        <div className="absolute inset-0 bg-black" />
         <div className="relative z-10 flex flex-col justify-center h-full px-[100px]">
           {active && (
             <>
               <p className="animate-fade-up stagger-1 text-primary font-medium tracking-[0.3em] uppercase text-[20px] mb-3">Revenue Breakdown</p>
-              <h2 className="animate-fade-up stagger-2 text-[60px] font-bold leading-[1] text-foreground mb-8">
+              <h2 className="animate-fade-up stagger-2 text-[60px] font-bold leading-[1] text-white mb-8">
                 Projected Annual <span className="text-primary">Revenue</span>
               </h2>
               <div className="animate-fade-up stagger-3 flex gap-10">
