@@ -494,15 +494,16 @@ const SLIDES = [
   })),
   { component: SlideFinancialProjections, title: "Financial Overview" },
   { component: SlideOperatingCosts, title: "Operating Costs" },
-  { component: SlideUseOfFundsDetailed, title: "Use of Funds" },
   { component: SlideSmartBuild, title: "Smart Build" },
-  { component: SlideMarketingStrategy, title: "Marketing" },
+  { component: SlideUseOfFundsDetailed, title: "Use of Funds" },
+  { component: SlideCostBenefit, title: "Cost vs Benefit" },
 
-  // ACT 5: Impact & The Ask
-  { component: SlideCommunityOutreach, title: "Community Impact" },
+  // ACT 5: The Ask
   { component: SlideInvestmentAsk, title: "The Ask" },
 
-  // ACT 6: Execution & Close
+  // ACT 6: Execution & Community
+  { component: SlideCommunityOutreach, title: "Community Impact" },
+  { component: SlideMarketingStrategy, title: "Marketing" },
   { component: SlideTimeline, title: "Timeline" },
   { component: SlideRiskManagement, title: "Risk Management" },
   { component: SlideLongTermVision, title: "Vision" },
