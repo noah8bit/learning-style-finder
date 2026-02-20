@@ -495,7 +495,7 @@ const SLIDES = [
   { component: SlideFinancialProjections, title: "Financial Overview" },
   { component: SlideOperatingCosts, title: "Operating Costs" },
   { component: SlideUseOfFundsDetailed, title: "Use of Funds" },
-  { component: SlideSmartBuild, title: "Smart Build Strategy" },
+  { component: SlideSmartBuild, title: "Smart Build" },
   { component: SlideMarketingStrategy, title: "Marketing" },
 
   // ACT 5: Impact & The Ask
