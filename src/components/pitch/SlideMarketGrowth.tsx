@@ -1,4 +1,4 @@
-import heroAtlanta from "@/assets/pitch/hero-atlanta.jpg";
+import heroAtlantaGrowth from "@/assets/pitch/hero-atlanta-growth.jpg";
 import ScaledSlide from "./ScaledSlide";
 
 export default function SlideMarketGrowth({ active }: { active: boolean }) {
@@ -25,7 +25,7 @@ export default function SlideMarketGrowth({ active }: { active: boolean }) {
   return (
     <ScaledSlide>
       <div className="relative w-full h-full">
-        <img src={heroAtlanta} alt="" className="absolute inset-0 w-full h-full object-cover" />
+        <img src={heroAtlantaGrowth} alt="" className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 bg-black/90" />
         <div className="relative z-10 flex flex-col justify-center h-full px-[120px]">
           {active && (

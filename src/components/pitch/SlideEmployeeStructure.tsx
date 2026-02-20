@@ -1,4 +1,4 @@
-import heroPersonalTraining from "@/assets/pitch/hero-personal-training.jpg";
+import heroStaff from "@/assets/pitch/hero-staff.jpg";
 import ScaledSlide from "./ScaledSlide";
 
 export default function SlideEmployeeStructure({ active }: { active: boolean }) {
@@ -14,7 +14,7 @@ export default function SlideEmployeeStructure({ active }: { active: boolean }) 
   return (
     <ScaledSlide>
       <div className="relative w-full h-full">
-        <img src={heroPersonalTraining} alt="Personal training session" className="absolute inset-0 w-full h-full object-cover" />
+        <img src={heroStaff} alt="Training staff team" className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 bg-black/85" />
         <div className="relative z-10 flex flex-col justify-center h-full px-[120px]">
         {active && (

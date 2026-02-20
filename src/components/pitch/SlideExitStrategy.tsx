@@ -1,11 +1,11 @@
-import heroConstruction from "@/assets/pitch/hero-construction.jpg";
+import heroExitStrategy from "@/assets/pitch/hero-exit-strategy.jpg";
 import ScaledSlide from "./ScaledSlide";
 
 export default function SlideExitStrategy({ active }: { active: boolean }) {
   return (
     <ScaledSlide>
       <div className="relative w-full h-full">
-        <img src={heroConstruction} alt="" className="absolute inset-0 w-full h-full object-cover" />
+        <img src={heroExitStrategy} alt="" className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 bg-black/90" />
         <div className="relative z-10 flex flex-col justify-center h-full px-[100px]" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.9), 0 0 2px rgba(0,0,0,1)' }}>
           {active && (
