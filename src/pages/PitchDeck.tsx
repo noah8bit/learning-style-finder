@@ -23,6 +23,7 @@ import SlideCommunityOutreach from "@/components/pitch/SlideCommunityOutreach";
 import SlideLongTermVision from "@/components/pitch/SlideLongTermVision";
 import SlideUseOfFundsDetailed from "@/components/pitch/SlideUseOfFundsDetailed";
 import SlideSmartBuild from "@/components/pitch/SlideSmartBuild";
+import SlideExitStrategy from "@/components/pitch/SlideExitStrategy";
 import SlideMarketGrowth from "@/components/pitch/SlideMarketGrowth";
 import SlideCompetitiveAnalysis from "@/components/pitch/SlideCompetitiveAnalysis";
 import SlideTimeline from "@/components/pitch/SlideTimeline";
@@ -498,8 +499,9 @@ const SLIDES = [
   { component: SlideUseOfFundsDetailed, title: "Use of Funds" },
   { component: SlideCostBenefit, title: "Cost vs Benefit" },
 
-  // ACT 5: The Ask
+  // ACT 5: The Ask & Returns
   { component: SlideInvestmentAsk, title: "The Ask" },
+  { component: SlideExitStrategy, title: "Exit Strategy" },
 
   // ACT 6: Execution & Community
   { component: SlideCommunityOutreach, title: "Community Impact" },

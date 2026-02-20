@@ -9,10 +9,10 @@ export default function SlideLongTermVision({ active }: { active: boolean }) {
     { icon: "🎓", title: "Grants & Scholarships", desc: "Financial support for underserved athletes to access top-tier training." },
   ];
 
-  const exitPaths = [
-    { icon: "🔁", title: "Franchise Model", desc: "Proven playbook replicated across 10+ metros by Year 7. Comparable: F45 scaled from 1 to 1,750+ locations in 8 years." },
-    { icon: "🏦", title: "Strategic Acquisition", desc: "Target for Life Time, Equinox, or PE firms. Comparable: TMPL Gym acquired for $30M (single NYC location). Multi-sport facilities command 6–10x EBITDA." },
-    { icon: "💸", title: "Cash-Flow Distributions", desc: "Projected 3–5x return within 5–7 years. Year 3+ net margins of 40%+ enable quarterly profit distributions to investors." },
+  const milestones = [
+    { icon: "📍", title: "Year 1–2: Establish & Prove", desc: "Build membership to 500+, hit profitability, validate every revenue stream, build brand authority in Atlanta." },
+    { icon: "📈", title: "Year 3–4: Scale & Optimize", desc: "Expand digital platform nationally, launch franchise pilot, grow corporate partnerships to 10+." },
+    { icon: "🌎", title: "Year 5+: Replicate & Dominate", desc: "Open 3–5 franchise locations, license training IP, become the national standard for multi-sport facilities." },
   ];
 
   return (
@@ -38,13 +38,13 @@ export default function SlideLongTermVision({ active }: { active: boolean }) {
               </div>
 
               <div className="animate-fade-up stagger-4">
-                <h3 className="text-accent text-[22px] font-bold mb-5 uppercase tracking-wider">Exit Strategy & Returns</h3>
+                <h3 className="text-accent text-[22px] font-bold mb-5 uppercase tracking-wider">Growth Roadmap</h3>
                 <div className="grid grid-cols-3 gap-5">
-                  {exitPaths.map((e, i) => (
+                  {milestones.map((m, i) => (
                     <div key={i} className="bg-accent/10 border border-accent/30 rounded-xl p-7">
-                      <span className="text-[40px] mb-3 block">{e.icon}</span>
-                      <h3 className="text-accent text-[24px] font-bold mb-2">{e.title}</h3>
-                      <p className="text-muted-foreground text-[20px] leading-relaxed">{e.desc}</p>
+                      <span className="text-[40px] mb-3 block">{m.icon}</span>
+                      <h3 className="text-accent text-[24px] font-bold mb-2">{m.title}</h3>
+                      <p className="text-muted-foreground text-[20px] leading-relaxed">{m.desc}</p>
                     </div>
                   ))}
                 </div>
