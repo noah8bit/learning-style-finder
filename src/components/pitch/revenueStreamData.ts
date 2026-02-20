@@ -9,6 +9,12 @@ import heroFilmStudio from "@/assets/pitch/hero-film-studio.jpg";
 import heroPilates from "@/assets/pitch/hero-pilates.jpg";
 import heroRockClimbing from "@/assets/pitch/hero-rockclimbing.jpg";
 import heroYouthSports from "@/assets/pitch/hero-youth-sports.jpg";
+import heroCafe from "@/assets/pitch/hero-cafe.jpg";
+import heroCryotherapy from "@/assets/pitch/hero-cryotherapy.jpg";
+import heroIvClinic from "@/assets/pitch/hero-iv-clinic.jpg";
+import heroCorporateWellness from "@/assets/pitch/hero-corporate-wellness.jpg";
+import heroProshop from "@/assets/pitch/hero-proshop.jpg";
+import heroEventSpace from "@/assets/pitch/hero-event-space.jpg";
 import type { RevenueStreamData } from "./SlideRevenueStream";
 
 export const revenueStreams: RevenueStreamData[] = [
@@ -94,7 +100,7 @@ export const revenueStreams: RevenueStreamData[] = [
     subtitle: "Event space, production rentals, and private bookings",
     total: "$156K",
     type: "core",
-    heroImage: heroConstruction,
+    heroImage: heroEventSpace,
     assumptions: [
       { label: "Rentable Sq Ft", value: "~15,000" },
       { label: "Avg Rental Rate", value: "$1,000/event" },
@@ -113,7 +119,7 @@ export const revenueStreams: RevenueStreamData[] = [
     subtitle: "Enterprise health & fitness programs for Atlanta companies",
     total: "$180K",
     type: "enhanced",
-    heroImage: heroPersonalTraining,
+    heroImage: heroCorporateWellness,
     assumptions: [
       { label: "Target Corporate Clients", value: "3" },
       { label: "Avg Monthly Contract", value: "$5,000" },
@@ -208,7 +214,7 @@ export const revenueStreams: RevenueStreamData[] = [
     subtitle: "Drop-ins, Recovery Pass subscriptions, and credit packs",
     total: "$190K",
     type: "enhanced",
-    heroImage: heroRecovery,
+    heroImage: heroCryotherapy,
     assumptions: [
       { label: "Daily Drop-In Visits", value: "10" },
       { label: "Avg Drop-In Price", value: "$40" },
@@ -265,7 +271,7 @@ export const revenueStreams: RevenueStreamData[] = [
     subtitle: "Performance wellness, IV therapy, and peptide protocols",
     total: "$300K",
     type: "enhanced",
-    heroImage: heroRecovery,
+    heroImage: heroIvClinic,
     assumptions: [
       { label: "IV Therapy Sessions/Day", value: "6" },
       { label: "Avg IV Session Price", value: "$200" },
@@ -284,7 +290,7 @@ export const revenueStreams: RevenueStreamData[] = [
     subtitle: "Smoothie bar, healthy café, and custom meal prep",
     total: "$175K",
     type: "enhanced",
-    heroImage: heroGym,
+    heroImage: heroCafe,
     assumptions: [
       { label: "Avg Daily Transactions", value: "60" },
       { label: "Avg Ticket (Smoothie/Meal)", value: "$12" },
@@ -303,7 +309,7 @@ export const revenueStreams: RevenueStreamData[] = [
     subtitle: "Equipment, supplements, branded merchandise, and gear",
     total: "$50K",
     type: "enhanced",
-    heroImage: heroGym,
+    heroImage: heroProshop,
     assumptions: [
       { label: "Avg Monthly Revenue", value: "$4,200" },
       { label: "Branded Merch (Shirts, Bags)", value: "$15K/yr" },
