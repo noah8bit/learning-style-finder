@@ -100,6 +100,9 @@ export default function SlideFinancialProjections({ active }: { active: boolean 
                 </div>
               ))}
             </div>
+            <p className="animate-fade-up stagger-5 absolute bottom-6 left-[100px] right-[100px] text-muted-foreground/50 text-[11px] leading-tight">
+              Sources: RSMeans Construction Cost Data 2024; IHRSA Industry Benchmark Reports; Iron Form internal financial models
+            </p>
           </>
         )}
         </div>

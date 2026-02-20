@@ -84,7 +84,7 @@ export default function SlideCostBenefit({ active }: { active: boolean }) {
               </div>
             </div>
             <p className="animate-fade-up stagger-5 absolute bottom-6 left-[100px] right-[100px] text-muted-foreground/50 text-[11px] leading-tight">
-              Sources: RSMeans Construction Cost Data; IHRSA Industry Benchmark Reports; Georgia Film Commission Economic Impact Study; Iron Form internal projections
+              Sources: RSMeans Construction Cost Data 2024; IHRSA Industry Benchmark Reports; Georgia Film Commission Economic Impact Study; Straits Research – Sports Medicine Market; Iron Form internal projections
             </p>
           </>
         )}

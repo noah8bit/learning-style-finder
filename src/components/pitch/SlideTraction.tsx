@@ -58,10 +58,10 @@ export default function SlideTraction({ active }: { active: boolean }) {
                   <h3 className="text-accent text-[20px] font-bold mb-3 uppercase tracking-wider">Comparable Facility Revenue</h3>
                   <div className="space-y-2">
                     {[
-                      "IMG Academy (Bradenton, FL): $80M+/yr revenue across multi-sport campus",
-                      "Life Time Fitness: $6.7B revenue (2023), avg $4.2M/location/yr",
-                      "F45 Training: Avg franchise $500K–$1M/yr with 1/60th our sq ft",
-                      "Avg Atlanta CrossFit box: $300K–$500K/yr with single-discipline focus",
+                      "IMG Academy (Bradenton, FL): ~$303M/yr revenue across multi-sport campus (Growjo 2024)",
+                      "Life Time Fitness: $6.6B revenue FY2024, ~175 locations (LTH SEC Filing, Feb 2025)",
+                      "F45 Training: 1,500+ studios globally, 12.4% AUV growth in 2024 (F45 Press Release)",
+                      "Avg Atlanta CrossFit box: $300K–$500K/yr with single-discipline focus (IHRSA benchmarks)",
                     ].map((s, i) => (
                       <div key={i} className="flex items-start gap-2">
                         <span className="text-accent text-[20px] mt-0.5 shrink-0">•</span>
