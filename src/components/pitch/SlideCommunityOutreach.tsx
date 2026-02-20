@@ -5,7 +5,7 @@ export default function SlideCommunityOutreach({ active }: { active: boolean }) 
   const strategies = [
     { icon: "🔍", title: "Talent Scouting", desc: "Scouts attend local tournaments and school events to identify exceptional young athletes." },
     { icon: "🏫", title: "School Partnerships", desc: "After-school programs and discounted memberships for student-athletes." },
-    { icon: "🤝", title: "Non-Profit Collaborations", desc: "Work with Boys & Girls Clubs, YMCA, and local sports foundations." },
+    { icon: "🤝", title: "Non-Profit Collabs", desc: "Work with Boys & Girls Clubs, YMCA, and local sports foundations." },
     { icon: "🏆", title: "Fitness Competitions", desc: "Host Hyrox, CrossFit, strongman, and multi-sport challenge events." },
     { icon: "🎓", title: "Scholarship Fund", desc: "Grant-funded training, equipment, and competition fees for low-income athletes." },
     { icon: "📢", title: "Community Events", desc: "Open-house days, family sports festivals, youth clinics, and fitness expos." },
@@ -28,10 +28,10 @@ export default function SlideCommunityOutreach({ active }: { active: boolean }) 
             </p>
             <div className="animate-fade-up stagger-4 grid grid-cols-3 gap-6">
               {strategies.map((s, i) => (
-                <div key={i} className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-7">
-                  <span className="text-[36px] mb-3 block">{s.icon}</span>
-                  <h3 className="text-foreground text-[24px] font-bold mb-2">{s.title}</h3>
-                  <p className="text-muted-foreground text-[18px] leading-relaxed">{s.desc}</p>
+                <div key={i} className="bg-white/8 backdrop-blur-sm border border-white/15 rounded-xl p-8">
+                  <span className="text-[44px] mb-4 block">{s.icon}</span>
+                  <h3 className="text-foreground text-[26px] font-bold mb-3">{s.title}</h3>
+                  <p className="text-muted-foreground text-[22px] leading-relaxed">{s.desc}</p>
                 </div>
               ))}
             </div>

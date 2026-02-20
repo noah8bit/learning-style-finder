@@ -6,7 +6,6 @@ export default function SlideDifferentiators({ active }: { active: boolean }) {
     { icon: "🏥", title: "Integrated Medical & Recovery", benefit: "Sports medicine combined with everyday training — performance and recovery under one roof." },
     { icon: "🏋", title: "30+ Training Disciplines", benefit: "One-stop hub for diverse athletic needs — unlike single-discipline competitors." },
     { icon: "🎬", title: "Film, Stunt & Circus Wing", benefit: "Stunt performers, circus artists, and Cirque du Soleil training in Atlanta's booming film market." },
-    { icon: "🌍", title: "Community Outreach", benefit: "Scouting and mentoring undiscovered talent — accessibility over profit-first models." },
     { icon: "🏆", title: "Competition Hosting", benefit: "Purpose-built for Hyrox, CrossFit, strongman, and multi-sport fitness competitions." },
     { icon: "⚡", title: "High-Tech Recovery", benefit: "Cryotherapy, infrared therapy, peptide wellness — forefront of performance innovation." },
     { icon: "🏃", title: "Olympic Track & Field", benefit: "Sprint lanes, jumping pits, throwing cages, and hurdle training — rare outside collegiate facilities." },
@@ -24,13 +23,13 @@ export default function SlideDifferentiators({ active }: { active: boolean }) {
               <h2 className="animate-fade-up stagger-2 text-[60px] font-bold leading-[1] text-foreground mb-10">
                 What Makes Iron Form <span className="text-primary">Different</span>
               </h2>
-              <div className="animate-fade-up stagger-3 grid grid-cols-2 gap-x-10 gap-y-5">
+              <div className="animate-fade-up stagger-3 grid grid-cols-2 gap-6">
                 {diffs.map((d, i) => (
-                  <div key={i} className="flex gap-5 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6">
-                    <span className="text-[36px] shrink-0">{d.icon}</span>
+                  <div key={i} className="flex gap-5 bg-white/8 backdrop-blur-sm border border-white/15 rounded-xl p-7">
+                    <span className="text-[44px] shrink-0">{d.icon}</span>
                     <div>
-                      <h3 className="text-foreground text-[22px] font-bold mb-1">{d.title}</h3>
-                      <p className="text-muted-foreground text-[18px] leading-relaxed">{d.benefit}</p>
+                      <h3 className="text-foreground text-[26px] font-bold mb-2">{d.title}</h3>
+                      <p className="text-muted-foreground text-[22px] leading-relaxed">{d.benefit}</p>
                     </div>
                   </div>
                 ))}

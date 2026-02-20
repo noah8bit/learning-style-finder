@@ -68,10 +68,10 @@ function SlideCover({ active }: { active: boolean }) {
 
 function SlideProblem({ active }: { active: boolean }) {
   const problems = [
-    { icon: "⚡", title: "Fragmented Resources", desc: "Athletes are forced to travel between multiple facilities for training, rehab, therapy, and recovery — wasting valuable time and disrupting tight schedules. Consolidating everything under one roof gives athletes back the hours that matter most." },
-    { icon: "🏅", title: "No Cross-Training Hub", desc: "There is no single destination in Atlanta where an athlete can train across multiple disciplines, access neuromuscular therapy, recovery science, and coaching all under one roof — with the flexibility to train as publicly or as privately as their needs require." },
-    { icon: "💰", title: "Access & Affordability", desc: "Elite-level training tools, recovery tech, and sports medicine are typically reserved for those who can afford premium pricing. Iron Form levels the playing field through tiered memberships, insurance partnerships, and grant-funded programs." },
-    { icon: "🌟", title: "Community Outreach", desc: "Financial barriers should never prevent a gifted athlete from reaching their full potential. Iron Form actively scouts and mentors undiscovered talent across Atlanta's communities, connecting them with coaching, resources, and opportunities they wouldn't otherwise have." },
+    { icon: "⚡", title: "Fragmented Resources", desc: "Athletes travel between multiple facilities for training, rehab, and recovery — wasting time. Iron Form consolidates everything under one roof." },
+    { icon: "🏅", title: "No Cross-Training Hub", desc: "No single destination in Atlanta for multi-discipline training, neuromuscular therapy, recovery science, and coaching." },
+    { icon: "💰", title: "Access & Affordability", desc: "Elite training tools and sports medicine are reserved for premium pricing. Iron Form levels the field through tiered memberships and grants." },
+    { icon: "🌟", title: "Community Outreach", desc: "Iron Form scouts and mentors undiscovered talent across Atlanta, connecting them with coaching and opportunities." },
   ];
   return (
     <ScaledSlide>
@@ -88,15 +88,15 @@ function SlideProblem({ active }: { active: boolean }) {
                 Every Athlete Deserves<br />
                 <span className="text-primary">Elite-Level Support</span>
               </h2>
-              <div className="space-y-8">
+              <div className="space-y-5">
                 {problems.map((p, i) => (
-                  <div key={i} className={`animate-fade-up stagger-${i + 3} flex gap-6`}>
-                    <div className="w-[56px] h-[56px] rounded-lg bg-secondary flex items-center justify-center text-[28px] shrink-0">
+                  <div key={i} className={`animate-fade-up stagger-${i + 3} flex gap-6 bg-secondary border border-border rounded-xl p-6`}>
+                    <div className="w-[64px] h-[64px] rounded-lg bg-primary/10 flex items-center justify-center text-[36px] shrink-0">
                       {p.icon}
                     </div>
                     <div>
-                      <h3 className="text-[24px] font-semibold text-foreground mb-1">{p.title}</h3>
-                      <p className="text-muted-foreground text-[18px] leading-relaxed">{p.desc}</p>
+                      <h3 className="text-[26px] font-bold text-foreground mb-2">{p.title}</h3>
+                      <p className="text-muted-foreground text-[22px] leading-relaxed">{p.desc}</p>
                     </div>
                   </div>
                 ))}
@@ -135,11 +135,11 @@ function SlideSolution({ active }: { active: boolean }) {
               <p className="animate-fade-up stagger-3 text-secondary-foreground text-[22px] max-w-[900px] mb-14 leading-relaxed font-light">
                 A comprehensive high-performance campus built for aspiring and elite athletes across every sport — integrated rehabilitation, recovery science, and medical services, all under one roof.
               </p>
-              <div className="grid grid-cols-4 gap-4">
+              <div className="grid grid-cols-4 gap-5">
                 {features.map((f, i) => (
-                  <div key={i} className={`animate-fade-up stagger-${Math.min(i + 3, 6)} bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl px-6 py-5 flex items-center gap-4`}>
-                    <span className="text-[32px]">{f.icon}</span>
-                    <span className="text-foreground text-[22px] font-medium">{f.label}</span>
+                  <div key={i} className={`animate-fade-up stagger-${Math.min(i + 3, 6)} bg-white/8 backdrop-blur-sm border border-white/15 rounded-xl px-7 py-6 flex items-center gap-5`}>
+                    <span className="text-[40px]">{f.icon}</span>
+                    <span className="text-foreground text-[24px] font-semibold">{f.label}</span>
                   </div>
                 ))}
               </div>
@@ -153,13 +153,12 @@ function SlideSolution({ active }: { active: boolean }) {
 
 function SlideServices({ active }: { active: boolean }) {
   const diffs = [
-    { icon: "🏥", title: "Integrated Medical & Recovery", benefit: "Neuromuscular therapy and peptide clinics on-site — bridging elite sports medicine with everyday training." },
-    { icon: "🏋", title: "30+ Training Disciplines", benefit: "One-stop hub for diverse athletic needs — martial arts, track & field, swimming, dance, and more." },
-    { icon: "🎬", title: "Film, Stunt & Circus Wing", benefit: "High-ceiling rigging, aerial training, and circus arts in Georgia's #1-ranked film production market." },
-    { icon: "🌍", title: "Community Outreach", benefit: "Scouting and mentoring undiscovered talent — accessibility over profit-first models." },
-    { icon: "🏆", title: "Competition Hosting", benefit: "Purpose-built for Hyrox, CrossFit, strongman, and multi-sport fitness competitions." },
-    { icon: "⚡", title: "Recovery Tech Suite", benefit: "Cryotherapy, infrared, PEMF, Normatec, sauna & cold plunge — forefront of performance innovation." },
-    { icon: "🏃", title: "Olympic Track & Field", benefit: "Full sprint lanes, jumping pits, throwing cages, and hurdle training for elite track athletes." },
+    { icon: "🏥", title: "Integrated Medical & Recovery", benefit: "Neuromuscular therapy and peptide clinics on-site — elite sports medicine with everyday training." },
+    { icon: "🏋", title: "30+ Training Disciplines", benefit: "One-stop hub — martial arts, track & field, swimming, dance, and more." },
+    { icon: "🎬", title: "Film, Stunt & Circus Wing", benefit: "Aerial training and circus arts in Georgia's #1 film production market." },
+    { icon: "🏆", title: "Competition Hosting", benefit: "Purpose-built for Hyrox, CrossFit, strongman, and multi-sport fitness events." },
+    { icon: "⚡", title: "Recovery Tech Suite", benefit: "Cryotherapy, infrared, PEMF, Normatec, sauna & cold plunge." },
+    { icon: "🏃", title: "Olympic Track & Field", benefit: "Sprint lanes, jumping pits, throwing cages, and hurdle training." },
   ];
   return (
     <ScaledSlide>
@@ -173,13 +172,13 @@ function SlideServices({ active }: { active: boolean }) {
               <h2 className="animate-fade-up stagger-2 text-[56px] font-bold leading-[1] text-foreground mb-12">
                 What Makes Iron Form <span className="text-primary">Different</span>
               </h2>
-              <div className="animate-fade-up stagger-3 grid grid-cols-2 gap-x-10 gap-y-5">
+              <div className="animate-fade-up stagger-3 grid grid-cols-2 gap-6">
                 {diffs.map((d, i) => (
-                  <div key={i} className="flex gap-5 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-5">
-                    <span className="text-[30px] shrink-0">{d.icon}</span>
+                  <div key={i} className="flex gap-5 bg-white/8 backdrop-blur-sm border border-white/15 rounded-xl p-7">
+                    <span className="text-[40px] shrink-0">{d.icon}</span>
                     <div>
-                      <h3 className="text-foreground text-[22px] font-bold mb-1">{d.title}</h3>
-                      <p className="text-muted-foreground text-[18px] leading-relaxed">{d.benefit}</p>
+                      <h3 className="text-foreground text-[26px] font-bold mb-2">{d.title}</h3>
+                      <p className="text-muted-foreground text-[22px] leading-relaxed">{d.benefit}</p>
                     </div>
                   </div>
                 ))}
@@ -215,11 +214,11 @@ function SlideDisciplines({ active }: { active: boolean }) {
               <div className="animate-fade-up stagger-3 grid grid-cols-2 gap-x-12 gap-y-6">
                 {categories.map((cat, i) => (
                   <div key={i}>
-                    <h3 className={`${cat.color} text-[22px] font-bold uppercase tracking-wide mb-2`}>{cat.title}</h3>
-                    <ul className="space-y-1">
+                    <h3 className={`${cat.color} text-[24px] font-bold uppercase tracking-wide mb-3`}>{cat.title}</h3>
+                    <ul className="space-y-1.5">
                       {cat.items.map((item, j) => (
-                        <li key={j} className="text-secondary-foreground text-[18px] flex items-center gap-2">
-                          <span className="w-1.5 h-1.5 rounded-full bg-muted-foreground" />
+                        <li key={j} className="text-secondary-foreground text-[20px] flex items-center gap-2">
+                          <span className="w-2 h-2 rounded-full bg-muted-foreground shrink-0" />
                           {item}
                         </li>
                       ))}
@@ -227,7 +226,6 @@ function SlideDisciplines({ active }: { active: boolean }) {
                   </div>
                 ))}
               </div>
-              <p className="animate-fade-up stagger-4 text-muted-foreground text-[12px] mt-6">Facility also features sauna & cold plunge variations, Olympic swimming lanes, and hosts elite athlete & coaching seminars.</p>
             </>
           )}
         </div>
@@ -305,25 +303,25 @@ function SlideTeam({ active }: { active: boolean }) {
             <div className="animate-fade-up stagger-3 grid grid-cols-2 gap-6">
               {team.map((t, i) => (
                 <div key={i} className="bg-secondary border border-border rounded-xl p-8 flex gap-6 items-start">
-                  <div className="w-[64px] h-[64px] rounded-full bg-primary/20 flex items-center justify-center text-primary text-[28px] font-bold shrink-0">
+                  <div className="w-[72px] h-[72px] rounded-full bg-primary/20 flex items-center justify-center text-primary text-[32px] font-bold shrink-0">
                     {t.name[0]}
                   </div>
                   <div>
-                    <h3 className="text-foreground text-[22px] font-bold">{t.name}</h3>
-                    <p className="text-primary text-[16px] font-medium uppercase tracking-wider mb-3">{t.role}</p>
-                    <p className="text-muted-foreground text-[17px] leading-relaxed">{t.highlights}</p>
+                    <h3 className="text-foreground text-[24px] font-bold">{t.name}</h3>
+                    <p className="text-primary text-[18px] font-medium uppercase tracking-wider mb-3">{t.role}</p>
+                    <p className="text-muted-foreground text-[20px] leading-relaxed">{t.highlights}</p>
                   </div>
                 </div>
               ))}
             </div>
             <div className="animate-fade-up stagger-4 mt-6 flex gap-5">
-              <div className="flex-1 bg-primary/10 border border-primary/20 rounded-xl p-5">
-                <p className="text-foreground text-[17px]">
-                  <span className="font-bold text-primary">Partner Equity:</span> Josh Garret & Rick Villanueva hold 5% equity each (10% total) with 3–5 year performance-based vesting. Partner equity is separate from the investor round.
+              <div className="flex-1 bg-primary/10 border border-primary/30 rounded-xl p-6">
+                <p className="text-foreground text-[20px]">
+                  <span className="font-bold text-primary">Partner Equity:</span> Josh & Rick hold 5% equity each (10% total) with 3–5 year performance-based vesting.
                 </p>
               </div>
-              <div className="flex-1 bg-secondary/50 border border-border rounded-xl p-5">
-                <p className="text-foreground text-[17px]">
+              <div className="flex-1 bg-secondary border border-border rounded-xl p-6">
+                <p className="text-foreground text-[20px]">
                   <span className="font-semibold">Coaches & Trainers:</span> Specialists across 20+ disciplines — to be recruited.
                 </p>
               </div>
@@ -355,13 +353,13 @@ function SlideWhyAtlanta({ active }: { active: boolean }) {
               <h2 className="animate-fade-up stagger-2 text-[64px] font-bold leading-[1] text-foreground mb-14">
                 The Perfect City to<br />Launch <span className="text-primary">Iron Form</span>
               </h2>
-              <div className="animate-fade-up stagger-3 grid grid-cols-2 gap-8">
+              <div className="animate-fade-up stagger-3 grid grid-cols-2 gap-6">
                 {reasons.map((r, i) => (
-                  <div key={i} className="flex gap-6">
-                    <span className="text-primary text-[48px] font-bold leading-none opacity-50">{r.num}</span>
+                  <div key={i} className="flex gap-6 bg-white/8 backdrop-blur-sm border border-white/15 rounded-xl p-7">
+                    <span className="text-primary text-[52px] font-bold leading-none opacity-60">{r.num}</span>
                     <div>
-                      <h3 className="text-foreground text-[26px] font-bold mb-2">{r.title}</h3>
-                      <p className="text-muted-foreground text-[18px] leading-relaxed">{r.desc}</p>
+                      <h3 className="text-foreground text-[28px] font-bold mb-2">{r.title}</h3>
+                      <p className="text-muted-foreground text-[22px] leading-relaxed">{r.desc}</p>
                     </div>
                   </div>
                 ))}
@@ -398,17 +396,17 @@ function SlideFilmIndustry({ active }: { active: boolean }) {
               <h2 className="animate-fade-up stagger-2 text-[56px] font-bold leading-[1] text-foreground mb-4">
                 Where Action<br />Meets <span className="text-primary">Production</span>
               </h2>
-              <p className="animate-fade-up stagger-3 text-muted-foreground text-[20px] mb-10 leading-relaxed max-w-[600px]">
+              <p className="animate-fade-up stagger-3 text-muted-foreground text-[22px] mb-10 leading-relaxed max-w-[650px]">
                 Actors, stunt performers, and circus artists train at Iron Form. We're exploring partnerships with Cirque du Soleil for training residencies during their Atlanta shows.
               </p>
-              <div className="animate-fade-up stagger-4 grid grid-cols-2 gap-4">
+              <div className="animate-fade-up stagger-4 grid grid-cols-2 gap-5">
                 {capabilities.map((c, i) => (
-                  <div key={i} className="bg-secondary border border-border rounded-xl p-5">
-                    <div className="flex items-center gap-3 mb-2">
-                      <span className="text-[28px]">{c.icon}</span>
-                      <h3 className="text-foreground text-[20px] font-semibold">{c.label}</h3>
+                  <div key={i} className="bg-secondary border border-border rounded-xl p-6">
+                    <div className="flex items-center gap-4 mb-2">
+                      <span className="text-[36px]">{c.icon}</span>
+                      <h3 className="text-foreground text-[24px] font-bold">{c.label}</h3>
                     </div>
-                    <p className="text-muted-foreground text-[16px] leading-relaxed">{c.desc}</p>
+                    <p className="text-muted-foreground text-[20px] leading-relaxed">{c.desc}</p>
                   </div>
                 ))}
               </div>
