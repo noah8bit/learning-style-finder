@@ -41,9 +41,9 @@ export default function SlideRevenueDetailed({ active }: { active: boolean }) {
                     {rampUp.map((r, i) => (
                       <div key={i} className="flex items-center gap-5">
                         <span className="text-foreground text-[24px] font-bold w-[55px]">{r.month}</span>
-                        <div className="flex-1 h-[40px] bg-black/50 rounded-full overflow-hidden relative">
-                          <div className="h-full bg-primary/70 rounded-full transition-all" style={{ width: `${Math.max((r.members / maxMembers) * 100, 18)}%` }} />
-                          <span className="absolute inset-0 flex items-center justify-center text-[20px] text-foreground font-bold">
+                        <div className="flex-1 h-[40px] bg-black/80 border border-white/15 rounded-full overflow-hidden relative">
+                          <div className="h-full bg-primary/80 rounded-full transition-all" style={{ width: `${Math.max((r.members / maxMembers) * 100, 18)}%` }} />
+                          <span className="absolute inset-0 flex items-center justify-center text-[20px] text-white font-bold drop-shadow-md">
                             {r.members} members
                           </span>
                         </div>
@@ -58,18 +58,18 @@ export default function SlideRevenueDetailed({ active }: { active: boolean }) {
                   <h3 className="text-accent text-[24px] font-bold mb-5 uppercase tracking-wider">Revenue Streams</h3>
                   <div className="space-y-3">
                     {streams.map((s, i) => (
-                      <div key={i} className={`flex justify-between items-center rounded-lg p-4 ${s.type === "core" ? "bg-primary/8 border border-primary/20" : "bg-accent/8 border border-accent/20"}`}>
-                        <span className="text-foreground text-[24px] font-medium">{s.label}</span>
+                      <div key={i} className={`flex justify-between items-center rounded-lg p-4 backdrop-blur-md ${s.type === "core" ? "bg-black/70 border border-primary/40" : "bg-black/70 border border-accent/40"}`}>
+                        <span className="text-white text-[24px] font-medium">{s.label}</span>
                         <span className={`${s.type === "core" ? "text-primary" : "text-accent"} text-[24px] font-bold shrink-0 ml-4`}>{s.value}</span>
                       </div>
                     ))}
                   </div>
-                  <div className="mt-4 flex justify-between items-center bg-black/60 border border-white/15 rounded-lg p-4">
-                    <span className="text-muted-foreground text-[22px] font-semibold">Core Subtotal</span>
+                  <div className="mt-4 flex justify-between items-center bg-black/80 border border-primary/30 rounded-lg p-4">
+                    <span className="text-white text-[22px] font-semibold">Core Subtotal</span>
                     <span className="text-primary text-[24px] font-bold">$614K – $794K</span>
                   </div>
-                  <div className="mt-2 flex justify-between items-center bg-black/60 border border-white/15 rounded-lg p-4">
-                    <span className="text-muted-foreground text-[22px] font-semibold">Enhanced Subtotal</span>
+                  <div className="mt-2 flex justify-between items-center bg-black/80 border border-accent/30 rounded-lg p-4">
+                    <span className="text-white text-[22px] font-semibold">Enhanced Subtotal</span>
                     <span className="text-accent text-[24px] font-bold">$480K</span>
                   </div>
                 </div>
