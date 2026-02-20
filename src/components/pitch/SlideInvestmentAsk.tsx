@@ -4,8 +4,8 @@ import ScaledSlide from "./ScaledSlide";
 export default function SlideInvestmentAsk({ active }: { active: boolean }) {
   const milestones = [
     { phase: "Tranche 1", amount: "$6M", trigger: "At close", use: "Land acquisition, construction start, permitting, core team hires", color: "text-primary", bg: "bg-primary/10", border: "border-primary/30" },
-    { phase: "Tranche 2", amount: "$5.5M", trigger: "Construction 50%", use: "Equipment, pool, tech platform, marketing launch, café build-out", color: "text-accent", bg: "bg-accent/10", border: "border-accent/30" },
-    { phase: "Tranche 3", amount: "$2.5M", trigger: "Doors open", use: "Year 1 operating runway, final fit-out, contingency", color: "text-primary", bg: "bg-primary/10", border: "border-primary/30" },
+    { phase: "Tranche 2", amount: "$5.5M", trigger: "Construction 50%", use: "Equipment, pool infrastructure, tech platform, marketing launch, café build-out", color: "text-accent", bg: "bg-accent/10", border: "border-accent/30" },
+    { phase: "Tranche 3", amount: "$2.5M", trigger: "Doors open", use: "Year 1 operating runway, final fit-out, contingency reserve", color: "text-primary", bg: "bg-primary/10", border: "border-primary/30" },
   ];
 
   const equityTiers = [

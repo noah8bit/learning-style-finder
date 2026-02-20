@@ -3,12 +3,12 @@ import ScaledSlide from "./ScaledSlide";
 
 export default function SlideFinancialProjections({ active }: { active: boolean }) {
   const startupCosts = [
-    { label: "Land (8–12 acres)", range: "$2M – $3.5M" },
-    { label: "Construction (60K sq ft)", range: "$5.5M – $7M" },
-    { label: "Equipment & Install", range: "$2M – $2.5M" },
-    { label: "Tech & App Platform", range: "$750K – $1M" },
-    { label: "Marketing & Legal", range: "$500K – $750K" },
-    { label: "Contingency (15%)", range: "$1.8M" },
+    { label: "Land (8–12 acres)", range: "$1.5M – $2.5M" },
+    { label: "Construction (60K sq ft)", range: "$5M – $6.5M" },
+    { label: "Equipment & Install", range: "$1.5M – $2M" },
+    { label: "Year 1 Operations", range: "$1.5M" },
+    { label: "Tech, Marketing & Legal", range: "$1.5M" },
+    { label: "Contingency (~11%)", range: "$1.5M" },
   ];
 
   const projections = [

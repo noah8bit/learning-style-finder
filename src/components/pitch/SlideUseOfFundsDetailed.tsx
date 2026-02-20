@@ -3,12 +3,12 @@ import ScaledSlide from "./ScaledSlide";
 
 export default function SlideUseOfFundsDetailed({ active }: { active: boolean }) {
   const funds = [
-    { pct: "36%", dollar: "$5M", title: "Construction & Land", desc: "8–12 acre campus, 60,000+ sq ft ground-up build, café & clinic build-out", color: "text-primary", borderColor: "border-primary/30", bgColor: "bg-primary/10" },
-    { pct: "21%", dollar: "$3M", title: "Equipment & Installations", desc: "Pool, climbing walls, cryotherapy, stunt rigging, kitchen equipment", color: "text-accent", borderColor: "border-accent/30", bgColor: "bg-accent/10" },
+    { pct: "54%", dollar: "$7.5M", title: "Land & Construction", desc: "8–12 acre campus, 60,000+ sq ft pre-engineered steel build, pool infrastructure, café & clinic build-out", color: "text-primary", borderColor: "border-primary/30", bgColor: "bg-primary/10" },
+    { pct: "14%", dollar: "$2M", title: "Equipment & Installations", desc: "Climbing walls, cryotherapy, stunt rigging, spring floors, kitchen & gym equipment", color: "text-accent", borderColor: "border-accent/30", bgColor: "bg-accent/10" },
     { pct: "11%", dollar: "$1.5M", title: "Year 1 Operations", desc: "Coaches, medical staff, utilities, insurance, inventory", color: "text-primary", borderColor: "border-primary/30", bgColor: "bg-primary/10" },
-    { pct: "7%", dollar: "$1M", title: "App & Technology", desc: "Performance tracking, biometrics, member mgmt, POS systems", color: "text-accent", borderColor: "border-accent/30", bgColor: "bg-accent/10" },
-    { pct: "7%", dollar: "$1M", title: "Marketing & Launch", desc: "Grand opening, digital presence, corporate sales, sponsorship outreach", color: "text-primary", borderColor: "border-primary/30", bgColor: "bg-primary/10" },
-    { pct: "18%", dollar: "$2.5M", title: "Contingency Reserve", desc: "Buffer for construction delays, overruns, regulatory costs, working capital", color: "text-accent", borderColor: "border-accent/30", bgColor: "bg-accent/10" },
+    { pct: "5%", dollar: "$750K", title: "App & Technology", desc: "Performance tracking, biometrics, member mgmt, POS systems", color: "text-accent", borderColor: "border-accent/30", bgColor: "bg-accent/10" },
+    { pct: "5%", dollar: "$750K", title: "Marketing & Launch", desc: "Grand opening, digital presence, corporate sales, sponsorship outreach", color: "text-primary", borderColor: "border-primary/30", bgColor: "bg-primary/10" },
+    { pct: "11%", dollar: "$1.5M", title: "Contingency Reserve", desc: "Buffer for construction delays, overruns, regulatory costs, working capital", color: "text-accent", borderColor: "border-accent/30", bgColor: "bg-accent/10" },
   ];
 
   return (

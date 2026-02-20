@@ -2,11 +2,11 @@ import ScaledSlide from "./ScaledSlide";
 
 export default function SlideCostBenefit({ active }: { active: boolean }) {
   const costs = [
-    { label: "Land & Construction", amount: "$7.5M – $10.5M", pct: 68 },
-    { label: "Equipment & Install", amount: "$2M – $2.5M", pct: 16 },
-    { label: "Tech & App Platform", amount: "$750K – $1M", pct: 6 },
-    { label: "Marketing & Legal", amount: "$500K – $750K", pct: 4 },
-    { label: "Contingency (15%)", amount: "$1.8M", pct: 6 },
+    { label: "Land & Construction", amount: "$6.5M – $9M", pct: 54 },
+    { label: "Equipment & Install", amount: "$1.5M – $2M", pct: 14 },
+    { label: "Year 1 Operations", amount: "$1.5M", pct: 11 },
+    { label: "Tech & Marketing", amount: "$1.5M", pct: 10 },
+    { label: "Contingency (~11%)", amount: "$1.5M", pct: 11 },
   ];
 
   const benefits = [
