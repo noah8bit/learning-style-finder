@@ -3,8 +3,8 @@ import ScaledSlide from "./ScaledSlide";
 
 export default function SlideTraction({ active }: { active: boolean }) {
   const validations = [
-    { metric: "150+", label: "Waitlist Signups", desc: "Pre-launch interest from athletes, families & fitness enthusiasts (target — campaign in progress)", icon: "📋" },
-    { metric: "3", label: "Letters of Intent", desc: "In-progress LOIs from local sports orgs for team training retainment (target)", icon: "📝" },
+    { metric: "2+", label: "Years in Development", desc: "Full-time research, facility planning, branding, and IP development by founding team", icon: "⏳" },
+    { metric: "3", label: "Co-Founders Invested", desc: "Each founder contributing personal capital, equipment, and relocating practices into Iron Form", icon: "💪" },
     { metric: "5", label: "Partnership Talks", desc: "Active conversations with insurance providers, schools & corporate wellness programs", icon: "🤝" },
     { metric: "2", label: "Industry Advisors", desc: "Committed advisors from Atlanta sports medicine & film stunt coordination", icon: "🧠" },
   ];
