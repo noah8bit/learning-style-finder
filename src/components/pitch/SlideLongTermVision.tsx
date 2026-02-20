@@ -10,7 +10,7 @@ export default function SlideLongTermVision({ active }: { active: boolean }) {
   ];
 
   const milestones = [
-    { icon: "📍", title: "Year 1–2: Establish & Prove", desc: "Build membership to 500+, hit profitability, validate every revenue stream, build brand authority in Atlanta." },
+    { icon: "📍", title: "Year 1–2: Establish & Prove", desc: "Grow membership to 275+ in Year 1, 500+ by Year 2, hit profitability, validate every revenue stream, build brand authority in Atlanta." },
     { icon: "📈", title: "Year 3–4: Scale & Optimize", desc: "Expand digital platform nationally, launch franchise pilot, grow corporate partnerships to 10+." },
     { icon: "🌎", title: "Year 5+: Replicate & Dominate", desc: "Open 3–5 franchise locations, license training IP, become the national standard for multi-sport facilities." },
   ];

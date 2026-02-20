@@ -4,7 +4,7 @@ import ScaledSlide from "./ScaledSlide";
 export default function SlideMarketStats({ active }: { active: boolean }) {
   const stats = [
     { value: "$100B+", label: "Global Fitness Market", sub: "Growing at ~7% CAGR" },
-    { value: "$8B", label: "Sports Medicine Market", sub: "Recovery & therapy focus" },
+    { value: "$10B+", label: "Sports Medicine Market", sub: "Recovery & therapy focus" },
     { value: "247M", label: "Sport & Fitness Participants", sub: "Participated in 2024 (SFIA)" },
     { value: "70%", label: "Prefer Multi-Training", sub: "Cross-training demand rising" },
     { value: "7M+", label: "Metro Atlanta Population", sub: "Athletes & fitness enthusiasts" },

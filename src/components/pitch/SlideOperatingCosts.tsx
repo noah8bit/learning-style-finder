@@ -67,7 +67,7 @@ export default function SlideOperatingCosts({ active }: { active: boolean }) {
                   <p className="text-white text-[16px]"><span className="text-primary font-bold">Staffing Model:</span> Part-time coaches on revenue share minimize fixed payroll. Only 8–10 full-time employees in Year 1.</p>
                 </div>
                 <div className="flex-1 bg-accent/10 border border-accent/30 rounded-lg p-4">
-                  <p className="text-white text-[16px]"><span className="text-accent font-bold">Scaling:</span> Operating costs grow ~15%/yr while revenue grows ~50%/yr — margins improve dramatically by Year 2–3.</p>
+                  <p className="text-white text-[16px]"><span className="text-accent font-bold">Scaling:</span> Operating costs grow ~15%/yr while revenue grows ~50%/yr — margins improve from 15% to 25–35% by Year 3.</p>
                 </div>
               </div>
               <p className="animate-fade-up stagger-5 absolute bottom-6 left-[100px] right-[100px] text-muted-foreground/50 text-[11px] leading-tight">
