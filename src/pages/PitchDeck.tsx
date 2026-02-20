@@ -518,7 +518,7 @@ const SLIDES = [
   { component: SlideTimeline, title: "Timeline" },
   { component: SlideRiskManagement, title: "Risk Management" },
   { component: SlideLongTermVision, title: "Vision" },
-  { component: SlidePricingAppendix, title: "Pricing Benchmarks (Appendix)" },
+  { component: SlidePricingAppendix, title: "Full Preliminary Pricing Benchmarks" },
   { component: SlideClosing, title: "Closing" },
 ];
 
