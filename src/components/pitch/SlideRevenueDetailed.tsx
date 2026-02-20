@@ -25,8 +25,8 @@ export default function SlideRevenueDetailed({ active }: { active: boolean }) {
     <ScaledSlide>
       <div className="relative w-full h-full">
         <img src={heroTrack} alt="" className="absolute inset-0 w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-black" />
-        <div className="relative z-10 flex flex-col justify-center h-full px-[100px]">
+        <div className="absolute inset-0 bg-black/85" />
+        <div className="relative z-10 flex flex-col justify-center h-full px-[100px]" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.9), 0 0 2px rgba(0,0,0,1)' }}>
           {active && (
             <>
               <p className="animate-fade-up stagger-1 text-primary font-medium tracking-[0.3em] uppercase text-[20px] mb-3">Revenue Breakdown</p>
