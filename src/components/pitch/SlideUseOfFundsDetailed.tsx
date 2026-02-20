@@ -35,6 +35,9 @@ export default function SlideUseOfFundsDetailed({ active }: { active: boolean })
                   </div>
                 ))}
               </div>
+              <p className="animate-fade-up stagger-4 mt-6 text-muted-foreground/50 text-[11px] leading-tight">
+                Sources: RSMeans Construction Cost Data 2024; BuildingsGuide – Metal Building Prices 2026; IHRSA Equipment Benchmarks; Iron Form internal financial models
+              </p>
             </>
           )}
         </div>
