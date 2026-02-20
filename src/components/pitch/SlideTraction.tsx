@@ -1,4 +1,4 @@
-import heroAthlete from "@/assets/pitch/hero-athlete.jpg";
+import heroTraction from "@/assets/pitch/hero-traction.jpg";
 import ScaledSlide from "./ScaledSlide";
 
 export default function SlideTraction({ active }: { active: boolean }) {
@@ -12,7 +12,7 @@ export default function SlideTraction({ active }: { active: boolean }) {
   return (
     <ScaledSlide>
       <div className="relative w-full h-full">
-        <img src={heroAthlete} alt="" className="absolute inset-0 w-full h-full object-cover" />
+        <img src={heroTraction} alt="" className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 bg-black/88" />
         <div className="relative z-10 flex flex-col justify-center h-full px-[100px]">
           {active && (

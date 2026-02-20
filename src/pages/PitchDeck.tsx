@@ -5,6 +5,7 @@ import { exportPptx } from "@/utils/exportPptx";
 import heroGym from "@/assets/pitch/hero-gym.jpg";
 import heroAthlete from "@/assets/pitch/hero-athlete.jpg";
 import heroAtlanta from "@/assets/pitch/hero-atlanta.jpg";
+import heroAtlantaWhy from "@/assets/pitch/hero-atlanta-why.jpg";
 import heroRecovery from "@/assets/pitch/hero-recovery.jpg";
 import heroFacility from "@/assets/pitch/hero-facility-v2.jpg";
 import heroSwimmingPool from "@/assets/pitch/hero-swimming-pool.jpg";
@@ -362,7 +363,7 @@ function SlideWhyAtlanta({ active }: { active: boolean }) {
   return (
     <ScaledSlide>
       <div className="relative w-full h-full">
-        <img src={heroAtlanta} alt="" className="absolute inset-0 w-full h-full object-cover" />
+        <img src={heroAtlantaWhy} alt="" className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-r from-black via-black/90 to-black/60" />
         <div className="relative z-10 flex flex-col justify-center h-full px-[120px]">
           {active && (
