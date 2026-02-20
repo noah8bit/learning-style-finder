@@ -2,42 +2,11 @@ import heroConstruction from "@/assets/pitch/hero-construction.jpg";
 import ScaledSlide from "./ScaledSlide";
 
 export default function SlideExitStrategy({ active }: { active: boolean }) {
-  const exits = [
-    {
-      icon: "🔁",
-      title: "Franchise Model",
-      timeline: "Year 5–7",
-      desc: "Replicate the Iron Form playbook across 10+ metros. Comparable: F45 scaled from 1 to 1,500+ locations in under a decade (F45 2024 Press Release). Each location projected at $1.5M–$2.5M/yr revenue.",
-      returnMultiple: "8–12x",
-    },
-    {
-      icon: "🏦",
-      title: "Strategic Acquisition",
-      timeline: "Year 5–8",
-      desc: "Acquisition target for Life Time, Equinox, or PE firms entering multi-sport. Comparable: TMPL Gym acquired for $30M (single NYC location). Multi-sport facilities command 6–10x EBITDA.",
-      returnMultiple: "6–10x",
-    },
-    {
-      icon: "💸",
-      title: "Cash-Flow Distributions",
-      timeline: "Year 3+",
-      desc: "Year 3+ net margins of 40%+ enable quarterly profit distributions. Projected 3–5x return within 5–7 years through distributions alone — no exit required.",
-      returnMultiple: "3–5x",
-    },
-  ];
-
-  const metrics = [
-    { label: "Investor Equity Cap", value: "20%", sub: "Founder retains 70%+ control" },
-    { label: "Projected Payback", value: "3–4 yrs", sub: "Through profit distributions" },
-    { label: "5-Year Cumulative", value: "$15M–$20M", sub: "Total revenue generated" },
-    { label: "Year 3 Net Margin", value: "40%+", sub: "Increasing annually" },
-  ];
-
   return (
     <ScaledSlide>
       <div className="relative w-full h-full">
         <img src={heroConstruction} alt="" className="absolute inset-0 w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-black/80" />
+        <div className="absolute inset-0 bg-black/90" />
         <div className="relative z-10 flex flex-col justify-center h-full px-[100px]" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.9), 0 0 2px rgba(0,0,0,1)' }}>
           {active && (
             <>
@@ -49,33 +18,101 @@ export default function SlideExitStrategy({ active }: { active: boolean }) {
                 Three clear paths to investor returns — you don't have to wait for an exit event to see money back.
               </p>
 
-              <div className="animate-fade-up stagger-4 space-y-5 mb-8">
-                {exits.map((e, i) => (
-                  <div key={i} className="bg-black/60 border border-white/15 rounded-xl p-6 flex gap-6 items-start">
-                    <span className="text-[44px] shrink-0">{e.icon}</span>
-                    <div className="flex-1">
-                      <div className="flex items-center justify-between mb-2">
-                        <h3 className="text-white text-[26px] font-bold">{e.title}</h3>
-                        <div className="flex items-center gap-4">
-                          <span className="text-muted-foreground text-[18px]">{e.timeline}</span>
-                          <span className="text-accent text-[24px] font-bold bg-accent/10 border border-accent/30 rounded-full px-4 py-0.5">{e.returnMultiple}</span>
-                        </div>
+              <div className="animate-fade-up stagger-4 flex gap-6 mb-7">
+                {/* LEFT: Primary path — Cash-Flow Distributions (elevated) */}
+                <div className="w-[480px] shrink-0 bg-accent/10 border-2 border-accent/50 rounded-2xl p-8 relative overflow-hidden">
+                  <div className="absolute top-0 right-0 bg-accent text-black text-[13px] font-bold uppercase tracking-wider px-4 py-1.5 rounded-bl-xl">Most Likely Path</div>
+                  <span className="text-[44px] block mb-3">💸</span>
+                  <div className="flex items-center gap-4 mb-3">
+                    <h3 className="text-white text-[28px] font-bold">Cash-Flow Distributions</h3>
+                    <span className="text-accent text-[26px] font-bold bg-accent/15 border border-accent/40 rounded-full px-5 py-0.5">3–5x</span>
+                  </div>
+                  <p className="text-muted-foreground text-[18px] leading-relaxed mb-6">
+                    Year 3+ net margins of 40%+ enable quarterly profit distributions. No exit required — your money works from day one.
+                  </p>
+
+                  {/* Scenario math */}
+                  <div className="bg-black/50 border border-accent/30 rounded-xl p-5">
+                    <p className="text-accent text-[15px] font-bold uppercase tracking-wider mb-4">Your $1M Investment</p>
+                    <div className="space-y-3">
+                      <div className="flex justify-between items-center">
+                        <span className="text-muted-foreground text-[17px]">Year 3 distributions</span>
+                        <span className="text-white text-[20px] font-bold">~$200K</span>
                       </div>
-                      <p className="text-muted-foreground text-[20px] leading-relaxed">{e.desc}</p>
+                      <div className="flex justify-between items-center">
+                        <span className="text-muted-foreground text-[17px]">Year 5 cumulative</span>
+                        <span className="text-white text-[20px] font-bold">~$800K</span>
+                      </div>
+                      <div className="flex justify-between items-center">
+                        <span className="text-muted-foreground text-[17px]">Year 7 cumulative</span>
+                        <span className="text-accent text-[22px] font-bold">~$1.5M–$2M</span>
+                      </div>
+                      <div className="border-t border-accent/20 pt-3 mt-1">
+                        <p className="text-foreground text-[16px] leading-relaxed">
+                          <span className="text-accent font-bold">+ you still own equity</span> — distributions don't dilute your stake
+                        </p>
+                      </div>
                     </div>
                   </div>
-                ))}
+                </div>
+
+                {/* RIGHT: Long-term exit paths */}
+                <div className="flex-1 flex flex-col gap-5">
+                  <p className="text-muted-foreground text-[14px] uppercase tracking-[0.2em] font-medium">Long-Term Upside</p>
+
+                  <div className="bg-black/60 border border-white/15 rounded-xl p-6 flex gap-5 items-start flex-1">
+                    <span className="text-[36px] shrink-0">🔁</span>
+                    <div className="flex-1">
+                      <div className="flex items-center justify-between mb-2">
+                        <h3 className="text-white text-[22px] font-bold">Franchise Model</h3>
+                        <div className="flex items-center gap-3">
+                          <span className="text-muted-foreground text-[16px]">Year 5–7</span>
+                          <span className="text-accent text-[20px] font-bold bg-accent/10 border border-accent/30 rounded-full px-4 py-0.5">8–12x</span>
+                        </div>
+                      </div>
+                      <p className="text-muted-foreground text-[17px] leading-relaxed">
+                        Replicate across 10+ metros. F45 scaled from 1 to 1,500+ locations in under a decade. Each location projected at $1.5M–$2.5M/yr.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="bg-black/60 border border-white/15 rounded-xl p-6 flex gap-5 items-start flex-1">
+                    <span className="text-[36px] shrink-0">🏦</span>
+                    <div className="flex-1">
+                      <div className="flex items-center justify-between mb-2">
+                        <h3 className="text-white text-[22px] font-bold">Strategic Acquisition</h3>
+                        <div className="flex items-center gap-3">
+                          <span className="text-muted-foreground text-[16px]">Year 5–8</span>
+                          <span className="text-accent text-[20px] font-bold bg-accent/10 border border-accent/30 rounded-full px-4 py-0.5">6–10x</span>
+                        </div>
+                      </div>
+                      <p className="text-muted-foreground text-[17px] leading-relaxed">
+                        Acquisition target for Life Time, Equinox, or PE firms. TMPL Gym acquired for $30M (single location). Multi-sport facilities command 6–10x EBITDA.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Bottom metrics */}
+                  <div className="grid grid-cols-3 gap-3">
+                    <div className="bg-black/70 backdrop-blur-md border border-white/20 rounded-xl p-4 text-center">
+                      <div className="text-primary text-[26px] font-bold mb-0.5">20%</div>
+                      <div className="text-foreground text-[14px] font-semibold">Equity Cap</div>
+                      <div className="text-muted-foreground text-[12px]">Founder retains 70%+</div>
+                    </div>
+                    <div className="bg-black/70 backdrop-blur-md border border-white/20 rounded-xl p-4 text-center">
+                      <div className="text-primary text-[26px] font-bold mb-0.5">3–4 yrs</div>
+                      <div className="text-foreground text-[14px] font-semibold">Projected Payback</div>
+                      <div className="text-muted-foreground text-[12px]">Via distributions</div>
+                    </div>
+                    <div className="bg-black/70 backdrop-blur-md border border-white/20 rounded-xl p-4 text-center">
+                      <div className="text-primary text-[26px] font-bold mb-0.5">40%+</div>
+                      <div className="text-foreground text-[14px] font-semibold">Year 3 Margin</div>
+                      <div className="text-muted-foreground text-[12px]">Increasing annually</div>
+                    </div>
+                  </div>
+                </div>
               </div>
 
-              <div className="animate-fade-up stagger-5 grid grid-cols-4 gap-4">
-                {metrics.map((m, i) => (
-                  <div key={i} className="bg-black/70 backdrop-blur-md border border-white/20 rounded-xl p-5 text-center">
-                    <div className="text-primary text-[32px] font-bold mb-1">{m.value}</div>
-                    <div className="text-foreground text-[18px] font-semibold mb-1">{m.label}</div>
-                    <div className="text-muted-foreground text-[14px]">{m.sub}</div>
-                  </div>
-                ))}
-              </div>
               <p className="animate-fade-up stagger-5 absolute bottom-6 left-[100px] right-[100px] text-muted-foreground/50 text-[11px] leading-tight">
                 Sources: F45 Training 2024 Press Release; Life Time Group Holdings SEC Filing (Feb 2025); IHRSA Industry Benchmark Reports; Iron Form internal financial models
               </p>
