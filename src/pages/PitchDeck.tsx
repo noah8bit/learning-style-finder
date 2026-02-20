@@ -254,12 +254,12 @@ function SlideDisciplines({ active }: { active: boolean }) {
 
 function SlideMarket({ active }: { active: boolean }) {
   const stats = [
-    { value: "$100B+", label: "Global Health & Fitness Industry", sub: "Growing at ~7% CAGR" },
-    { value: "$10B+", label: "Sports Medicine Market", sub: "Projected to reach $15B by 2032" },
-    { value: "247M", label: "Sport & Fitness Participants", sub: "Participated in 2024 (SFIA Report)" },
-    { value: "6M+", label: "Atlanta Metro Population", sub: "#1 U.S. film production state" },
-    { value: "↑", label: "Multi-Training Demand", sub: "Cross-training growth accelerating" },
-    { value: "#1", label: "First-Mover Advantage", sub: "No SE competitor matches" },
+    { value: "$96B+", label: "Global Health & Fitness Club Market", sub: "Growing at ~7.5% CAGR (IHRSA 2024)" },
+    { value: "$45B+", label: "Sports Medicine Market", sub: "Projected to reach $76B by 2033 (Straits Research)" },
+    { value: "247M", label: "Sport & Fitness Participants", sub: "Active Americans in 2024 (SFIA 2025 Topline Report)" },
+    { value: "6.2M+", label: "Atlanta Metro Population", sub: "#1 U.S. film production state (ARC 2024)" },
+    { value: "80%", label: "U.S. Participation Rate", sub: "Highest ever recorded (SFIA 2025)" },
+    { value: "#1", label: "First-Mover Advantage", sub: "No SE competitor matches this model" },
   ];
   return (
     <ScaledSlide>
@@ -285,6 +285,9 @@ function SlideMarket({ active }: { active: boolean }) {
                   </div>
                 ))}
               </div>
+              <p className="animate-fade-up stagger-5 absolute bottom-6 left-[120px] right-[120px] text-muted-foreground/50 text-[11px] leading-tight">
+                Sources: IHRSA Global Report 2024; Straits Research – Sports Medicine Market 2025; SFIA 2025 Topline Participation Report; Atlanta Regional Commission Population Estimates 2024; Georgia Dept. of Economic Development
+              </p>
             </>
           )}
         </div>

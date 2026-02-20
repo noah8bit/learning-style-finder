@@ -70,6 +70,9 @@ export default function SlideOperatingCosts({ active }: { active: boolean }) {
                   <p className="text-white text-[16px]"><span className="text-accent font-bold">Scaling:</span> Operating costs grow ~15%/yr while revenue grows ~50%/yr — margins improve dramatically by Year 2–3.</p>
                 </div>
               </div>
+              <p className="animate-fade-up stagger-5 absolute bottom-6 left-[100px] right-[100px] text-muted-foreground/50 text-[11px] leading-tight">
+                Sources: IHRSA Operating Benchmarks 2024; Bureau of Labor Statistics – Atlanta Metro Wage Data; Iron Form internal staffing models
+              </p>
             </>
           )}
         </div>

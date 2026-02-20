@@ -7,7 +7,7 @@ export default function SlideSmartBuild({ active }: { active: boolean }) {
       icon: "🏗️",
       title: "Pre-Engineered Steel Shell",
       saving: "Save 40–60%",
-      desc: "Steel frame + metal panel construction at $85–$110/sq ft vs $200+ for traditional commercial. Same approach used by IMG Academy, Lifetime Fitness, and F45 flagships.",
+      desc: "Steel shell + metal panel at $15–$60/sq ft for the structure, vs $170–$390/sq ft fully finished traditional (Reich Construction 2025). We finish selectively — athletic training space doesn't need Class A office finishes.",
     },
     {
       icon: "⚡",
@@ -47,7 +47,7 @@ export default function SlideSmartBuild({ active }: { active: boolean }) {
                 Smart Build, <span className="text-primary">Premium Feel</span>
               </h2>
               <p className="animate-fade-up stagger-3 text-muted-foreground text-[22px] mb-7 leading-relaxed">
-                How we deliver a cutting-edge facility at <span className="text-foreground font-semibold">$85–$110/sq ft</span> — the same playbook elite facilities worldwide use.
+                How we deliver a cutting-edge 60K sq ft facility within our <span className="text-foreground font-semibold">$7.5M construction budget</span> — the same playbook elite facilities worldwide use.
               </p>
 
               <div className="animate-fade-up stagger-4 space-y-4">
@@ -99,6 +99,9 @@ export default function SlideSmartBuild({ active }: { active: boolean }) {
                     <span className="text-primary font-bold">Phase 2 Upgrades:</span> Pre-engineered steel allows easy interior upgrades — premium cladding, glass facades, branded exteriors, and expanded amenities can be added as profits grow, without structural changes.
                   </p>
                 </div>
+                <p className="mt-3 text-muted-foreground/50 text-[11px] leading-tight">
+                  Sources: Reich Construction LLC – Pre-Engineered Steel Recreation Buildings (2025); BuildingsGuide – Metal Building Prices (2026); RSMeans Construction Cost Data
+                </p>
               </div>
             )}
           </div>

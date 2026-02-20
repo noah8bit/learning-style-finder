@@ -7,7 +7,7 @@ export default function SlideExitStrategy({ active }: { active: boolean }) {
       icon: "🔁",
       title: "Franchise Model",
       timeline: "Year 5–7",
-      desc: "Replicate the Iron Form playbook across 10+ metros. Comparable: F45 scaled from 1 to 1,750+ locations in 8 years. Each location projected at $1.5M–$2.5M/yr revenue.",
+      desc: "Replicate the Iron Form playbook across 10+ metros. Comparable: F45 scaled from 1 to 1,500+ locations in under a decade (F45 2024 Press Release). Each location projected at $1.5M–$2.5M/yr revenue.",
       returnMultiple: "8–12x",
     },
     {
@@ -76,6 +76,9 @@ export default function SlideExitStrategy({ active }: { active: boolean }) {
                   </div>
                 ))}
               </div>
+              <p className="animate-fade-up stagger-5 absolute bottom-6 left-[100px] right-[100px] text-muted-foreground/50 text-[11px] leading-tight">
+                Sources: F45 Training 2024 Press Release; Life Time Group Holdings SEC Filing (Feb 2025); IHRSA Industry Benchmark Reports; Iron Form internal financial models
+              </p>
             </>
           )}
         </div>
