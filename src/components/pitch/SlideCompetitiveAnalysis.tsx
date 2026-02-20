@@ -16,7 +16,7 @@ export default function SlideCompetitiveAnalysis({ active }: { active: boolean }
     { name: "Iron Form", scores: [true, true, true, true, true, true, true, true] },
     { name: "IMG Academy", scores: [true, true, false, true, false, false, true, true] },
     { name: "EXOS", scores: [false, true, false, true, false, false, true, false] },
-    { name: "D1 Training", scores: [false, false, false, false, false, true, true, true] },
+    { name: "D1 Training", scores: [false, false, false, false, true, true, false, true] },
     { name: "Plex", scores: [true, false, false, false, false, true, false, true] },
   ];
 
