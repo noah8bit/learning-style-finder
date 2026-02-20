@@ -255,7 +255,7 @@ function SlideDisciplines({ active }: { active: boolean }) {
 function SlideMarket({ active }: { active: boolean }) {
   const stats = [
     { value: "$96B+", label: "Global Health & Fitness Club Market", sub: "Growing at ~7.5% CAGR (IHRSA 2024)" },
-    { value: "$45B+", label: "Sports Medicine Market", sub: "Projected to reach $76B by 2033 (Straits Research)" },
+    { value: "$10B+", label: "Sports Medicine Market", sub: "Projected to reach $76B by 2033 (Straits Research)" },
     { value: "247M", label: "Sport & Fitness Participants", sub: "Active Americans in 2024 (SFIA 2025 Topline Report)" },
     { value: "6.2M+", label: "Atlanta Metro Population", sub: "#1 U.S. film production state (ARC 2024)" },
     { value: "80%", label: "U.S. Participation Rate", sub: "Highest ever recorded (SFIA 2025)" },

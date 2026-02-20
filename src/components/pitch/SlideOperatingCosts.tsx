@@ -64,7 +64,7 @@ export default function SlideOperatingCosts({ active }: { active: boolean }) {
 
               <div className="animate-fade-up stagger-5 mt-3 flex gap-4">
                 <div className="flex-1 bg-primary/10 border border-primary/30 rounded-lg p-4">
-                  <p className="text-white text-[16px]"><span className="text-primary font-bold">Staffing Model:</span> Part-time coaches on revenue share minimize fixed payroll. Only 8–10 full-time employees in Year 1.</p>
+                  <p className="text-white text-[16px]"><span className="text-primary font-bold">Note:</span> This covers operating expenses only. Total Year 1 costs ($2.0M–$2.4M) include COGS from café, clinic, retail, and trainer revenue-share — shown in Financial Overview.</p>
                 </div>
                 <div className="flex-1 bg-accent/10 border border-accent/30 rounded-lg p-4">
                   <p className="text-white text-[16px]"><span className="text-accent font-bold">Scaling:</span> Operating costs grow ~15%/yr while revenue grows ~50%/yr — margins improve from 15% to 25–35% by Year 3.</p>
