@@ -12,16 +12,16 @@ export default function SlideFinancialProjections({ active }: { active: boolean 
   ];
 
   const projections = [
-    { year: "Year 1", cost: 1000, revenue: 1990, costLabel: "$800K–$1.2M", revenueLabel: "$1.90M–$2.08M", netLabel: "$700K–$1.28M" },
-    { year: "Year 2", cost: 1150, revenue: 3200, costLabel: "$1M–$1.3M", revenueLabel: "$2.9M–$3.5M", netLabel: "$1.6M–$2.2M" },
-    { year: "Year 3", cost: 1250, revenue: 4300, costLabel: "$1.1M–$1.4M", revenueLabel: "$4.0M–$4.6M", netLabel: "$2.6M–$3.2M" },
+    { year: "Year 1", cost: 1000, revenue: 2100, costLabel: "$800K–$1.2M", revenueLabel: "$2.0M–$2.19M", netLabel: "$800K–$1.39M" },
+    { year: "Year 2", cost: 1150, revenue: 3400, costLabel: "$1M–$1.3M", revenueLabel: "$3.1M–$3.7M", netLabel: "$1.8M–$2.4M" },
+    { year: "Year 3", cost: 1250, revenue: 4500, costLabel: "$1.1M–$1.4M", revenueLabel: "$4.2M–$4.9M", netLabel: "$2.8M–$3.5M" },
   ];
 
   const roi = [
-    { label: "Break-Even", value: "12–18 mo", icon: "⏱️" },
-    { label: "Yr 3 Net Profit", value: "$2.6M–$3.2M", icon: "📈" },
-    { label: "5-Yr Cumulative", value: "$11M–$15M", icon: "💰" },
-    { label: "Payback Period", value: "3–5 years", icon: "🔄" },
+    { label: "Break-Even", value: "12–16 mo", icon: "⏱️" },
+    { label: "Yr 3 Net Profit", value: "$2.8M–$3.5M", icon: "📈" },
+    { label: "5-Yr Cumulative", value: "$12M–$16M", icon: "💰" },
+    { label: "Payback Period", value: "3–4 years", icon: "🔄" },
   ];
 
   const maxBar = 2500;
