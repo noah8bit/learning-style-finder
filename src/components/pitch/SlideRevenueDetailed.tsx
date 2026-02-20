@@ -16,12 +16,16 @@ export default function SlideRevenueDetailed({ active }: { active: boolean }) {
     { label: "Team Retainments", value: "$180K", type: "core" },
     { label: "Insurance Partnerships", value: "$125K", type: "core" },
     { label: "Facility Rentals", value: "$156K", type: "core" },
-    { label: "Corporate Wellness", value: "$300K", type: "enhanced" },
+    { label: "Personal Training", value: "$300K", type: "core" },
+    { label: "Corporate Wellness", value: "$180K", type: "enhanced" },
     { label: "Camps & Seminars", value: "$144K", type: "enhanced" },
     { label: "Digital Memberships", value: "$84K", type: "enhanced" },
-    { label: "Naming Rights & Sponsorships", value: "$350K", type: "enhanced" },
+    { label: "Naming Rights & Sponsorships", value: "$200K", type: "enhanced" },
     { label: "Event Hosting", value: "$150K", type: "enhanced" },
     { label: "Recovery Drop-Ins", value: "$120K", type: "enhanced" },
+    { label: "Peptide & IV Wellness Clinic", value: "$300K", type: "enhanced" },
+    { label: "Nutrition Hub & Café", value: "$150K", type: "enhanced" },
+    { label: "Pro Shop & Retail", value: "$50K", type: "enhanced" },
     { label: "Content & Media", value: "$36K", type: "enhanced" },
   ];
 
@@ -34,7 +38,7 @@ export default function SlideRevenueDetailed({ active }: { active: boolean }) {
           {active && (
             <>
               <p className="animate-fade-up stagger-1 text-primary font-medium tracking-[0.3em] uppercase text-[18px] mb-2">Revenue Breakdown</p>
-              <h2 className="animate-fade-up stagger-2 text-[50px] font-bold leading-[1] text-white mb-6">
+              <h2 className="animate-fade-up stagger-2 text-[46px] font-bold leading-[1] text-white mb-4">
                 Projected Annual <span className="text-primary">Revenue</span>
               </h2>
               <div className="animate-fade-up stagger-3 flex gap-8">
@@ -60,32 +64,32 @@ export default function SlideRevenueDetailed({ active }: { active: boolean }) {
                 {/* Right: Revenue streams */}
                 <div className="flex-1">
                   <h3 className="text-accent text-[20px] font-bold mb-4 uppercase tracking-wider">Revenue Streams</h3>
-                  <div className="space-y-1.5">
+                  <div className="space-y-1">
                     {streams.map((s, i) => (
-                      <div key={i} className={`flex justify-between items-center rounded-lg px-4 py-2 backdrop-blur-md ${s.type === "core" ? "bg-black/70 border border-primary/40" : "bg-black/70 border border-accent/40"}`}>
-                        <span className="text-white text-[18px] font-medium">{s.label}</span>
-                        <span className={`${s.type === "core" ? "text-primary" : "text-accent"} text-[18px] font-bold shrink-0 ml-4`}>{s.value}</span>
+                      <div key={i} className={`flex justify-between items-center rounded-lg px-3 py-1.5 backdrop-blur-md ${s.type === "core" ? "bg-black/70 border border-primary/40" : "bg-black/70 border border-accent/40"}`}>
+                        <span className="text-white text-[16px] font-medium">{s.label}</span>
+                        <span className={`${s.type === "core" ? "text-primary" : "text-accent"} text-[16px] font-bold shrink-0 ml-4`}>{s.value}</span>
                       </div>
                     ))}
                   </div>
-                  <div className="mt-2 flex justify-between items-center bg-black/80 border border-primary/30 rounded-lg px-4 py-2">
-                    <span className="text-white text-[18px] font-semibold">Core Subtotal</span>
-                    <span className="text-primary text-[20px] font-bold">$821K – $1.0M</span>
+                  <div className="mt-1.5 flex justify-between items-center bg-black/80 border border-primary/30 rounded-lg px-3 py-1.5">
+                    <span className="text-white text-[16px] font-semibold">Core Subtotal</span>
+                    <span className="text-primary text-[18px] font-bold">$1.12M – $1.30M</span>
                   </div>
-                  <div className="mt-1.5 flex justify-between items-center bg-black/80 border border-accent/30 rounded-lg px-4 py-2">
-                    <span className="text-white text-[18px] font-semibold">Enhanced Subtotal</span>
-                    <span className="text-accent text-[20px] font-bold">$1.18M</span>
+                  <div className="mt-1 flex justify-between items-center bg-black/80 border border-accent/30 rounded-lg px-3 py-1.5">
+                    <span className="text-white text-[16px] font-semibold">Enhanced Subtotal</span>
+                    <span className="text-accent text-[18px] font-bold">$1.41M</span>
                   </div>
                 </div>
               </div>
 
               {/* Total bar */}
-              <div className="animate-fade-up stagger-4 mt-4 bg-black/70 backdrop-blur-md border border-white/20 rounded-xl p-5 flex items-center justify-between">
-                <span className="text-foreground text-[24px] font-bold uppercase tracking-wider">Year 1 Total Revenue</span>
+              <div className="animate-fade-up stagger-4 mt-3 bg-black/70 backdrop-blur-md border border-white/20 rounded-xl p-4 flex items-center justify-between">
+                <span className="text-foreground text-[22px] font-bold uppercase tracking-wider">Year 1 Total Revenue</span>
                 <div className="flex items-center gap-4">
-                  <span className="text-primary text-[38px] font-bold">$2.0M</span>
-                  <span className="text-muted-foreground text-[30px]">–</span>
-                  <span className="text-accent text-[38px] font-bold">$2.19M</span>
+                  <span className="text-primary text-[34px] font-bold">$2.54M</span>
+                  <span className="text-muted-foreground text-[26px]">–</span>
+                  <span className="text-accent text-[34px] font-bold">$2.72M</span>
                 </div>
               </div>
             </>
