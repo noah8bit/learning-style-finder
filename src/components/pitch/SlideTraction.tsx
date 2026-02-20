@@ -27,7 +27,7 @@ export default function SlideTraction({ active }: { active: boolean }) {
 
               <div className="animate-fade-up stagger-4 grid grid-cols-2 gap-6 mb-8">
                 {validations.map((v, i) => (
-                  <div key={i} className="bg-white/8 backdrop-blur-sm border border-white/15 rounded-xl p-8 flex gap-6 items-start">
+                  <div key={i} className="bg-black/70 backdrop-blur-md border border-white/20 rounded-xl p-8 flex gap-6 items-start">
                     <span className="text-[44px] shrink-0">{v.icon}</span>
                     <div>
                       <div className="text-primary text-[48px] font-bold leading-none mb-1">{v.metric}</div>

@@ -44,7 +44,7 @@ export default function SlideFinancialProjections({ active }: { active: boolean 
                 <h3 className="text-primary text-[24px] font-bold mb-4 uppercase tracking-wider">Start-Up Costs</h3>
                 <div className="space-y-3">
                   {startupCosts.map((c, i) => (
-                    <div key={i} className="flex justify-between items-center bg-white/5 border border-white/10 rounded-lg p-4">
+                    <div key={i} className="flex justify-between items-center bg-black/60 border border-white/15 rounded-lg p-4">
                       <span className="text-foreground text-[22px]">{c.label}</span>
                       <span className="text-primary font-bold text-[22px]">{c.range}</span>
                     </div>
@@ -63,7 +63,7 @@ export default function SlideFinancialProjections({ active }: { active: boolean 
                 <h3 className="text-accent text-[24px] font-bold mb-4 uppercase tracking-wider">Annual Projections</h3>
                 <div className="space-y-5">
                   {projections.map((p, i) => (
-                    <div key={i} className="bg-white/5 border border-white/10 rounded-lg p-5">
+                    <div key={i} className="bg-black/60 border border-white/15 rounded-lg p-5">
                       <div className="flex items-center justify-between mb-3">
                         <span className="text-foreground text-[24px] font-bold">{p.year}</span>
                         <span className="text-primary text-[22px] font-bold">Net: {p.netLabel}</span>
@@ -71,7 +71,7 @@ export default function SlideFinancialProjections({ active }: { active: boolean 
                       <div className="space-y-2">
                         <div className="flex items-center gap-3">
                           <span className="text-muted-foreground text-[20px] w-[90px] text-right">Costs</span>
-                          <div className="flex-1 h-[28px] bg-white/5 rounded-full overflow-hidden">
+                          <div className="flex-1 h-[28px] bg-black/40 rounded-full overflow-hidden">
                             <div className="h-full bg-accent/70 rounded-full flex items-center justify-end pr-3" style={{ width: `${(p.cost / maxBar) * 100}%` }}>
                               <span className="text-[16px] text-foreground font-bold">{p.costLabel}</span>
                             </div>
@@ -79,7 +79,7 @@ export default function SlideFinancialProjections({ active }: { active: boolean 
                         </div>
                         <div className="flex items-center gap-3">
                           <span className="text-muted-foreground text-[20px] w-[90px] text-right">Revenue</span>
-                          <div className="flex-1 h-[28px] bg-white/5 rounded-full overflow-hidden">
+                          <div className="flex-1 h-[28px] bg-black/40 rounded-full overflow-hidden">
                             <div className="h-full bg-primary/70 rounded-full flex items-center justify-end pr-3" style={{ width: `${(p.revenue / maxBar) * 100}%` }}>
                               <span className="text-[16px] text-foreground font-bold">{p.revenueLabel}</span>
                             </div>
@@ -93,7 +93,7 @@ export default function SlideFinancialProjections({ active }: { active: boolean 
             </div>
             <div className="animate-fade-up stagger-4 grid grid-cols-4 gap-4">
               {roi.map((r, i) => (
-                <div key={i} className="bg-white/8 border border-white/15 rounded-xl p-6 text-center">
+                <div key={i} className="bg-black/70 backdrop-blur-md border border-white/20 rounded-xl p-6 text-center">
                   <span className="text-[36px] mb-2 block">{r.icon}</span>
                   <div className="text-primary text-[28px] font-bold mb-1">{r.value}</div>
                   <div className="text-muted-foreground text-[20px]">{r.label}</div>

@@ -25,7 +25,7 @@ export default function SlideDifferentiators({ active }: { active: boolean }) {
               </h2>
               <div className="animate-fade-up stagger-3 grid grid-cols-2 gap-6">
                 {diffs.map((d, i) => (
-                  <div key={i} className="flex gap-5 bg-white/8 backdrop-blur-sm border border-white/15 rounded-xl p-7">
+                  <div key={i} className="flex gap-5 bg-black/70 backdrop-blur-md border border-white/20 rounded-xl p-7">
                     <span className="text-[44px] shrink-0">{d.icon}</span>
                     <div>
                       <h3 className="text-foreground text-[26px] font-bold mb-2">{d.title}</h3>

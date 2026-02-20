@@ -137,7 +137,7 @@ function SlideSolution({ active }: { active: boolean }) {
               </p>
               <div className="grid grid-cols-4 gap-5">
                 {features.map((f, i) => (
-                  <div key={i} className={`animate-fade-up stagger-${Math.min(i + 3, 6)} bg-white/8 backdrop-blur-sm border border-white/15 rounded-xl px-7 py-6 flex items-center gap-5`}>
+                  <div key={i} className={`animate-fade-up stagger-${Math.min(i + 3, 6)} bg-black/70 backdrop-blur-md border border-white/20 rounded-xl px-7 py-6 flex items-center gap-5`}>
                     <span className="text-[40px]">{f.icon}</span>
                     <span className="text-foreground text-[24px] font-semibold">{f.label}</span>
                   </div>
@@ -174,7 +174,7 @@ function SlideServices({ active }: { active: boolean }) {
               </h2>
               <div className="animate-fade-up stagger-3 grid grid-cols-2 gap-6">
                 {diffs.map((d, i) => (
-                  <div key={i} className="flex gap-5 bg-white/8 backdrop-blur-sm border border-white/15 rounded-xl p-7">
+                  <div key={i} className="flex gap-5 bg-black/70 backdrop-blur-md border border-white/20 rounded-xl p-7">
                     <span className="text-[40px] shrink-0">{d.icon}</span>
                     <div>
                       <h3 className="text-foreground text-[26px] font-bold mb-2">{d.title}</h3>
@@ -265,7 +265,7 @@ function SlideMarket({ active }: { active: boolean }) {
               </p>
               <div className="animate-fade-up stagger-4 grid grid-cols-3 gap-6">
                 {stats.map((s, i) => (
-                  <div key={i} className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 text-center">
+                  <div key={i} className="bg-black/70 backdrop-blur-md border border-white/20 rounded-2xl p-8 text-center">
                     <div className="text-primary text-[56px] font-bold leading-none mb-3">{s.value}</div>
                     <div className="text-foreground text-[22px] font-semibold mb-1">{s.label}</div>
                     <div className="text-muted-foreground text-[18px]">{s.sub}</div>
@@ -355,7 +355,7 @@ function SlideWhyAtlanta({ active }: { active: boolean }) {
               </h2>
               <div className="animate-fade-up stagger-3 grid grid-cols-2 gap-6">
                 {reasons.map((r, i) => (
-                  <div key={i} className="flex gap-6 bg-white/8 backdrop-blur-sm border border-white/15 rounded-xl p-7">
+                  <div key={i} className="flex gap-6 bg-black/70 backdrop-blur-md border border-white/20 rounded-xl p-7">
                     <span className="text-primary text-[52px] font-bold leading-none opacity-60">{r.num}</span>
                     <div>
                       <h3 className="text-foreground text-[28px] font-bold mb-2">{r.title}</h3>

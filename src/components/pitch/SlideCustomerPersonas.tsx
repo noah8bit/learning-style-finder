@@ -25,7 +25,7 @@ export default function SlideCustomerPersonas({ active }: { active: boolean }) {
               </h2>
               <div className="animate-fade-up stagger-3 grid grid-cols-3 gap-5">
                 {personas.map((p, i) => (
-                  <div key={i} className="bg-white/8 backdrop-blur-md border border-white/15 rounded-xl p-7">
+                  <div key={i} className="bg-black/70 backdrop-blur-md border border-white/20 rounded-xl p-7">
                     <div className="flex items-center gap-4 mb-4">
                       <span className="text-[40px]">{p.icon}</span>
                       <div>

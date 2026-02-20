@@ -28,7 +28,7 @@ export default function SlideMarketStats({ active }: { active: boolean }) {
               </p>
               <div className="animate-fade-up stagger-4 grid grid-cols-3 gap-6">
                 {stats.map((s, i) => (
-                  <div key={i} className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 text-center">
+                  <div key={i} className="bg-black/70 backdrop-blur-md border border-white/20 rounded-2xl p-8 text-center">
                     <div className="text-primary text-[56px] font-bold leading-none mb-3">{s.value}</div>
                     <div className="text-foreground text-[22px] font-semibold mb-1">{s.label}</div>
                     <div className="text-muted-foreground text-[18px]">{s.sub}</div>

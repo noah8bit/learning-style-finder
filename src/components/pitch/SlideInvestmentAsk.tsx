@@ -54,7 +54,7 @@ export default function SlideInvestmentAsk({ active }: { active: boolean }) {
                     <h3 className="text-accent text-[24px] font-bold mb-5 uppercase tracking-wider">Equity Structure</h3>
                     <div className="space-y-4">
                       {equityTiers.map((t, i) => (
-                        <div key={i} className="bg-white/8 border border-white/15 rounded-xl p-6">
+                        <div key={i} className="bg-black/70 backdrop-blur-md border border-white/20 rounded-xl p-6">
                           <div className="flex justify-between items-center mb-2">
                             <span className="text-foreground text-[24px] font-bold">{t.range}</span>
                             <span className="text-primary text-[28px] font-bold">{t.equity}</span>

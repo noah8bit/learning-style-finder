@@ -28,7 +28,7 @@ export default function SlideCommunityOutreach({ active }: { active: boolean }) 
             </p>
             <div className="animate-fade-up stagger-4 grid grid-cols-3 gap-6">
               {strategies.map((s, i) => (
-                <div key={i} className="bg-white/8 backdrop-blur-sm border border-white/15 rounded-xl p-8">
+                <div key={i} className="bg-black/70 backdrop-blur-md border border-white/20 rounded-xl p-8">
                   <span className="text-[44px] mb-4 block">{s.icon}</span>
                   <h3 className="text-foreground text-[26px] font-bold mb-3">{s.title}</h3>
                   <p className="text-muted-foreground text-[22px] leading-relaxed">{s.desc}</p>
