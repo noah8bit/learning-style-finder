@@ -12,10 +12,10 @@ export default function SlideCustomerPersonas({ active }: { active: boolean }) {
     },
     {
       icon: "🎬",
-      name: "The Film & Stunt Pro",
+      name: "The Film, Stunt & Circus Pro",
       age: "22–45",
-      desc: "Actors, stunt performers, and coordinators in Georgia's booming film industry — needs fight choreography, wire rigs, and production-grade rehearsal space.",
-      needs: ["Stunt training & rigging", "Green screen / mo-cap", "Production space rental"],
+      desc: "Actors, stunt performers, circus artists, and coordinators — including potential Cirque du Soleil training residencies when their shows come to Atlanta.",
+      needs: ["Stunt training & rigging", "Aerial silks & trapeze", "Cirque du Soleil rehearsal space"],
     },
     {
       icon: "👨‍👩‍👧‍👦",

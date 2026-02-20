@@ -27,7 +27,7 @@ export default function SlideInvestmentAsk({ active }: { active: boolean }) {
                 Raising <span className="text-primary">$12M</span>
               </h2>
               <p className="animate-fade-up stagger-3 text-muted-foreground text-[17px] mb-8 max-w-[800px]">
-                Full capital for a ground-up 60,000+ sq ft world-class athletic facility — milestone-gated tranches that de-risk your investment while delivering the complete Iron Form vision from day one.
+                Full capital for a ground-up 60,000+ sq ft world-class athletic facility on an 8–12 acre campus — milestone-gated tranches that de-risk your investment while delivering the complete Iron Form vision from day one.
               </p>
 
               <div className="animate-fade-up stagger-4 flex gap-8">

@@ -5,7 +5,7 @@ export default function SlideMarketStats({ active }: { active: boolean }) {
   const stats = [
     { value: "$100B+", label: "Global Fitness Market by 2025", sub: "Growing at ~7% CAGR" },
     { value: "$8B", label: "Sports Medicine Market by 2025", sub: "Recovery & therapy focus" },
-    { value: "80%", label: "Americans in Fitness Activities", sub: "247M active in 2024 (SFIA)" },
+    { value: "247M", label: "Sport & Fitness Participants", sub: "Participated in 2024 (SFIA Report)" },
     { value: "70%", label: "Prefer Multi-Training Facilities", sub: "Cross-training demand" },
     { value: "7M+", label: "Metro Atlanta Population", sub: "Athletes & fitness enthusiasts" },
     { value: "↑", label: "Mental Health Awareness", sub: "Driving comprehensive solutions" },

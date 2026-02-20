@@ -17,7 +17,7 @@ export default function SlideFacilityLayout({ active }: { active: boolean }) {
 
   const stats = [
     { label: "Total Indoor", value: "60,000+ sq ft" },
-    { label: "Training Zones", value: "11 Distinct" },
+    { label: "Campus Acreage", value: "8–12 acres" },
     { label: "Sport Disciplines", value: "30+" },
     { label: "Recovery Modalities", value: "8+" },
   ];
