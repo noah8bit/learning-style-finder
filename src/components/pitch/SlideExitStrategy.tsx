@@ -28,7 +28,7 @@ export default function SlideExitStrategy({ active }: { active: boolean }) {
                     <span className="text-accent text-[26px] font-bold bg-accent/15 border border-accent/40 rounded-full px-5 py-0.5">3–5x</span>
                   </div>
                   <p className="text-muted-foreground text-[18px] leading-relaxed mb-6">
-                    Year 3+ net margins of 40%+ enable quarterly profit distributions. No exit required — your money works from day one.
+                    Year 3+ net margins of 25–35% enable quarterly profit distributions. No exit required — your money works from day one.
                   </p>
 
                   {/* Scenario math */}
@@ -41,15 +41,15 @@ export default function SlideExitStrategy({ active }: { active: boolean }) {
                       </div>
                       <div className="flex justify-between items-center">
                         <span className="text-muted-foreground text-[17px]">Year 3 distributions</span>
-                        <span className="text-white text-[20px] font-bold">~$200K</span>
+                        <span className="text-white text-[20px] font-bold">~$90K</span>
                       </div>
                       <div className="flex justify-between items-center">
                         <span className="text-muted-foreground text-[17px]">Year 5 cumulative</span>
-                        <span className="text-white text-[20px] font-bold">~$800K</span>
+                        <span className="text-white text-[20px] font-bold">~$400K</span>
                       </div>
                       <div className="flex justify-between items-center">
                         <span className="text-muted-foreground text-[17px]">Year 7 cumulative</span>
-                        <span className="text-accent text-[22px] font-bold">~$1.5M–$2M</span>
+                        <span className="text-accent text-[22px] font-bold">~$800K–$1.2M</span>
                       </div>
                       <div className="border-t border-accent/20 pt-3 mt-1">
                         <p className="text-foreground text-[16px] leading-relaxed">
@@ -104,12 +104,12 @@ export default function SlideExitStrategy({ active }: { active: boolean }) {
                       <div className="text-muted-foreground text-[12px]">Conversion ceiling</div>
                     </div>
                     <div className="bg-black/70 backdrop-blur-md border border-white/20 rounded-xl p-4 text-center">
-                      <div className="text-primary text-[26px] font-bold mb-0.5">3–4 yrs</div>
+                      <div className="text-primary text-[26px] font-bold mb-0.5">5–6 yrs</div>
                       <div className="text-foreground text-[14px] font-semibold">Projected Payback</div>
                       <div className="text-muted-foreground text-[12px]">Via distributions</div>
                     </div>
                     <div className="bg-black/70 backdrop-blur-md border border-white/20 rounded-xl p-4 text-center">
-                      <div className="text-primary text-[26px] font-bold mb-0.5">40%+</div>
+                      <div className="text-primary text-[26px] font-bold mb-0.5">25–35%</div>
                       <div className="text-foreground text-[14px] font-semibold">Year 3 Margin</div>
                       <div className="text-muted-foreground text-[12px]">Increasing annually</div>
                     </div>
