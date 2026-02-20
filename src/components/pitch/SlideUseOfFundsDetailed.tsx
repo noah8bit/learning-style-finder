@@ -3,12 +3,12 @@ import ScaledSlide from "./ScaledSlide";
 
 export default function SlideUseOfFundsDetailed({ active }: { active: boolean }) {
   const funds = [
-    { pct: "38%", dollar: "$4.5M", title: "Construction & Land", desc: "8–12 acre campus, 60,000+ sq ft ground-up build", color: "text-primary", borderColor: "border-primary/30", bgColor: "bg-primary/10" },
-    { pct: "22%", dollar: "$2.7M", title: "Equipment & Installations", desc: "Pool, climbing walls, cryotherapy, stunt rigging", color: "text-accent", borderColor: "border-accent/30", bgColor: "bg-accent/10" },
-    { pct: "11%", dollar: "$1.35M", title: "Year 1 Operations", desc: "Coaches, medical staff, utilities, insurance", color: "text-primary", borderColor: "border-primary/30", bgColor: "bg-primary/10" },
-    { pct: "7%", dollar: "$850K", title: "App & Technology", desc: "Performance tracking, biometrics, member mgmt", color: "text-accent", borderColor: "border-accent/30", bgColor: "bg-accent/10" },
-    { pct: "6%", dollar: "$750K", title: "Marketing & Launch", desc: "Grand opening, digital presence, sponsorships", color: "text-primary", borderColor: "border-primary/30", bgColor: "bg-primary/10" },
-    { pct: "15%", dollar: "$1.8M", title: "Contingency Reserve", desc: "Buffer for delays, overruns, regulatory costs", color: "text-accent", borderColor: "border-accent/30", bgColor: "bg-accent/10" },
+    { pct: "36%", dollar: "$5M", title: "Construction & Land", desc: "8–12 acre campus, 60,000+ sq ft ground-up build, café & clinic build-out", color: "text-primary", borderColor: "border-primary/30", bgColor: "bg-primary/10" },
+    { pct: "21%", dollar: "$3M", title: "Equipment & Installations", desc: "Pool, climbing walls, cryotherapy, stunt rigging, kitchen equipment", color: "text-accent", borderColor: "border-accent/30", bgColor: "bg-accent/10" },
+    { pct: "11%", dollar: "$1.5M", title: "Year 1 Operations", desc: "Coaches, medical staff, utilities, insurance, inventory", color: "text-primary", borderColor: "border-primary/30", bgColor: "bg-primary/10" },
+    { pct: "7%", dollar: "$1M", title: "App & Technology", desc: "Performance tracking, biometrics, member mgmt, POS systems", color: "text-accent", borderColor: "border-accent/30", bgColor: "bg-accent/10" },
+    { pct: "7%", dollar: "$1M", title: "Marketing & Launch", desc: "Grand opening, digital presence, corporate sales, sponsorship outreach", color: "text-primary", borderColor: "border-primary/30", bgColor: "bg-primary/10" },
+    { pct: "18%", dollar: "$2.5M", title: "Contingency Reserve", desc: "Buffer for construction delays, overruns, regulatory costs, working capital", color: "text-accent", borderColor: "border-accent/30", bgColor: "bg-accent/10" },
   ];
 
   return (
