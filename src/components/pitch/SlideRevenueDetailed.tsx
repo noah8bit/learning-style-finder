@@ -25,7 +25,7 @@ export default function SlideRevenueDetailed({ active }: { active: boolean }) {
     <ScaledSlide>
       <div className="relative w-full h-full">
         <img src={heroTrack} alt="" className="absolute inset-0 w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-black/85" />
+        <div className="absolute inset-0 bg-black/65" />
         <div className="relative z-10 flex flex-col justify-center h-full px-[100px]" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.9), 0 0 2px rgba(0,0,0,1)' }}>
           {active && (
             <>
