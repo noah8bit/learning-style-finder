@@ -34,7 +34,10 @@ export default function SlideMarketStats({ active }: { active: boolean }) {
                     <div className="text-muted-foreground text-[18px]">{s.sub}</div>
                   </div>
                 ))}
-              </div>
+            </div>
+              <p className="animate-fade-up stagger-5 absolute bottom-6 left-[100px] right-[100px] text-muted-foreground/50 text-[11px] leading-tight">
+                Sources: IHRSA Global Report 2024; Grand View Research – Sports Medicine Market 2025; SFIA 2025 Topline Participation Report; Atlanta Regional Commission Population Estimates 2024; Statista Digital Fitness Forecast
+              </p>
             </>
           )}
         </div>
