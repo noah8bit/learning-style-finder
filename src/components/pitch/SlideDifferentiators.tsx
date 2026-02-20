@@ -5,11 +5,11 @@ export default function SlideDifferentiators({ active }: { active: boolean }) {
   const diffs = [
     { icon: "🏥", title: "Integrated Medical & Recovery", benefit: "Combines sports medicine with everyday training, enhancing performance and recovery." },
     { icon: "🏋", title: "30+ Training Disciplines", benefit: "One-stop hub for diverse athletic needs — unlike competitors focused on singular disciplines." },
-    { icon: "🎬", title: "Film & Stunt Wing", benefit: "Unique offering in Atlanta's booming film market for stunt performers and actors." },
+    { icon: "🎬", title: "Film, Stunt & Circus Wing", benefit: "Unique offering for stunt performers, circus artists, and Cirque du Soleil-level training in Atlanta's booming film market." },
     { icon: "🌍", title: "Community Outreach", benefit: "Scouting and mentoring undiscovered talent — accessibility over profit-first models." },
-    { icon: "💰", title: "Diverse Revenue Streams", benefit: "Memberships, team retainment, insurance, events — stable, adaptable financial model." },
+    { icon: "🏆", title: "Competition Hosting", benefit: "Purpose-built for Hyrox, CrossFit, strongman, and multi-sport fitness competitions drawing regional audiences." },
     { icon: "⚡", title: "High-Tech Recovery", benefit: "Cryotherapy, infrared therapy, peptide wellness — forefront of performance innovation." },
-    { icon: "👨‍🏫", title: "Expert Staff", benefit: "Specialists across disciplines ensuring personalized, high-quality training." },
+    { icon: "🏃", title: "Olympic Track & Field", benefit: "Full sprint lanes, jumping pits, throwing cages, and hurdle training — rare outside collegiate facilities." },
   ];
 
   return (

@@ -155,11 +155,11 @@ function SlideServices({ active }: { active: boolean }) {
   const diffs = [
     { icon: "🏥", title: "Integrated Medical & Recovery", benefit: "Neuromuscular therapy and peptide clinics on-site — bridging elite sports medicine with everyday training." },
     { icon: "🏋", title: "30+ Training Disciplines", benefit: "One-stop hub for diverse athletic needs — martial arts, track & field, swimming, dance, and more." },
-    { icon: "🎬", title: "Film & Stunt Wing", benefit: "High-ceiling rigging, green screen, and mo-cap in Georgia's #1-ranked film production market." },
+    { icon: "🎬", title: "Film, Stunt & Circus Wing", benefit: "High-ceiling rigging, aerial training, and circus arts in Georgia's #1-ranked film production market." },
     { icon: "🌍", title: "Community Outreach", benefit: "Scouting and mentoring undiscovered talent — accessibility over profit-first models." },
-    { icon: "💰", title: "Diverse Revenue Streams", benefit: "Memberships, team retainment, insurance, film rentals, events — stable, adaptable financial model." },
+    { icon: "🏆", title: "Competition Hosting", benefit: "Purpose-built for Hyrox, CrossFit, strongman, and multi-sport fitness competitions." },
     { icon: "⚡", title: "Recovery Tech Suite", benefit: "Cryotherapy, infrared, PEMF, Normatec, sauna & cold plunge — forefront of performance innovation." },
-    { icon: "📊", title: "Performance Analytics", benefit: "Proprietary app for athlete tracking, biometric data, and personalized training insights." },
+    { icon: "🏃", title: "Olympic Track & Field", benefit: "Full sprint lanes, jumping pits, throwing cages, and hurdle training for elite track athletes." },
   ];
   return (
     <ScaledSlide>
@@ -196,10 +196,10 @@ function SlideDisciplines({ active }: { active: boolean }) {
   const categories = [
     { title: "Martial Arts & Combat", items: ["Tae Kwon Do", "Karate", "Jiu-Jitsu", "Muay Thai", "Kickboxing", "Wing Chun", "Boxing", "Silat", "Jeet Kune Do", "Wrestling"], color: "text-primary" },
     { title: "Weapons & Combat", items: ["Fencing", "Kendo", "HEMA Sword Fighting"], color: "text-accent" },
-    { title: "Dance & Acrobatics", items: ["Ballet", "Hip Hop", "Contemporary", "Jazz", "Tap", "Gymnastics & Tumbling"], color: "text-primary" },
+    { title: "Dance & Acrobatics", items: ["Ballet", "Hip Hop", "Contemporary", "Jazz", "Tap", "Gymnastics & Tumbling", "Aerial Silks & Trapeze", "Circus Performance"], color: "text-primary" },
     { title: "Field & Court", items: ["Basketball", "Soccer", "Volleyball", "Football Training", "Baseball & Softball", "Lacrosse"], color: "text-accent" },
-    { title: "Athletic Performance", items: ["Track & Field", "CrossFit", "Hyrox", "Rowing & Erging"], color: "text-primary" },
-    { title: "Specialty", items: ["Rock Climbing", "Stunt Training", "Cycling", "Pilates", "Yoga", "Golf Sim", "Olympic Swimming"], color: "text-accent" },
+    { title: "Track & Field (Olympic)", items: ["Sprints (100m–400m)", "Distance (800m–5K)", "Hurdles", "High Jump & Pole Vault", "Long Jump & Triple Jump", "Shot Put & Discus", "Javelin", "Decathlon/Heptathlon Training"], color: "text-primary" },
+    { title: "Specialty", items: ["Rock Climbing", "Stunt Training", "Cycling", "Pilates", "Yoga", "Golf Sim", "Olympic Swimming", "Hyrox / CrossFit", "Rowing & Erging"], color: "text-accent" },
   ];
   return (
     <ScaledSlide>
@@ -245,7 +245,7 @@ function SlideMarket({ active }: { active: boolean }) {
   const stats = [
     { value: "$100B+", label: "Global Health & Fitness Industry", sub: "Growing at ~7% CAGR" },
     { value: "$10B+", label: "Sports Medicine Market", sub: "Projected to reach $15B by 2032" },
-    { value: "80%", label: "Americans Physically Active", sub: "247M active in 2024 (SFIA)" },
+    { value: "247M", label: "Sport & Fitness Participants", sub: "Participated in 2024 (SFIA Report)" },
     { value: "6M+", label: "Atlanta Metro Population", sub: "#1 U.S. film production state" },
     { value: "↑", label: "Multi-Training Demand", sub: "Cross-training growth accelerating" },
     { value: "#1", label: "First-Mover Advantage", sub: "No SE competitor matches" },
@@ -399,7 +399,7 @@ function SlideFilmIndustry({ active }: { active: boolean }) {
                 Where Action<br />Meets <span className="text-primary">Production</span>
               </h2>
               <p className="animate-fade-up stagger-3 text-muted-foreground text-[16px] mb-10 leading-relaxed max-w-[600px]">
-                Actors and stunt performers train at Iron Form. Productions rent dedicated space for rehearsals, previsualization, and action design — all within Atlanta's booming film ecosystem.
+                Actors, stunt performers, and circus artists train at Iron Form. Productions rent dedicated space for rehearsals, previsualization, and action design. We're also exploring partnerships with Cirque du Soleil for training residencies during their Atlanta shows.
               </p>
               <div className="animate-fade-up stagger-4 grid grid-cols-2 gap-4">
                 {capabilities.map((c, i) => (
