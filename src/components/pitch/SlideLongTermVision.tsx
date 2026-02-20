@@ -10,9 +10,9 @@ export default function SlideLongTermVision({ active }: { active: boolean }) {
   ];
 
   const exitPaths = [
-    { icon: "🔁", title: "Franchise Model", desc: "Proven playbook replicated across 10+ metros by Year 7 — each generating $1.5M–$2.5M annually." },
-    { icon: "🏦", title: "Strategic Acquisition", desc: "Acquisition target for national fitness brands, sports media companies, or healthcare networks." },
-    { icon: "💸", title: "Investor Returns", desc: "Projected 3–5x return within 5–7 years through profit distributions and equity appreciation." },
+    { icon: "🔁", title: "Franchise Model", desc: "Proven playbook replicated across 10+ metros by Year 7. Comparable: F45 scaled from 1 to 1,750+ locations in 8 years." },
+    { icon: "🏦", title: "Strategic Acquisition", desc: "Target for Life Time, Equinox, or PE firms. Comparable: TMPL Gym acquired for $30M (single NYC location). Multi-sport facilities command 6–10x EBITDA." },
+    { icon: "💸", title: "Cash-Flow Distributions", desc: "Projected 3–5x return within 5–7 years. Year 3+ net margins of 40%+ enable quarterly profit distributions to investors." },
   ];
 
   return (

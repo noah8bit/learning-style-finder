@@ -38,19 +38,37 @@ export default function SlideTraction({ active }: { active: boolean }) {
                 ))}
               </div>
 
-              <div className="animate-fade-up stagger-5 bg-primary/10 border border-primary/30 rounded-xl p-7">
-                <h3 className="text-primary text-[22px] font-bold mb-3 uppercase tracking-wider">Social Proof</h3>
-                <div className="flex gap-10">
-                  {[
-                    "Endorsed by Atlanta-based professional athletes and trainers",
-                    "Concept validated through local fitness community outreach",
-                    "Pre-launch survey planned to gauge switching intent",
-                  ].map((s, i) => (
-                    <div key={i} className="flex items-start gap-3 flex-1">
-                      <span className="text-primary text-[24px] mt-0.5">✓</span>
-                      <p className="text-foreground text-[20px] leading-relaxed">{s}</p>
-                    </div>
-                  ))}
+              <div className="animate-fade-up stagger-5 flex gap-5">
+                <div className="flex-1 bg-primary/10 border border-primary/30 rounded-xl p-6">
+                  <h3 className="text-primary text-[20px] font-bold mb-3 uppercase tracking-wider">Founder Skin in the Game</h3>
+                  <div className="space-y-2">
+                    {[
+                      "Noah Garret: 2+ years of full-time development, personal capital invested in IP, branding, and facility planning",
+                      "Rick Villanueva: Relocating his established NMT practice into Iron Form — bringing existing client revenue",
+                      "Josh Garret: Contributing peptide clinic equipment and licensing costs from personal investment",
+                    ].map((s, i) => (
+                      <div key={i} className="flex items-start gap-2">
+                        <span className="text-primary text-[20px] mt-0.5 shrink-0">✓</span>
+                        <p className="text-foreground text-[18px] leading-relaxed">{s}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                <div className="flex-1 bg-accent/10 border border-accent/30 rounded-xl p-6">
+                  <h3 className="text-accent text-[20px] font-bold mb-3 uppercase tracking-wider">Comparable Facility Revenue</h3>
+                  <div className="space-y-2">
+                    {[
+                      "IMG Academy (Bradenton, FL): $80M+/yr revenue across multi-sport campus",
+                      "Life Time Fitness: $6.7B revenue (2023), avg $4.2M/location/yr",
+                      "F45 Training: Avg franchise $500K–$1M/yr with 1/60th our sq ft",
+                      "Avg Atlanta CrossFit box: $300K–$500K/yr with single-discipline focus",
+                    ].map((s, i) => (
+                      <div key={i} className="flex items-start gap-2">
+                        <span className="text-accent text-[20px] mt-0.5 shrink-0">•</span>
+                        <p className="text-foreground text-[18px] leading-relaxed">{s}</p>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
             </>
