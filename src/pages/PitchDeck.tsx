@@ -193,32 +193,31 @@ function SlideServices({ active }: { active: boolean }) {
 
 function SlideDisciplines({ active }: { active: boolean }) {
   const categories = [
-    { title: "Martial Arts & Combat", items: ["Tae Kwon Do", "Karate", "Jiu-Jitsu", "Muay Thai", "Kickboxing", "Wing Chun", "Boxing", "Silat", "Jeet Kune Do", "Wrestling"], color: "text-primary" },
+    { title: "Martial Arts & Combat", items: ["Tae Kwon Do", "Karate", "Jiu-Jitsu", "Muay Thai", "Boxing", "Wrestling", "Kickboxing", "Wing Chun"], color: "text-primary" },
     { title: "Weapons & Combat", items: ["Fencing", "Kendo", "HEMA Sword Fighting"], color: "text-accent" },
-    { title: "Dance & Acrobatics", items: ["Ballet", "Hip Hop", "Contemporary", "Jazz", "Tap", "Gymnastics & Tumbling", "Aerial Silks & Trapeze", "Circus Performance"], color: "text-primary" },
+    { title: "Dance & Acrobatics", items: ["Ballet", "Hip Hop", "Contemporary", "Gymnastics & Tumbling", "Aerial Silks & Trapeze", "Circus Performance"], color: "text-primary" },
     { title: "Field & Court", items: ["Basketball", "Soccer", "Volleyball", "Football Training", "Baseball & Softball", "Lacrosse"], color: "text-accent" },
-    { title: "Track & Field (Olympic)", items: ["Sprints (100m–400m)", "Distance (800m–5K)", "Hurdles", "High Jump & Pole Vault", "Long Jump & Triple Jump", "Shot Put & Discus", "Javelin", "Decathlon/Heptathlon Training"], color: "text-primary" },
-    { title: "Specialty", items: ["Rock Climbing", "Stunt Training", "Cycling", "Pilates", "Yoga", "Golf Sim", "Olympic Swimming", "Hyrox / CrossFit", "Rowing & Erging"], color: "text-accent" },
+    { title: "Track & Field (Olympic)", items: ["Sprints (100m–400m)", "Distance (800m–5K)", "Hurdles", "High/Long/Triple Jump", "Pole Vault", "Shot Put & Discus", "Javelin"], color: "text-primary" },
+    { title: "Specialty", items: ["Rock Climbing", "Stunt Training", "Olympic Swimming", "Hyrox / CrossFit", "Pilates & Yoga", "Golf Sim", "Rowing"], color: "text-accent" },
   ];
   return (
     <ScaledSlide>
       <div className="w-full h-full bg-background flex">
-        {/* Left: discipline list */}
-        <div className="w-[55%] flex flex-col justify-center px-[80px] pl-[100px]">
+        <div className="w-[58%] flex flex-col justify-center px-[80px] pl-[100px]">
           {active && (
             <>
-              <p className="animate-fade-up stagger-1 text-primary font-medium tracking-[0.3em] uppercase text-[20px] mb-4">Cross-Training Mediums</p>
-              <h2 className="animate-fade-up stagger-2 text-[56px] font-bold leading-[1] text-foreground mb-10">
-                <span className="text-primary">30+</span> Disciplines<br />Under One Roof
+              <p className="animate-fade-up stagger-1 text-primary font-medium tracking-[0.3em] uppercase text-[20px] mb-3">Cross-Training Mediums</p>
+              <h2 className="animate-fade-up stagger-2 text-[52px] font-bold leading-[1] text-foreground mb-8">
+                <span className="text-primary">30+</span> Disciplines Under One Roof
               </h2>
-              <div className="animate-fade-up stagger-3 grid grid-cols-2 gap-x-12 gap-y-6">
+              <div className="animate-fade-up stagger-3 grid grid-cols-3 gap-x-10 gap-y-5">
                 {categories.map((cat, i) => (
                   <div key={i}>
-                    <h3 className={`${cat.color} text-[24px] font-bold uppercase tracking-wide mb-3`}>{cat.title}</h3>
-                    <ul className="space-y-1.5">
+                    <h3 className={`${cat.color} text-[22px] font-bold uppercase tracking-wide mb-2`}>{cat.title}</h3>
+                    <ul className="space-y-1">
                       {cat.items.map((item, j) => (
-                        <li key={j} className="text-secondary-foreground text-[20px] flex items-center gap-2">
-                          <span className="w-2 h-2 rounded-full bg-muted-foreground shrink-0" />
+                        <li key={j} className="text-secondary-foreground text-[18px] flex items-center gap-2">
+                          <span className="w-1.5 h-1.5 rounded-full bg-muted-foreground shrink-0" />
                           {item}
                         </li>
                       ))}
@@ -229,8 +228,7 @@ function SlideDisciplines({ active }: { active: boolean }) {
             </>
           )}
         </div>
-        {/* Right: facility image */}
-        <div className="w-[45%] h-full relative">
+        <div className="w-[42%] h-full relative">
           <img src={heroFacility} alt="Multi-sport training facility" className="absolute inset-0 w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-l from-transparent to-background" />
         </div>
