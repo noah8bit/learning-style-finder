@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback, useRef } from "react";
-import { ChevronLeft, ChevronRight, Maximize, Minimize, Grid3X3, Download, Loader2 } from "lucide-react";
+import { ChevronLeft, ChevronRight, Maximize, Minimize, Grid3X3, Download, Loader2, FileDown } from "lucide-react";
+import { exportPptx } from "@/utils/exportPptx";
 
 import heroGym from "@/assets/pitch/hero-gym.jpg";
 import heroAthlete from "@/assets/pitch/hero-athlete.jpg";
@@ -499,6 +500,7 @@ export default function PitchDeck() {
   const [showGrid, setShowGrid] = useState(false);
   const [showUI, setShowUI] = useState(true);
   const [exporting, setExporting] = useState(false);
+  const [exportingPptx, setExportingPptx] = useState(false);
   const uiTimeout = useRef<number>();
 
   const exportPDF = useCallback(() => {
@@ -648,6 +650,18 @@ export default function PitchDeck() {
           title="Download PDF"
         >
           {exporting ? <Loader2 className="w-4 h-4 animate-spin" /> : <Download className="w-4 h-4" />}
+        </button>
+
+        <button
+          onClick={async () => {
+            setExportingPptx(true);
+            try { await exportPptx(); } finally { setExportingPptx(false); }
+          }}
+          disabled={exportingPptx}
+          className="text-muted-foreground hover:text-foreground p-1 transition-colors disabled:opacity-50"
+          title="Download PPTX"
+        >
+          {exportingPptx ? <Loader2 className="w-4 h-4 animate-spin" /> : <FileDown className="w-4 h-4" />}
         </button>
 
         <button
