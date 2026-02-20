@@ -380,6 +380,9 @@ function SlideWhyAtlanta({ active }: { active: boolean }) {
                   </div>
                 ))}
               </div>
+              <p className="animate-fade-up stagger-4 absolute bottom-6 left-[120px] right-[120px] text-muted-foreground/50 text-[11px] leading-tight">
+                Sources: Atlanta Regional Commission Population Estimates 2024; Georgia Dept. of Economic Development – Film Industry Report; MPAA Theatrical & Home Entertainment Market Report
+              </p>
             </>
           )}
         </div>
