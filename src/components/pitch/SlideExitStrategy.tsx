@@ -25,7 +25,7 @@ export default function SlideExitStrategy({ active }: { active: boolean }) {
                   <span className="text-[44px] block mb-3">💸</span>
                   <div className="flex items-center gap-4 mb-3">
                     <h3 className="text-white text-[28px] font-bold">Cash-Flow Distributions</h3>
-                    <span className="text-accent text-[26px] font-bold bg-accent/15 border border-accent/40 rounded-full px-5 py-0.5">3–5x</span>
+                    <span className="text-accent text-[18px] font-bold bg-accent/15 border border-accent/40 rounded-full px-5 py-0.5">Recurring Income</span>
                   </div>
                   <p className="text-muted-foreground text-[18px] leading-relaxed mb-6">
                     Year 3+ net margins of 25–35% enable quarterly profit distributions. No exit required — your money works from day one.
@@ -71,11 +71,11 @@ export default function SlideExitStrategy({ active }: { active: boolean }) {
                         <h3 className="text-white text-[22px] font-bold">Franchise Model</h3>
                         <div className="flex items-center gap-3">
                           <span className="text-muted-foreground text-[16px]">Year 5–7</span>
-                          <span className="text-accent text-[20px] font-bold bg-accent/10 border border-accent/30 rounded-full px-4 py-0.5">8–12x</span>
+                          <span className="text-accent text-[20px] font-bold bg-accent/10 border border-accent/30 rounded-full px-4 py-0.5">8–12x valuation</span>
                         </div>
                       </div>
                       <p className="text-muted-foreground text-[17px] leading-relaxed">
-                        Replicate across 10+ metros. F45 scaled from 1 to 1,500+ locations in under a decade. Each location projected at $1.5M–$2.5M/yr.
+                        Replicate across 10+ metros. F45 scaled from 1 to 1,500+ locations in under a decade. Company valuation could reach $80M–$300M, growing your equity value proportionally.
                       </p>
                     </div>
                   </div>
@@ -87,11 +87,11 @@ export default function SlideExitStrategy({ active }: { active: boolean }) {
                         <h3 className="text-white text-[22px] font-bold">Strategic Acquisition</h3>
                         <div className="flex items-center gap-3">
                           <span className="text-muted-foreground text-[16px]">Year 5–8</span>
-                          <span className="text-accent text-[20px] font-bold bg-accent/10 border border-accent/30 rounded-full px-4 py-0.5">6–10x</span>
+                          <span className="text-accent text-[20px] font-bold bg-accent/10 border border-accent/30 rounded-full px-4 py-0.5">6–10x valuation</span>
                         </div>
                       </div>
                       <p className="text-muted-foreground text-[17px] leading-relaxed">
-                        Acquisition target for Life Time, Equinox, or PE firms. TMPL Gym acquired for $30M (single location). Multi-sport facilities command 6–10x EBITDA.
+                        Acquisition target for Life Time, Equinox, or PE firms. Multi-sport facilities command 6–10x EBITDA multiples, translating to significant equity appreciation.
                       </p>
                     </div>
                   </div>
