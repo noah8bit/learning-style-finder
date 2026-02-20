@@ -18,12 +18,12 @@ export default function SlideInvestmentAsk({ active }: { active: boolean }) {
     <ScaledSlide>
       <div className="relative w-full h-full">
         <img src={heroConstruction} alt="" className="absolute inset-0 w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-black/92" />
-        <div className="relative z-10 flex flex-col justify-center h-full px-[100px]">
+        <div className="absolute inset-0 bg-black/75" />
+        <div className="relative z-10 flex flex-col justify-center h-full px-[100px]" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.9), 0 0 2px rgba(0,0,0,1)' }}>
           {active && (
             <>
               <p className="animate-fade-up stagger-1 text-primary font-medium tracking-[0.3em] uppercase text-[20px] mb-3">The Ask</p>
-              <h2 className="animate-fade-up stagger-2 text-[60px] font-bold leading-[1] text-foreground mb-3">
+              <h2 className="animate-fade-up stagger-2 text-[60px] font-bold leading-[1] text-white mb-3">
                 Raising <span className="text-primary">$12M</span>
               </h2>
               <p className="animate-fade-up stagger-3 text-muted-foreground text-[24px] mb-8 max-w-[900px] leading-relaxed">
