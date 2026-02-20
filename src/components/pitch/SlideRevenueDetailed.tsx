@@ -3,16 +3,16 @@ import ScaledSlide from "./ScaledSlide";
 
 export default function SlideRevenueDetailed({ active }: { active: boolean }) {
   const rampUp = [
-    { month: "M1", members: 30, revenue: "$7.5K" },
-    { month: "M3", members: 75, revenue: "$19K" },
-    { month: "M6", members: 140, revenue: "$35K" },
-    { month: "M9", members: 200, revenue: "$50K" },
-    { month: "M12", members: 275, revenue: "$69K" },
+    { month: "M1", members: 30, revenue: "$8K" },
+    { month: "M3", members: 75, revenue: "$20K" },
+    { month: "M6", members: 140, revenue: "$37K" },
+    { month: "M9", members: 200, revenue: "$52K" },
+    { month: "M12", members: 275, revenue: "$72K" },
   ];
   const maxMembers = 300;
 
   const streams = [
-    { label: "Monthly Memberships", value: "$360K – $540K", type: "core" },
+    { label: "Monthly Memberships", value: "$690K – $790K", type: "core" },
     { label: "Team Retainments", value: "$180K", type: "core" },
     { label: "Insurance Partnerships", value: "$125K", type: "core" },
     { label: "Facility Rentals", value: "$156K", type: "core" },
@@ -23,7 +23,7 @@ export default function SlideRevenueDetailed({ active }: { active: boolean }) {
     { label: "Digital Memberships", value: "$84K", type: "enhanced" },
     { label: "Naming Rights & Sponsorships", value: "$200K", type: "enhanced" },
     { label: "Event Hosting", value: "$150K", type: "enhanced" },
-    { label: "Recovery Drop-Ins", value: "$120K", type: "enhanced" },
+    { label: "Recovery Services", value: "$190K", type: "enhanced" },
     { label: "Peptide & IV Wellness Clinic", value: "$300K", type: "enhanced" },
     { label: "Nutrition Hub & Café", value: "$150K", type: "enhanced" },
     { label: "Pro Shop & Retail", value: "$50K", type: "enhanced" },
@@ -75,11 +75,11 @@ export default function SlideRevenueDetailed({ active }: { active: boolean }) {
                   </div>
                   <div className="mt-1.5 flex justify-between items-center bg-black/80 border border-primary/30 rounded-lg px-3 py-1.5">
                     <span className="text-white text-[16px] font-semibold">Core Subtotal</span>
-                    <span className="text-primary text-[18px] font-bold">$1.27M – $1.45M</span>
+                    <span className="text-primary text-[18px] font-bold">$1.60M – $1.70M</span>
                   </div>
                   <div className="mt-1 flex justify-between items-center bg-black/80 border border-accent/30 rounded-lg px-3 py-1.5">
                     <span className="text-white text-[16px] font-semibold">Enhanced Subtotal</span>
-                    <span className="text-accent text-[18px] font-bold">$1.41M</span>
+                    <span className="text-accent text-[18px] font-bold">$1.48M</span>
                   </div>
                 </div>
               </div>
@@ -88,9 +88,9 @@ export default function SlideRevenueDetailed({ active }: { active: boolean }) {
               <div className="animate-fade-up stagger-4 mt-3 bg-black/70 backdrop-blur-md border border-white/20 rounded-xl p-4 flex items-center justify-between">
                 <span className="text-foreground text-[22px] font-bold uppercase tracking-wider">Year 1 Total Revenue</span>
                 <div className="flex items-center gap-4">
-                  <span className="text-primary text-[34px] font-bold">$2.68M</span>
+                  <span className="text-primary text-[34px] font-bold">$3.1M</span>
                   <span className="text-muted-foreground text-[26px]">–</span>
-                  <span className="text-accent text-[34px] font-bold">$2.87M</span>
+                  <span className="text-accent text-[34px] font-bold">$3.3M</span>
                 </div>
               </div>
               <p className="animate-fade-up stagger-5 absolute bottom-6 left-[100px] right-[100px] text-muted-foreground/50 text-[11px] leading-tight">
