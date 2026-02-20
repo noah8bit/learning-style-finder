@@ -10,10 +10,10 @@ export default function SlideCostBenefit({ active }: { active: boolean }) {
   ];
 
   const benefits = [
-    { label: "Year 1 Revenue", amount: "$2.54M – $2.72M", icon: "💰" },
-    { label: "Year 3 Net Profit", amount: "$3.1M – $3.9M", icon: "📈" },
-    { label: "5-Year Cumulative", amount: "$14M – $18M", icon: "🏦" },
-    { label: "Break-Even", amount: "10–14 Months", icon: "⏱️" },
+    { label: "Year 1 Revenue", amount: "$2.68M – $2.87M", icon: "💰" },
+    { label: "Year 3 Net Profit", amount: "$3.4M – $4.2M", icon: "📈" },
+    { label: "5-Year Cumulative", amount: "$15M – $20M", icon: "🏦" },
+    { label: "Break-Even", amount: "9–13 Months", icon: "⏱️" },
   ];
 
   const intangibles = [
