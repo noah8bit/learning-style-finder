@@ -5,36 +5,38 @@ export default function SlideConservativeScenario({ active }: { active: boolean 
   const scenarios = [
     {
       label: "Base Case",
-      tag: "Current Model",
+      tag: "Credible Ramp",
       tagColor: "text-primary bg-primary/10 border-primary/40",
-      members: 275,
-      teams: 6,
-      corporate: 3,
-      revenue: "$1.66M",
-      ebitda: "~Breakeven",
+      members: 200,
+      teams: 4,
+      corporate: 1,
+      peptide: 15,
+      revenue: "$1.14M",
+      ebitda: "-$90K",
       color: "text-primary",
       borderColor: "border-primary/40",
     },
     {
-      label: "Conservative Case",
+      label: "Downside Case",
       tag: "Stress Test",
       tagColor: "text-yellow-400 bg-yellow-400/10 border-yellow-400/40",
-      members: 220,
-      teams: 4,
-      corporate: 1,
-      revenue: "~$1.25M",
-      ebitda: "-$200K",
+      members: 160,
+      teams: 3,
+      corporate: 0,
+      peptide: 8,
+      revenue: "~$900K",
+      ebitda: "-$330K",
       color: "text-yellow-400",
       borderColor: "border-yellow-400/40",
     },
   ];
 
   const assumptions = [
-    { label: "Members slip 20%", base: "275", conservative: "220" },
-    { label: "Team retainers", base: "6 teams", conservative: "4 teams" },
-    { label: "Corporate clients", base: "3 clients", conservative: "1 client" },
-    { label: "NMT utilization", base: "6/day (75%)", conservative: "4/day (50%)" },
-    { label: "Digital subscribers", base: "700", conservative: "400" },
+    { label: "Avg members", base: "200", conservative: "160" },
+    { label: "Team retainers", base: "4 teams", conservative: "3 teams" },
+    { label: "Corporate clients", base: "1 client", conservative: "0" },
+    { label: "Peptide clients", base: "15", conservative: "8" },
+    { label: "NMT utilization", base: "5/day", conservative: "3/day" },
   ];
 
   return (
@@ -50,7 +52,7 @@ export default function SlideConservativeScenario({ active }: { active: boolean 
                 Conservative <span className="text-yellow-400">Scenario Modeling</span>
               </h2>
               <p className="animate-fade-up stagger-2 text-muted-foreground text-[20px] mb-8 max-w-[900px]">
-                What happens if ramp-up takes longer? We model the downside so investors see maturity, not just optimism.
+                Our base case already models a conservative ramp. What happens if it takes even longer? We show you the downside.
               </p>
 
               <div className="animate-fade-up stagger-3 flex gap-6 mb-6">
@@ -102,7 +104,7 @@ export default function SlideConservativeScenario({ active }: { active: boolean 
 
               <div className="animate-fade-up stagger-5 mt-4 bg-black/85 backdrop-blur-xl border border-yellow-400/30 rounded-xl p-4">
                 <p className="text-muted-foreground text-[16px]">
-                  <span className="text-yellow-400 font-bold">Key takeaway:</span> Even at 20% below targets, Iron Form's diversified revenue model limits downside to -$200K EBITDA — survivable with working capital reserve. Break-even requires only <span className="text-primary font-bold">245 active members</span>.
+                  <span className="text-yellow-400 font-bold">Key takeaway:</span> Even in the downside case, Iron Form's -$330K EBITDA is survivable with working capital reserves. Break-even requires only <span className="text-primary font-bold">245 active members</span> — achievable by mid-Year 1 in the base case.
                 </p>
               </div>
             </>

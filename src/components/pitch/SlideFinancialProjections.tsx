@@ -4,16 +4,16 @@ import ScaledSlide from "./ScaledSlide";
 export default function SlideFinancialProjections({ active }: { active: boolean }) {
   const proForma = [
     {
-      year: "Year 1", revenue: "$1.66M", cogs: "$450K", grossProfit: "$1.21M",
-      opex: "$1.23M", ebitda: "-$25K", debtService: "$620K", netCash: "-$645K",
-      note: "Runway year — covered by working capital reserve",
-      barWidth: 33, color: "text-accent"
+      year: "Year 1", revenue: "$1.14M", cogs: "$280K", grossProfit: "$860K",
+      opex: "$950K", ebitda: "-$90K", debtService: "$620K", netCash: "-$710K",
+      note: "Conservative ramp — loss covered by working capital reserve",
+      barWidth: 23, color: "text-yellow-400"
     },
     {
       year: "Year 2", revenue: "$3.17M", cogs: "$1.05M", grossProfit: "$2.12M",
       opex: "$1.60M", ebitda: "$520K", debtService: "$620K", netCash: "-$100K",
-      note: "Tight but survivable — push membership past 450",
-      barWidth: 63, color: "text-yellow-400"
+      note: "Growth year — membership 450+, corporate scales to 3 clients",
+      barWidth: 63, color: "text-accent"
     },
     {
       year: "Year 3", revenue: "$5.01M", cogs: "$1.73M", grossProfit: "$3.28M",
@@ -24,7 +24,7 @@ export default function SlideFinancialProjections({ active }: { active: boolean 
   ];
 
   const keyMetrics = [
-    { label: "Break-Even", value: "Year 1 EBITDA", icon: "⏱️" },
+    { label: "Break-Even", value: "245 Members", icon: "⏱️" },
     { label: "Yr 3 EBITDA", value: "$1.2M", icon: "📈" },
     { label: "Yr 3 Net Cash", value: "$575K", icon: "💰" },
     { label: "Debt Service", value: "$620K/yr", icon: "🏦" },
@@ -85,13 +85,13 @@ export default function SlideFinancialProjections({ active }: { active: boolean 
 
             {/* Sensitivity */}
               <div className="animate-fade-up stagger-4 flex gap-4 mb-4">
-              <div className="flex-1 bg-black/85 backdrop-blur-xl border border-accent/40 rounded-xl p-4">
-                <h4 className="text-accent text-[18px] font-bold mb-1">Stress Test (Year 2)</h4>
-                <p className="text-muted-foreground text-[16px]">Revenue $3.8M → EBITDA $800K → Net after debt $180K. <span className="text-foreground font-semibold">Survivable.</span></p>
+              <div className="flex-1 bg-black/85 backdrop-blur-xl border border-yellow-400/40 rounded-xl p-4">
+                <h4 className="text-yellow-400 text-[18px] font-bold mb-1">Year 1 Reality</h4>
+                <p className="text-muted-foreground text-[16px]">Conservative ramp: 200 avg members, 4 teams, 1 corporate client. <span className="text-foreground font-semibold">-$90K EBITDA covered by reserves.</span></p>
               </div>
               <div className="flex-1 bg-black/85 backdrop-blur-xl border border-primary/40 rounded-xl p-4">
-                <h4 className="text-primary text-[18px] font-bold mb-1">Sensitivity (Year 3)</h4>
-                <p className="text-muted-foreground text-[16px]">If only 500 members: Revenue -$400K → EBITDA ~$900K → Net ~$280K. <span className="text-foreground font-semibold">Viable but no expansion.</span></p>
+                <h4 className="text-primary text-[18px] font-bold mb-1">Year 2 Acceleration</h4>
+                <p className="text-muted-foreground text-[16px]">450 members, 3 corporate clients, full peptide ramp. <span className="text-foreground font-semibold">$520K EBITDA — survivable.</span></p>
               </div>
             </div>
 

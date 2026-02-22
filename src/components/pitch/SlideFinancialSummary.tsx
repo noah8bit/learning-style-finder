@@ -3,15 +3,15 @@ import ScaledSlide from "./ScaledSlide";
 
 export default function SlideFinancialSummary({ active }: { active: boolean }) {
   const years = [
-    { year: "Year 1", revenue: "$1.66M", ebitda: "~Breakeven", members: "275", note: "Runway year — covered by working capital reserve", color: "text-accent", barWidth: 33 },
-    { year: "Year 2", revenue: "$3.17M", ebitda: "$520K", members: "450", note: "Push membership past 450 — tight but survivable", color: "text-yellow-400", barWidth: 63 },
+    { year: "Year 1", revenue: "$1.14M", ebitda: "-$90K", members: "200", note: "Conservative ramp — operating loss covered by working capital reserve", color: "text-yellow-400", barWidth: 23 },
+    { year: "Year 2", revenue: "$3.17M", ebitda: "$520K", members: "450", note: "Growth year — push membership past 450, corporate scales", color: "text-accent", barWidth: 63 },
     { year: "Year 3", revenue: "$5.01M", ebitda: "$1.2M", members: "600", note: "Stable and bankable — net positive after debt", color: "text-primary", barWidth: 100 },
   ];
 
   const keyNumbers = [
     { label: "Break-Even", value: "245 members", icon: "⏱️" },
+    { label: "Yr 1 EBITDA", value: "-$90K", icon: "📉" },
     { label: "Yr 3 EBITDA", value: "$1.2M", icon: "📈" },
-    { label: "Debt Service", value: "$620K/yr", icon: "🏦" },
     { label: "Yr 3 Net Cash", value: "$575K", icon: "💰" },
   ];
 
@@ -28,7 +28,7 @@ export default function SlideFinancialSummary({ active }: { active: boolean }) {
                 3-Year <span className="text-primary">At a Glance</span>
               </h2>
               <p className="animate-fade-up stagger-2 text-muted-foreground text-[20px] mb-10 max-w-[900px]">
-                Investors should be able to skim. Here's the trajectory.
+                Year 1 is designed for stability, not peak performance. Growth accelerates as engines come online.
               </p>
 
               <div className="animate-fade-up stagger-3 space-y-5 mb-8">

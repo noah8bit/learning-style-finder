@@ -6,24 +6,24 @@ export default function SlideHighMarginAddOns({ active }: { active: boolean }) {
     {
       icon: "🏢",
       title: "Corporate Wellness",
-      total: "$180K",
+      total: "$45K",
       points: [
-        "3 corporate clients × $5,000/mo × 12 months",
+        "1 corporate client × $5,000/mo × 9 months (Q2 start)",
         "Atlanta has 18 Fortune 500 HQs — deep employer base",
-        "Industry spend: $600+/employee/year and rising",
+        "Corporate sales cycles are 4–6 months — Year 1 is realistic at 1 client",
       ],
-      note: "Year 1 assumes staggered onboarding Q2–Q3. Corporate sales cycles are 4–6 months.",
+      note: "Year 2 scales to 3 clients ($180K) as sales pipeline matures.",
     },
     {
-      icon: "⛺",
-      title: "Camps & Seminars",
-      total: "$180K",
+      icon: "💊",
+      title: "Peptide & IV Clinic",
+      total: "$90K",
       points: [
-        "4 seasonal camps × 30 kids × $500 avg = $60K",
-        "Seminars: 2/mo × $4K avg × 12 = $96K",
-        "Evening clinics & workshops: $24K",
+        "15 active clients × $400 avg/month × 12 = $72K",
+        "IV therapy add-ons: 3 sessions/day × $50 avg = $18K",
+        "Stacks: Iron Form Cut ($699), Build ($649), Recovery ($599)",
       ],
-      note: "Pre-paid registration model. 30+ discipline variety drives high enrollment.",
+      note: "Operated under licensed medical oversight, compliant with Georgia regulations. Year 2 ramps to 30+ clients ($300K net).",
     },
   ];
 
@@ -40,7 +40,7 @@ export default function SlideHighMarginAddOns({ active }: { active: boolean }) {
                 High-Margin <span className="text-accent">Add-Ons</span>
               </h2>
               <p className="animate-fade-up stagger-2 text-muted-foreground text-[20px] mb-8 max-w-[900px]">
-                Corporate wellness and camps/seminars are high-margin, pre-paid revenue streams that scale independently of membership.
+                Corporate wellness and peptide services are high-margin, scalable revenue streams that layer on top of the core membership + medical engine.
               </p>
 
               <div className="animate-fade-up stagger-3 flex gap-6 mb-6">
@@ -72,9 +72,9 @@ export default function SlideHighMarginAddOns({ active }: { active: boolean }) {
               <div className="animate-fade-up stagger-4 bg-black/85 backdrop-blur-xl border border-white/20 rounded-xl p-5 flex items-center justify-between">
                 <div>
                   <span className="text-white text-[22px] font-bold uppercase tracking-wider">Combined High-Margin Revenue</span>
-                  <span className="text-muted-foreground text-[16px] ml-4">Pre-paid · Scalable · Low variable cost</span>
+                  <span className="text-muted-foreground text-[16px] ml-4">Scalable · Pre-paid · Medically credentialed</span>
                 </div>
-                <span className="text-accent text-[34px] font-bold">$360K</span>
+                <span className="text-accent text-[34px] font-bold">$135K</span>
               </div>
             </>
           )}
