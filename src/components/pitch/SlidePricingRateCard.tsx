@@ -85,24 +85,24 @@ export default function SlidePricingRateCard({ active }: { active: boolean }) {
 
   return (
     <ScaledSlide>
-      <div className="w-full h-full bg-background flex flex-col justify-center px-[100px]">
+      <div className="w-full h-full bg-background flex flex-col justify-center px-[80px]">
         {active && (
           <>
-            <p className="animate-fade-up stagger-1 text-primary font-medium tracking-[0.3em] uppercase text-[14px] mb-3">Atlanta Market Benchmarks</p>
-            <h2 className="animate-fade-up stagger-2 text-[48px] font-bold leading-[1] text-foreground mb-6">
+            <p className="animate-fade-up stagger-1 text-primary font-medium tracking-[0.3em] uppercase text-[18px] mb-2">Atlanta Market Benchmarks</p>
+            <h2 className="animate-fade-up stagger-2 text-[48px] font-bold leading-[1] text-foreground mb-5">
               Service <span className="text-primary">Rate Card</span>
             </h2>
 
-            <div className="animate-fade-up stagger-3 flex gap-6 mb-5">
+            <div className="animate-fade-up stagger-3 flex gap-5 mb-4">
               {/* Group Classes */}
               <div className="flex-1">
-                <h3 className="text-primary text-[16px] font-bold mb-3 uppercase tracking-wider">Group Classes (per person/mo)</h3>
-                <div className="grid grid-cols-2 gap-2.5">
+                <h3 className="text-primary text-[20px] font-bold mb-3 uppercase tracking-wider">Group Classes (per person/mo)</h3>
+                <div className="grid grid-cols-2 gap-3">
                   {categories.map((cat, i) => (
-                    <div key={i} className={`bg-secondary border ${cat.border} rounded-lg p-3`}>
-                      <h4 className={`${cat.color} text-[13px] font-bold mb-1.5`}>{cat.title}</h4>
+                    <div key={i} className={`bg-secondary border ${cat.border} rounded-lg p-4`}>
+                      <h4 className={`${cat.color} text-[17px] font-bold mb-2`}>{cat.title}</h4>
                       {cat.items.map((item, j) => (
-                        <div key={j} className="flex justify-between text-[12px]">
+                        <div key={j} className="flex justify-between text-[16px]">
                           <span className="text-muted-foreground">{item.freq}</span>
                           <span className={`${cat.color} font-semibold`}>{item.price}</span>
                         </div>
@@ -113,25 +113,25 @@ export default function SlidePricingRateCard({ active }: { active: boolean }) {
               </div>
 
               {/* Specialty + PT */}
-              <div className="w-[420px] shrink-0 space-y-4">
+              <div className="w-[480px] shrink-0 space-y-4">
                 <div>
-                  <h3 className="text-accent text-[16px] font-bold mb-3 uppercase tracking-wider">Specialty Programs</h3>
-                  <div className="space-y-1.5">
+                  <h3 className="text-accent text-[20px] font-bold mb-3 uppercase tracking-wider">Specialty Programs</h3>
+                  <div className="space-y-2">
                     {specialty.map((s, i) => (
-                      <div key={i} className="flex justify-between items-center bg-secondary border border-accent/20 rounded-lg px-3 py-1.5">
-                        <span className="text-foreground text-[12px]">{s.label}</span>
-                        <span className="text-accent text-[12px] font-bold shrink-0 ml-3">{s.price}</span>
+                      <div key={i} className="flex justify-between items-center bg-secondary border border-accent/20 rounded-lg px-4 py-2">
+                        <span className="text-foreground text-[16px]">{s.label}</span>
+                        <span className="text-accent text-[16px] font-bold shrink-0 ml-3">{s.price}</span>
                       </div>
                     ))}
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-primary text-[16px] font-bold mb-3 uppercase tracking-wider">Privates & Personal Training</h3>
-                  <div className="space-y-1.5">
+                  <h3 className="text-primary text-[20px] font-bold mb-3 uppercase tracking-wider">Privates & Personal Training</h3>
+                  <div className="space-y-2">
                     {ptAndPrivates.map((p, i) => (
-                      <div key={i} className="flex justify-between items-center bg-secondary border border-primary/20 rounded-lg px-3 py-1.5">
-                        <span className="text-foreground text-[12px]">{p.label}</span>
-                        <span className="text-primary text-[12px] font-bold shrink-0 ml-3">{p.price}</span>
+                      <div key={i} className="flex justify-between items-center bg-secondary border border-primary/20 rounded-lg px-4 py-2">
+                        <span className="text-foreground text-[16px]">{p.label}</span>
+                        <span className="text-primary text-[16px] font-bold shrink-0 ml-3">{p.price}</span>
                       </div>
                     ))}
                   </div>
@@ -139,42 +139,42 @@ export default function SlidePricingRateCard({ active }: { active: boolean }) {
               </div>
             </div>
 
-            {/* Bottom row: Camps, Seminars, Events, Meal Prep */}
+            {/* Bottom row */}
             <div className="animate-fade-up stagger-4 grid grid-cols-4 gap-4">
-              <div className="bg-secondary border border-primary/20 rounded-lg p-3">
-                <h4 className="text-primary text-[13px] font-bold mb-2">Camps (per week)</h4>
-                <div className="space-y-1 text-[11px]">
+              <div className="bg-secondary border border-primary/20 rounded-lg p-4">
+                <h4 className="text-primary text-[17px] font-bold mb-2">Camps (per week)</h4>
+                <div className="space-y-1.5 text-[15px]">
                   <div className="flex justify-between"><span className="text-muted-foreground">Half-Day Standard</span><span className="text-primary font-semibold">$200–$350</span></div>
                   <div className="flex justify-between"><span className="text-muted-foreground">Full-Day Standard</span><span className="text-primary font-semibold">$300–$450</span></div>
                   <div className="flex justify-between"><span className="text-muted-foreground">Full-Day Elite</span><span className="text-primary font-semibold">$500–$800</span></div>
                 </div>
               </div>
-              <div className="bg-secondary border border-accent/20 rounded-lg p-3">
-                <h4 className="text-accent text-[13px] font-bold mb-2">Seminars (per person)</h4>
-                <div className="space-y-1 text-[11px]">
+              <div className="bg-secondary border border-accent/20 rounded-lg p-4">
+                <h4 className="text-accent text-[17px] font-bold mb-2">Seminars (per person)</h4>
+                <div className="space-y-1.5 text-[15px]">
                   <div className="flex justify-between"><span className="text-muted-foreground">Clinic (2–3 hr)</span><span className="text-accent font-semibold">$40–$150</span></div>
                   <div className="flex justify-between"><span className="text-muted-foreground">One-Day (4–6 hr)</span><span className="text-accent font-semibold">$75–$300</span></div>
                   <div className="flex justify-between"><span className="text-muted-foreground">Weekend (2-day)</span><span className="text-accent font-semibold">$200–$600</span></div>
                 </div>
               </div>
-              <div className="bg-secondary border border-primary/20 rounded-lg p-3">
-                <h4 className="text-primary text-[13px] font-bold mb-2">Events</h4>
-                <div className="space-y-1 text-[11px]">
+              <div className="bg-secondary border border-primary/20 rounded-lg p-4">
+                <h4 className="text-primary text-[17px] font-bold mb-2">Events</h4>
+                <div className="space-y-1.5 text-[15px]">
                   <div className="flex justify-between"><span className="text-muted-foreground">Athlete Entry</span><span className="text-primary font-semibold">$40–$150</span></div>
                   <div className="flex justify-between"><span className="text-muted-foreground">Team Entry</span><span className="text-primary font-semibold">$300–$1.5K</span></div>
                   <div className="flex justify-between"><span className="text-muted-foreground">Vendor Booth</span><span className="text-primary font-semibold">$250–$2K</span></div>
                 </div>
               </div>
-              <div className="bg-secondary border border-accent/20 rounded-lg p-3">
-                <h4 className="text-accent text-[13px] font-bold mb-2">Meal Prep (per month)</h4>
-                <div className="space-y-1 text-[11px]">
+              <div className="bg-secondary border border-accent/20 rounded-lg p-4">
+                <h4 className="text-accent text-[17px] font-bold mb-2">Meal Prep (per month)</h4>
+                <div className="space-y-1.5 text-[15px]">
                   <div className="flex justify-between"><span className="text-muted-foreground">Entry (10 meals/wk)</span><span className="text-accent font-semibold">$440–$560</span></div>
                   <div className="flex justify-between"><span className="text-muted-foreground">Premium (14 meals/wk)</span><span className="text-accent font-semibold">$720–$880</span></div>
                   <div className="flex justify-between"><span className="text-muted-foreground">Iron Form Plans</span><span className="text-accent font-semibold">$300–$800</span></div>
                 </div>
               </div>
             </div>
-            <p className="animate-fade-up stagger-5 absolute bottom-6 left-[100px] right-[100px] text-muted-foreground/50 text-[11px] leading-tight">
+            <p className="animate-fade-up stagger-5 absolute bottom-6 left-[80px] right-[80px] text-muted-foreground/50 text-[12px] leading-tight">
               Sources: Atlanta-area facility surveys 2024–2025; ClassPass market rate data; IHRSA membership pricing benchmarks; Iron Form internal research
             </p>
           </>
