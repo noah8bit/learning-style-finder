@@ -10,13 +10,15 @@ export default function SlideExitStrategy({ active }: { active: boolean }) {
         <div className="relative z-10 flex flex-col justify-center h-full px-[100px]" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.9), 0 0 2px rgba(0,0,0,1)' }}>
           {active && (
             <>
-              <p className="animate-fade-up stagger-1 text-accent font-medium tracking-[0.3em] uppercase text-[20px] mb-3">Investor Returns</p>
-              <h2 className="animate-fade-up stagger-2 text-[56px] font-bold leading-[1] text-white mb-3">
-                5–7 Year <span className="text-accent">Exit Outlook</span>
-              </h2>
-              <p className="animate-fade-up stagger-3 text-muted-foreground text-[22px] mb-7 max-w-[900px] leading-relaxed">
-                Valuation of operating entity only. Tech entity (Iron Form Digital LLC) excluded. Fitness + medical hybrid comps trade between 4–7× EBITDA (private market transactions, IHRSA data).
-              </p>
+              <div className="animate-fade-up stagger-1 bg-black/85 backdrop-blur-xl rounded-xl px-8 py-5 mb-5 border border-white/10 inline-block">
+                <p className="text-accent font-medium tracking-[0.3em] uppercase text-[20px] mb-2">Investor Returns</p>
+                <h2 className="text-[52px] font-bold leading-[1] text-white mb-2">
+                  5–7 Year <span className="text-accent">Exit Outlook</span>
+                </h2>
+                <p className="text-white/70 text-[20px] max-w-[900px] leading-relaxed">
+                  Valuation of operating entity only. Tech entity (Iron Form Digital LLC) excluded. Fitness + medical hybrid comps trade between 4–7× EBITDA (private market transactions, IHRSA data).
+                </p>
+              </div>
 
               <div className="animate-fade-up stagger-4 flex gap-6 mb-6">
                 {/* LEFT: Core valuation */}
@@ -57,7 +59,9 @@ export default function SlideExitStrategy({ active }: { active: boolean }) {
 
                 {/* RIGHT: Exit paths */}
                 <div className="flex-1 flex flex-col gap-4">
-                  <p className="text-muted-foreground text-[14px] uppercase tracking-[0.2em] font-medium">Exit Paths</p>
+                  <div className="bg-black/85 backdrop-blur-xl border border-white/10 rounded-lg px-4 py-2 inline-block self-start">
+                    <p className="text-white/80 text-[14px] uppercase tracking-[0.2em] font-medium">Exit Paths</p>
+                  </div>
 
                   <div className="bg-black/80 backdrop-blur-xl border border-white/20 rounded-xl p-5 flex gap-4 items-start flex-1">
                     <span className="text-[32px] shrink-0">🔁</span>
