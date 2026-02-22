@@ -26,7 +26,7 @@ export default function SlideFinancialProjections({ active }: { active: boolean 
   const keyMetrics = [
     { label: "Break-Even (blended)", value: "245 Members", icon: "⏱️" },
     { label: "Yr 3 EBITDA", value: "$1.2M", icon: "📈" },
-    { label: "Yr 3 Net After Debt", value: "$580K", icon: "💰" },
+    { label: "Yr 3 Net After Debt", value: "$580K (pre-tax)", icon: "💰" },
     { label: "Debt Service", value: "$620K/yr", icon: "🏦" },
   ];
 
