@@ -18,7 +18,7 @@ export default function SlideRevenueDetailed({ active }: { active: boolean }) {
     { label: "NMT Net to Facility", value: "$150K", type: "core" },
     { label: "Corporate Wellness (3 cos)", value: "$180K", type: "core" },
     { label: "Facility Rentals/Events", value: "$150K", type: "core" },
-    { label: "Josh Wellness (ramp)", value: "$150K", type: "enhanced" },
+    { label: "Peptide & IV Clinic (Year 1 ramp)", value: "$150K", type: "enhanced" },
   ];
 
   const yearComps = [
