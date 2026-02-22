@@ -88,10 +88,22 @@ export default function SlideInvestmentAsk({ active }: { active: boolean }) {
                     </div>
                   ))}
 
-                  <div className="bg-black/80 backdrop-blur-xl border border-primary/30 rounded-xl p-4">
-                    <p className="text-muted-foreground text-[16px] leading-relaxed">
-                      <span className="text-primary font-bold">No board seats issued in this round.</span> Founder retains majority voting control at all times pre-Series A.
-                    </p>
+                  <div className="bg-black/80 backdrop-blur-xl border border-accent/30 rounded-xl p-5">
+                    <h3 className="text-accent text-[18px] font-bold mb-3 uppercase tracking-wider">SAFE Milestones</h3>
+                    <ul className="space-y-2">
+                      {[
+                        "Lease signed & deposits secured",
+                        "Phase 1 buildout completed",
+                        "150+ members enrolled",
+                        "Medical engine live (NMT + Peptide)",
+                        "First corporate wellness pilot signed",
+                      ].map((m, i) => (
+                        <li key={i} className="text-muted-foreground text-[16px] flex items-start gap-2">
+                          <span className="w-1.5 h-1.5 rounded-full bg-accent mt-2 shrink-0" />
+                          {m}
+                        </li>
+                      ))}
+                    </ul>
                   </div>
                 </div>
               </div>

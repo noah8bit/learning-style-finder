@@ -104,8 +104,8 @@ export default function SlideRevenueDetailed({ active }: { active: boolean }) {
                   <span className="text-yellow-400 text-[18px] font-semibold">EBITDA: -$90K</span>
                 </div>
               </div>
-              <p className="animate-fade-up stagger-5 text-muted-foreground text-[14px] mt-3 leading-relaxed">
-                <span className="text-primary font-bold">Core thesis:</span> Membership + medical = core engine. Everything else layers on.
+              <p className="animate-fade-up stagger-5 text-muted-foreground text-[14px] mt-2 leading-relaxed">
+                <span className="text-primary font-bold">Core thesis:</span> Membership + medical = core engine. Everything else layers on. Operational break-even expected <span className="text-primary font-bold">Month 10–14</span>.
               </p>
             </>
           )}

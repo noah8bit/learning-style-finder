@@ -104,7 +104,7 @@ export default function SlideConservativeScenario({ active }: { active: boolean 
 
               <div className="animate-fade-up stagger-5 mt-4 bg-black/85 backdrop-blur-xl border border-yellow-400/30 rounded-xl p-4">
                 <p className="text-muted-foreground text-[16px]">
-                  <span className="text-yellow-400 font-bold">Key takeaway:</span> Even in the downside case, Iron Form's -$330K EBITDA is survivable with working capital reserves. Break-even requires only <span className="text-primary font-bold">245 active members</span> — achievable by mid-Year 1 in the base case.
+                  <span className="text-yellow-400 font-bold">Key takeaway:</span> Even in the downside case, Iron Form's -$330K EBITDA is survivable with working capital reserves. Break-even requires <span className="text-primary font-bold">245 active members</span>. <span className="text-white font-bold">We expect to reach operational break-even between Month 10–14</span> depending on ramp velocity.
                 </p>
               </div>
             </>
