@@ -14,104 +14,100 @@ export default function SlideExitStrategy({ active }: { active: boolean }) {
               <h2 className="animate-fade-up stagger-2 text-[56px] font-bold leading-[1] text-white mb-3">
                 How You Get <span className="text-accent">Paid Back</span>
               </h2>
-              <p className="animate-fade-up stagger-3 text-muted-foreground text-[22px] mb-8 max-w-[900px] leading-relaxed">
-                You don't have to wait for an exit — cash-flow distributions start Year 3, and your note converts at a guaranteed discount.
+              <p className="animate-fade-up stagger-3 text-muted-foreground text-[22px] mb-7 max-w-[900px] leading-relaxed">
+                8% accrued preferred return plus three clear paths to upside — you don't have to wait for an exit.
               </p>
 
-              <div className="animate-fade-up stagger-4 flex gap-6 mb-7">
-                {/* LEFT: Primary path — Cash-Flow Distributions */}
-                <div className="w-[480px] shrink-0 bg-accent/10 border-2 border-accent/50 rounded-2xl p-8 relative overflow-hidden">
-                  <div className="absolute top-0 right-0 bg-accent text-black text-[13px] font-bold uppercase tracking-wider px-4 py-1.5 rounded-bl-xl">Near-Term Returns</div>
-                  <span className="text-[44px] block mb-3">💸</span>
-                  <div className="flex items-center gap-4 mb-3">
-                    <h3 className="text-white text-[28px] font-bold">Cash-Flow Distributions</h3>
-                    <span className="text-accent text-[18px] font-bold bg-accent/15 border border-accent/40 rounded-full px-5 py-0.5">Recurring Income</span>
-                  </div>
-                  <p className="text-muted-foreground text-[18px] leading-relaxed mb-6">
-                    Year 3+ net margins of 25–35% enable quarterly profit distributions. No exit required — your money works from day one.
+              <div className="animate-fade-up stagger-4 flex gap-6 mb-6">
+                {/* LEFT: Preferred Return + Cash Flow */}
+                <div className="w-[500px] shrink-0 bg-accent/10 border-2 border-accent/50 rounded-2xl p-7 relative overflow-hidden">
+                  <div className="absolute top-0 right-0 bg-accent text-black text-[13px] font-bold uppercase tracking-wider px-4 py-1.5 rounded-bl-xl">Preferred Return</div>
+                  <span className="text-[40px] block mb-3">💸</span>
+                  <h3 className="text-white text-[26px] font-bold mb-3">8% Accrued Preferred Return</h3>
+                  <p className="text-muted-foreground text-[17px] leading-relaxed mb-5">
+                    Non-compounding, accrued — not mandatory annual cash payout. Paid at distributions, refinance, or exit. Protects downside without choking early cash flow.
                   </p>
 
-                  {/* Scenario math */}
                   <div className="bg-black/50 border border-accent/30 rounded-xl p-5">
-                    <p className="text-accent text-[15px] font-bold uppercase tracking-wider mb-4">Your $1M Note Converts & Earns</p>
-                    <div className="space-y-3">
+                    <p className="text-accent text-[15px] font-bold uppercase tracking-wider mb-3">$1M Equity Scenario</p>
+                    <div className="space-y-2.5">
                       <div className="flex justify-between items-center">
-                        <span className="text-muted-foreground text-[17px]">Note converts at 20% discount</span>
-                        <span className="text-white text-[20px] font-bold">$1.25M value</span>
+                        <span className="text-muted-foreground text-[16px]">Your equity stake</span>
+                        <span className="text-white text-[18px] font-bold">~3.5% of company</span>
                       </div>
                       <div className="flex justify-between items-center">
-                        <span className="text-muted-foreground text-[17px]">Year 3 distributions</span>
-                        <span className="text-white text-[20px] font-bold">~$110K</span>
+                        <span className="text-muted-foreground text-[16px]">Accrued preferred (Year 3)</span>
+                        <span className="text-white text-[18px] font-bold">$240K owed</span>
                       </div>
                       <div className="flex justify-between items-center">
-                        <span className="text-muted-foreground text-[17px]">Year 5 cumulative</span>
-                        <span className="text-white text-[20px] font-bold">~$500K</span>
+                        <span className="text-muted-foreground text-[16px]">Year 3 distributions begin</span>
+                        <span className="text-accent text-[18px] font-bold">~$575K net cash</span>
                       </div>
-                      <div className="flex justify-between items-center">
-                        <span className="text-muted-foreground text-[17px]">Year 7 cumulative</span>
-                        <span className="text-accent text-[22px] font-bold">~$1M–$1.5M</span>
-                      </div>
-                      <div className="border-t border-accent/20 pt-3 mt-1">
-                        <p className="text-foreground text-[16px] leading-relaxed">
-                          <span className="text-accent font-bold">+ you still own converted equity</span> — distributions don't dilute your stake
+                      <div className="border-t border-accent/20 pt-2.5 mt-1">
+                        <p className="text-foreground text-[15px] leading-relaxed">
+                          <span className="text-accent font-bold">Preferred paid first</span> before pro-rata profit distributions to all equity holders
                         </p>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                {/* RIGHT: Long-term exit paths */}
-                <div className="flex-1 flex flex-col gap-5">
-                  <p className="text-muted-foreground text-[14px] uppercase tracking-[0.2em] font-medium">Long-Term Upside (Post-Conversion)</p>
+                {/* RIGHT: Exit paths */}
+                <div className="flex-1 flex flex-col gap-4">
+                  <p className="text-muted-foreground text-[14px] uppercase tracking-[0.2em] font-medium">Long-Term Exit Paths</p>
 
-                  <div className="bg-black/60 border border-white/15 rounded-xl p-6 flex gap-5 items-start flex-1">
-                    <span className="text-[36px] shrink-0">🔁</span>
+                  <div className="bg-black/60 border border-white/15 rounded-xl p-5 flex gap-4 items-start flex-1">
+                    <span className="text-[32px] shrink-0">🔁</span>
                     <div className="flex-1">
-                      <div className="flex items-center justify-between mb-2">
-                        <h3 className="text-white text-[22px] font-bold">Franchise Model</h3>
-                        <div className="flex items-center gap-3">
-                          <span className="text-muted-foreground text-[16px]">Year 5–7</span>
-                          <span className="text-accent text-[20px] font-bold bg-accent/10 border border-accent/30 rounded-full px-4 py-0.5">8–12x valuation</span>
-                        </div>
+                      <div className="flex items-center justify-between mb-1.5">
+                        <h3 className="text-white text-[20px] font-bold">Franchise Model</h3>
+                        <span className="text-accent text-[18px] font-bold bg-accent/10 border border-accent/30 rounded-full px-4 py-0.5">8–12x valuation</span>
                       </div>
-                      <p className="text-muted-foreground text-[17px] leading-relaxed">
-                        Replicate across 10+ metros. F45 scaled from 1 to 1,500+ locations in under a decade. Company valuation could reach $80M–$300M, growing your equity value proportionally.
+                      <p className="text-muted-foreground text-[16px] leading-relaxed">
+                        Replicate across metros. Valuation could reach $80M–$300M at 5–15 locations. Triggered when EBITDA &gt; $1.5M sustained.
                       </p>
                     </div>
                   </div>
 
-                  <div className="bg-black/60 border border-white/15 rounded-xl p-6 flex gap-5 items-start flex-1">
-                    <span className="text-[36px] shrink-0">🏦</span>
+                  <div className="bg-black/60 border border-white/15 rounded-xl p-5 flex gap-4 items-start flex-1">
+                    <span className="text-[32px] shrink-0">🏦</span>
                     <div className="flex-1">
-                      <div className="flex items-center justify-between mb-2">
-                        <h3 className="text-white text-[22px] font-bold">Strategic Acquisition</h3>
-                        <div className="flex items-center gap-3">
-                          <span className="text-muted-foreground text-[16px]">Year 5–8</span>
-                          <span className="text-accent text-[20px] font-bold bg-accent/10 border border-accent/30 rounded-full px-4 py-0.5">6–10x valuation</span>
-                        </div>
+                      <div className="flex items-center justify-between mb-1.5">
+                        <h3 className="text-white text-[20px] font-bold">Strategic Acquisition</h3>
+                        <span className="text-accent text-[18px] font-bold bg-accent/10 border border-accent/30 rounded-full px-4 py-0.5">6–10x EBITDA</span>
                       </div>
-                      <p className="text-muted-foreground text-[17px] leading-relaxed">
-                        Acquisition target for Life Time, Equinox, or PE firms. Multi-sport facilities command 6–10x EBITDA multiples, translating to significant equity appreciation.
+                      <p className="text-muted-foreground text-[16px] leading-relaxed">
+                        Target for Life Time, Equinox, or PE firms. Multi-sport facilities command premium multiples.
                       </p>
                     </div>
                   </div>
 
-                  {/* Bottom metrics */}
-                  <div className="grid grid-cols-3 gap-3">
-                    <div className="bg-black/70 backdrop-blur-md border border-white/20 rounded-xl p-4 text-center">
-                      <div className="text-primary text-[26px] font-bold mb-0.5">$35M</div>
-                      <div className="text-foreground text-[14px] font-semibold">Valuation Cap</div>
-                      <div className="text-muted-foreground text-[12px]">Conversion ceiling</div>
+                  <div className="bg-black/60 border border-white/15 rounded-xl p-5 flex gap-4 items-start flex-1">
+                    <span className="text-[32px] shrink-0">💰</span>
+                    <div className="flex-1">
+                      <div className="flex items-center justify-between mb-1.5">
+                        <h3 className="text-white text-[20px] font-bold">Cash-Flow Hold</h3>
+                        <span className="text-accent text-[18px] font-bold bg-accent/10 border border-accent/30 rounded-full px-4 py-0.5">Recurring Income</span>
+                      </div>
+                      <p className="text-muted-foreground text-[16px] leading-relaxed">
+                        No exit needed. Year 3+ distributions grow as EBITDA scales. Asset-backed real estate appreciates independently.
+                      </p>
                     </div>
-                    <div className="bg-black/70 backdrop-blur-md border border-white/20 rounded-xl p-4 text-center">
-                      <div className="text-primary text-[26px] font-bold mb-0.5">3.5–4.5 yrs</div>
-                      <div className="text-foreground text-[14px] font-semibold">Projected Payback</div>
-                      <div className="text-muted-foreground text-[12px]">Via distributions</div>
+                  </div>
+
+                  {/* Phase 2 triggers */}
+                  <div className="grid grid-cols-3 gap-2.5">
+                    <div className="bg-black/70 backdrop-blur-md border border-white/20 rounded-xl p-3 text-center">
+                      <div className="text-primary text-[22px] font-bold mb-0.5">30–35%</div>
+                      <div className="text-foreground text-[13px] font-semibold">Equity Offered</div>
                     </div>
-                    <div className="bg-black/70 backdrop-blur-md border border-white/20 rounded-xl p-4 text-center">
-                      <div className="text-primary text-[26px] font-bold mb-0.5">25–35%</div>
-                      <div className="text-foreground text-[14px] font-semibold">Year 3 Margin</div>
-                      <div className="text-muted-foreground text-[12px]">Increasing annually</div>
+                    <div className="bg-black/70 backdrop-blur-md border border-white/20 rounded-xl p-3 text-center">
+                      <div className="text-primary text-[22px] font-bold mb-0.5">8% Pref</div>
+                      <div className="text-foreground text-[13px] font-semibold">Accrued Return</div>
+                    </div>
+                    <div className="bg-black/70 backdrop-blur-md border border-white/20 rounded-xl p-3 text-center">
+                      <div className="text-primary text-[22px] font-bold mb-0.5">Year 3+</div>
+                      <div className="text-foreground text-[13px] font-semibold">Distributions Start</div>
                     </div>
                   </div>
                 </div>

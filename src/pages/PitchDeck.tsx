@@ -336,8 +336,8 @@ function SlideTeam({ active }: { active: boolean }) {
             <div className="animate-fade-up stagger-4 mt-6 flex gap-5">
               <div className="flex-1 bg-primary/10 border border-primary/30 rounded-xl p-6">
                 <p className="text-foreground text-[20px]">
-                  <span className="font-bold text-primary">Partner Equity:</span> Josh & Rick hold 5% equity each (10% total) with 3–5 year performance-based vesting.
-                </p>
+                   <span className="font-bold text-primary">Partner Equity:</span> Josh & Rick hold 4% equity each (8% total) with 4-year vesting, 1-year cliff.
+                 </p>
               </div>
               <div className="flex-1 bg-secondary border border-border rounded-xl p-6">
                 <p className="text-foreground text-[20px]">
