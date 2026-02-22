@@ -3,14 +3,14 @@ import ScaledSlide from "./ScaledSlide";
 
 export default function SlideFinancialSummary({ active }: { active: boolean }) {
   const years = [
-    { year: "Year 1", revenue: "$1.14M", ebitda: "-$90K", members: "200", note: "Conservative ramp — operating loss covered by working capital reserve", color: "text-yellow-400", barWidth: 23 },
+    { year: "Year 1", revenue: "$1.14M", ebitda: "-$215K", members: "200", note: "Conservative ramp — operating loss covered by working capital reserve", color: "text-yellow-400", barWidth: 23 },
     { year: "Year 2", revenue: "$3.17M", ebitda: "$520K", members: "450", note: "Growth year — push membership past 450, corporate scales", color: "text-accent", barWidth: 63 },
     { year: "Year 3", revenue: "$5.01M", ebitda: "$1.2M", members: "600", note: "Stable and bankable — net positive after debt", color: "text-primary", barWidth: 100 },
   ];
 
   const keyNumbers = [
     { label: "Break-Even", value: "245 members", icon: "⏱️" },
-    { label: "Yr 1 EBITDA", value: "-$90K", icon: "📉" },
+    { label: "Yr 1 EBITDA", value: "-$215K", icon: "📉" },
     { label: "Yr 3 EBITDA", value: "$1.2M", icon: "📈" },
     { label: "Yr 3 Net Cash", value: "$575K", icon: "💰" },
   ];
@@ -51,12 +51,12 @@ export default function SlideFinancialSummary({ active }: { active: boolean }) {
                   </div>
                   <span className="text-muted-foreground text-[20px]">−</span>
                   <div className="text-center flex-1">
-                    <div className="text-white text-[24px] font-bold">$950K</div>
+                    <div className="text-white text-[24px] font-bold">$1.075M</div>
                     <div className="text-muted-foreground text-[13px]">OPEX</div>
                   </div>
                   <span className="text-muted-foreground text-[20px]">=</span>
                   <div className="text-center flex-1">
-                    <div className="text-yellow-400 text-[24px] font-bold">-$90K</div>
+                    <div className="text-yellow-400 text-[24px] font-bold">-$215K</div>
                     <div className="text-muted-foreground text-[13px]">EBITDA</div>
                   </div>
                 </div>

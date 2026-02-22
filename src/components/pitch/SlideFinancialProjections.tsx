@@ -5,7 +5,7 @@ export default function SlideFinancialProjections({ active }: { active: boolean 
   const proForma = [
     {
       year: "Year 1", revenue: "$1.14M", cogs: "$280K", grossProfit: "$860K",
-      opex: "$950K", ebitda: "-$90K", debtService: "$620K", netCash: "-$710K",
+      opex: "$1.075M", ebitda: "-$215K", debtService: "$620K", netCash: "-$835K",
       note: "Conservative ramp — loss covered by working capital reserve",
       barWidth: 23, color: "text-yellow-400"
     },
@@ -87,7 +87,7 @@ export default function SlideFinancialProjections({ active }: { active: boolean 
               <div className="animate-fade-up stagger-4 flex gap-4 mb-4">
               <div className="flex-1 bg-black/85 backdrop-blur-xl border border-yellow-400/40 rounded-xl p-4">
                 <h4 className="text-yellow-400 text-[18px] font-bold mb-1">Year 1 Reality</h4>
-                <p className="text-muted-foreground text-[16px]">Conservative ramp: 200 avg members, 4 teams, 1 corporate client. <span className="text-foreground font-semibold">-$90K EBITDA covered by reserves.</span></p>
+                <p className="text-muted-foreground text-[16px]">Conservative ramp: 200 avg members, 4 teams, 1 corporate client. <span className="text-foreground font-semibold">–$215K EBITDA covered by reserves.</span></p>
               </div>
               <div className="flex-1 bg-black/85 backdrop-blur-xl border border-primary/40 rounded-xl p-4">
                 <h4 className="text-primary text-[18px] font-bold mb-1">Year 2 Acceleration</h4>
