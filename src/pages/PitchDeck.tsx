@@ -47,6 +47,7 @@ import SlideMedicalRevenueEngine from "@/components/pitch/SlideMedicalRevenueEng
 import SlideHighMarginAddOns from "@/components/pitch/SlideHighMarginAddOns";
 import SlideFinancialSummary from "@/components/pitch/SlideFinancialSummary";
 import SlideFiveYearVision from "@/components/pitch/SlideFiveYearVision";
+import SlideValuationBridge from "@/components/pitch/SlideValuationBridge";
 
 // ─── Slide Components ───────────────────────────────────────────────────────
 
@@ -527,6 +528,7 @@ const SLIDES = [
 
   // ACT 5: The Ask & Returns
   { component: SlideInvestmentAsk, title: "Investment Opportunity" },
+  { component: SlideValuationBridge, title: "Valuation Bridge" },
   { component: SlideCapTable, title: "Cap Table" },
   { component: SlideGovernance, title: "Governance" },
   { component: SlideExitStrategy, title: "Exit Outlook" },
