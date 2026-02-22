@@ -10,7 +10,7 @@ export default function SlideHighMarginAddOns({ active }: { active: boolean }) {
       points: [
         "1 corporate client × $5,000/mo × 9 months (Q2 start)",
         "Atlanta has 18 Fortune 500 HQs — deep employer base",
-        "Corporate sales cycles are 4–6 months — Year 1 is realistic at 1 client",
+        "Corporate sales cycle: 4–6 months. Year 1 assumes only 1 signed contract",
       ],
       note: "Year 2 scales to 3 clients ($180K) as sales pipeline matures.",
     },
@@ -20,10 +20,11 @@ export default function SlideHighMarginAddOns({ active }: { active: boolean }) {
       total: "$90K",
       points: [
         "15 active clients × $400 avg/month × 12 = $72K",
-        "IV therapy add-ons: 3 sessions/day × $50 avg = $18K",
-        "Stacks: Iron Form Cut ($699), Build ($649), Recovery ($599)",
+        "IV therapy add-ons: 3 sessions/day × $50 avg × 120 days = $18K",
+        "All protocols prescribed under licensed MD. No on-site compounding",
+        "Sourced through compliant 503A pharmacy partners",
       ],
-      note: "All protocols prescribed under licensed MD. No on-site compounding. Sourced through compliant 503A pharmacy partners. Year 2 ramps to 30+ clients ($300K net).",
+      note: "Year 2 ramps to 30+ clients ($300K net). Fully compliant with Georgia regulations.",
     },
   ];
 
