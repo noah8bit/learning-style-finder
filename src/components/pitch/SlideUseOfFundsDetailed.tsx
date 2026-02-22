@@ -3,11 +3,11 @@ import ScaledSlide from "./ScaledSlide";
 
 export default function SlideUseOfFundsDetailed({ active }: { active: boolean }) {
   const funds = [
-    { dollar: "$230,000", title: "Facility Buildout Improvements", desc: "Interior buildout, flooring, wall systems, lighting, HVAC upgrades", color: "text-primary", borderColor: "border-primary/30" },
-    { dollar: "$170,000", title: "Recovery & Medical Equipment", desc: "Cryo, Normatec, PEMF, infrared sauna, cold plunge, treatment tables", color: "text-accent", borderColor: "border-accent/30" },
-    { dollar: "$95,000", title: "Lease Deposits & Legal", desc: "Security deposits, lease negotiation, entity formation, contracts", color: "text-primary", borderColor: "border-primary/30" },
-    { dollar: "$50,000", title: "Initial Marketing & Launch", desc: "Brand identity, website, pre-launch campaigns, grand opening", color: "text-accent", borderColor: "border-accent/30" },
-    { dollar: "$110,000", title: "Payroll (First 4 Months)", desc: "GM, ops manager, admin — runway cushion through initial ramp", color: "text-primary", borderColor: "border-primary/30" },
+    { dollar: "$230,000", title: "Pre-Development & Design", desc: "Architecture, engineering, permitting, site planning, legal formation", color: "text-primary", borderColor: "border-primary/30" },
+    { dollar: "$170,000", title: "Equity Raise Costs & Advisory", desc: "Legal, accounting, investor materials, placement agent fees", color: "text-accent", borderColor: "border-accent/30" },
+    { dollar: "$95,000", title: "Land Deposits & Due Diligence", desc: "Earnest money, environmental assessments, title, surveys", color: "text-primary", borderColor: "border-primary/30" },
+    { dollar: "$50,000", title: "Pre-Launch Marketing", desc: "Brand identity, website, pre-sale membership campaigns", color: "text-accent", borderColor: "border-accent/30" },
+    { dollar: "$110,000", title: "Founder & Team Runway", desc: "Founder compensation and key hire costs during pre-development phase", color: "text-primary", borderColor: "border-primary/30" },
     { dollar: "$95,000", title: "Operating Reserve", desc: "Working capital cushion for unexpected costs and downside protection", color: "text-accent", borderColor: "border-accent/30" },
   ];
 
@@ -19,10 +19,10 @@ export default function SlideUseOfFundsDetailed({ active }: { active: boolean })
             <>
               <p className="animate-fade-up stagger-1 text-primary font-medium tracking-[0.3em] uppercase text-[20px] mb-3">Capital Allocation</p>
               <h2 className="animate-fade-up stagger-2 text-[52px] font-bold leading-[1] text-foreground mb-3">
-                Use of Funds — <span className="text-primary">$750,000</span>
+                SAFE Use of Funds — <span className="text-primary">$750,000</span>
               </h2>
               <p className="animate-fade-up stagger-2 text-muted-foreground text-[20px] mb-6">
-                Every dollar allocated. No rounding. Exact totals.
+                Foundational equity within the $9–10M raise. Funds pre-development and positions the full capital close.
               </p>
               <div className="animate-fade-up stagger-3 space-y-3">
                 {funds.map((f, i) => (
@@ -40,23 +40,10 @@ export default function SlideUseOfFundsDetailed({ active }: { active: boolean })
                 <span className="text-primary text-[32px] font-bold">$750,000</span>
               </div>
 
-              {/* Capital Stack Roadmap */}
-              <div className="animate-fade-up stagger-5 mt-3">
-                <h3 className="text-accent text-[16px] font-bold mb-2 uppercase tracking-wider">Capital Stack Roadmap</h3>
-                <div className="flex gap-2">
-                  {[
-                    { phase: "Phase 0", label: "$750K SAFE", desc: "Pre-dev & launch runway", color: "border-primary/40 text-primary" },
-                    { phase: "Phase 1", label: "Land Secured", desc: "Lease & site control", color: "border-accent/40 text-accent" },
-                    { phase: "Phase 2", label: "$9–10M Equity", desc: "Syndicate close", color: "border-primary/40 text-primary" },
-                    { phase: "Phase 3", label: "$5–6M Debt", desc: "Bank financing", color: "border-accent/40 text-accent" },
-                  ].map((p, i) => (
-                    <div key={i} className={`flex-1 bg-secondary border ${p.color.split(' ')[0]} rounded-lg p-3 text-center`}>
-                      <div className={`${p.color.split(' ')[1]} text-[14px] font-bold`}>{p.phase}</div>
-                      <div className="text-foreground text-[14px] font-bold mt-0.5">{p.label}</div>
-                      <div className="text-muted-foreground text-[12px]">{p.desc}</div>
-                    </div>
-                  ))}
-                </div>
+              <div className="animate-fade-up stagger-5 mt-3 bg-accent/10 border border-accent/30 rounded-lg p-3">
+                <p className="text-muted-foreground text-[15px]">
+                  <span className="text-accent font-bold">SAFE role:</span> Foundational equity anchoring the full $9–10M raise. Funds pre-development, secures land, and positions the project for institutional close. Construction begins only after full capital stack is secured.
+                </p>
               </div>
             </>
           )}

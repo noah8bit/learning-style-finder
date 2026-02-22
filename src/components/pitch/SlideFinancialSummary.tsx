@@ -28,7 +28,7 @@ export default function SlideFinancialSummary({ active }: { active: boolean }) {
                 3-Year <span className="text-primary">At a Glance</span>
               </h2>
               <p className="animate-fade-up stagger-2 text-muted-foreground text-[18px] mb-6 max-w-[900px]">
-                Year 1 is designed for stability, not peak performance. Blended ARPU: $261/month. Break-even at 245 members. Operational break-even expected Month 10–14.
+                Year 1 projections represent first 12 months of operations following facility completion. Blended ARPU: $261/month. Break-even at 245 members. Operational break-even expected Month 10–14.
               </p>
 
               {/* Clean P&L Waterfall - Year 1 */}
@@ -103,7 +103,7 @@ export default function SlideFinancialSummary({ active }: { active: boolean }) {
               </div>
 
               <p className="animate-fade-up stagger-5 absolute bottom-6 left-[100px] right-[100px] text-muted-foreground/50 text-[11px]">
-                Full 3-year pro forma with stress testing available in detailed financials appendix.
+                Year 1 = first 12 months post-opening. Development period (Year 0) funded entirely by capital raise. Full 3-year pro forma in appendix.
               </p>
             </>
           )}

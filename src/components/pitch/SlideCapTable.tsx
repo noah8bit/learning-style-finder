@@ -89,12 +89,12 @@ export default function SlideCapTable({ active }: { active: boolean }) {
 
                   <div className="bg-black/80 backdrop-blur-xl border border-white/20 rounded-xl p-6">
                     <h3 className="text-white text-[20px] font-bold mb-3 uppercase tracking-wider">Option Pool & Tech Entity</h3>
-                    <p className="text-muted-foreground text-[18px] leading-relaxed mb-2">
-                      4% reserved for future key hires (GM, COO, etc.). Protects against dilution when scaling the team.
-                    </p>
-                    <p className="text-muted-foreground text-[16px] leading-relaxed border-t border-white/10 pt-2">
-                      <span className="text-primary font-bold">Iron Form Digital LLC</span> will be structured as a wholly owned, founder-controlled subsidiary of Iron Form Holdings with a licensing agreement to the parent entity.
-                    </p>
+                     <p className="text-muted-foreground text-[18px] leading-relaxed mb-2">
+                       4% reserved for future key hires (GM, COO, etc.). Option pool created post-SAFE conversion. Protects against dilution when scaling the team.
+                     </p>
+                     <p className="text-muted-foreground text-[16px] leading-relaxed border-t border-white/10 pt-2">
+                       <span className="text-primary font-bold">Iron Form Digital LLC</span> will be structured as a wholly owned, founder-controlled subsidiary of Iron Form Holdings with a licensing agreement to the parent entity.
+                     </p>
                   </div>
                 </div>
               </div>
