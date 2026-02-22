@@ -39,7 +39,7 @@ export default function SlideInvestmentAsk({ active }: { active: boolean }) {
                 Simple Agreement for Future Equity. $5M valuation cap. 10% discount. No board seats. Founder retains majority voting control.
               </p>
               <p className="animate-fade-up stagger-3 text-accent text-[18px] mb-6 max-w-[900px] font-medium italic">
-                The $750K SAFE round funds pre-development, lease, equipment, and launch runway prior to full capital stack close.
+                This SAFE funds the revenue-generating launch facility and de-risks the full $15M campus build prior to institutional equity. It is not construction capital — it is proof-of-concept capital.
               </p>
 
               <div className="animate-fade-up stagger-4 flex gap-8">

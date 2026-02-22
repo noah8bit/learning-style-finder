@@ -5,7 +5,7 @@ export default function SlideFiveYearVision({ active }: { active: boolean }) {
   const milestones = [
     { year: "Year 1–2", icon: "📍", title: "Establish & Prove", items: ["1 flagship facility (32,000 sq ft)", "275 → 450 members", "Hit EBITDA breakeven", "Validate medical + wellness revenue"] },
     { year: "Year 3–4", icon: "📈", title: "Scale & Optimize", items: ["600+ members, EBITDA >$1.2M", "Begin investor distributions", "10+ corporate clients", "Digital platform: 1,500+ subscribers"] },
-    { year: "Year 5+", icon: "🚀", title: "Expand & Exit", items: ["2nd location in a major metro market", "1 digital platform (Iron Form Digital, LLC)", "$8M+ revenue potential", "Combined enterprise valuation: $12M–$18M"] },
+    { year: "Year 5+", icon: "🚀", title: "Expand & Exit", items: ["Expansion only after $1.5M EBITDA sustained 12 months", "Iron Form Digital LLC — wholly owned subsidiary", "$8M+ revenue potential", "Combined enterprise valuation: $12M–$18M"] },
   ];
 
   return (

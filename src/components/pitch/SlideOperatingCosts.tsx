@@ -55,7 +55,22 @@ export default function SlideOperatingCosts({ active }: { active: boolean }) {
 
               <div className="animate-fade-up stagger-5 mt-3 flex gap-4">
                 <div className="flex-1 bg-primary/10 border border-primary/30 rounded-lg p-3">
-                  <p className="text-white text-[15px]"><span className="text-primary font-bold">P&L Note:</span> Year 1 pro forma shows $950K OPEX + $280K COGS = $1.23M total cost structure. Revenue $1.14M → EBITDA -$90K. Break-even expected Month 10–14.</p>
+                  <p className="text-white text-[14px] font-bold text-primary mb-1">COGS Breakdown ($280K):</p>
+                  <div className="grid grid-cols-2 gap-x-4 gap-y-0.5">
+                    {[
+                      { item: "Instructor revenue share", val: "$165K" },
+                      { item: "Merchant processing", val: "$35K" },
+                      { item: "Medical supplies & disposables", val: "$40K" },
+                      { item: "Event direct costs", val: "$25K" },
+                      { item: "Misc variable program costs", val: "$15K" },
+                    ].map((c, i) => (
+                      <div key={i} className="flex justify-between text-white text-[13px]">
+                        <span className="text-muted-foreground">{c.item}</span>
+                        <span className="font-bold">{c.val}</span>
+                      </div>
+                    ))}
+                  </div>
+                  <p className="text-white text-[13px] mt-1"><span className="text-primary font-bold">P&L:</span> $1.14M Revenue → $280K COGS → $860K Gross → $950K OPEX → <span className="text-primary font-bold">-$90K EBITDA</span></p>
                 </div>
                 <div className="flex-1 bg-accent/10 border border-accent/30 rounded-lg p-3">
                   <p className="text-white text-[15px]"><span className="text-accent font-bold">Target:</span> Payroll under 50% of revenue. Year 3 OPEX ~$2.09M with revenue at $5M+ — margins improve to ~24% EBITDA.</p>

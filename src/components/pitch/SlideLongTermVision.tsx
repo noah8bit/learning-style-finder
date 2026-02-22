@@ -12,7 +12,7 @@ export default function SlideLongTermVision({ active }: { active: boolean }) {
   const milestones = [
     { icon: "📍", title: "Year 1–2: Establish & Prove", desc: "Grow membership to 275 (Year 1), 450+ (Year 2). Hit EBITDA breakeven Year 1. Validate medical + wellness revenue. Build brand." },
     { icon: "📈", title: "Year 3–4: Scale & Optimize", desc: "Push to 600+ members, EBITDA >$1.2M. Begin distributions. Grow corporate to 10+ clients. Prep Phase 2 triggers." },
-    { icon: "🌎", title: "Year 5+: Phase 2 & Beyond", desc: "Expand when EBITDA >$1.5M sustained 12 months + 700 members + medical at 90% utilization. Franchise pilot in a major metro market." },
+    { icon: "🌎", title: "Year 5+: Phase 2 & Beyond", desc: "Phase 2 expansion will not occur until Iron Form reaches $1.5M EBITDA sustained 12 months — to avoid premature leverage and protect investor capital. 700+ members + medical at 90% utilization required." },
   ];
 
   return (
