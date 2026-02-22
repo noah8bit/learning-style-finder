@@ -11,7 +11,7 @@ export default function SlideCostBenefit({ active }: { active: boolean }) {
   ];
 
   const projections = [
-    { label: "Year 1 Revenue", amount: "$1.66M", icon: "📊" },
+    { label: "Year 1 Revenue", amount: "$1.14M", icon: "📊" },
     { label: "Year 2 Revenue", amount: "$3.17M", icon: "📈" },
     { label: "Year 3 Revenue", amount: "$5.01M", icon: "💰" },
     { label: "Year 3 EBITDA", amount: "$1.2M", icon: "🏦" },

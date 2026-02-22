@@ -96,7 +96,7 @@ export default function SlideSmartBuild({ active }: { active: boolean }) {
                 {/* Phase 2 upgrade callout */}
                 <div className="mt-4 bg-primary/10 border border-primary/30 rounded-lg p-4">
                   <p className="text-foreground text-[16px] leading-relaxed">
-                    <span className="text-primary font-bold">Phase 2 Upgrades:</span> Pre-engineered steel allows easy interior upgrades — premium cladding, glass facades, branded exteriors, and expanded amenities can be added as profits grow, without structural changes.
+                    <span className="text-primary font-bold">Execution Timeline:</span> Estimated 10–14 month build. Permitting (2–3 mo) → Foundation & Steel (3–4 mo) → Interior fit-out (4–6 mo). GC selection in progress. Phase 2 upgrades layered as profits grow — no structural changes needed.
                   </p>
                 </div>
                 <p className="mt-3 text-muted-foreground/50 text-[11px] leading-tight">

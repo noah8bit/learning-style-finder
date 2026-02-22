@@ -74,12 +74,12 @@ export default function SlideMedicalRevenueEngine({ active }: { active: boolean 
               <div className="animate-fade-up stagger-5 mt-4 flex gap-4">
                 <div className="flex-1 bg-black/85 backdrop-blur-xl border border-accent/40 rounded-lg p-4">
                   <p className="text-muted-foreground text-[15px]">
-                    <span className="text-accent font-bold">Year 1 Conservative:</span> NMT at 5/day (63% capacity) and 8 insurance referrals/week. Year 2 scales to full utilization as provider relationships mature.
+                    <span className="text-accent font-bold">Year 1 Conservative:</span> NMT at 5/day (63% capacity) and 8 insurance referrals/week. Insurance revenue assumes 0 from Months 1–3 (credentialing period). Year 2 scales to full utilization as provider relationships mature.
                   </p>
                 </div>
                 <div className="flex-1 bg-black/85 backdrop-blur-xl border border-white/15 rounded-lg p-4">
                   <p className="text-muted-foreground text-[15px]">
-                    <span className="text-white font-bold">Defensibility:</span> Rick Villanueva's 18+ year clinical specialization and existing client roster is the moat. Not a generic massage therapist — a neuromuscular specialist.
+                    <span className="text-white font-bold">Compliance Status:</span> Payer credentialing planned pre-launch (90-day lead time). Billing outsourced to certified medical billing partner. Workers' comp referral pipeline via existing provider relationships. Reimbursement begins Month 4.
                   </p>
                 </div>
               </div>

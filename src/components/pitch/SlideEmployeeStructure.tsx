@@ -12,7 +12,7 @@ export default function SlideEmployeeStructure({ active }: { active: boolean }) 
 
   const strategies = [
     { icon: "💵", title: "Revenue-Share Model", desc: "Instructors and trainers are mostly revenue-share — no fixed payroll burden until revenue supports it." },
-    { icon: "📊", title: "Under 50% of Revenue", desc: "Target total payroll (salaries + splits) at ≤50% of revenue. Year 1: ~$420K salaries + $450K COGS splits on $1.66M rev." },
+    { icon: "📊", title: "Under 50% of Revenue", desc: "Target total payroll (salaries + splits) at ≤50% of revenue. Year 1: ~$420K salaries + $280K COGS on $1.14M rev." },
     { icon: "🤝", title: "Partner Alignment", desc: "Rick & Josh: 4% equity each, 4-year vest with 1-year cliff. Reduces key-person risk and aligns with investor interests." },
     { icon: "📅", title: "Lean Year 1", desc: "Founder pay stays lean through Year 1–2. No bloated org chart — scale staffing with revenue, not ahead of it." },
   ];

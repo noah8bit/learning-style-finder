@@ -5,7 +5,7 @@ export default function SlideOperatingCosts({ active }: { active: boolean }) {
   const costs = [
     { category: "Salaries & Payroll", items: ["GM ($90K–$120K)", "Ops Manager ($75K–$90K)", "Admin ($50K)", "Rick & Josh base draws"], range: "$420K", pct: 34, color: "text-primary" },
     { category: "Utilities", items: ["HVAC for 32,000 sq ft", "Electric, water, waste", "Outdoor field maintenance"], range: "$180K", pct: 15, color: "text-accent" },
-    { category: "Property Taxes", items: ["8-acre campus", "32,000 sq ft facility", "Metro Atlanta rates"], range: "$150K", pct: 12, color: "text-primary" },
+    { category: "Lease & Property Costs", items: ["Triple-net lease structure", "CAM charges & property taxes", "Year 1 assumes lease — no land ownership"], range: "$150K", pct: 12, color: "text-primary" },
     { category: "Insurance & Liability", items: ["General liability (stunt, film)", "Workers' comp", "Professional liability (clinic)", "Property insurance"], range: "$120K", pct: 10, color: "text-accent" },
     { category: "Marketing & Sales", items: ["Digital ads & SEO", "Community events", "Corporate outreach", "Content production"], range: "$100K", pct: 8, color: "text-primary" },
     { category: "Maintenance", items: ["Equipment repair", "Facility upkeep", "Outdoor areas", "Cleaning"], range: "$100K", pct: 8, color: "text-accent" },
