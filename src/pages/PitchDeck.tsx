@@ -132,6 +132,16 @@ function SlideProblem({ active }: { active: boolean }) {
 }
 
 function SlideSolution({ active }: { active: boolean }) {
+  const features = [
+    { icon: "🏋", label: "30+ Sport Disciplines" },
+    { icon: "🧠", label: "Neuromuscular Therapy" },
+    { icon: "💊", label: "Peptide Wellness Clinic" },
+    { icon: "❄️", label: "Sauna & Cold Plunge" },
+    { icon: "🏊", label: "Olympic Swimming Lanes" },
+    { icon: "🎤", label: "Athlete & Coach Seminars" },
+    { icon: "🤝", label: "Grants & Sponsorships" },
+    { icon: "🎬", label: "Film & Stunt Wing" },
+  ];
   const pillars = [
     { icon: "🏅", label: "Diversified Training", desc: "30+ disciplines under one roof generate broad membership appeal and reduce churn — athletes don't outgrow us." },
     { icon: "🏥", label: "Insurance-Backed Medical", desc: "Sports medicine, neuromuscular therapy, and peptide wellness billed through insurance — recurring clinical revenue independent of membership." },
@@ -147,22 +157,31 @@ function SlideSolution({ active }: { active: boolean }) {
         <div className="relative z-10 flex flex-col justify-center h-full px-[100px]">
           {active && (
             <>
-              <div className="animate-fade-up stagger-1 bg-black/85 backdrop-blur-xl rounded-xl px-8 py-6 mb-6 border border-white/10 inline-block">
+              <div className="animate-fade-up stagger-1 bg-black/85 backdrop-blur-xl rounded-xl px-8 py-5 mb-5 border border-white/10 inline-block">
                 <p className="text-primary font-medium tracking-[0.3em] uppercase text-[18px] mb-2">The Solution</p>
-                <h2 className="text-[56px] font-bold leading-[1] text-white mb-3">
+                <h2 className="text-[56px] font-bold leading-[1] text-white mb-2">
                   Train Better. Recover Faster. <span className="text-primary">Go Further.</span>
                 </h2>
-                <p className="text-white/70 text-[22px] max-w-[1100px] leading-relaxed">
+                <p className="text-white/70 text-[20px] max-w-[1100px] leading-relaxed">
                   A comprehensive high-performance campus for athletes across every sport — with integrated rehabilitation, recovery science, and medical services under one roof. <span className="text-primary font-semibold">Month-to-month memberships aren't the only way to build a successful facility.</span> Iron Form is built on five distinct revenue pillars.
                 </p>
               </div>
 
-              <div className="animate-fade-up stagger-3 grid grid-cols-5 gap-4">
+              <div className="animate-fade-up stagger-3 grid grid-cols-5 gap-3 mb-5">
                 {pillars.map((p, i) => (
-                  <div key={i} className="bg-black/85 backdrop-blur-xl border border-primary/30 rounded-xl p-6 flex flex-col">
-                    <span className="text-[36px] mb-3">{p.icon}</span>
-                    <h3 className="text-primary text-[20px] font-bold mb-2">{p.label}</h3>
-                    <p className="text-white/70 text-[17px] leading-relaxed">{p.desc}</p>
+                  <div key={i} className="bg-black/85 backdrop-blur-xl border border-primary/30 rounded-xl p-5 flex flex-col">
+                    <span className="text-[32px] mb-2">{p.icon}</span>
+                    <h3 className="text-primary text-[18px] font-bold mb-1">{p.label}</h3>
+                    <p className="text-white/70 text-[15px] leading-snug">{p.desc}</p>
+                  </div>
+                ))}
+              </div>
+
+              <div className="animate-fade-up stagger-4 grid grid-cols-4 gap-3">
+                {features.map((f, i) => (
+                  <div key={i} className="bg-black/70 backdrop-blur-md border border-white/20 rounded-xl px-5 py-4 flex items-center gap-4">
+                    <span className="text-[32px]">{f.icon}</span>
+                    <span className="text-white text-[20px] font-semibold">{f.label}</span>
                   </div>
                 ))}
               </div>
