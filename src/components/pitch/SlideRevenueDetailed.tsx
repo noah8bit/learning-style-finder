@@ -21,7 +21,7 @@ export default function SlideRevenueDetailed({ active }: { active: boolean }) {
   ];
 
   const yearComps = [
-    { year: "Year 1", total: "$1.14M", members: "200", ebitda: "-$90K" },
+    { year: "Year 1", total: "$1.14M", members: "200", ebitda: "-$215K" },
     { year: "Year 2", total: "$3.17M", members: "450", ebitda: "$520K" },
     { year: "Year 3", total: "$5.01M", members: "600", ebitda: "$1.2M" },
   ];
@@ -101,7 +101,7 @@ export default function SlideRevenueDetailed({ active }: { active: boolean }) {
                 </div>
                 <div className="flex items-center gap-6">
                   <span className="text-primary text-[34px] font-bold">$1.14M</span>
-                  <span className="text-yellow-400 text-[18px] font-semibold">EBITDA: -$90K</span>
+                  <span className="text-yellow-400 text-[18px] font-semibold">EBITDA: –$215K</span>
                 </div>
               </div>
               <p className="animate-fade-up stagger-5 text-muted-foreground text-[14px] mt-2 leading-relaxed">

@@ -12,7 +12,7 @@ export default function SlideConservativeScenario({ active }: { active: boolean 
       corporate: 1,
       peptide: 15,
       revenue: "$1.14M",
-      ebitda: "-$90K",
+      ebitda: "-$215K",
       color: "text-primary",
       borderColor: "border-primary/40",
     },
@@ -25,7 +25,7 @@ export default function SlideConservativeScenario({ active }: { active: boolean 
       corporate: 0,
       peptide: 8,
       revenue: "~$900K",
-      ebitda: "-$330K",
+      ebitda: "-$400K",
       color: "text-yellow-400",
       borderColor: "border-yellow-400/40",
     },
@@ -105,17 +105,17 @@ export default function SlideConservativeScenario({ active }: { active: boolean 
               <div className="animate-fade-up stagger-5 mt-4 flex gap-4">
                 <div className="flex-[2] bg-black/85 backdrop-blur-xl border border-yellow-400/30 rounded-xl p-4">
                   <p className="text-muted-foreground text-[16px]">
-                    <span className="text-yellow-400 font-bold">Key takeaway:</span> Even in the downside case, Iron Form's –$330K EBITDA is survivable. Break-even requires <span className="text-primary font-bold">245 active members</span> at blended ARPU of $261/month. <span className="text-white font-bold">Cost levers include delaying non-essential hires, reducing marketing, and pausing Phase 2 specialty expansions.</span>
+                    <span className="text-yellow-400 font-bold">Key takeaway:</span> Even in the downside case, Iron Form's –$400K EBITDA is survivable. Break-even requires <span className="text-primary font-bold">245 active members</span> at blended ARPU of $261/month. <span className="text-white font-bold">Cost levers include delaying non-essential hires, reducing marketing, and pausing Phase 2 specialty expansions.</span>
                   </p>
                 </div>
                 <div className="flex-1 bg-black/85 backdrop-blur-xl border border-white/20 rounded-xl p-4">
                   <h4 className="text-white text-[14px] font-bold uppercase tracking-wider mb-2">Runway Math</h4>
                   <div className="space-y-1.5 text-[14px]">
-                    <div className="flex justify-between"><span className="text-muted-foreground">Monthly burn</span><span className="text-yellow-400 font-bold">–$27.5K</span></div>
+                    <div className="flex justify-between"><span className="text-muted-foreground">Monthly burn</span><span className="text-yellow-400 font-bold">–$33.3K</span></div>
                     <div className="flex justify-between"><span className="text-muted-foreground">Operating reserve</span><span className="text-white font-bold">$95K</span></div>
                     <div className="flex justify-between"><span className="text-muted-foreground">Payroll runway</span><span className="text-white font-bold">$110K</span></div>
                     <div className="border-t border-white/20 pt-1.5 flex justify-between"><span className="text-muted-foreground">Total liquidity</span><span className="text-primary font-bold">$205K</span></div>
-                    <div className="flex justify-between"><span className="text-muted-foreground">Runway</span><span className="text-primary font-bold">~7.5 months</span></div>
+                    <div className="flex justify-between"><span className="text-muted-foreground">Runway</span><span className="text-primary font-bold">~6.2 months</span></div>
                   </div>
                 </div>
               </div>

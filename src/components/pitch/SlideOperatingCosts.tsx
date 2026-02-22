@@ -12,7 +12,7 @@ export default function SlideOperatingCosts({ active }: { active: boolean }) {
     { category: "Software & Admin", range: "$40K", pct: 4, color: "text-primary" },
   ];
 
-  const total = "$950K";
+  const total = "$1.075M";
 
   return (
     <ScaledSlide>
@@ -69,7 +69,7 @@ export default function SlideOperatingCosts({ active }: { active: boolean }) {
                       </div>
                     ))}
                   </div>
-                  <p className="text-white text-[13px] mt-1"><span className="text-primary font-bold">P&L:</span> $1.14M Revenue → $280K COGS → $860K Gross → $950K OPEX → <span className="text-primary font-bold">–$90K EBITDA</span></p>
+                  <p className="text-white text-[13px] mt-1"><span className="text-primary font-bold">P&L:</span> $1.14M Revenue → $280K COGS → $860K Gross → $1.075M OPEX → <span className="text-primary font-bold">–$215K EBITDA</span></p>
                 </div>
                 <div className="flex-1 bg-accent/10 border border-accent/30 rounded-lg p-3">
                   <p className="text-white text-[15px]"><span className="text-accent font-bold">Year 1 is lean by design.</span> Proof-of-concept mode — not luxury campus. Payroll under 50% of revenue. Year 3 OPEX ~$2.09M with revenue at $5M+ — margins improve to ~24% EBITDA.</p>
