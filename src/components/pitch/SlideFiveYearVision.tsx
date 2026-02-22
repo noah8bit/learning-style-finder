@@ -3,7 +3,7 @@ import ScaledSlide from "./ScaledSlide";
 
 export default function SlideFiveYearVision({ active }: { active: boolean }) {
   const milestones = [
-    { year: "Year 1–2", icon: "📍", title: "Establish & Prove", items: ["1 flagship facility (32,000 sq ft)", "275 → 450 members", "Hit EBITDA breakeven", "Validate medical + wellness revenue"] },
+    { year: "Year 1–2", icon: "📍", title: "Establish & Prove", items: ["32,000 sq ft purpose-built campus operational", "200 → 450 members", "Hit EBITDA breakeven", "Validate medical + wellness revenue"] },
     { year: "Year 3–4", icon: "📈", title: "Scale & Optimize", items: ["600+ members, EBITDA >$1.2M", "Begin investor distributions", "10+ corporate clients", "Digital platform: 1,500+ subscribers"] },
     { year: "Year 5+", icon: "🚀", title: "Expand & Exit", items: ["Expansion only after $1.5M EBITDA sustained 12 months", "Iron Form Digital LLC — wholly owned subsidiary", "$8M+ revenue potential", "Combined enterprise valuation: $12M–$18M"] },
   ];
@@ -49,7 +49,7 @@ export default function SlideFiveYearVision({ active }: { active: boolean }) {
               <div className="animate-fade-up stagger-4 bg-black/85 backdrop-blur-xl border border-white/20 rounded-xl p-6 flex items-center justify-between">
                 <div>
                   <h3 className="text-white text-[22px] font-bold uppercase tracking-wider">What This Becomes</h3>
-                  <p className="text-muted-foreground text-[16px] mt-1">1 flagship · 2nd location in a major metro · 1 digital platform · $8M+ revenue potential</p>
+                  <p className="text-muted-foreground text-[16px] mt-1">1 flagship campus · 2nd location in a major metro · 1 digital platform · $8M+ revenue potential</p>
                 </div>
                 <div className="text-right">
                   <div className="text-primary text-[32px] font-bold">$12M–$18M</div>

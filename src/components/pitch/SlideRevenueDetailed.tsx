@@ -105,7 +105,7 @@ export default function SlideRevenueDetailed({ active }: { active: boolean }) {
                 </div>
               </div>
               <p className="animate-fade-up stagger-5 text-muted-foreground text-[14px] mt-2 leading-relaxed">
-                <span className="text-primary font-bold">Core thesis:</span> Membership + medical = core engine. Everything else layers on. Operational break-even expected <span className="text-primary font-bold">Month 10–14</span>.
+                <span className="text-primary font-bold">Core thesis:</span> Year 1 = first 12 months post-opening. Membership + medical = core engine. Everything else layers on. Break-even at <span className="text-primary font-bold">245 members</span>, expected <span className="text-primary font-bold">Month 10–14</span>.
               </p>
             </>
           )}

@@ -39,7 +39,7 @@ export default function SlideInvestmentAsk({ active }: { active: boolean }) {
                 Post-money SAFE (YC standard). $5M valuation cap. 10% discount. No board seats. SAFE pool hard-capped at $750K — no rolling extensions without repricing. Founder retains majority voting control.
               </p>
               <p className="animate-fade-up stagger-3 text-accent text-[18px] mb-6 max-w-[900px] font-medium italic">
-                This SAFE funds the revenue-generating launch facility and de-risks the full $15M campus build prior to institutional equity. It is not construction capital — it is proof-of-concept capital.
+                $750K SAFE serves as foundational equity within the full $9–10M equity raise. Anchors early capital commitment and rewards conviction with priority conversion terms.
               </p>
 
               <div className="animate-fade-up stagger-4 flex gap-8">
@@ -89,14 +89,14 @@ export default function SlideInvestmentAsk({ active }: { active: boolean }) {
                   ))}
 
                   <div className="bg-black/80 backdrop-blur-xl border border-accent/30 rounded-xl p-5">
-                    <h3 className="text-accent text-[18px] font-bold mb-3 uppercase tracking-wider">SAFE Milestones</h3>
+                    <h3 className="text-accent text-[18px] font-bold mb-3 uppercase tracking-wider">Pre-Construction Milestones</h3>
                     <ul className="space-y-2">
                       {[
-                        "Lease signed & deposits secured",
-                        "Phase 1 buildout completed",
-                        "150+ members enrolled",
-                        "Medical engine live (NMT + Peptide)",
-                        "First corporate wellness pilot signed",
+                        "Full equity commitments secured",
+                        "Bank term sheet in hand",
+                        "Land closed & architecture finalized",
+                        "150+ pre-sale memberships committed",
+                        "Corporate wellness contracts signed",
                       ].map((m, i) => (
                         <li key={i} className="text-muted-foreground text-[16px] flex items-start gap-2">
                           <span className="w-1.5 h-1.5 rounded-full bg-accent mt-2 shrink-0" />

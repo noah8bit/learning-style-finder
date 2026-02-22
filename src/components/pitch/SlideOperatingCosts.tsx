@@ -72,11 +72,11 @@ export default function SlideOperatingCosts({ active }: { active: boolean }) {
                   <p className="text-white text-[13px] mt-1"><span className="text-primary font-bold">P&L:</span> $1.14M Revenue → $280K COGS → $860K Gross → $1.075M OPEX → <span className="text-primary font-bold">–$215K EBITDA</span></p>
                 </div>
                 <div className="flex-1 bg-accent/10 border border-accent/30 rounded-lg p-3">
-                  <p className="text-white text-[15px]"><span className="text-accent font-bold">Year 1 is lean by design.</span> Proof-of-concept mode — not luxury campus. Payroll under 50% of revenue. Year 3 OPEX ~$2.09M with revenue at $5M+ — margins improve to ~24% EBITDA.</p>
+                  <p className="text-white text-[15px]"><span className="text-accent font-bold">Year 1 is lean by design.</span> Purpose-built campus, disciplined operations. Payroll under 50% of revenue. Year 3 OPEX ~$2.09M with revenue at $5M+ — margins improve to ~24% EBITDA.</p>
                 </div>
               </div>
               <p className="animate-fade-up stagger-5 absolute bottom-6 left-[100px] right-[100px] text-muted-foreground/50 text-[11px] leading-tight">
-                Year 1 assumes triple-net lease structure — no land ownership. Sources: IHRSA Operating Benchmarks 2024; Bureau of Labor Statistics — Atlanta Metro Wage Data
+                Year 1 projections represent first 12 months of operations following facility completion. Sources: IHRSA Operating Benchmarks 2024; Bureau of Labor Statistics — Atlanta Metro Wage Data
               </p>
             </>
           )}

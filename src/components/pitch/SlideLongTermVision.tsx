@@ -3,16 +3,16 @@ import ScaledSlide from "./ScaledSlide";
 
 export default function SlideLongTermVision({ active }: { active: boolean }) {
   const visions = [
-    { icon: "🏢", title: "Multi-Location Expansion", desc: "Multiple locations throughout Atlanta and eventually other major cities." },
+    { icon: "🏢", title: "Multi-Location Expansion", desc: "Additional locations across key metros after flagship proves model." },
     { icon: "🏕️", title: "Camps & Youth Programs", desc: "Pro athlete-led camps, structured youth development with mentorship." },
     { icon: "🧬", title: "Holistic Wellness", desc: "Nutrition, mental health, biofeedback, and personalized recovery plans." },
-    { icon: "🎓", title: "Grants & Scholarships", desc: "Financial support for underserved athletes to access top-tier training." },
+    { icon: "🎓", title: "Grants & Scholarships", desc: "Financial support for underserved athletes to access integrated training." },
   ];
 
   const milestones = [
-    { icon: "📍", title: "Year 1–2: Establish & Prove", desc: "Grow membership to 275 (Year 1), 450+ (Year 2). Hit EBITDA breakeven Year 1. Validate medical + wellness revenue. Build brand." },
-    { icon: "📈", title: "Year 3–4: Scale & Optimize", desc: "Push to 600+ members, EBITDA >$1.2M. Begin distributions. Grow corporate to 10+ clients. Prep Phase 2 triggers." },
-    { icon: "🌎", title: "Year 5+: Phase 2 & Beyond", desc: "Phase 2 expansion will not occur until Iron Form reaches $1.5M EBITDA sustained 12 months — to avoid premature leverage and protect investor capital. 700+ members + medical at 90% utilization required." },
+    { icon: "📍", title: "Year 1–2: Establish & Prove", desc: "Grow membership to 200 (Year 1), 450+ (Year 2). Validate medical + wellness revenue. Build brand presence." },
+    { icon: "📈", title: "Year 3–4: Scale & Optimize", desc: "Push to 600+ members, EBITDA >$1.2M. Begin distributions. Grow corporate to 10+ clients. Prep expansion triggers." },
+    { icon: "🌎", title: "Year 5+: Expand", desc: "Expansion only after $1.5M EBITDA sustained 12 months — protecting investor capital. 700+ members + medical at 90% utilization required." },
   ];
 
   return (

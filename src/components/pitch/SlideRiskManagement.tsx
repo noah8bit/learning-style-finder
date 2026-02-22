@@ -2,12 +2,12 @@ import ScaledSlide from "./ScaledSlide";
 
 export default function SlideRiskManagement({ active }: { active: boolean }) {
   const risks = [
-    { risk: "Construction Delays", level: "High", levelColor: "text-red-400 bg-red-400/10", mitigation: "Phased build-out plan allows partial operations. ~12% contingency reserve (~$2.7M soft costs + contingency) built into budget.", icon: "🏗️" },
+    { risk: "Construction Delays", level: "High", levelColor: "text-red-400 bg-red-400/10", mitigation: "Pre-engineered steel shell reduces timeline risk. ~$750K contingency reserve built into development budget. GC selection before capital close.", icon: "🏗️" },
+    { risk: "Capital Raise Risk", level: "High", levelColor: "text-red-400 bg-red-400/10", mitigation: "Construction begins only after full capital stack secured. SAFE anchors early equity. No phased fundraising during build.", icon: "💰" },
     { risk: "Market Competition", level: "Medium", levelColor: "text-yellow-400 bg-yellow-400/10", mitigation: "Limited regional competitors offer integrated multi-sport, medical, and film infrastructure. Our breadth is the moat.", icon: "⚔️" },
-    { risk: "Economic Downturn", level: "Medium", levelColor: "text-yellow-400 bg-yellow-400/10", mitigation: "Diversified revenue streams. Insurance partnerships and grants provide recession-resistant income.", icon: "📉" },
-    { risk: "Staffing Challenges", level: "Medium", levelColor: "text-yellow-400 bg-yellow-400/10", mitigation: "Competitive pay + commission, professional development, and Atlanta's deep sports/film talent pool.", icon: "👥" },
+    { risk: "Economic Downturn", level: "Medium", levelColor: "text-yellow-400 bg-yellow-400/10", mitigation: "Diversified revenue streams. Insurance-backed medical revenue provides recession resistance.", icon: "📉" },
+    { risk: "Low Initial Membership", level: "Medium", levelColor: "text-yellow-400 bg-yellow-400/10", mitigation: "150+ pre-sale target before opening. 12-month operating reserve. Conservative Year 1 model assumes only 200 avg members.", icon: "📊" },
     { risk: "Regulatory & Licensing", level: "Low", levelColor: "text-green-400 bg-green-400/10", mitigation: "Legal counsel engaged early. Experienced ops manager for permits, insurance, and compliance.", icon: "📋" },
-    { risk: "Low Initial Membership", level: "Medium", levelColor: "text-yellow-400 bg-yellow-400/10", mitigation: "Pre-launch marketing, community partnerships, and invite-only soft launch for word-of-mouth.", icon: "📊" },
   ];
 
   return (

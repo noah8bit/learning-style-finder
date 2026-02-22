@@ -2,11 +2,11 @@ import ScaledSlide from "./ScaledSlide";
 
 export default function SlideValuationBridge({ active }: { active: boolean }) {
   const milestones = [
-    { icon: "📝", title: "Lease Signed & Site Secured", desc: "Physical location locked — eliminates site risk", status: "SAFE Funded" },
-    { icon: "🏗️", title: "Phase 1 Buildout Completed", desc: "32K sq ft facility operational and revenue-generating", status: "SAFE Funded" },
-    { icon: "👥", title: "150+ Active Members", desc: "Proves demand and validates membership pricing model", status: "SAFE Funded" },
-    { icon: "🧠", title: "Medical Engine Live", desc: "NMT + peptide clinic generating recurring revenue", status: "SAFE Funded" },
-    { icon: "🏢", title: "Corporate Wellness Pilot Signed", desc: "Validates B2B sales channel and enterprise pricing", status: "SAFE Funded" },
+    { icon: "📝", title: "Full Capital Stack Secured", desc: "Equity commitments + bank term sheet — eliminates fundraising risk", status: "Pre-Build" },
+    { icon: "🏗️", title: "Land Closed & Construction Started", desc: "32K sq ft campus under construction — tangible asset creation", status: "Pre-Build" },
+    { icon: "👥", title: "150+ Pre-Sale Members", desc: "Proves demand and validates membership pricing model before opening", status: "Pre-Opening" },
+    { icon: "🧠", title: "Medical Agreements Secured", desc: "Insurance credentialing + physician referral partnerships in place", status: "Pre-Opening" },
+    { icon: "🏢", title: "Corporate Wellness Contracts", desc: "Validates B2B sales channel and guarantees opening-day revenue", status: "Pre-Opening" },
   ];
 
   return (
@@ -16,7 +16,7 @@ export default function SlideValuationBridge({ active }: { active: boolean }) {
           <>
             <p className="animate-fade-up stagger-1 text-primary font-medium tracking-[0.3em] uppercase text-[20px] mb-3">Valuation Logic</p>
             <h2 className="animate-fade-up stagger-2 text-[52px] font-bold leading-[1] text-foreground mb-3">
-              From <span className="text-primary">$5M Cap</span> to Next Round
+              From <span className="text-primary">$5M Cap</span> to Priced Round
             </h2>
             <p className="animate-fade-up stagger-2 text-muted-foreground text-[20px] mb-8 max-w-[1000px] leading-relaxed">
               The $750K SAFE converts at the next priced round. Here's what must be true before that round happens — and why the step-up is justified.
@@ -43,24 +43,24 @@ export default function SlideValuationBridge({ active }: { active: boolean }) {
                 <div className="flex-1 bg-primary/10 border border-primary/30 rounded-lg p-4 text-center">
                   <div className="text-primary text-[28px] font-bold">$5M</div>
                   <div className="text-muted-foreground text-[14px]">SAFE Cap (Today)</div>
-                  <div className="text-muted-foreground text-[12px] mt-1">Pre-revenue · Concept stage</div>
+                  <div className="text-muted-foreground text-[12px] mt-1">Pre-revenue · Pre-construction</div>
                 </div>
                 <div className="text-muted-foreground text-[24px]">→</div>
                 <div className="flex-1 bg-secondary border border-border rounded-lg p-4 text-center">
                   <div className="text-foreground text-[16px] font-bold">De-Risk Milestones</div>
-                  <div className="text-muted-foreground text-[13px] mt-1">Lease · Members · Revenue · Medical</div>
+                  <div className="text-muted-foreground text-[13px] mt-1">Capital · Land · Pre-sales · Medical</div>
                 </div>
                 <div className="text-muted-foreground text-[24px]">→</div>
                 <div className="flex-1 bg-accent/10 border border-accent/30 rounded-lg p-4 text-center">
                   <div className="text-accent text-[28px] font-bold">Priced Round</div>
-                  <div className="text-muted-foreground text-[14px]">$9–10M Equity Raise</div>
-                  <div className="text-muted-foreground text-[12px] mt-1">Revenue-validated · Site secured</div>
+                  <div className="text-muted-foreground text-[14px]">Full $9–10M Equity Close</div>
+                  <div className="text-muted-foreground text-[12px] mt-1">Asset-backed · Demand-validated</div>
                 </div>
               </div>
             </div>
 
             <p className="animate-fade-up stagger-5 text-muted-foreground text-[16px] mt-4 leading-relaxed">
-              <span className="text-primary font-bold">Founder has 2+ years sweat equity and personal capital invested.</span> The $5M cap reflects concept-stage risk. SAFE investors are rewarded with a 10% discount and priority conversion when these milestones justify a higher valuation.
+              <span className="text-primary font-bold">Founder has 2+ years sweat equity and personal capital invested.</span> The $5M cap reflects pre-construction risk. SAFE investors are rewarded with a 10% discount and priority conversion when these milestones justify a higher valuation.
             </p>
           </>
         )}

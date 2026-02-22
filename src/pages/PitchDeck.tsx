@@ -25,10 +25,13 @@ import SlideLongTermVision from "@/components/pitch/SlideLongTermVision";
 import SlideUseOfFundsDetailed from "@/components/pitch/SlideUseOfFundsDetailed";
 import SlideSmartBuild from "@/components/pitch/SlideSmartBuild";
 import SlideExitStrategy from "@/components/pitch/SlideExitStrategy";
+import SlideDevelopmentBudget from "@/components/pitch/SlideDevelopmentBudget";
+import SlideCapitalStack from "@/components/pitch/SlideCapitalStack";
+import SlideDevelopmentTimeline from "@/components/pitch/SlideDevelopmentTimeline";
+import SlidePreOpeningRisk from "@/components/pitch/SlidePreOpeningRisk";
 import SlideMarketGrowth from "@/components/pitch/SlideMarketGrowth";
 import SlideCompetitiveAnalysis from "@/components/pitch/SlideCompetitiveAnalysis";
-import SlideTimeline from "@/components/pitch/SlideTimeline";
-import SlideCampSchedules from "@/components/pitch/SlideCampSchedules";
+// SlideTimeline removed — replaced by SlideDevelopmentTimeline
 import SlidePricingRateCard from "@/components/pitch/SlidePricingRateCard";
 import SlidePricingAppendix from "@/components/pitch/SlidePricingAppendix";
 import SlideFacilityLayout from "@/components/pitch/SlideFacilityLayout";
@@ -36,7 +39,7 @@ import SlideRiskManagement from "@/components/pitch/SlideRiskManagement";
 import SlideMarketingStrategy from "@/components/pitch/SlideMarketingStrategy";
 import SlideFAQs from "@/components/pitch/SlideFAQs";
 import SlideCustomerPersonas from "@/components/pitch/SlideCustomerPersonas";
-import SlideCostBenefit from "@/components/pitch/SlideCostBenefit";
+// SlideCostBenefit removed from main flow
 import SlideInvestmentAsk from "@/components/pitch/SlideInvestmentAsk";
 import SlideCapTable from "@/components/pitch/SlideCapTable";
 import SlideGovernance from "@/components/pitch/SlideGovernance";
@@ -523,23 +526,27 @@ const SLIDES = [
   { component: SlideFinancialSummary, title: "Financial Summary" },
   { component: SlideConservativeScenario, title: "Conservative Scenario" },
   { component: SlideOperatingCosts, title: "Operating Costs" },
-  { component: SlideSmartBuild, title: "Smart Build" },
-  { component: SlideUseOfFundsDetailed, title: "Use of Funds" },
-  { component: SlideCostBenefit, title: "Cost vs Benefit" },
   { component: SlideKPIs, title: "Core KPIs" },
 
-  // ACT 5: The Ask & Returns
+  // ACT 5: Development & Capital
+  { component: SlideDevelopmentBudget, title: "Development Budget" },
+  { component: SlideCapitalStack, title: "Capital Stack" },
+  { component: SlideSmartBuild, title: "Smart Build" },
+  { component: SlideDevelopmentTimeline, title: "Development Timeline" },
+  { component: SlidePreOpeningRisk, title: "Pre-Opening Risk Mitigation" },
+
+  // ACT 6: The Ask & Returns
   { component: SlideInvestmentAsk, title: "Investment Opportunity" },
+  { component: SlideUseOfFundsDetailed, title: "SAFE Use of Funds" },
   { component: SlideValuationBridge, title: "Valuation Bridge" },
   { component: SlideCapTable, title: "Cap Table" },
   { component: SlideGovernance, title: "Governance" },
   { component: SlideExitStrategy, title: "Exit Outlook" },
   { component: SlideFiveYearVision, title: "5-Year Vision" },
 
-  // ACT 6: Execution & Community
+  // ACT 7: Execution & Community
   { component: SlideCommunityOutreach, title: "Community Impact" },
   { component: SlideMarketingStrategy, title: "Marketing" },
-  { component: SlideTimeline, title: "Timeline" },
   { component: SlideRiskManagement, title: "Risk Management" },
   { component: SlideAdvisoryStructure, title: "Advisory Structure" },
   { component: SlideLongTermVision, title: "Vision" },

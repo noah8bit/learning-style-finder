@@ -47,7 +47,7 @@ export default function SlideSmartBuild({ active }: { active: boolean }) {
                 Smart Build, <span className="text-primary">Premium Feel</span>
               </h2>
               <p className="animate-fade-up stagger-3 text-muted-foreground text-[22px] mb-7 leading-relaxed">
-                How we deliver a 32K sq ft Phase 1 facility within our <span className="text-foreground font-semibold">~$8M vertical build budget</span> at ~$250/sq ft — the same playbook elite facilities worldwide use.
+                How we deliver a 32K sq ft purpose-built campus within our <span className="text-foreground font-semibold">~$8M vertical build budget</span> at ~$250/sq ft — the same playbook institutional facilities worldwide use.
               </p>
 
               <div className="animate-fade-up stagger-4 space-y-4">
@@ -96,7 +96,7 @@ export default function SlideSmartBuild({ active }: { active: boolean }) {
                 {/* Phase 2 upgrade callout */}
                 <div className="mt-4 bg-primary/10 border border-primary/30 rounded-lg p-4">
                   <p className="text-foreground text-[16px] leading-relaxed">
-                    <span className="text-primary font-bold">Execution Timeline:</span> Estimated 10–14 month build. Permitting (2–3 mo) → Foundation & Steel (3–4 mo) → Interior fit-out (4–6 mo). GC selection in progress. Phase 2 upgrades layered as profits grow — no structural changes needed.
+                    <span className="text-primary font-bold">Execution Timeline:</span> Estimated 18–20 month development cycle. Pre-development (4–6 mo) → Foundation & Steel (3–4 mo) → Interior fit-out (4–6 mo) → Pre-opening (2–3 mo). GC selection in progress. Future expansions layered as revenue grows — no structural changes needed.
                   </p>
                 </div>
                 <p className="mt-3 text-muted-foreground/50 text-[11px] leading-tight">
