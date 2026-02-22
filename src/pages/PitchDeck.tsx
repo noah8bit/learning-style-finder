@@ -142,26 +142,46 @@ function SlideSolution({ active }: { active: boolean }) {
     { icon: "🤝", label: "Grants & Sponsorships" },
     { icon: "🎬", label: "Film & Stunt Wing" },
   ];
+  const pillars = [
+    { icon: "🏅", label: "Diversified Training", desc: "30+ disciplines under one roof — not a single-sport gym" },
+    { icon: "🏥", label: "Insurance-Backed Medical", desc: "Sports medicine and NMT billed through insurance, not out-of-pocket" },
+    { icon: "🏢", label: "Corporate Wellness", desc: "B2B contracts with employers for recurring, predictable revenue" },
+    { icon: "🤝", label: "Sponsorships & Grants", desc: "Community outreach funded through partnerships and grant programs" },
+    { icon: "🎪", label: "Event & Facility Rentals", desc: "Competitions, film productions, and private bookings generate high-margin income" },
+  ];
   return (
     <ScaledSlide>
       <div className="relative w-full h-full">
         <img src={heroRecovery} alt="" className="absolute inset-0 w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-black/75" />
-        <div className="relative z-10 flex flex-col justify-center h-full px-[120px]">
+        <div className="absolute inset-0 bg-black/80" />
+        <div className="relative z-10 flex flex-col justify-center h-full px-[100px]">
           {active && (
             <>
-              <p className="animate-fade-up stagger-1 text-primary font-medium tracking-[0.3em] uppercase text-[20px] mb-4">The Solution</p>
-              <h2 className="animate-fade-up stagger-2 text-[72px] font-bold leading-[1] text-foreground mb-4">
-                Train Better. Recover Faster.<br /><span className="text-primary">Go Further.</span>
-              </h2>
-              <p className="animate-fade-up stagger-3 text-secondary-foreground text-[22px] max-w-[900px] mb-14 leading-relaxed font-light">
-                A comprehensive high-performance campus built for aspiring and competitive athletes across every sport — integrated rehabilitation, recovery science, and medical services, all under one roof.
-              </p>
-              <div className="grid grid-cols-4 gap-5">
+              <div className="animate-fade-up stagger-1 bg-black/85 backdrop-blur-xl rounded-xl px-8 py-5 mb-5 border border-white/10 inline-block">
+                <p className="text-primary font-medium tracking-[0.3em] uppercase text-[18px] mb-2">The Solution</p>
+                <h2 className="text-[56px] font-bold leading-[1] text-white mb-2">
+                  Train Better. Recover Faster. <span className="text-primary">Go Further.</span>
+                </h2>
+                <p className="text-white/70 text-[20px] max-w-[1100px] leading-relaxed">
+                  A comprehensive high-performance campus for athletes across every sport — with integrated rehabilitation, recovery science, and medical services under one roof. <span className="text-primary font-semibold">Month-to-month memberships aren't the only way to build a successful facility.</span> Iron Form is built on five distinct revenue pillars.
+                </p>
+              </div>
+
+              <div className="animate-fade-up stagger-3 grid grid-cols-5 gap-3 mb-5">
+                {pillars.map((p, i) => (
+                  <div key={i} className="bg-black/85 backdrop-blur-xl border border-primary/30 rounded-xl p-5 flex flex-col">
+                    <span className="text-[32px] mb-2">{p.icon}</span>
+                    <h3 className="text-primary text-[18px] font-bold mb-1">{p.label}</h3>
+                    <p className="text-white/70 text-[15px] leading-snug">{p.desc}</p>
+                  </div>
+                ))}
+              </div>
+
+              <div className="animate-fade-up stagger-4 grid grid-cols-4 gap-3">
                 {features.map((f, i) => (
-                  <div key={i} className={`animate-fade-up stagger-${Math.min(i + 3, 6)} bg-black/70 backdrop-blur-md border border-white/20 rounded-xl px-7 py-6 flex items-center gap-5`}>
-                    <span className="text-[40px]">{f.icon}</span>
-                    <span className="text-foreground text-[24px] font-semibold">{f.label}</span>
+                  <div key={i} className="bg-black/70 backdrop-blur-md border border-white/20 rounded-xl px-5 py-4 flex items-center gap-4">
+                    <span className="text-[32px]">{f.icon}</span>
+                    <span className="text-white text-[20px] font-semibold">{f.label}</span>
                   </div>
                 ))}
               </div>
