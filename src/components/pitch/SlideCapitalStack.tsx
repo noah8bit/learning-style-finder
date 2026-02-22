@@ -67,9 +67,9 @@ export default function SlideCapitalStack({ active }: { active: boolean }) {
                     <div className="text-primary text-[24px] font-bold">$620K</div>
                     <div className="text-muted-foreground text-[13px]">Debt Service</div>
                   </div>
-                  <div className="text-center flex-1">
-                    <div className="text-primary text-[24px] font-bold">$580K</div>
-                    <div className="text-muted-foreground text-[13px]">Net After Debt</div>
+                   <div className="text-center flex-1">
+                     <div className="text-primary text-[24px] font-bold">$580K</div>
+                     <div className="text-muted-foreground text-[13px]">Net After Debt (pre-tax)</div>
                   </div>
                 </div>
               </div>

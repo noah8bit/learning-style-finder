@@ -12,7 +12,7 @@ export default function SlideFinancialSummary({ active }: { active: boolean }) {
     { label: "Break-Even", value: "245 members", icon: "⏱️" },
     { label: "Yr 1 EBITDA", value: "-$215K", icon: "📉" },
     { label: "Yr 3 EBITDA", value: "$1.2M", icon: "📈" },
-    { label: "Yr 3 Net After Debt", value: "$580K", icon: "💰" },
+    { label: "Yr 3 Net After Debt", value: "$580K", icon: "💰", note: "Pre-tax, before reinvestment" },
   ];
 
   return (
@@ -98,6 +98,7 @@ export default function SlideFinancialSummary({ active }: { active: boolean }) {
                     <span className="text-[24px] mb-1 block">{k.icon}</span>
                     <div className="text-primary text-[20px] font-bold mb-0.5">{k.value}</div>
                     <div className="text-muted-foreground text-[14px]">{k.label}</div>
+                    {'note' in k && k.note && <div className="text-muted-foreground/60 text-[11px] mt-1 italic">{k.note}</div>}
                   </div>
                 ))}
               </div>
