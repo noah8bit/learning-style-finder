@@ -19,13 +19,15 @@ export default function SlideCommunityOutreach({ active }: { active: boolean }) 
         <div className="relative z-10 flex flex-col justify-center h-full px-[100px]">
         {active && (
           <>
-            <p className="animate-fade-up stagger-1 text-primary font-medium tracking-[0.3em] uppercase text-[20px] mb-3">Community Impact</p>
-            <h2 className="animate-fade-up stagger-2 text-[60px] font-bold leading-[1] text-foreground mb-4">
-              Every Athlete <span className="text-primary">Deserves a Chance</span>
-            </h2>
-            <p className="animate-fade-up stagger-3 text-muted-foreground text-[24px] max-w-[1000px] mb-10 leading-relaxed">
-              Iron Form scouts talent, hosts competitive events, and mentors athletes in underserved communities.
-            </p>
+            <div className="animate-fade-up stagger-1 bg-black/85 backdrop-blur-xl rounded-xl px-8 py-5 mb-6 inline-block border border-white/10">
+              <p className="text-primary font-medium tracking-[0.3em] uppercase text-[20px] mb-2">Community Impact</p>
+              <h2 className="text-[56px] font-bold leading-[1] text-white mb-2">
+                Every Athlete <span className="text-primary">Deserves a Chance</span>
+              </h2>
+              <p className="text-white/70 text-[22px] max-w-[1000px] leading-relaxed">
+                Iron Form scouts talent, hosts competitive events, and mentors athletes in underserved communities.
+              </p>
+            </div>
             <div className="animate-fade-up stagger-4 grid grid-cols-3 gap-5">
               {strategies.map((s, i) => (
                 <div key={i} className="bg-black/90 backdrop-blur-xl border border-primary/30 rounded-xl p-7 flex flex-col">
