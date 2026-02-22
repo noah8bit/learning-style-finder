@@ -96,7 +96,10 @@ export default function SlideRevenueDetailed({ active }: { active: boolean }) {
 
               {/* Total bar */}
               <div className="animate-fade-up stagger-4 mt-4 bg-black/70 backdrop-blur-md border border-white/20 rounded-xl p-4 flex items-center justify-between">
-                <span className="text-foreground text-[22px] font-bold uppercase tracking-wider">Year 1 Total Revenue</span>
+                <div>
+                  <span className="text-foreground text-[22px] font-bold uppercase tracking-wider">Year 1 Total Revenue</span>
+                  <span className="text-muted-foreground text-[16px] ml-4">Break-even threshold: <span className="text-primary font-bold">245 active members</span></span>
+                </div>
                 <div className="flex items-center gap-6">
                   <span className="text-primary text-[34px] font-bold">$1.66M</span>
                   <span className="text-muted-foreground text-[18px]">EBITDA: ~breakeven</span>

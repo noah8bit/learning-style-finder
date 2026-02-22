@@ -115,7 +115,7 @@ export async function exportPptx() {
       { title: "80%", desc: "Americans physically active — 247M in 2024" },
       { title: "6M+", desc: "Atlanta metro population — #1 U.S. film state" },
       { title: "↑ Cross-Training", desc: "Multi-training demand accelerating" },
-      { title: "#1 First-Mover", desc: "No SE competitor matches this model" },
+      { title: "#1 Integrated", desc: "Limited regional competitors offer this combination" },
     ];
     addCards(s, stats, 3, 2.0);
   }
@@ -402,7 +402,7 @@ export async function exportPptx() {
     s.background = { color: BG };
     addTitle(s, "RISK ASSESSMENT", "Risks &", "Mitigation Plans");
     const risks = [
-      { risk: "Market Competition (Med)", mit: "First-mover advantage. No competitor offers 30+ sports, medical, and film wing." },
+      { risk: "Market Competition (Med)", mit: "Limited regional competitors offer integrated multi-sport, medical, and film infrastructure." },
       { risk: "Economic Downturn (Med)", mit: "Diversified revenue. Insurance and grants provide recession-resistant income." },
       { risk: "Construction Delays (High)", mit: "Phased build-out allows partial ops. 6% contingency reserve ($750K)." },
       { risk: "Staffing Challenges (Med)", mit: "Competitive pay + commission. Atlanta's deep sports and film talent pool." },
