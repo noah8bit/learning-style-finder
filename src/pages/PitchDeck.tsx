@@ -208,6 +208,7 @@ function SlideServices({ active }: { active: boolean }) {
 }
 
 function SlideDisciplines({ active }: { active: boolean }) {
+  const phase2Items = new Set(["Pole Vault", "Olympic Swimming", "Rock Climbing", "Aerial Silks & Trapeze", "Circus Performance"]);
   const leftCol = [
     { title: "Martial Arts & Combat", items: ["Tae Kwon Do", "Karate", "Jiu-Jitsu", "Muay Thai", "Boxing", "Wrestling", "Kickboxing", "Wing Chun"], color: "text-primary" },
     { title: "Weapons", items: ["Fencing", "Kendo", "HEMA Sword Fighting"], color: "text-accent" },
@@ -243,6 +244,9 @@ function SlideDisciplines({ active }: { active: boolean }) {
                             <li key={j} className="text-secondary-foreground text-[17px] flex items-center gap-2">
                               <span className="w-1.5 h-1.5 rounded-full bg-muted-foreground shrink-0" />
                               {item}
+                              {phase2Items.has(item) && (
+                                <span className="text-[11px] font-bold text-accent bg-accent/15 border border-accent/30 rounded px-1.5 py-0.5 leading-none ml-1 shrink-0">P2</span>
+                              )}
                             </li>
                           ))}
                         </ul>
@@ -251,6 +255,10 @@ function SlideDisciplines({ active }: { active: boolean }) {
                   </div>
                 ))}
               </div>
+              <p className="animate-fade-up stagger-4 text-muted-foreground text-[14px] mt-4">
+                <span className="text-accent font-bold bg-accent/15 border border-accent/30 rounded px-1.5 py-0.5 text-[11px] mr-2">P2</span>
+                = Phase 2 Expansion (triggered when EBITDA &gt; $1.5M sustained 12 mo.)
+              </p>
             </>
           )}
         </div>
