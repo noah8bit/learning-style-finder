@@ -26,12 +26,14 @@ export default function SlideCommunityOutreach({ active }: { active: boolean }) 
             <p className="animate-fade-up stagger-3 text-muted-foreground text-[24px] max-w-[1000px] mb-10 leading-relaxed">
               Iron Form scouts talent, hosts competitive events, and mentors athletes in underserved communities.
             </p>
-            <div className="animate-fade-up stagger-4 grid grid-cols-3 gap-6">
+            <div className="animate-fade-up stagger-4 grid grid-cols-3 gap-5">
               {strategies.map((s, i) => (
-                <div key={i} className="bg-black/70 backdrop-blur-md border border-white/20 rounded-xl p-8">
-                  <span className="text-[44px] mb-4 block">{s.icon}</span>
-                  <h3 className="text-foreground text-[26px] font-bold mb-3">{s.title}</h3>
-                  <p className="text-muted-foreground text-[22px] leading-relaxed">{s.desc}</p>
+                <div key={i} className="bg-black/90 backdrop-blur-xl border border-primary/30 rounded-xl p-7 flex flex-col">
+                  <div className="flex items-center gap-4 mb-3">
+                    <span className="text-[36px] shrink-0">{s.icon}</span>
+                    <h3 className="text-white text-[24px] font-bold leading-tight">{s.title}</h3>
+                  </div>
+                  <p className="text-white/70 text-[19px] leading-[1.5]">{s.desc}</p>
                 </div>
               ))}
             </div>
