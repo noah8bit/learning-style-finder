@@ -34,7 +34,7 @@ export default function SlideFinancialProjections({ active }: { active: boolean 
     <ScaledSlide>
       <div className="relative w-full h-full">
         <img src={heroFinancial} alt="" className="absolute inset-0 w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-black/78" />
+        <div className="absolute inset-0 bg-black/90" />
         <div className="relative z-10 flex flex-col justify-center h-full px-[100px]" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.9), 0 0 2px rgba(0,0,0,1)' }}>
         {active && (
           <>
@@ -45,7 +45,7 @@ export default function SlideFinancialProjections({ active }: { active: boolean 
 
             <div className="animate-fade-up stagger-3 space-y-4 mb-5">
               {proForma.map((p, i) => (
-                <div key={i} className="bg-black/60 border border-white/15 rounded-xl p-5">
+                <div key={i} className="bg-black/80 backdrop-blur-xl border border-white/20 rounded-xl p-5">
                   <div className="flex items-center justify-between mb-3">
                     <div className="flex items-center gap-4">
                       <span className={`${p.color} text-[28px] font-bold`}>{p.year}</span>
@@ -85,11 +85,11 @@ export default function SlideFinancialProjections({ active }: { active: boolean 
 
             {/* Sensitivity */}
               <div className="animate-fade-up stagger-4 flex gap-4 mb-4">
-              <div className="flex-1 bg-black/70 backdrop-blur-md border border-accent/30 rounded-xl p-4">
+              <div className="flex-1 bg-black/85 backdrop-blur-xl border border-accent/40 rounded-xl p-4">
                 <h4 className="text-accent text-[18px] font-bold mb-1">Stress Test (Year 2)</h4>
                 <p className="text-muted-foreground text-[16px]">Revenue $3.8M → EBITDA $800K → Net after debt $180K. <span className="text-foreground font-semibold">Survivable.</span></p>
               </div>
-              <div className="flex-1 bg-black/70 backdrop-blur-md border border-primary/30 rounded-xl p-4">
+              <div className="flex-1 bg-black/85 backdrop-blur-xl border border-primary/40 rounded-xl p-4">
                 <h4 className="text-primary text-[18px] font-bold mb-1">Sensitivity (Year 3)</h4>
                 <p className="text-muted-foreground text-[16px]">If only 500 members: Revenue -$400K → EBITDA ~$900K → Net ~$280K. <span className="text-foreground font-semibold">Viable but no expansion.</span></p>
               </div>
@@ -97,7 +97,7 @@ export default function SlideFinancialProjections({ active }: { active: boolean 
 
             <div className="animate-fade-up stagger-5 grid grid-cols-4 gap-3">
               {keyMetrics.map((r, i) => (
-                <div key={i} className="bg-black/70 backdrop-blur-md border border-white/20 rounded-xl p-4 text-center">
+                <div key={i} className="bg-black/85 backdrop-blur-xl border border-white/25 rounded-xl p-4 text-center">
                   <span className="text-[28px] mb-1 block">{r.icon}</span>
                   <div className="text-primary text-[22px] font-bold mb-0.5">{r.value}</div>
                   <div className="text-muted-foreground text-[16px]">{r.label}</div>
