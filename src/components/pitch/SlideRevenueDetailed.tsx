@@ -85,7 +85,7 @@ export default function SlideRevenueDetailed({ active }: { active: boolean }) {
                   </div>
 
                   {/* COGS callout */}
-                  <div className="mt-3 bg-black/60 border border-white/10 rounded-lg px-4 py-2.5">
+                  <div className="mt-3 bg-black/70 backdrop-blur-md border border-white/15 rounded-lg px-4 py-2.5">
                     <div className="flex justify-between text-[16px]">
                       <span className="text-muted-foreground">COGS (splits, staffing)</span>
                       <span className="text-red-400 font-bold">-$450K</span>

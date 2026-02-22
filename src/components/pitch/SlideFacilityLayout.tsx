@@ -47,7 +47,7 @@ export default function SlideFacilityLayout({ active }: { active: boolean }) {
               <h3 className="text-primary text-[20px] font-bold mb-3 uppercase tracking-wider">Indoor Zones — 32,000 sq ft</h3>
               <div className="grid grid-cols-3 gap-3 mb-5">
                 {indoorZones.map((z, i) => (
-                  <div key={i} className={`${z.color} border rounded-xl p-5 flex items-center gap-4`}>
+                  <div key={i} className={`bg-secondary border ${z.color.split(' ')[0]} rounded-xl p-5 flex items-center gap-4`}>
                     <span className="text-[28px]">{z.icon}</span>
                     <div className="flex-1 flex justify-between items-baseline">
                       <h3 className="text-foreground text-[22px] font-bold">{z.name}</h3>
@@ -63,7 +63,7 @@ export default function SlideFacilityLayout({ active }: { active: boolean }) {
               <h3 className="text-accent text-[20px] font-bold mb-3 uppercase tracking-wider">Outdoor Training Areas</h3>
               <div className="grid grid-cols-4 gap-3">
                 {outdoorZones.map((z, i) => (
-                  <div key={i} className="bg-accent/10 border border-accent/30 rounded-xl p-4 flex items-center gap-3">
+                  <div key={i} className="bg-secondary border border-accent/30 rounded-xl p-4 flex items-center gap-3">
                     <span className="text-[24px]">{z.icon}</span>
                     <span className="text-foreground text-[18px] font-semibold">{z.name}</span>
                   </div>

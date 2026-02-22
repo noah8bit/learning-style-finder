@@ -44,7 +44,7 @@ export default function SlideInvestmentAsk({ active }: { active: boolean }) {
                   <h3 className="text-primary text-[22px] font-bold mb-4 uppercase tracking-wider">Capital Stack</h3>
                   <div className="space-y-4 mb-5">
                     {capitalStack.map((c, i) => (
-                      <div key={i} className={`${c.bg} border ${c.border} rounded-xl p-5`}>
+                      <div key={i} className={`bg-black/60 backdrop-blur-md border ${c.border} rounded-xl p-5`}>
                         <div className="flex justify-between items-center mb-1">
                           <span className={`${c.color} text-[26px] font-bold`}>{c.label}</span>
                           <span className={`${c.color} text-[32px] font-bold`}>{c.amount}</span>
@@ -82,7 +82,7 @@ export default function SlideInvestmentAsk({ active }: { active: boolean }) {
                     </div>
                   ))}
 
-                  <div className="bg-primary/10 border border-primary/30 rounded-xl p-4">
+                  <div className="bg-black/60 backdrop-blur-md border border-primary/30 rounded-xl p-4">
                     <p className="text-muted-foreground text-[16px] leading-relaxed">
                       <span className="text-primary font-bold">Founder retains 60%+</span> after partner vesting and option pool. Hard ceiling of 35% investor equity without valuation adjustment.
                     </p>

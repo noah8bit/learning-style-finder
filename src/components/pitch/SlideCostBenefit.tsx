@@ -66,7 +66,7 @@ export default function SlideCostBenefit({ active }: { active: boolean }) {
                 <h3 className="text-primary text-[18px] font-bold mb-5 uppercase tracking-wider">Projected Returns</h3>
                 <div className="grid grid-cols-2 gap-4">
                   {projections.map((b, i) => (
-                    <div key={i} className="bg-primary/5 border border-primary/20 rounded-xl p-5 text-center">
+                    <div key={i} className="bg-secondary border border-primary/20 rounded-xl p-5 text-center">
                       <span className="text-[28px] block mb-2">{b.icon}</span>
                       <div className="text-primary text-[20px] font-bold mb-1">{b.amount}</div>
                       <div className="text-muted-foreground text-[13px]">{b.label}</div>
