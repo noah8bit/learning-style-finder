@@ -18,82 +18,82 @@ export default function SlideCapTable({ active }: { active: boolean }) {
         <div className="relative z-10 flex flex-col justify-center h-full px-[100px]" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.9), 0 0 2px rgba(0,0,0,1)' }}>
           {active && (
             <>
-              <p className="animate-fade-up stagger-1 text-primary font-medium tracking-[0.3em] uppercase text-[20px] mb-3">Ownership Structure</p>
-              <h2 className="animate-fade-up stagger-2 text-[56px] font-bold leading-[1] text-white mb-3">
+              <p className="animate-fade-up stagger-1 text-primary font-medium tracking-[0.3em] uppercase text-[18px] mb-2">Ownership Structure</p>
+              <h2 className="animate-fade-up stagger-2 text-[48px] font-bold leading-[1] text-white mb-2">
                 Projected Ownership <span className="text-primary">After SAFE Conversion</span>
               </h2>
-              <p className="animate-fade-up stagger-2 text-muted-foreground text-[20px] mb-8">
+              <p className="animate-fade-up stagger-2 text-muted-foreground text-[18px] mb-5">
                 Assuming full $750,000 converts at $5M cap
               </p>
 
-              <div className="animate-fade-up stagger-3 flex gap-10">
+              <div className="animate-fade-up stagger-3 flex gap-8">
                 {/* Left: Visual bar chart */}
                 <div className="flex-1">
-                  <div className="space-y-4">
+                  <div className="space-y-3">
                     {capTable.map((c, i) => (
                       <div key={i}>
-                        <div className="flex justify-between items-center mb-1.5">
-                          <span className={`${c.textColor} text-[20px] font-bold`}>{c.owner}</span>
-                          <span className={`${c.textColor} text-[24px] font-bold`}>{c.pct.toFixed(2)}%</span>
+                        <div className="flex justify-between items-center mb-1">
+                          <span className={`${c.textColor} text-[18px] font-bold`}>{c.owner}</span>
+                          <span className={`${c.textColor} text-[20px] font-bold`}>{c.pct.toFixed(2)}%</span>
                         </div>
-                        <div className="h-[36px] bg-black/60 border border-white/15 rounded-full overflow-hidden">
+                        <div className="h-[28px] bg-black/60 border border-white/15 rounded-full overflow-hidden">
                           <div className={`h-full ${c.color} rounded-full transition-all`} style={{ width: `${c.pct}%` }} />
                         </div>
                       </div>
                     ))}
                   </div>
 
-                  <div className="mt-6 bg-black/80 backdrop-blur-xl border border-white/20 rounded-xl p-4 flex justify-between items-center">
-                    <span className="text-white text-[20px] font-bold uppercase tracking-wider">Total</span>
-                    <span className="text-primary text-[28px] font-bold">100.00%</span>
+                  <div className="mt-4 bg-black/80 backdrop-blur-xl border border-white/20 rounded-xl p-3 flex justify-between items-center">
+                    <span className="text-white text-[18px] font-bold uppercase tracking-wider">Total</span>
+                    <span className="text-primary text-[24px] font-bold">100.00%</span>
                   </div>
                 </div>
 
                 {/* Right: Key details */}
-                <div className="w-[440px] shrink-0 flex flex-col gap-4">
-                  <div className="bg-black/80 backdrop-blur-xl border border-primary/30 rounded-xl p-6">
-                    <h3 className="text-primary text-[20px] font-bold mb-3 uppercase tracking-wider">Founder Control</h3>
-                    <ul className="space-y-2.5">
-                      <li className="text-muted-foreground text-[18px] flex items-start gap-2.5">
-                        <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2.5 shrink-0" />
+                <div className="w-[420px] shrink-0 flex flex-col gap-3">
+                  <div className="bg-black/80 backdrop-blur-xl border border-primary/30 rounded-xl p-4">
+                    <h3 className="text-primary text-[17px] font-bold mb-2 uppercase tracking-wider">Founder Control</h3>
+                    <ul className="space-y-1.5">
+                      <li className="text-muted-foreground text-[16px] flex items-start gap-2">
+                        <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" />
                         Founder retains 74.96% post-conversion
                       </li>
-                      <li className="text-muted-foreground text-[18px] flex items-start gap-2.5">
-                        <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2.5 shrink-0" />
+                      <li className="text-muted-foreground text-[16px] flex items-start gap-2">
+                        <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" />
                         Majority voting control at all times
                       </li>
-                      <li className="text-muted-foreground text-[18px] flex items-start gap-2.5">
-                        <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2.5 shrink-0" />
+                      <li className="text-muted-foreground text-[16px] flex items-start gap-2">
+                        <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" />
                         No board seats issued to angels
                       </li>
                     </ul>
                   </div>
 
-                  <div className="bg-black/80 backdrop-blur-xl border border-accent/30 rounded-xl p-6">
-                    <h3 className="text-accent text-[20px] font-bold mb-3 uppercase tracking-wider">Partner Vesting</h3>
-                    <ul className="space-y-2.5">
-                      <li className="text-muted-foreground text-[18px] flex items-start gap-2.5">
-                        <span className="w-1.5 h-1.5 rounded-full bg-accent mt-2.5 shrink-0" />
+                  <div className="bg-black/80 backdrop-blur-xl border border-accent/30 rounded-xl p-4">
+                    <h3 className="text-accent text-[17px] font-bold mb-2 uppercase tracking-wider">Partner Vesting</h3>
+                    <ul className="space-y-1.5">
+                      <li className="text-muted-foreground text-[16px] flex items-start gap-2">
+                        <span className="w-1.5 h-1.5 rounded-full bg-accent mt-2 shrink-0" />
                         Josh Garret: 4% · 4-year vest · 1-year cliff
                       </li>
-                      <li className="text-muted-foreground text-[18px] flex items-start gap-2.5">
-                        <span className="w-1.5 h-1.5 rounded-full bg-accent mt-2.5 shrink-0" />
+                      <li className="text-muted-foreground text-[16px] flex items-start gap-2">
+                        <span className="w-1.5 h-1.5 rounded-full bg-accent mt-2 shrink-0" />
                         Rick Villanueva: 4% · 4-year vest · 1-year cliff
                       </li>
-                      <li className="text-muted-foreground text-[18px] flex items-start gap-2.5">
-                        <span className="w-1.5 h-1.5 rounded-full bg-accent mt-2.5 shrink-0" />
-                        Equity subject to continued active participation and performance benchmarks
+                      <li className="text-muted-foreground text-[16px] flex items-start gap-2">
+                        <span className="w-1.5 h-1.5 rounded-full bg-accent mt-2 shrink-0" />
+                        Equity subject to continued participation and performance
                       </li>
                     </ul>
                   </div>
 
-                  <div className="bg-black/80 backdrop-blur-xl border border-white/20 rounded-xl p-6">
-                    <h3 className="text-white text-[20px] font-bold mb-3 uppercase tracking-wider">Option Pool & Tech Entity</h3>
-                     <p className="text-muted-foreground text-[18px] leading-relaxed mb-2">
-                       4% reserved for future key hires (GM, COO, etc.). Option pool created post-SAFE conversion. Protects against dilution when scaling the team.
+                  <div className="bg-black/80 backdrop-blur-xl border border-white/20 rounded-xl p-4">
+                    <h3 className="text-white text-[17px] font-bold mb-2 uppercase tracking-wider">Option Pool & Tech Entity</h3>
+                     <p className="text-muted-foreground text-[15px] leading-relaxed mb-1.5">
+                       4% reserved for future key hires (GM, COO, etc.). Option pool created post-SAFE conversion.
                      </p>
-                     <p className="text-muted-foreground text-[16px] leading-relaxed border-t border-white/10 pt-2">
-                       <span className="text-primary font-bold">Iron Form Digital LLC</span> will be structured as a wholly owned, founder-controlled subsidiary of Iron Form Holdings with a licensing agreement to the parent entity.
+                     <p className="text-muted-foreground text-[14px] leading-relaxed border-t border-white/10 pt-1.5">
+                       <span className="text-primary font-bold">Iron Form Digital LLC</span> — wholly owned, founder-controlled subsidiary with licensing agreement to parent entity.
                      </p>
                   </div>
                 </div>
