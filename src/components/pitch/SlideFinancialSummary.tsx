@@ -28,7 +28,7 @@ export default function SlideFinancialSummary({ active }: { active: boolean }) {
                 3-Year <span className="text-primary">At a Glance</span>
               </h2>
               <p className="animate-fade-up stagger-2 text-muted-foreground text-[18px] mb-6 max-w-[900px]">
-                Year 1 projections represent first 12 months of operations following facility completion. Blended ARPU: $261/month. Operational break-even achieved at 245 active members assuming base medical, team retainers, and ancillary revenue remain at conservative Year 1 levels.
+                Blended ARPU: $261/month. Year 3 assumes expanded specialty programs, 3+ corporate contracts, scaled medical utilization, and event hosting growth.
               </p>
 
               {/* Clean P&L Waterfall - Year 1 */}

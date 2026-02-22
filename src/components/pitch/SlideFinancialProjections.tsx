@@ -18,7 +18,7 @@ export default function SlideFinancialProjections({ active }: { active: boolean 
     {
       year: "Year 3", revenue: "$5.01M", cogs: "$1.73M", grossProfit: "$3.28M",
       opex: "$2.09M", ebitda: "$1.20M", debtService: "$620K", netCash: "$580K",
-      note: "Stable and bankable — net positive after debt",
+      note: "Expanded specialty, 3+ corporate, scaled medical & events",
       barWidth: 100, color: "text-primary"
     },
   ];
