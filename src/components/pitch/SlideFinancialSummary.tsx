@@ -23,13 +23,15 @@ export default function SlideFinancialSummary({ active }: { active: boolean }) {
         <div className="relative z-10 flex flex-col justify-center h-full px-[100px]" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.9), 0 0 2px rgba(0,0,0,1)' }}>
           {active && (
             <>
-              <p className="animate-fade-up stagger-1 text-primary font-medium tracking-[0.3em] uppercase text-[18px] mb-2">Financial Summary</p>
-              <h2 className="animate-fade-up stagger-2 text-[56px] font-bold leading-[1] text-white mb-4">
-                3-Year <span className="text-primary">At a Glance</span>
-              </h2>
-              <p className="animate-fade-up stagger-2 text-muted-foreground text-[18px] mb-6 max-w-[900px]">
-                Blended ARPU: $261/month. Year 3 assumes expanded specialty programs, 3+ corporate contracts, scaled medical utilization, and event hosting growth.
-              </p>
+              <div className="animate-fade-up stagger-1 bg-black/85 backdrop-blur-xl rounded-xl px-8 py-5 mb-5 border border-white/10 inline-block">
+                <p className="text-primary font-medium tracking-[0.3em] uppercase text-[18px] mb-2">Financial Summary</p>
+                <h2 className="text-[52px] font-bold leading-[1] text-white mb-2">
+                  3-Year <span className="text-primary">At a Glance</span>
+                </h2>
+                <p className="text-white/70 text-[17px] max-w-[900px]">
+                  Blended ARPU: $261/month. Year 3 assumes expanded specialty programs, 3+ corporate contracts, scaled medical utilization, and event hosting growth.
+                </p>
+              </div>
 
               {/* Clean P&L Waterfall - Year 1 */}
               <div className="animate-fade-up stagger-3 bg-black/85 backdrop-blur-xl border border-primary/40 rounded-xl p-5 mb-5">
