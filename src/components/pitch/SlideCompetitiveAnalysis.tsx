@@ -61,7 +61,7 @@ export default function SlideCompetitiveAnalysis({ active }: { active: boolean }
             </div>
             <div className="animate-fade-up stagger-4 mt-6 bg-primary/10 border border-primary/30 rounded-xl p-6">
               <p className="text-foreground text-[22px]">
-                <span className="font-bold text-primary">Iron Form Advantage:</span> The only facility combining elite multi-sport training, integrated medical, recovery tech, and a film & stunt wing.
+                <span className="font-bold text-primary">Iron Form Advantage:</span> The only facility combining integrated multi-sport training, insurance-backed medical, recovery tech, and a film & stunt wing.
               </p>
             </div>
             <p className="animate-fade-up stagger-5 absolute bottom-6 left-[100px] right-[100px] text-muted-foreground/50 text-[11px] leading-tight">

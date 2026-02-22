@@ -48,6 +48,7 @@ import SlideHighMarginAddOns from "@/components/pitch/SlideHighMarginAddOns";
 import SlideFinancialSummary from "@/components/pitch/SlideFinancialSummary";
 import SlideFiveYearVision from "@/components/pitch/SlideFiveYearVision";
 import SlideValuationBridge from "@/components/pitch/SlideValuationBridge";
+import SlideKPIs from "@/components/pitch/SlideKPIs";
 
 // ─── Slide Components ───────────────────────────────────────────────────────
 
@@ -70,7 +71,7 @@ function SlideCover({ active }: { active: boolean }) {
                 <span className="text-primary">FORM</span>
               </h1>
               <p className="animate-fade-up stagger-3 text-[28px] text-secondary-foreground mt-8 max-w-[800px] leading-relaxed font-light">
-                Atlanta's Premier High-Performance Training & Rehab Facility
+                Atlanta's Integrated High-Performance Training & Rehab Facility
               </p>
               <p className="animate-fade-up stagger-4 text-muted-foreground text-[18px] mt-6">
                 Investor Pitch Deck · Concept Stage · 2026
@@ -87,7 +88,7 @@ function SlideProblem({ active }: { active: boolean }) {
   const problems = [
     { icon: "⚡", title: "Fragmented Resources", desc: "Athletes travel between multiple facilities for training, rehab, and recovery — wasting time. Iron Form consolidates everything under one roof." },
     { icon: "🏅", title: "No Cross-Training Hub", desc: "No single destination in Atlanta for multi-discipline training, neuromuscular therapy, recovery science, and coaching." },
-    { icon: "💰", title: "Access & Affordability", desc: "Elite training tools and sports medicine are reserved for premium pricing. Iron Form levels the field through tiered memberships and grants." },
+    { icon: "💰", title: "Access & Affordability", desc: "Advanced training tools and sports medicine are reserved for premium pricing. Iron Form levels the field through tiered memberships and grants." },
     { icon: "🌟", title: "Community Outreach", desc: "Iron Form scouts and mentors undiscovered talent across Atlanta, connecting them with coaching and opportunities." },
   ];
   return (
@@ -103,7 +104,7 @@ function SlideProblem({ active }: { active: boolean }) {
               <p className="animate-fade-up stagger-1 text-primary font-medium tracking-[0.3em] uppercase text-[20px] mb-4">The Problem</p>
               <h2 className="animate-fade-up stagger-2 text-[64px] font-bold leading-[1] text-foreground mb-12">
                 Every Athlete Deserves<br />
-                <span className="text-primary">Elite-Level Support</span>
+                <span className="text-primary">Integrated Support</span>
               </h2>
               <div className="space-y-5">
                 {problems.map((p, i) => (
@@ -150,7 +151,7 @@ function SlideSolution({ active }: { active: boolean }) {
                 Train Better. Recover Faster.<br /><span className="text-primary">Go Further.</span>
               </h2>
               <p className="animate-fade-up stagger-3 text-secondary-foreground text-[22px] max-w-[900px] mb-14 leading-relaxed font-light">
-                A comprehensive high-performance campus built for aspiring and elite athletes across every sport — integrated rehabilitation, recovery science, and medical services, all under one roof.
+                A comprehensive high-performance campus built for aspiring and competitive athletes across every sport — integrated rehabilitation, recovery science, and medical services, all under one roof.
               </p>
               <div className="grid grid-cols-4 gap-5">
                 {features.map((f, i) => (
@@ -170,7 +171,7 @@ function SlideSolution({ active }: { active: boolean }) {
 
 function SlideServices({ active }: { active: boolean }) {
   const diffs = [
-    { icon: "🏥", title: "Integrated Medical & Recovery", benefit: "Neuromuscular therapy and peptide clinics on-site — elite sports medicine with everyday training." },
+    { icon: "🏥", title: "Integrated Medical & Recovery", benefit: "Neuromuscular therapy and peptide clinics on-site — insurance-backed sports medicine with everyday training." },
     { icon: "🏋", title: "30+ Training Disciplines", benefit: "One-stop hub — martial arts, track & field, swimming, dance, and more." },
     { icon: "🎪", title: "Film, Stunt & Circus Wing", benefit: "Aerial training and circus arts — conditioning hub for Cirque du Soleil performers during Atlanta tours." },
     { icon: "🏆", title: "Competition Hosting", benefit: "Purpose-built for Hyrox, CrossFit, strongman, and multi-sport fitness events." },
@@ -472,7 +473,7 @@ function SlideClosing({ active }: { active: boolean }) {
               </h2>
               <div className="animate-fade-up stagger-2 w-[100px] h-[3px] bg-primary mx-auto my-10" />
               <p className="animate-fade-up stagger-3 text-[32px] text-secondary-foreground font-light max-w-[800px] leading-relaxed">
-                Forging Elite Performers.<br />Empowering Every Athlete.
+                Integrated Performance. Revenue-Validated Model.<br />Built for Athletes. Backed by Science.
               </p>
               <div className="animate-fade-up stagger-4 mt-10 bg-primary/20 border border-primary/40 rounded-2xl px-12 py-8 max-w-[700px]">
                 <p className="text-foreground text-[24px] font-bold mb-3">Let's Build This Together</p>
@@ -525,6 +526,7 @@ const SLIDES = [
   { component: SlideSmartBuild, title: "Smart Build" },
   { component: SlideUseOfFundsDetailed, title: "Use of Funds" },
   { component: SlideCostBenefit, title: "Cost vs Benefit" },
+  { component: SlideKPIs, title: "Core KPIs" },
 
   // ACT 5: The Ask & Returns
   { component: SlideInvestmentAsk, title: "Investment Opportunity" },

@@ -82,7 +82,7 @@ export default function SlideCapTable({ active }: { active: boolean }) {
                       </li>
                       <li className="text-muted-foreground text-[18px] flex items-start gap-2.5">
                         <span className="w-1.5 h-1.5 rounded-full bg-accent mt-2.5 shrink-0" />
-                        Equity is non-controlling, performance-based
+                        Equity subject to continued active participation and performance benchmarks
                       </li>
                     </ul>
                   </div>

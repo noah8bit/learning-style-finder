@@ -3,12 +3,12 @@ import ScaledSlide from "./ScaledSlide";
 
 export default function SlideUseOfFundsDetailed({ active }: { active: boolean }) {
   const funds = [
-    { dollar: "$280,000", title: "Facility Buildout Improvements", desc: "Interior buildout, flooring, wall systems, lighting, HVAC upgrades", color: "text-primary", borderColor: "border-primary/30" },
+    { dollar: "$230,000", title: "Facility Buildout Improvements", desc: "Interior buildout, flooring, wall systems, lighting, HVAC upgrades", color: "text-primary", borderColor: "border-primary/30" },
     { dollar: "$170,000", title: "Recovery & Medical Equipment", desc: "Cryo, Normatec, PEMF, infrared sauna, cold plunge, treatment tables", color: "text-accent", borderColor: "border-accent/30" },
     { dollar: "$95,000", title: "Lease Deposits & Legal", desc: "Security deposits, lease negotiation, entity formation, contracts", color: "text-primary", borderColor: "border-primary/30" },
-    { dollar: "$65,000", title: "Initial Marketing & Launch", desc: "Brand identity, website, pre-launch campaigns, grand opening", color: "text-accent", borderColor: "border-accent/30" },
+    { dollar: "$50,000", title: "Initial Marketing & Launch", desc: "Brand identity, website, pre-launch campaigns, grand opening", color: "text-accent", borderColor: "border-accent/30" },
     { dollar: "$110,000", title: "Payroll (First 4 Months)", desc: "GM, ops manager, admin — runway cushion through initial ramp", color: "text-primary", borderColor: "border-primary/30" },
-    { dollar: "$30,000", title: "Operating Reserve", desc: "Emergency fund for unexpected costs during launch period", color: "text-accent", borderColor: "border-accent/30" },
+    { dollar: "$95,000", title: "Operating Reserve", desc: "Working capital cushion for unexpected costs and downside protection", color: "text-accent", borderColor: "border-accent/30" },
   ];
 
   return (

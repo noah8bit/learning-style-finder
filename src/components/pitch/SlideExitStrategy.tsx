@@ -15,7 +15,7 @@ export default function SlideExitStrategy({ active }: { active: boolean }) {
                 5–7 Year <span className="text-accent">Exit Outlook</span>
               </h2>
               <p className="animate-fade-up stagger-3 text-muted-foreground text-[22px] mb-7 max-w-[900px] leading-relaxed">
-                Numbers. Not adjectives. Clear valuation targets based on stabilized EBITDA and industry multiples.
+                Valuation of operating entity only. Tech entity (Iron Form Digital LLC) excluded. Fitness + medical hybrid comps trade between 4–7× EBITDA (private market transactions, IHRSA data).
               </p>
 
               <div className="animate-fade-up stagger-4 flex gap-6 mb-6">

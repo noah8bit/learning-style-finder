@@ -3,7 +3,7 @@ import ScaledSlide from "./ScaledSlide";
 
 export default function SlideCustomerPersonas({ active }: { active: boolean }) {
   const personas = [
-    { icon: "🏆", name: "Competitive Athlete", age: "16–35", desc: "Elite coaching, recovery tech & performance analytics", needs: ["Multi-sport cross-training", "Injury rehab & prevention"] },
+    { icon: "🏆", name: "Competitive Athlete", age: "16–35", desc: "Integrated coaching, recovery tech & performance analytics", needs: ["Multi-sport cross-training", "Injury rehab & prevention"] },
     { icon: "🎬", name: "Film, Stunt & Circus", age: "22–45", desc: "Stunt training, aerial arts, Cirque du Soleil residencies", needs: ["Stunt rigging & choreography", "Aerial silks & trapeze"] },
     { icon: "👨‍👩‍👧‍👦", name: "Active Family", age: "30–55", desc: "Youth sports + parent fitness & wellness", needs: ["Youth development", "Family memberships"] },
     { icon: "🏢", name: "Corporate Client", age: "25–55", desc: "$600+/employee/yr spend — $3–$6 ROI per dollar", needs: ["Packages $3K–$10K/mo", "Productivity reporting"] },

@@ -12,7 +12,7 @@ export default function SlideFAQs({ active }: { active: boolean }) {
     },
     {
       q: "What makes this different from a traditional gym?",
-      a: "Iron Form combines 30+ sport disciplines, integrated medical/recovery services, a film & stunt wing, and community outreach — no traditional gym or even elite performance center offers this level of integration.",
+      a: "Iron Form combines 30+ sport disciplines, integrated medical/recovery services, a film & stunt wing, and community outreach — no traditional gym or performance center offers this level of integration under one roof.",
     },
     {
       q: "How will you attract and retain members?",
