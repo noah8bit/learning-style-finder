@@ -41,7 +41,7 @@ export default function SlideLongTermVision({ active }: { active: boolean }) {
                 <h3 className="text-accent text-[22px] font-bold mb-5 uppercase tracking-wider">Growth Roadmap</h3>
                 <div className="grid grid-cols-3 gap-5">
                   {milestones.map((m, i) => (
-                    <div key={i} className="bg-accent/10 border border-accent/30 rounded-xl p-7">
+                    <div key={i} className="bg-black/70 backdrop-blur-md border border-accent/30 rounded-xl p-7">
                       <span className="text-[40px] mb-3 block">{m.icon}</span>
                       <h3 className="text-accent text-[24px] font-bold mb-2">{m.title}</h3>
                       <p className="text-muted-foreground text-[20px] leading-relaxed">{m.desc}</p>
