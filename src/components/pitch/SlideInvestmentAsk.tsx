@@ -39,7 +39,7 @@ export default function SlideInvestmentAsk({ active }: { active: boolean }) {
                 Post-money SAFE (YC standard). $5M valuation cap. 10% discount. No board seats. SAFE pool hard-capped at $750K — no rolling extensions without repricing. Founders retain &gt;70% ownership post-conversion.
               </p>
               <p className="animate-fade-up stagger-3 text-accent text-[18px] mb-6 max-w-[900px] font-medium italic">
-                $750K SAFE serves as foundational equity within the full $9.8M equity raise. Anchors early capital commitment and rewards conviction with priority conversion terms.
+                $750K SAFE serves as foundational equity within the full $9.8M equity raise. SAFE converts into the broader $9.8M priced equity round at construction close. Anchors early capital commitment and rewards conviction with priority conversion terms.
               </p>
 
               <div className="animate-fade-up stagger-4 flex gap-8">

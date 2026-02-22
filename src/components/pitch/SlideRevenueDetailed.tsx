@@ -11,14 +11,14 @@ export default function SlideRevenueDetailed({ active }: { active: boolean }) {
   const maxMembers = 280;
 
   const streams = [
-    { label: "Membership (200 avg × $261 × 12)", value: "$626K", type: "core" },
-    { label: "Team Retainers (4 × $30K)", value: "$120K", type: "core" },
-    { label: "Insurance Partnerships", value: "$58K", type: "core" },
-    { label: "NMT Net to Facility", value: "$110K", type: "core" },
-    { label: "Facility Rentals & Events", value: "$90K", type: "core" },
-    { label: "Peptide Clinic (15 × $400 × 12)", value: "$72K", type: "enhanced", detail: "$72K protocols + $18K IV add-ons" },
-    { label: "Corporate Wellness (1 × $5K × 9mo)", value: "$45K", type: "core" },
-    { label: "IV Add-ons", value: "$18K", type: "enhanced" },
+    { label: "Membership (200 avg × $261 × 12)", value: "$626,400", type: "core" },
+    { label: "Team Retainers (4 × $30K)", value: "$120,000", type: "core" },
+    { label: "Insurance Partnerships", value: "$58,000", type: "core" },
+    { label: "NMT Net to Facility", value: "$110,000", type: "core" },
+    { label: "Facility Rentals & Events", value: "$90,000", type: "core" },
+    { label: "Peptide Clinic (15 × $400 × 12)", value: "$72,000", type: "enhanced" },
+    { label: "IV Add-Ons", value: "$18,000", type: "enhanced" },
+    { label: "Corporate Wellness (1 × $5K × 9 mo)", value: "$45,000", type: "core" },
   ];
 
   const yearComps = [
@@ -85,9 +85,6 @@ export default function SlideRevenueDetailed({ active }: { active: boolean }) {
                           <span className="text-white text-[18px] font-medium">{s.label}</span>
                           <span className={`${s.type === "core" ? "text-primary" : "text-accent"} text-[20px] font-bold shrink-0 ml-4`}>{s.value}</span>
                         </div>
-                        {s.detail && (
-                          <p className="text-muted-foreground text-[13px] mt-1 italic">{s.detail}</p>
-                        )}
                       </div>
                     ))}
                   </div>
@@ -98,7 +95,7 @@ export default function SlideRevenueDetailed({ active }: { active: boolean }) {
               <div className="animate-fade-up stagger-4 mt-4 bg-black/70 backdrop-blur-md border border-white/20 rounded-xl p-4 flex items-center justify-between">
                 <div>
                   <span className="text-foreground text-[22px] font-bold uppercase tracking-wider">Year 1 Total Revenue</span>
-                  <span className="text-muted-foreground text-[16px] ml-4">Break-even: <span className="text-primary font-bold">245 members</span> · Operating loss covered by reserves</span>
+                  <span className="text-muted-foreground text-[14px] ml-4">Operational break-even at <span className="text-primary font-bold">245 members</span> assuming base medical, team retainers, and ancillary revenue at conservative Year 1 levels</span>
                 </div>
                 <div className="flex items-center gap-6">
                   <span className="text-primary text-[34px] font-bold">$1.14M</span>

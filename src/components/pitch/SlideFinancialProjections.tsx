@@ -24,7 +24,7 @@ export default function SlideFinancialProjections({ active }: { active: boolean 
   ];
 
   const keyMetrics = [
-    { label: "Break-Even", value: "245 Members", icon: "⏱️" },
+    { label: "Break-Even (blended)", value: "245 Members", icon: "⏱️" },
     { label: "Yr 3 EBITDA", value: "$1.2M", icon: "📈" },
     { label: "Yr 3 Net After Debt", value: "$580K", icon: "💰" },
     { label: "Debt Service", value: "$620K/yr", icon: "🏦" },
@@ -91,7 +91,7 @@ export default function SlideFinancialProjections({ active }: { active: boolean 
               </div>
               <div className="flex-1 bg-black/85 backdrop-blur-xl border border-primary/40 rounded-xl p-4">
                 <h4 className="text-primary text-[18px] font-bold mb-1">Year 3 Stabilization</h4>
-                <p className="text-muted-foreground text-[16px]">600 members, $5.01M revenue, 23.9% EBITDA margin. <span className="text-foreground font-semibold">$580K net after $620K debt service.</span></p>
+                <p className="text-muted-foreground text-[16px]">Year 3 assumes 600 stabilized members at blended ARPU of $295–$310/month and scaled ancillary programs. <span className="text-foreground font-semibold">$580K net after $620K debt service.</span></p>
               </div>
             </div>
 

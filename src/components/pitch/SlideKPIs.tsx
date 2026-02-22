@@ -7,7 +7,7 @@ export default function SlideKPIs({ active }: { active: boolean }) {
     { icon: "📊", metric: "Blended ARPU", target: "$261/mo", desc: "Mix of group, specialty, hybrid, and medical members", color: "text-primary" },
     { icon: "👥", metric: "Payroll-to-Revenue (Yr 1)", target: "36.8%", desc: "Target by Year 3: ≤40%. Year 1 payroll: $420K on $1.14M revenue", color: "text-accent" },
     { icon: "🏥", metric: "Medical Utilization", target: "70%", desc: "NMT + insurance at 70% capacity by Month 18", color: "text-primary" },
-    { icon: "⏱️", metric: "Break-Even", target: "245 members", desc: "Break-even revenue: $766,000 annual membership revenue", color: "text-accent" },
+    { icon: "⏱️", metric: "Break-Even", target: "245 members", desc: "Operational break-even achieved at 245 active members assuming base medical, team retainers, and ancillary revenue remain at conservative Year 1 levels", color: "text-accent" },
   ];
 
   return (

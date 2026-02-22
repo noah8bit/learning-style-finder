@@ -88,6 +88,10 @@ export default function SlideCapitalStack({ active }: { active: boolean }) {
                   <div className="text-muted-foreground text-[14px]">Net Positive After Debt</div>
                 </div>
               </div>
+
+              <p className="animate-fade-up stagger-5 mt-3 text-muted-foreground/60 text-[12px]">
+                Assumes 10-year amortization at 8% blended commercial construction rate. Annual debt service: $620K.
+              </p>
             </>
           )}
         </div>

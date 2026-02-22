@@ -8,7 +8,7 @@ export default function SlideFinancialSnapshot({ active }: { active: boolean }) 
     { label: "Debt", value: "$6.0M", icon: "🏦" },
     { label: "Year 1 Revenue", value: "$1.14M", icon: "📊" },
     { label: "Year 1 EBITDA", value: "-$215K", icon: "📉" },
-    { label: "Break-Even", value: "245 members", icon: "⏱️" },
+    { label: "Break-Even (blended)", value: "245 members", icon: "⏱️" },
     { label: "Year 3 Revenue", value: "$5.01M", icon: "📈" },
     { label: "Year 3 EBITDA", value: "$1.2M", icon: "🔥" },
     { label: "Year 3 Net After Debt", value: "$580K", icon: "✅" },

@@ -45,7 +45,7 @@ export default function SlideDevelopmentBudget({ active }: { active: boolean }) 
 
               <div className="animate-fade-up stagger-5 bg-black/80 backdrop-blur-xl border border-accent/30 rounded-xl p-4">
                 <p className="text-muted-foreground text-[16px] leading-relaxed">
-                  <span className="text-accent font-bold">Note:</span> Founder compensation during development phase is limited and included within the pre-opening allocation. Construction begins only after full capital stack is secured.
+                  <span className="text-accent font-bold">Note:</span> Founder compensation during development phase is limited and included within the pre-opening allocation. Construction begins only after full capital stack is secured. $250/sq ft validated against RSMeans 2025 steel recreation benchmarks.
                 </p>
               </div>
             </>
