@@ -55,7 +55,7 @@ export default function SlideOperatingCosts({ active }: { active: boolean }) {
 
               <div className="animate-fade-up stagger-5 mt-3 flex gap-4">
                 <div className="flex-1 bg-primary/10 border border-primary/30 rounded-lg p-3">
-                  <p className="text-white text-[15px]"><span className="text-primary font-bold">COGS separate:</span> $450K in instructor splits, therapist splits, wellness provider splits, and event staffing — shown in Financial Overview.</p>
+                  <p className="text-white text-[15px]"><span className="text-primary font-bold">P&L Note:</span> Year 1 pro forma shows $950K OPEX + $280K COGS = $1.23M total cost structure. Revenue $1.14M → EBITDA -$90K. Break-even expected Month 10–14.</p>
                 </div>
                 <div className="flex-1 bg-accent/10 border border-accent/30 rounded-lg p-3">
                   <p className="text-white text-[15px]"><span className="text-accent font-bold">Target:</span> Payroll under 50% of revenue. Year 3 OPEX ~$2.09M with revenue at $5M+ — margins improve to ~24% EBITDA.</p>
