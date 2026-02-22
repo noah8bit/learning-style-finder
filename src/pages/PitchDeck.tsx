@@ -38,6 +38,9 @@ import SlideFAQs from "@/components/pitch/SlideFAQs";
 import SlideCustomerPersonas from "@/components/pitch/SlideCustomerPersonas";
 import SlideCostBenefit from "@/components/pitch/SlideCostBenefit";
 import SlideInvestmentAsk from "@/components/pitch/SlideInvestmentAsk";
+import SlideCapTable from "@/components/pitch/SlideCapTable";
+import SlideGovernance from "@/components/pitch/SlideGovernance";
+import SlideAdvisoryStructure from "@/components/pitch/SlideAdvisoryStructure";
 import SlideTraction from "@/components/pitch/SlideTraction";
 
 // ─── Slide Components ───────────────────────────────────────────────────────
@@ -262,7 +265,7 @@ function SlideMarket({ active }: { active: boolean }) {
     { value: "247M", label: "Sport & Fitness Participants", sub: "Active Americans in 2024 (SFIA 2025 Topline Report)" },
     { value: "6.2M+", label: "Atlanta Metro Population", sub: "#1 U.S. film production state (ARC 2024)" },
     { value: "80%", label: "U.S. Participation Rate", sub: "Highest ever recorded (SFIA 2025)" },
-    { value: "#1", label: "First-Mover Advantage", sub: "No SE competitor matches this model" },
+    { value: "#1", label: "Integrated Model", sub: "Limited regional competitors offer this combination" },
   ];
   return (
     <ScaledSlide>
@@ -334,14 +337,15 @@ function SlideTeam({ active }: { active: boolean }) {
               ))}
             </div>
             <div className="animate-fade-up stagger-4 mt-6 flex gap-5">
-              <div className="flex-1 bg-primary/10 border border-primary/30 rounded-xl p-6">
-                <p className="text-foreground text-[20px]">
-                   <span className="font-bold text-primary">Partner Equity:</span> Josh & Rick hold 4% equity each (8% total) with 4-year vesting, 1-year cliff.
-                 </p>
+              <div className="flex-1 bg-black/70 backdrop-blur-md border border-primary/30 rounded-xl p-6">
+                <p className="text-foreground text-[20px] font-bold text-primary mb-2">Partner Equity Structure</p>
+                <p className="text-muted-foreground text-[18px] leading-relaxed">Josh Garret – 4% equity, 4-year vesting, 1-year cliff</p>
+                <p className="text-muted-foreground text-[18px] leading-relaxed">Rick Villanueva – 4% equity, 4-year vesting, 1-year cliff</p>
+                <p className="text-muted-foreground text-[16px] mt-2 italic">Equity is non-controlling and subject to performance-based continuation.</p>
               </div>
-              <div className="flex-1 bg-secondary border border-border rounded-xl p-6">
+              <div className="flex-1 bg-black/70 backdrop-blur-md border border-border rounded-xl p-6">
                 <p className="text-foreground text-[20px]">
-                  <span className="font-semibold">Coaches & Trainers:</span> Specialists across 20+ disciplines — to be recruited.
+                  <span className="font-semibold">Athletes as Instructors:</span> Contract-based specialists across 20+ disciplines — recruited on revenue-share model.
                 </p>
               </div>
             </div>
@@ -419,7 +423,7 @@ function SlideFilmIndustry({ active }: { active: boolean }) {
                 Where Action<br />Meets <span className="text-primary">Production</span>
               </h2>
               <p className="animate-fade-up stagger-3 text-muted-foreground text-[22px] mb-10 leading-relaxed max-w-[650px]">
-                Georgia is the <span className="text-foreground font-semibold">#1 U.S. film production state</span>. Cirque du Soleil regularly performs in Atlanta, and our facility offers dedicated aerial training, rehearsal space, and conditioning for touring performers — a pipeline no competitor provides.
+                Georgia is the <span className="text-foreground font-semibold">#1 U.S. film production state</span>. Cirque du Soleil regularly performs in Atlanta, and our facility offers dedicated aerial training, rehearsal space, and conditioning for touring performers — limited regional competitors offer integrated multi-sport, medical, and film infrastructure.
               </p>
               <div className="animate-fade-up stagger-4 grid grid-cols-2 gap-5">
                 {capabilities.map((c, i) => (
@@ -510,14 +514,17 @@ const SLIDES = [
   { component: SlideCostBenefit, title: "Cost vs Benefit" },
 
   // ACT 5: The Ask & Returns
-  { component: SlideInvestmentAsk, title: "The Ask" },
-  { component: SlideExitStrategy, title: "Exit Strategy" },
+  { component: SlideInvestmentAsk, title: "Investment Opportunity" },
+  { component: SlideCapTable, title: "Cap Table" },
+  { component: SlideGovernance, title: "Governance" },
+  { component: SlideExitStrategy, title: "Exit Outlook" },
 
   // ACT 6: Execution & Community
   { component: SlideCommunityOutreach, title: "Community Impact" },
   { component: SlideMarketingStrategy, title: "Marketing" },
   { component: SlideTimeline, title: "Timeline" },
   { component: SlideRiskManagement, title: "Risk Management" },
+  { component: SlideAdvisoryStructure, title: "Advisory Structure" },
   { component: SlideLongTermVision, title: "Vision" },
   { component: SlidePricingAppendix, title: "Full Preliminary Pricing Benchmarks" },
   { component: SlideClosing, title: "Closing" },
