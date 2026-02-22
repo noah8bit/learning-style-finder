@@ -90,7 +90,7 @@ function SlideCover({ active }: { active: boolean }) {
 
 function SlideProblem({ active }: { active: boolean }) {
   const problems = [
-    { icon: "⚡", title: "Fragmented Resources", desc: "Athletes travel between multiple facilities for training, rehab, and recovery — wasting time. Iron Form consolidates everything under one roof." },
+    { icon: "⚡", title: "Fragmented Resources", desc: "Athletes juggle multiple facilities for training, rehab, and recovery — wasting time and money. Iron Form consolidates everything they need under one roof." },
     { icon: "🏅", title: "No Cross-Training Hub", desc: "No single destination in Atlanta for multi-discipline training, neuromuscular therapy, recovery science, and coaching." },
     { icon: "💰", title: "Access & Affordability", desc: "Advanced training tools and sports medicine are reserved for premium pricing. Iron Form levels the field through tiered memberships and grants." },
     { icon: "🌟", title: "Community Outreach", desc: "Iron Form scouts and mentors undiscovered talent across Atlanta, connecting them with coaching and opportunities." },
