@@ -4,10 +4,10 @@ export default function SlideKPIs({ active }: { active: boolean }) {
   const kpis = [
     { icon: "💰", metric: "Member Acquisition Cost", target: "<$250", desc: "Blended across digital, referral, and community channels", color: "text-primary" },
     { icon: "📉", metric: "Monthly Churn Rate", target: "<6%", desc: "Industry avg 8–10%. Retention driven by integrated services", color: "text-accent" },
-    { icon: "🏋", metric: "Instructor Revenue Share", target: "45–55%", desc: "Capped share of program revenue — aligns incentives", color: "text-primary" },
-    { icon: "👥", metric: "Payroll-to-Revenue Ratio", target: "<50%", desc: "Year 1 target. Improves to ~40% by Year 3 at scale", color: "text-accent" },
+    { icon: "📊", metric: "Blended ARPU", target: "$261/mo", desc: "Mix of group, specialty, hybrid, and medical members", color: "text-primary" },
+    { icon: "👥", metric: "Payroll-to-Revenue (Yr 1)", target: "36.8%", desc: "Target by Year 3: ≤40%. Year 1 payroll: $420K on $1.14M revenue", color: "text-accent" },
     { icon: "🏥", metric: "Medical Utilization", target: "70%", desc: "NMT + insurance at 70% capacity by Month 18", color: "text-primary" },
-    { icon: "📊", metric: "Blended ARPU", target: "$261/mo", desc: "Mix of group, specialty, hybrid, and medical members", color: "text-accent" },
+    { icon: "⏱️", metric: "Break-Even", target: "245 members", desc: "Break-even revenue: $766,000 annual membership revenue", color: "text-accent" },
   ];
 
   return (

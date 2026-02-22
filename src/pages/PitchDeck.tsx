@@ -52,6 +52,7 @@ import SlideFinancialSummary from "@/components/pitch/SlideFinancialSummary";
 import SlideFiveYearVision from "@/components/pitch/SlideFiveYearVision";
 import SlideValuationBridge from "@/components/pitch/SlideValuationBridge";
 import SlideKPIs from "@/components/pitch/SlideKPIs";
+import SlideFinancialSnapshot from "@/components/pitch/SlideFinancialSnapshot";
 
 // ─── Slide Components ───────────────────────────────────────────────────────
 
@@ -527,6 +528,9 @@ const SLIDES = [
   { component: SlideConservativeScenario, title: "Conservative Scenario" },
   { component: SlideOperatingCosts, title: "Operating Costs" },
   { component: SlideKPIs, title: "Core KPIs" },
+
+  // Financial Snapshot
+  { component: SlideFinancialSnapshot, title: "Financial Snapshot" },
 
   // ACT 5: Development & Capital
   { component: SlideDevelopmentBudget, title: "Development Budget" },

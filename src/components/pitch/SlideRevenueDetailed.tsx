@@ -11,19 +11,20 @@ export default function SlideRevenueDetailed({ active }: { active: boolean }) {
   const maxMembers = 280;
 
   const streams = [
-    { label: "Membership (200 avg)", value: "$626K", type: "core" },
-    { label: "Team Retainers (4 teams)", value: "$120K", type: "core" },
+    { label: "Membership (200 avg × $261 × 12)", value: "$626K", type: "core" },
+    { label: "Team Retainers (4 × $30K)", value: "$120K", type: "core" },
     { label: "Insurance Partnerships", value: "$58K", type: "core" },
     { label: "NMT Net to Facility", value: "$110K", type: "core" },
-    { label: "Corporate Wellness (1 client)", value: "$45K", type: "core" },
-    { label: "Facility Rentals/Events", value: "$90K", type: "core" },
-    { label: "Peptide & IV Clinic (15 clients)", value: "$90K", type: "enhanced", detail: "15 × $400/mo × 12 = $72K + $18K IV" },
+    { label: "Facility Rentals & Events", value: "$90K", type: "core" },
+    { label: "Peptide Clinic (15 × $400 × 12)", value: "$72K", type: "enhanced", detail: "$72K protocols + $18K IV add-ons" },
+    { label: "Corporate Wellness (1 × $5K × 9mo)", value: "$45K", type: "core" },
+    { label: "IV Add-ons", value: "$18K", type: "enhanced" },
   ];
 
   const yearComps = [
-    { year: "Year 1", total: "$1.14M", members: "200", ebitda: "-$215K" },
-    { year: "Year 2", total: "$3.17M", members: "450", ebitda: "$520K" },
-    { year: "Year 3", total: "$5.01M", members: "600", ebitda: "$1.2M" },
+    { year: "Year 1", total: "$1.14M", members: "200", ebitda: "-$215K", margin: "—" },
+    { year: "Year 2", total: "$3.17M", members: "450", ebitda: "$520K", margin: "16.4%" },
+    { year: "Year 3", total: "$5.01M", members: "600", ebitda: "$1.2M", margin: "23.9%" },
   ];
 
   return (
@@ -39,7 +40,7 @@ export default function SlideRevenueDetailed({ active }: { active: boolean }) {
                 Year 1 <span className="text-primary">Conservative Ramp</span>
               </h2>
               <p className="animate-fade-up stagger-2 text-muted-foreground text-[16px] mb-4 italic">
-                Year 1 is designed for stability, not peak performance.
+                Year 1 = first 12 months post-opening. Designed for stability, not peak performance.
               </p>
               <div className="animate-fade-up stagger-3 flex gap-8">
                 {/* Left: Membership ramp-up */}
@@ -104,9 +105,6 @@ export default function SlideRevenueDetailed({ active }: { active: boolean }) {
                   <span className="text-yellow-400 text-[18px] font-semibold">EBITDA: –$215K</span>
                 </div>
               </div>
-              <p className="animate-fade-up stagger-5 text-muted-foreground text-[14px] mt-2 leading-relaxed">
-                <span className="text-primary font-bold">Core thesis:</span> Year 1 = first 12 months post-opening. Membership + medical = core engine. Everything else layers on. Break-even at <span className="text-primary font-bold">245 members</span>, expected <span className="text-primary font-bold">Month 10–14</span>.
-              </p>
             </>
           )}
         </div>

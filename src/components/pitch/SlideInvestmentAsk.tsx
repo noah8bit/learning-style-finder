@@ -20,7 +20,7 @@ export default function SlideInvestmentAsk({ active }: { active: boolean }) {
 
   const protections = [
     { icon: "🛡️", title: "Investor Rights", items: ["Pro-rata participation rights in future rounds", "Standard information rights", "10% discount to next priced round", "No board seats — clean and simple"] },
-    { icon: "⚡", title: "Founder Protections", items: ["Founder retains majority voting control", "No operational control granted to angels", "Future tech IP housed in separate entity", "Hard cap on SAFE pool — no creep"] },
+    { icon: "⚡", title: "Founder Protections", items: ["Founders retain >70% ownership post-conversion", "No operational control granted to angels", "Future tech IP housed in separate entity", "Hard cap on SAFE pool — no creep"] },
   ];
 
   return (
@@ -36,10 +36,10 @@ export default function SlideInvestmentAsk({ active }: { active: boolean }) {
                 Raising <span className="text-primary">$750,000</span> via SAFE
               </h2>
               <p className="animate-fade-up stagger-3 text-muted-foreground text-[22px] mb-3 max-w-[900px] leading-relaxed">
-                Post-money SAFE (YC standard). $5M valuation cap. 10% discount. No board seats. SAFE pool hard-capped at $750K — no rolling extensions without repricing. Founder retains majority voting control.
+                Post-money SAFE (YC standard). $5M valuation cap. 10% discount. No board seats. SAFE pool hard-capped at $750K — no rolling extensions without repricing. Founders retain &gt;70% ownership post-conversion.
               </p>
               <p className="animate-fade-up stagger-3 text-accent text-[18px] mb-6 max-w-[900px] font-medium italic">
-                $750K SAFE serves as foundational equity within the full $9–10M equity raise. Anchors early capital commitment and rewards conviction with priority conversion terms.
+                $750K SAFE serves as foundational equity within the full $9.8M equity raise. Anchors early capital commitment and rewards conviction with priority conversion terms.
               </p>
 
               <div className="animate-fade-up stagger-4 flex gap-8">
@@ -65,7 +65,7 @@ export default function SlideInvestmentAsk({ active }: { active: boolean }) {
                     ))}
                   </div>
                   <p className="mt-3 text-muted-foreground text-[15px] leading-relaxed">
-                    $750,000 ÷ $5,750,000 post-money = <span className="text-primary font-bold">13.04%</span> ownership at conversion
+                    $750,000 ÷ $5,750,000 post-money = <span className="text-primary font-bold">13.04%</span> ownership at conversion. SAFE investors receive pro-rata rights. No board seat.
                   </p>
                 </div>
 

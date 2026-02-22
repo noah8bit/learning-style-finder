@@ -3,16 +3,17 @@ import ScaledSlide from "./ScaledSlide";
 
 export default function SlideOperatingCosts({ active }: { active: boolean }) {
   const costs = [
-    { category: "Salaries & Payroll", range: "$420K", pct: 44, color: "text-primary" },
-    { category: "Lease & Property Costs", range: "$150K", pct: 16, color: "text-accent" },
-    { category: "Utilities", range: "$120K", pct: 13, color: "text-primary" },
-    { category: "Marketing & Sales", range: "$80K", pct: 8, color: "text-accent" },
-    { category: "Insurance & Liability", range: "$80K", pct: 8, color: "text-primary" },
-    { category: "Maintenance", range: "$60K", pct: 6, color: "text-accent" },
-    { category: "Software & Admin", range: "$40K", pct: 4, color: "text-primary" },
+    { category: "Salaries & Payroll", range: "$420K", pct: 39, color: "text-primary" },
+    { category: "Lease & Property Costs", range: "$150K", pct: 14, color: "text-accent" },
+    { category: "Misc/Admin Cushion", range: "$125K", pct: 12, color: "text-primary" },
+    { category: "Utilities", range: "$120K", pct: 11, color: "text-accent" },
+    { category: "Marketing & Sales", range: "$80K", pct: 7, color: "text-primary" },
+    { category: "Insurance & Liability", range: "$80K", pct: 7, color: "text-accent" },
+    { category: "Maintenance", range: "$60K", pct: 6, color: "text-primary" },
+    { category: "Software & Admin", range: "$40K", pct: 4, color: "text-accent" },
   ];
 
-  const total = "$1.075M";
+  const total = "$1,075,000";
 
   return (
     <ScaledSlide>
@@ -72,7 +73,7 @@ export default function SlideOperatingCosts({ active }: { active: boolean }) {
                   <p className="text-white text-[13px] mt-1"><span className="text-primary font-bold">P&L:</span> $1.14M Revenue → $280K COGS → $860K Gross → $1.075M OPEX → <span className="text-primary font-bold">–$215K EBITDA</span></p>
                 </div>
                 <div className="flex-1 bg-accent/10 border border-accent/30 rounded-lg p-3">
-                  <p className="text-white text-[15px]"><span className="text-accent font-bold">Year 1 is lean by design.</span> Purpose-built campus, disciplined operations. Payroll under 50% of revenue. Year 3 OPEX ~$2.09M with revenue at $5M+ — margins improve to ~24% EBITDA.</p>
+                  <p className="text-white text-[15px]"><span className="text-accent font-bold">Year 1 is lean by design.</span> Purpose-built campus, disciplined operations. Payroll-to-revenue: 36.8%. Year 3 OPEX $2.09M with revenue at $5.01M — margins improve to 24% EBITDA.</p>
                 </div>
               </div>
               <p className="animate-fade-up stagger-5 absolute bottom-6 left-[100px] right-[100px] text-muted-foreground/50 text-[11px] leading-tight">

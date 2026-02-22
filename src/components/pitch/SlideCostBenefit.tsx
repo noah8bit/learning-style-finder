@@ -2,12 +2,12 @@ import ScaledSlide from "./ScaledSlide";
 
 export default function SlideCostBenefit({ active }: { active: boolean }) {
   const costs = [
-    { label: "Land Acquisition", amount: "~$2.3M", pct: 15 },
-    { label: "Site Work & Utilities", amount: "~$1.6M", pct: 10 },
-    { label: "Vertical Build (32K sq ft)", amount: "~$8M", pct: 52 },
-    { label: "Outdoor Build", amount: "~$2M", pct: 13 },
-    { label: "Equipment & Install", amount: "~$1.4M", pct: 9 },
-    { label: "Soft Costs + Contingency", amount: "~$2.7M", pct: 17 },
+    { label: "Land Acquisition", amount: "$2.3M", pct: 15 },
+    { label: "Site Work & Utilities", amount: "$1.6M", pct: 10 },
+    { label: "Vertical Build (32K sq ft)", amount: "$8.0M", pct: 51 },
+    { label: "Outdoor Build", amount: "$2.0M", pct: 13 },
+    { label: "Equipment & Install", amount: "$1.4M", pct: 9 },
+    { label: "Soft Costs + Contingency", amount: "$2.5M", pct: 16 },
   ];
 
   const projections = [
@@ -51,12 +51,12 @@ export default function SlideCostBenefit({ active }: { active: boolean }) {
                   ))}
                 </div>
                 <div className="mt-5 bg-accent/10 border border-accent/30 rounded-xl p-4 flex justify-between items-center">
-                  <span className="text-foreground text-[16px] font-bold">Total Phase 1</span>
-                  <span className="text-accent text-[18px] font-bold">~$15M–$16M</span>
+                  <span className="text-foreground text-[16px] font-bold">Total Development</span>
+                  <span className="text-accent text-[18px] font-bold">$15.8M</span>
                 </div>
                 <div className="mt-2 bg-secondary border border-border rounded-lg p-3">
                   <p className="text-muted-foreground text-[13px]">
-                    <span className="text-foreground font-semibold">Capital Stack:</span> $9–10M equity (30–35%) + $5–6M bank debt · Debt service ~$620K/yr
+                    <span className="text-foreground font-semibold">Capital Stack:</span> $9.8M equity + $6.0M bank debt · Debt service $620K/yr
                   </p>
                 </div>
               </div>
@@ -75,7 +75,7 @@ export default function SlideCostBenefit({ active }: { active: boolean }) {
                 </div>
                 <div className="mt-4 bg-primary/10 border border-primary/30 rounded-xl p-4">
                   <p className="text-foreground text-[14px]">
-                    <span className="text-primary font-bold">Year 3 net after debt:</span> ~$575K · Phase 2 triggers at EBITDA &gt;$1.5M sustained 12 months
+                    <span className="text-primary font-bold">Year 3 net after debt:</span> $580K · Phase 2 triggers at EBITDA &gt;$1.5M sustained 12 months
                   </p>
                 </div>
               </div>

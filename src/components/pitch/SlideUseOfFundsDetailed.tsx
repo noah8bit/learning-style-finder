@@ -22,7 +22,7 @@ export default function SlideUseOfFundsDetailed({ active }: { active: boolean })
                 SAFE Use of Funds — <span className="text-primary">$750,000</span>
               </h2>
               <p className="animate-fade-up stagger-2 text-muted-foreground text-[20px] mb-6">
-                Foundational equity within the $9–10M raise. Funds pre-development and positions the full capital close.
+                Foundational equity within the $9.8M raise. Funds pre-development and positions the full capital close.
               </p>
               <div className="animate-fade-up stagger-3 space-y-3">
                 {funds.map((f, i) => (
@@ -42,7 +42,7 @@ export default function SlideUseOfFundsDetailed({ active }: { active: boolean })
 
               <div className="animate-fade-up stagger-5 mt-3 bg-accent/10 border border-accent/30 rounded-lg p-3">
                 <p className="text-muted-foreground text-[15px]">
-                  <span className="text-accent font-bold">SAFE role:</span> Foundational equity anchoring the full $9–10M raise. Funds pre-development, secures land, and positions the project for institutional close. Construction begins only after full capital stack is secured.
+                  <span className="text-accent font-bold">SAFE role:</span> Foundational equity anchoring the full $9.8M raise. Funds pre-development, secures land, and positions the project for institutional close. Construction begins only after full capital stack is secured.
                 </p>
               </div>
             </>

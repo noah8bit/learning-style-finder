@@ -12,7 +12,7 @@ export default function SlideEmployeeStructure({ active }: { active: boolean }) 
 
   const strategies = [
     { icon: "💵", title: "Revenue-Share Model", desc: "Instructors and trainers are mostly revenue-share — no fixed payroll burden until revenue supports it." },
-    { icon: "📊", title: "Under 50% of Revenue", desc: "Target total payroll (salaries + splits) at ≤50% of revenue. Year 1: ~$420K salaries + $280K COGS on $1.14M rev." },
+    { icon: "📊", title: "Payroll-to-Revenue: 36.8%", desc: "Target total payroll (salaries + splits) at ≤40% by Year 3. Year 1: $420K salaries + $280K COGS on $1.14M rev." },
     { icon: "🤝", title: "Partner Alignment", desc: "Rick & Josh: 4% equity each, 4-year vest with 1-year cliff. Reduces key-person risk and aligns with investor interests." },
     { icon: "📅", title: "Lean Year 1", desc: "Founder pay stays lean through Year 1–2. No bloated org chart — scale staffing with revenue, not ahead of it." },
   ];
@@ -51,7 +51,7 @@ export default function SlideEmployeeStructure({ active }: { active: boolean }) 
                 <div className="mt-3 bg-primary/10 border border-primary/30 rounded-xl p-4">
                   <div className="flex justify-between items-center">
                     <span className="text-foreground text-[18px] font-bold">Year 1 Core Payroll</span>
-                    <span className="text-primary text-[22px] font-bold">~$420K</span>
+                    <span className="text-primary text-[22px] font-bold">$420K</span>
                   </div>
                 </div>
               </div>
