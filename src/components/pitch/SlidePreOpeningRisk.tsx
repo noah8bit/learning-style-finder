@@ -3,7 +3,7 @@ import ScaledSlide from "./ScaledSlide";
 
 export default function SlidePreOpeningRisk({ active }: { active: boolean }) {
   const mitigations = [
-    { icon: "💰", title: "$350K Development Reserve", desc: "Built into the $15.8M raise. Covers initial operating losses during membership ramp. Provides 10.5 months runway in downside case.", color: "text-primary", borderColor: "border-primary/30" },
+    { icon: "💰", title: "$350K Operating Reserve", desc: "$350K operating reserve built into capital raise to cover 10+ months of downside burn. Provides 10.5 months runway at $33,333/month in worst case.", color: "text-primary", borderColor: "border-primary/30" },
     { icon: "👥", title: "Pre-Sale Membership Target: 150+", desc: "Structured pre-sale campaign launches during construction. Members commit before doors open — de-risks Day 1 revenue.", color: "text-accent", borderColor: "border-accent/30" },
     { icon: "🏢", title: "Corporate Contracts Pre-Opening", desc: "Corporate wellness agreements signed during development phase. Guaranteed recurring revenue from opening day.", color: "text-primary", borderColor: "border-primary/30" },
     { icon: "🏥", title: "Medical Referral Agreements", desc: "Insurance credentialing and physician referral partnerships secured 90+ days pre-opening. NMT revenue begins Month 1.", color: "text-accent", borderColor: "border-accent/30" },
