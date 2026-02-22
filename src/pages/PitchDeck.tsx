@@ -208,7 +208,7 @@ function SlideServices({ active }: { active: boolean }) {
 }
 
 function SlideDisciplines({ active }: { active: boolean }) {
-  const phase2Items = new Set(["Pole Vault", "Olympic Swimming", "Rock Climbing", "Aerial Silks & Trapeze", "Circus Performance"]);
+  const phase2Items = new Set(["Rock Climbing", "Olympic Swimming", "Basketball"]);
   const leftCol = [
     { title: "Martial Arts & Combat", items: ["Tae Kwon Do", "Karate", "Jiu-Jitsu", "Muay Thai", "Boxing", "Wrestling", "Kickboxing", "Wing Chun"], color: "text-primary" },
     { title: "Weapons", items: ["Fencing", "Kendo", "HEMA Sword Fighting"], color: "text-accent" },
