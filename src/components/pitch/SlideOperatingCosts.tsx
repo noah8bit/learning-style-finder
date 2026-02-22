@@ -3,17 +3,16 @@ import ScaledSlide from "./ScaledSlide";
 
 export default function SlideOperatingCosts({ active }: { active: boolean }) {
   const costs = [
-    { category: "Salaries & Payroll", items: ["GM ($90K–$120K)", "Ops Manager ($75K–$90K)", "Admin ($50K)", "Rick & Josh base draws"], range: "$420K", pct: 34, color: "text-primary" },
-    { category: "Utilities", items: ["HVAC for 32,000 sq ft", "Electric, water, waste", "Outdoor field maintenance"], range: "$180K", pct: 15, color: "text-accent" },
-    { category: "Lease & Property Costs", items: ["Triple-net lease structure", "CAM charges & property taxes", "Year 1 assumes lease — no land ownership"], range: "$150K", pct: 12, color: "text-primary" },
-    { category: "Insurance & Liability", items: ["General liability (stunt, film)", "Workers' comp", "Professional liability (clinic)", "Property insurance"], range: "$120K", pct: 10, color: "text-accent" },
-    { category: "Marketing & Sales", items: ["Digital ads & SEO", "Community events", "Corporate outreach", "Content production"], range: "$100K", pct: 8, color: "text-primary" },
-    { category: "Maintenance", items: ["Equipment repair", "Facility upkeep", "Outdoor areas", "Cleaning"], range: "$100K", pct: 8, color: "text-accent" },
-    { category: "Software & Admin", items: ["Tech platform", "Booking system", "POS & accounting", "Legal & compliance"], range: "$60K", pct: 5, color: "text-primary" },
-    { category: "Miscellaneous", items: ["Supplies", "Contingency", "Travel", "Professional development"], range: "$100K", pct: 8, color: "text-accent" },
+    { category: "Salaries & Payroll", range: "$420K", pct: 44, color: "text-primary" },
+    { category: "Lease & Property Costs", range: "$150K", pct: 16, color: "text-accent" },
+    { category: "Utilities", range: "$120K", pct: 13, color: "text-primary" },
+    { category: "Marketing & Sales", range: "$80K", pct: 8, color: "text-accent" },
+    { category: "Insurance & Liability", range: "$80K", pct: 8, color: "text-primary" },
+    { category: "Maintenance", range: "$60K", pct: 6, color: "text-accent" },
+    { category: "Software & Admin", range: "$40K", pct: 4, color: "text-primary" },
   ];
 
-  const total = "$1.23M";
+  const total = "$950K";
 
   return (
     <ScaledSlide>
@@ -38,7 +37,7 @@ export default function SlideOperatingCosts({ active }: { active: boolean }) {
                     <div className="h-[20px] bg-black/60 border border-white/10 rounded-full overflow-hidden">
                       <div
                         className={`h-full rounded-full ${c.color === "text-primary" ? "bg-primary/70" : "bg-accent/70"} flex items-center justify-end pr-2`}
-                        style={{ width: `${Math.max(c.pct * 2.5, 15)}%` }}
+                        style={{ width: `${Math.max(c.pct * 2, 15)}%` }}
                       >
                         <span className="text-white text-[11px] font-bold">{c.pct}%</span>
                       </div>
@@ -70,14 +69,14 @@ export default function SlideOperatingCosts({ active }: { active: boolean }) {
                       </div>
                     ))}
                   </div>
-                  <p className="text-white text-[13px] mt-1"><span className="text-primary font-bold">P&L:</span> $1.14M Revenue → $280K COGS → $860K Gross → $950K OPEX → <span className="text-primary font-bold">-$90K EBITDA</span></p>
+                  <p className="text-white text-[13px] mt-1"><span className="text-primary font-bold">P&L:</span> $1.14M Revenue → $280K COGS → $860K Gross → $950K OPEX → <span className="text-primary font-bold">–$90K EBITDA</span></p>
                 </div>
                 <div className="flex-1 bg-accent/10 border border-accent/30 rounded-lg p-3">
-                  <p className="text-white text-[15px]"><span className="text-accent font-bold">Target:</span> Payroll under 50% of revenue. Year 3 OPEX ~$2.09M with revenue at $5M+ — margins improve to ~24% EBITDA.</p>
+                  <p className="text-white text-[15px]"><span className="text-accent font-bold">Year 1 is lean by design.</span> Proof-of-concept mode — not luxury campus. Payroll under 50% of revenue. Year 3 OPEX ~$2.09M with revenue at $5M+ — margins improve to ~24% EBITDA.</p>
                 </div>
               </div>
               <p className="animate-fade-up stagger-5 absolute bottom-6 left-[100px] right-[100px] text-muted-foreground/50 text-[11px] leading-tight">
-                Sources: IHRSA Operating Benchmarks 2024; Bureau of Labor Statistics – Atlanta Metro Wage Data; Iron Form internal staffing models
+                Year 1 assumes triple-net lease structure — no land ownership. Sources: IHRSA Operating Benchmarks 2024; Bureau of Labor Statistics — Atlanta Metro Wage Data
               </p>
             </>
           )}

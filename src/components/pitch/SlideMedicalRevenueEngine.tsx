@@ -10,6 +10,8 @@ export default function SlideMedicalRevenueEngine({ active }: { active: boolean 
       points: [
         "8 workers' comp referrals/week × $150/session × 48 weeks = $57,600",
         "Year 1 conservative — ramps to 20/week as relationships build",
+        "Workers' comp reimbursement lag: 30–45 days",
+        "Billing handled by certified third-party medical billing company (not internal)",
       ],
     },
     {
@@ -17,9 +19,9 @@ export default function SlideMedicalRevenueEngine({ active }: { active: boolean 
       title: "Neuromuscular Therapy (Net)",
       total: "$110K",
       points: [
-        "5 sessions/day avg × $120 × 280 days = $168K gross",
-        "Additional pack subscriptions and rehab packages",
-        "Total gross ~$310K → Net to facility after Rick's split: $110K",
+        "5 sessions/day avg × $120 avg reimbursement × 280 days = $168K base gross",
+        "Additional rehab bundles and subscription packages increase total gross to ~$310K",
+        "Net to facility after Rick's 65/35 split: $110K",
       ],
     },
   ];
@@ -79,7 +81,7 @@ export default function SlideMedicalRevenueEngine({ active }: { active: boolean 
                 </div>
                 <div className="flex-1 bg-black/85 backdrop-blur-xl border border-white/15 rounded-lg p-4">
                   <p className="text-muted-foreground text-[15px]">
-                    <span className="text-white font-bold">Compliance Status:</span> Payer credentialing planned pre-launch (90-day lead time). Billing outsourced to certified third-party medical billing company (not internal). Workers' comp referral pipeline via existing provider relationships. Reimbursements begin Month 4.
+                    <span className="text-white font-bold">Compliance:</span> Payer credentialing planned pre-launch (90-day lead time). Billing outsourced to certified third-party company. Workers' comp referral pipeline via existing provider relationships. Reimbursements begin Month 4.
                   </p>
                 </div>
               </div>
