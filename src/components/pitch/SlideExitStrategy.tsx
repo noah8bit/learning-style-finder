@@ -62,9 +62,9 @@ export default function SlideExitStrategy({ active }: { active: boolean }) {
                   <div className="bg-black/80 backdrop-blur-xl border border-white/20 rounded-xl p-5 flex gap-4 items-start flex-1">
                     <span className="text-[32px] shrink-0">🔁</span>
                     <div className="flex-1">
-                      <h3 className="text-white text-[20px] font-bold mb-1.5">Franchise Model</h3>
+                     <h3 className="text-white text-[20px] font-bold mb-1.5">Multi-Location Potential</h3>
                       <p className="text-muted-foreground text-[16px] leading-relaxed">
-                        Replicate across metros. Valuation could reach $80M–$300M at 5–15 locations.
+                        Long-term multi-location potential across key metros. Proven model replicates with pre-engineered build strategy.
                       </p>
                     </div>
                   </div>

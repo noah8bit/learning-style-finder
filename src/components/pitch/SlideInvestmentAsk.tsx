@@ -35,8 +35,11 @@ export default function SlideInvestmentAsk({ active }: { active: boolean }) {
               <h2 className="animate-fade-up stagger-2 text-[56px] font-bold leading-[1] text-white mb-3">
                 Raising <span className="text-primary">$750,000</span> via SAFE
               </h2>
-              <p className="animate-fade-up stagger-3 text-muted-foreground text-[22px] mb-6 max-w-[900px] leading-relaxed">
+              <p className="animate-fade-up stagger-3 text-muted-foreground text-[22px] mb-3 max-w-[900px] leading-relaxed">
                 Simple Agreement for Future Equity. $5M valuation cap. 10% discount. No board seats. Founder retains majority voting control.
+              </p>
+              <p className="animate-fade-up stagger-3 text-accent text-[18px] mb-6 max-w-[900px] font-medium italic">
+                The $750K SAFE round funds pre-development, lease, equipment, and launch runway prior to full capital stack close.
               </p>
 
               <div className="animate-fade-up stagger-4 flex gap-8">
