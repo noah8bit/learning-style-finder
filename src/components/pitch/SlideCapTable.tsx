@@ -18,18 +18,20 @@ export default function SlideCapTable({ active }: { active: boolean }) {
         <div className="relative z-10 flex flex-col justify-center h-full px-[100px]" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.9), 0 0 2px rgba(0,0,0,1)' }}>
           {active && (
             <>
-              <p className="animate-fade-up stagger-1 text-primary font-medium tracking-[0.3em] uppercase text-[18px] mb-2">Ownership Structure</p>
-              <h2 className="animate-fade-up stagger-2 text-[48px] font-bold leading-[1] text-white mb-2">
-                Projected Ownership <span className="text-primary">After SAFE Conversion</span>
-              </h2>
-              <p className="animate-fade-up stagger-2 text-muted-foreground text-[18px] mb-5">
-                Assuming full $750,000 converts at $5M cap
-              </p>
+              <div className="animate-fade-up stagger-1 bg-black/85 backdrop-blur-xl rounded-xl px-8 py-5 mb-5 border border-white/10 inline-block">
+                <p className="text-primary font-medium tracking-[0.3em] uppercase text-[18px] mb-2">Ownership Structure</p>
+                <h2 className="text-[48px] font-bold leading-[1] text-white mb-2">
+                  Projected Ownership <span className="text-primary">After SAFE Conversion</span>
+                </h2>
+                <p className="text-white/70 text-[18px]">
+                  Assuming full $750,000 converts at $5M cap
+                </p>
+              </div>
 
               <div className="animate-fade-up stagger-3 flex gap-8">
                 {/* Left: Visual bar chart */}
                 <div className="flex-1">
-                  <div className="space-y-3">
+                  <div className="bg-black/85 backdrop-blur-xl border border-white/15 rounded-xl p-6 space-y-3">
                     {capTable.map((c, i) => (
                       <div key={i}>
                         <div className="flex justify-between items-center mb-1">
@@ -41,11 +43,11 @@ export default function SlideCapTable({ active }: { active: boolean }) {
                         </div>
                       </div>
                     ))}
-                  </div>
 
-                  <div className="mt-4 bg-black/80 backdrop-blur-xl border border-white/20 rounded-xl p-3 flex justify-between items-center">
-                    <span className="text-white text-[18px] font-bold uppercase tracking-wider">Total</span>
-                    <span className="text-primary text-[24px] font-bold">100.00%</span>
+                    <div className="mt-4 bg-black/80 border border-white/20 rounded-xl p-3 flex justify-between items-center">
+                      <span className="text-white text-[18px] font-bold uppercase tracking-wider">Total</span>
+                      <span className="text-primary text-[24px] font-bold">100.00%</span>
+                    </div>
                   </div>
                 </div>
 
