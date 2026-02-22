@@ -42,6 +42,11 @@ import SlideCapTable from "@/components/pitch/SlideCapTable";
 import SlideGovernance from "@/components/pitch/SlideGovernance";
 import SlideAdvisoryStructure from "@/components/pitch/SlideAdvisoryStructure";
 import SlideTraction from "@/components/pitch/SlideTraction";
+import SlideConservativeScenario from "@/components/pitch/SlideConservativeScenario";
+import SlideMedicalRevenueEngine from "@/components/pitch/SlideMedicalRevenueEngine";
+import SlideHighMarginAddOns from "@/components/pitch/SlideHighMarginAddOns";
+import SlideFinancialSummary from "@/components/pitch/SlideFinancialSummary";
+import SlideFiveYearVision from "@/components/pitch/SlideFiveYearVision";
 
 // ─── Slide Components ───────────────────────────────────────────────────────
 
@@ -501,13 +506,12 @@ const SLIDES = [
   { component: SlideFacilityLayout, title: "Facility Layout" },
   { component: SlideFilmIndustry, title: "Film & Stunt" },
 
-  // ACT 4: Business Model & Financials
+  // ACT 4: Business Model (Summary Flow)
   { component: SlideRevenueDetailed, title: "Revenue Breakdown" },
-  ...revenueStreams.map((stream) => ({
-    component: ({ active }: { active: boolean }) => <SlideRevenueStream active={active} data={stream} />,
-    title: stream.title,
-  })),
-  { component: SlideFinancialProjections, title: "Financial Overview" },
+  { component: SlideMedicalRevenueEngine, title: "Medical Revenue Engine" },
+  { component: SlideHighMarginAddOns, title: "High-Margin Add-Ons" },
+  { component: SlideFinancialSummary, title: "Financial Summary" },
+  { component: SlideConservativeScenario, title: "Conservative Scenario" },
   { component: SlideOperatingCosts, title: "Operating Costs" },
   { component: SlideSmartBuild, title: "Smart Build" },
   { component: SlideUseOfFundsDetailed, title: "Use of Funds" },
@@ -518,6 +522,7 @@ const SLIDES = [
   { component: SlideCapTable, title: "Cap Table" },
   { component: SlideGovernance, title: "Governance" },
   { component: SlideExitStrategy, title: "Exit Outlook" },
+  { component: SlideFiveYearVision, title: "5-Year Vision" },
 
   // ACT 6: Execution & Community
   { component: SlideCommunityOutreach, title: "Community Impact" },
@@ -526,7 +531,14 @@ const SLIDES = [
   { component: SlideRiskManagement, title: "Risk Management" },
   { component: SlideAdvisoryStructure, title: "Advisory Structure" },
   { component: SlideLongTermVision, title: "Vision" },
-  { component: SlidePricingAppendix, title: "Full Preliminary Pricing Benchmarks" },
+
+  // APPENDIX: Deep Dives
+  ...revenueStreams.map((stream) => ({
+    component: ({ active }: { active: boolean }) => <SlideRevenueStream active={active} data={stream} />,
+    title: `[Appendix] ${stream.title}`,
+  })),
+  { component: SlideFinancialProjections, title: "[Appendix] Pro Forma Detail" },
+  { component: SlidePricingAppendix, title: "[Appendix] Pricing Benchmarks" },
   { component: SlideClosing, title: "Closing" },
 ];
 

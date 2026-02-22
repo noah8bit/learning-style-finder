@@ -39,7 +39,7 @@ export default function SlideTraction({ active }: { active: boolean }) {
               </div>
 
               <div className="animate-fade-up stagger-5 flex gap-5">
-                <div className="flex-1 bg-primary/10 border border-primary/30 rounded-xl p-6">
+                <div className="flex-1 bg-black/70 backdrop-blur-md border border-primary/30 rounded-xl p-6">
                   <h3 className="text-primary text-[20px] font-bold mb-3 uppercase tracking-wider">Founder Skin in the Game</h3>
                   <div className="space-y-2">
                     {[
@@ -54,7 +54,7 @@ export default function SlideTraction({ active }: { active: boolean }) {
                     ))}
                   </div>
                 </div>
-                <div className="flex-1 bg-accent/10 border border-accent/30 rounded-xl p-6">
+                <div className="flex-1 bg-black/70 backdrop-blur-md border border-accent/30 rounded-xl p-6">
                   <h3 className="text-accent text-[20px] font-bold mb-3 uppercase tracking-wider">Comparable Facility Revenue</h3>
                   <div className="space-y-2">
                     {[
