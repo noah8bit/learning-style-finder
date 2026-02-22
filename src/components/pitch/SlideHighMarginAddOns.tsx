@@ -23,7 +23,7 @@ export default function SlideHighMarginAddOns({ active }: { active: boolean }) {
         "IV therapy add-ons: 3 sessions/day × $50 avg = $18K",
         "Stacks: Iron Form Cut ($699), Build ($649), Recovery ($599)",
       ],
-      note: "Operated under licensed medical director, fully compliant with Georgia regulations. No on-site compounding. Year 2 ramps to 30+ clients ($300K net).",
+      note: "All protocols prescribed under licensed MD. No on-site compounding. Sourced through compliant 503A pharmacy partners. Year 2 ramps to 30+ clients ($300K net).",
     },
   ];
 
