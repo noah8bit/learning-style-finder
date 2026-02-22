@@ -521,12 +521,10 @@ function SlideClosing({ active }: { active: boolean }) {
 
 // ─── Slide registry ─────────────────────────────────────────────────────────
 const SLIDES = [
-  // ACT 1: The Hook — Who & Why
+  // ACT 1: The Hook
   { component: SlideCover, title: "Cover" },
   { component: SlideProblem, title: "Problem" },
   { component: SlideSolution, title: "Solution" },
-  { component: SlideTeam, title: "Team" },
-  { component: SlideTraction, title: "Traction" },
 
   // ACT 2: The Product — What We're Building
   { component: SlideServices, title: "Services & Differentiators" },
@@ -540,6 +538,10 @@ const SLIDES = [
   { component: SlideWhyAtlanta, title: "Why Atlanta" },
   { component: SlideCompetitiveAnalysis, title: "Competitive Analysis" },
   { component: SlideCommunityOutreach, title: "Community Impact" },
+
+  // ACT 4: Who's Behind It
+  { component: SlideTeam, title: "Team" },
+  { component: SlideTraction, title: "Traction" },
 
   // ACT 4: The Business Model — How We Make Money
   { component: SlideRevenueDetailed, title: "Revenue Breakdown" },
