@@ -10,9 +10,9 @@ export default function SlideLongTermVision({ active }: { active: boolean }) {
   ];
 
   const milestones = [
-    { icon: "📍", title: "Year 1–2: Establish & Prove", desc: "Grow membership to 275+ in Year 1, 500+ by Year 2, hit profitability, validate every revenue stream, build brand authority in Atlanta." },
-    { icon: "📈", title: "Year 3–4: Scale & Optimize", desc: "Expand digital platform nationally, launch franchise pilot, grow corporate partnerships to 10+." },
-    { icon: "🌎", title: "Year 5+: Replicate & Dominate", desc: "Open 3–5 franchise locations, license training IP, become the national standard for multi-sport facilities." },
+    { icon: "📍", title: "Year 1–2: Establish & Prove", desc: "Grow membership to 275 (Year 1), 450+ (Year 2). Hit EBITDA breakeven Year 1. Validate medical + wellness revenue. Build brand." },
+    { icon: "📈", title: "Year 3–4: Scale & Optimize", desc: "Push to 600+ members, EBITDA >$1.2M. Begin distributions. Grow corporate to 10+ clients. Prep Phase 2 triggers." },
+    { icon: "🌎", title: "Year 5+: Phase 2 & Beyond", desc: "Expand when EBITDA >$1.5M sustained 12 months + 700 members + medical at 90% utilization. Franchise pilot in 2nd metro." },
   ];
 
   return (

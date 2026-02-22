@@ -12,22 +12,19 @@ export default function SlideRevenueDetailed({ active }: { active: boolean }) {
   const maxMembers = 300;
 
   const streams = [
-    { label: "Monthly Memberships", value: "$690K – $790K", type: "core" },
-    { label: "Team Retainments", value: "$180K", type: "core" },
+    { label: "Membership (275 avg)", value: "$720K", type: "core" },
+    { label: "Team Retainers (6 teams)", value: "$180K", type: "core" },
     { label: "Insurance Partnerships", value: "$125K", type: "core" },
-    { label: "Facility Rentals", value: "$156K", type: "core" },
-    { label: "Personal Training", value: "$410K", type: "core" },
-    { label: "Neuromuscular Therapy", value: "$150K", type: "core" },
-    { label: "Corporate Wellness", value: "$180K", type: "enhanced" },
-    { label: "Camps & Seminars", value: "$180K", type: "enhanced" },
-    { label: "Digital Memberships", value: "$84K", type: "enhanced" },
-    { label: "Naming Rights & Sponsorships", value: "$200K", type: "enhanced" },
-    { label: "Event Hosting", value: "$174K", type: "enhanced" },
-    { label: "Recovery Services", value: "$190K", type: "enhanced" },
-    { label: "Peptide & IV Wellness Clinic", value: "$300K", type: "enhanced" },
-    { label: "Nutrition Hub & Café", value: "$175K", type: "enhanced" },
-    { label: "Pro Shop & Retail", value: "$50K", type: "enhanced" },
-    { label: "Content & Media", value: "$36K", type: "enhanced" },
+    { label: "NMT Net to Facility", value: "$150K", type: "core" },
+    { label: "Corporate Wellness (3 cos)", value: "$180K", type: "core" },
+    { label: "Facility Rentals/Events", value: "$150K", type: "core" },
+    { label: "Josh Wellness (ramp)", value: "$150K", type: "enhanced" },
+  ];
+
+  const yearComps = [
+    { year: "Year 1", total: "$1.66M", members: "275", ebitda: "~Breakeven" },
+    { year: "Year 2", total: "$3.17M", members: "450", ebitda: "$520K" },
+    { year: "Year 3", total: "$5.01M", members: "600", ebitda: "$1.2M" },
   ];
 
   return (
@@ -40,12 +37,12 @@ export default function SlideRevenueDetailed({ active }: { active: boolean }) {
             <>
               <p className="animate-fade-up stagger-1 text-primary font-medium tracking-[0.3em] uppercase text-[18px] mb-2">Revenue Breakdown</p>
               <h2 className="animate-fade-up stagger-2 text-[46px] font-bold leading-[1] text-white mb-4">
-                Projected Annual <span className="text-primary">Revenue</span>
+                Year 1 <span className="text-primary">Revenue Model</span>
               </h2>
               <div className="animate-fade-up stagger-3 flex gap-8">
                 {/* Left: Membership ramp-up */}
                 <div className="w-[460px] shrink-0">
-                  <h3 className="text-primary text-[20px] font-bold mb-4 uppercase tracking-wider">Year 1 Ramp-Up</h3>
+                  <h3 className="text-primary text-[20px] font-bold mb-4 uppercase tracking-wider">Membership Ramp-Up</h3>
                   <div className="space-y-3">
                     {rampUp.map((r, i) => (
                       <div key={i} className="flex items-center gap-4">
@@ -60,41 +57,53 @@ export default function SlideRevenueDetailed({ active }: { active: boolean }) {
                       </div>
                     ))}
                   </div>
+
+                  {/* Year comparison */}
+                  <h3 className="text-accent text-[18px] font-bold mt-5 mb-3 uppercase tracking-wider">3-Year Growth</h3>
+                  <div className="space-y-2">
+                    {yearComps.map((y, i) => (
+                      <div key={i} className="flex justify-between items-center bg-black/70 border border-white/15 rounded-lg px-4 py-2.5">
+                        <span className="text-foreground text-[18px] font-bold">{y.year}</span>
+                        <span className="text-muted-foreground text-[16px]">{y.members} mbrs</span>
+                        <span className="text-primary text-[18px] font-bold">{y.total}</span>
+                        <span className="text-accent text-[16px] font-semibold">{y.ebitda}</span>
+                      </div>
+                    ))}
+                  </div>
                 </div>
 
                 {/* Right: Revenue streams */}
                 <div className="flex-1">
-                  <h3 className="text-accent text-[20px] font-bold mb-4 uppercase tracking-wider">Revenue Streams</h3>
-                  <div className="space-y-1">
+                  <h3 className="text-accent text-[20px] font-bold mb-4 uppercase tracking-wider">Year 1 Revenue Streams</h3>
+                  <div className="space-y-2">
                     {streams.map((s, i) => (
-                      <div key={i} className={`flex justify-between items-center rounded-lg px-3 py-1.5 backdrop-blur-md ${s.type === "core" ? "bg-black/70 border border-primary/40" : "bg-black/70 border border-accent/40"}`}>
-                        <span className="text-white text-[16px] font-medium">{s.label}</span>
-                        <span className={`${s.type === "core" ? "text-primary" : "text-accent"} text-[16px] font-bold shrink-0 ml-4`}>{s.value}</span>
+                      <div key={i} className={`flex justify-between items-center rounded-lg px-4 py-3 backdrop-blur-md ${s.type === "core" ? "bg-black/70 border border-primary/40" : "bg-black/70 border border-accent/40"}`}>
+                        <span className="text-white text-[18px] font-medium">{s.label}</span>
+                        <span className={`${s.type === "core" ? "text-primary" : "text-accent"} text-[20px] font-bold shrink-0 ml-4`}>{s.value}</span>
                       </div>
                     ))}
                   </div>
-                  <div className="mt-1.5 flex justify-between items-center bg-black/80 border border-primary/30 rounded-lg px-3 py-1.5">
-                    <span className="text-white text-[16px] font-semibold">Core Subtotal</span>
-                    <span className="text-primary text-[18px] font-bold">$1.71M – $1.81M</span>
-                  </div>
-                  <div className="mt-1 flex justify-between items-center bg-black/80 border border-accent/30 rounded-lg px-3 py-1.5">
-                    <span className="text-white text-[16px] font-semibold">Enhanced Subtotal</span>
-                    <span className="text-accent text-[18px] font-bold">$1.57M</span>
+
+                  {/* COGS callout */}
+                  <div className="mt-3 bg-black/60 border border-white/10 rounded-lg px-4 py-2.5">
+                    <div className="flex justify-between text-[16px]">
+                      <span className="text-muted-foreground">COGS (splits, staffing)</span>
+                      <span className="text-red-400 font-bold">-$450K</span>
+                    </div>
                   </div>
                 </div>
               </div>
 
               {/* Total bar */}
-              <div className="animate-fade-up stagger-4 mt-3 bg-black/70 backdrop-blur-md border border-white/20 rounded-xl p-4 flex items-center justify-between">
+              <div className="animate-fade-up stagger-4 mt-4 bg-black/70 backdrop-blur-md border border-white/20 rounded-xl p-4 flex items-center justify-between">
                 <span className="text-foreground text-[22px] font-bold uppercase tracking-wider">Year 1 Total Revenue</span>
-                <div className="flex items-center gap-4">
-                  <span className="text-primary text-[34px] font-bold">$3.3M</span>
-                  <span className="text-muted-foreground text-[26px]">–</span>
-                  <span className="text-accent text-[34px] font-bold">$3.4M</span>
+                <div className="flex items-center gap-6">
+                  <span className="text-primary text-[34px] font-bold">$1.66M</span>
+                  <span className="text-muted-foreground text-[18px]">EBITDA: ~breakeven</span>
                 </div>
               </div>
               <p className="animate-fade-up stagger-5 absolute bottom-6 left-[100px] right-[100px] text-muted-foreground/50 text-[11px] leading-tight">
-                Sources: IHRSA Membership Pricing Benchmarks 2024; Iron Form internal financial models; comparable facility revenue data (IMG Academy, Life Time, F45)
+                Sources: IHRSA Membership Pricing Benchmarks 2024; Iron Form internal financial models
               </p>
             </>
           )}

@@ -3,12 +3,12 @@ import ScaledSlide from "./ScaledSlide";
 
 export default function SlideUseOfFundsDetailed({ active }: { active: boolean }) {
   const funds = [
-    { pct: "50%", dollar: "$7.5M", title: "Land & Construction", desc: "8–12 acre campus, 60,000+ sq ft pre-engineered steel build, pool infrastructure, café & clinic build-out", color: "text-primary", borderColor: "border-primary/30", bgColor: "bg-primary/10" },
-    { pct: "15%", dollar: "$2.25M", title: "Equipment & Installations", desc: "Climbing walls, cryotherapy, stunt rigging, spring floors, kitchen & gym equipment", color: "text-accent", borderColor: "border-accent/30", bgColor: "bg-accent/10" },
-    { pct: "10%", dollar: "$1.5M", title: "Year 1 Operations", desc: "Coaches, medical staff, utilities, insurance, inventory", color: "text-primary", borderColor: "border-primary/30", bgColor: "bg-primary/10" },
-    { pct: "5%", dollar: "$750K", title: "App & Technology", desc: "Performance tracking, biometrics, member mgmt, POS systems", color: "text-accent", borderColor: "border-accent/30", bgColor: "bg-accent/10" },
-    { pct: "5%", dollar: "$750K", title: "Marketing & Launch", desc: "Grand opening, digital presence, corporate sales, sponsorship outreach", color: "text-primary", borderColor: "border-primary/30", bgColor: "bg-primary/10" },
-    { pct: "15%", dollar: "$2.25M", title: "Contingency Reserve", desc: "Buffer for construction delays, overruns, regulatory costs, working capital", color: "text-accent", borderColor: "border-accent/30", bgColor: "bg-accent/10" },
+    { pct: "15%", dollar: "~$2.3M", title: "Land Acquisition", desc: "8 acres in metro Atlanta — site selection underway", color: "text-primary", borderColor: "border-primary/30", bgColor: "bg-primary/10" },
+    { pct: "10%", dollar: "~$1.6M", title: "Site Work & Utilities", desc: "Grading, parking, utility connections, outdoor field prep", color: "text-accent", borderColor: "border-accent/30", bgColor: "bg-accent/10" },
+    { pct: "52%", dollar: "~$8M", title: "Vertical Build (32K sq ft)", desc: "Pre-engineered steel shell at ~$250/sq ft avg — performance floor, sprint lab, combat studio, film wing, medical suite, seminar space", color: "text-primary", borderColor: "border-primary/30", bgColor: "bg-primary/10" },
+    { pct: "13%", dollar: "~$2M", title: "Outdoor Build", desc: "100×50 turf field, 120m sprint lane, long jump pit, sled lane", color: "text-accent", borderColor: "border-accent/30", bgColor: "bg-accent/10" },
+    { pct: "9%", dollar: "~$1.4M", title: "Equipment & Install", desc: "Training equipment, recovery tech, spring floors, gantry rigs, stunt gear", color: "text-primary", borderColor: "border-primary/30", bgColor: "bg-primary/10" },
+    { pct: "17%", dollar: "~$2.7M", title: "Soft Costs & Contingency", desc: "Permits, legal, architecture, marketing, insurance, ~12% contingency reserve", color: "text-accent", borderColor: "border-accent/30", bgColor: "bg-accent/10" },
   ];
 
   return (
@@ -18,25 +18,28 @@ export default function SlideUseOfFundsDetailed({ active }: { active: boolean })
           {active && (
             <>
               <p className="animate-fade-up stagger-1 text-primary font-medium tracking-[0.3em] uppercase text-[20px] mb-3">Investment Allocation</p>
-              <h2 className="animate-fade-up stagger-2 text-[56px] font-bold leading-[1] text-foreground mb-8">
+              <h2 className="animate-fade-up stagger-2 text-[52px] font-bold leading-[1] text-foreground mb-3">
                 Use of Funds <span className="text-primary">Detailed</span>
               </h2>
-              <div className="animate-fade-up stagger-3 space-y-4">
+              <p className="animate-fade-up stagger-2 text-muted-foreground text-[20px] mb-6">
+                Total: <span className="text-primary font-bold">$15M–$16M</span> · Equity: $9–10M · Debt: $5–6M · Working capital reserve: $1.5M
+              </p>
+              <div className="animate-fade-up stagger-3 space-y-3">
                 {funds.map((f, i) => (
-                  <div key={i} className={`${f.bgColor} border ${f.borderColor} rounded-xl p-6 flex gap-6 items-center`}>
-                    <span className={`${f.color} text-[48px] font-bold shrink-0 min-w-[90px]`}>{f.pct}</span>
+                  <div key={i} className={`${f.bgColor} border ${f.borderColor} rounded-xl p-5 flex gap-5 items-center`}>
+                    <span className={`${f.color} text-[42px] font-bold shrink-0 min-w-[80px]`}>{f.pct}</span>
                     <div className="flex-1">
                       <div className="flex justify-between items-center">
-                        <h3 className={`${f.color} text-[26px] font-bold`}>{f.title}</h3>
-                        <span className={`${f.color} text-[26px] font-bold`}>{f.dollar}</span>
+                        <h3 className={`${f.color} text-[24px] font-bold`}>{f.title}</h3>
+                        <span className={`${f.color} text-[24px] font-bold`}>{f.dollar}</span>
                       </div>
-                      <p className="text-muted-foreground text-[22px] leading-relaxed mt-1">{f.desc}</p>
+                      <p className="text-muted-foreground text-[18px] leading-relaxed mt-1">{f.desc}</p>
                     </div>
                   </div>
                 ))}
               </div>
-              <p className="animate-fade-up stagger-4 mt-6 text-muted-foreground/50 text-[11px] leading-tight">
-                Sources: RSMeans Construction Cost Data 2024; BuildingsGuide – Metal Building Prices 2026; IHRSA Equipment Benchmarks; Iron Form internal financial models
+              <p className="animate-fade-up stagger-4 mt-4 text-muted-foreground/50 text-[11px] leading-tight">
+                Sources: RSMeans Construction Cost Data 2024; BuildingsGuide – Metal Building Prices 2026; Iron Form internal financial models
               </p>
             </>
           )}

@@ -2,7 +2,7 @@ import ScaledSlide from "./ScaledSlide";
 
 export default function SlideRiskManagement({ active }: { active: boolean }) {
   const risks = [
-    { risk: "Construction Delays", level: "High", levelColor: "text-red-400 bg-red-400/10", mitigation: "Phased build-out plan allows partial operations. 15% contingency reserve ($1.8M) built into budget.", icon: "🏗️" },
+    { risk: "Construction Delays", level: "High", levelColor: "text-red-400 bg-red-400/10", mitigation: "Phased build-out plan allows partial operations. ~12% contingency reserve (~$2.7M soft costs + contingency) built into budget.", icon: "🏗️" },
     { risk: "Market Competition", level: "Medium", levelColor: "text-yellow-400 bg-yellow-400/10", mitigation: "First-mover advantage — no Atlanta competitor offers 30+ sports, medical rehab, and film wing.", icon: "⚔️" },
     { risk: "Economic Downturn", level: "Medium", levelColor: "text-yellow-400 bg-yellow-400/10", mitigation: "Diversified revenue streams. Insurance partnerships and grants provide recession-resistant income.", icon: "📉" },
     { risk: "Staffing Challenges", level: "Medium", levelColor: "text-yellow-400 bg-yellow-400/10", mitigation: "Competitive pay + commission, professional development, and Atlanta's deep sports/film talent pool.", icon: "👥" },

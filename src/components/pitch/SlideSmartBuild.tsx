@@ -47,7 +47,7 @@ export default function SlideSmartBuild({ active }: { active: boolean }) {
                 Smart Build, <span className="text-primary">Premium Feel</span>
               </h2>
               <p className="animate-fade-up stagger-3 text-muted-foreground text-[22px] mb-7 leading-relaxed">
-                How we deliver a cutting-edge 60K sq ft facility within our <span className="text-foreground font-semibold">$7.5M land & construction budget</span> — the same playbook elite facilities worldwide use.
+                How we deliver a 32K sq ft Phase 1 facility within our <span className="text-foreground font-semibold">~$8M vertical build budget</span> at ~$250/sq ft — the same playbook elite facilities worldwide use.
               </p>
 
               <div className="animate-fade-up stagger-4 space-y-4">
