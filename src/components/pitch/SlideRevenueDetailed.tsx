@@ -40,7 +40,7 @@ export default function SlideRevenueDetailed({ active }: { active: boolean }) {
                 Year 1 <span className="text-primary">Conservative Ramp</span>
               </h2>
               <p className="animate-fade-up stagger-2 text-muted-foreground text-[16px] mb-4 italic">
-                Year 1 = first 12 months post-opening. Designed for stability, not peak performance.
+                Designed for stability, not peak performance.
               </p>
               <div className="animate-fade-up stagger-3 flex gap-8">
                 {/* Left: Membership ramp-up */}
@@ -95,7 +95,7 @@ export default function SlideRevenueDetailed({ active }: { active: boolean }) {
               <div className="animate-fade-up stagger-4 mt-4 bg-black/70 backdrop-blur-md border border-white/20 rounded-xl p-4 flex items-center justify-between">
                 <div>
                   <span className="text-foreground text-[22px] font-bold uppercase tracking-wider">Year 1 Total Revenue</span>
-                  <span className="text-muted-foreground text-[14px] ml-4">Operational break-even at <span className="text-primary font-bold">245 members</span> assuming base medical, team retainers, and ancillary revenue at conservative Year 1 levels</span>
+                  <span className="text-muted-foreground text-[14px] ml-4">Blended ARPU: $261/month across all membership tiers</span>
                 </div>
                 <div className="flex items-center gap-6">
                   <span className="text-primary text-[34px] font-bold">$1.14M</span>

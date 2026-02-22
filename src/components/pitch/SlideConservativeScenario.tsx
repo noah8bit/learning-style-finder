@@ -105,7 +105,7 @@ export default function SlideConservativeScenario({ active }: { active: boolean 
               <div className="animate-fade-up stagger-5 mt-4 flex gap-4">
                 <div className="flex-[2] bg-black/85 backdrop-blur-xl border border-yellow-400/30 rounded-xl p-4">
                   <p className="text-muted-foreground text-[16px]">
-                    <span className="text-yellow-400 font-bold">Key takeaway:</span> Even in the downside case, Iron Form's –$400K EBITDA is survivable. Development reserve of $350,000 built into capital raise. Operational break-even at <span className="text-primary font-bold">245 active members</span> assuming base medical, team retainers, and ancillary revenue at conservative Year 1 levels. <span className="text-white font-bold">Cost levers include delaying non-essential hires, reducing marketing, and pausing specialty expansions.</span>
+                    <span className="text-yellow-400 font-bold">Key takeaway:</span> Even in the downside case, Iron Form's –$400K EBITDA is survivable. Development reserve of $350,000 built into capital raise. <span className="text-white font-bold">Cost levers include delaying non-essential hires, reducing marketing, and pausing specialty expansions.</span>
                   </p>
                 </div>
                 <div className="flex-1 bg-black/85 backdrop-blur-xl border border-white/20 rounded-xl p-4">

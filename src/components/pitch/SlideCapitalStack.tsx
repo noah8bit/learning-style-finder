@@ -3,7 +3,7 @@ import ScaledSlide from "./ScaledSlide";
 
 export default function SlideCapitalStack({ active }: { active: boolean }) {
   const stack = [
-    { source: "Equity Raise", amount: "$9.8M", pct: "62%", color: "text-primary", borderColor: "border-primary/40", items: ["$750K SAFE (foundational equity — already raising)", "Remaining equity from institutional / syndicate investors", "Closes prior to construction start"] },
+    { source: "Equity Raise", amount: "$9.8M", pct: "62%", color: "text-primary", borderColor: "border-primary/40", items: ["$750K SAFE (foundational equity — already raising)", "Remaining equity from institutional / syndicate investors", "Closes prior to construction start", "Land under LOI prior to equity close; purchase completed at capital close"] },
     { source: "Bank Debt", amount: "$6.0M", pct: "38%", color: "text-accent", borderColor: "border-accent/40", items: ["Construction financing + equipment", "Secured by real estate asset", "Debt service: $620K/year at stabilization"] },
   ];
 
