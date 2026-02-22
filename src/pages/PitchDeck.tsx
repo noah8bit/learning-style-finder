@@ -501,26 +501,27 @@ function SlideClosing({ active }: { active: boolean }) {
 
 // ─── Slide registry ─────────────────────────────────────────────────────────
 const SLIDES = [
-  // ACT 1: Hook — Who & Why
+  // ACT 1: The Hook — Who & Why
   { component: SlideCover, title: "Cover" },
   { component: SlideProblem, title: "Problem" },
   { component: SlideSolution, title: "Solution" },
   { component: SlideTeam, title: "Team" },
   { component: SlideTraction, title: "Traction" },
 
-  // ACT 2: Market Validation
+  // ACT 2: The Product — What We're Building
+  { component: SlideServices, title: "Services & Differentiators" },
+  { component: SlideDisciplines, title: "Disciplines" },
+  { component: SlideFilmIndustry, title: "Film & Stunt" },
+  { component: SlideFacilityLayout, title: "Facility Layout" },
+  { component: SlidePricingRateCard, title: "Service Rate Card" },
+
+  // ACT 3: The Market — Why It Works
   { component: SlideMarket, title: "Market Opportunity" },
   { component: SlideWhyAtlanta, title: "Why Atlanta" },
   { component: SlideCompetitiveAnalysis, title: "Competitive Analysis" },
+  { component: SlideCommunityOutreach, title: "Community Impact" },
 
-  // ACT 3: The Product
-  { component: SlideServices, title: "Services & Differentiators" },
-  { component: SlideDisciplines, title: "Disciplines" },
-  { component: SlidePricingRateCard, title: "Service Rate Card" },
-  { component: SlideFacilityLayout, title: "Facility Layout" },
-  { component: SlideFilmIndustry, title: "Film & Stunt" },
-
-  // ACT 4: Business Model (Summary Flow)
+  // ACT 4: The Business Model — How We Make Money
   { component: SlideRevenueDetailed, title: "Revenue Breakdown" },
   { component: SlideMedicalRevenueEngine, title: "Medical Revenue Engine" },
   { component: SlideHighMarginAddOns, title: "High-Margin Add-Ons" },
@@ -528,18 +529,16 @@ const SLIDES = [
   { component: SlideConservativeScenario, title: "Conservative Scenario" },
   { component: SlideOperatingCosts, title: "Operating Costs" },
   { component: SlideKPIs, title: "Core KPIs" },
-
-  // Financial Snapshot
   { component: SlideFinancialSnapshot, title: "Financial Snapshot" },
 
-  // ACT 5: Development & Capital
+  // ACT 5: The Build — Development & Capital
   { component: SlideDevelopmentBudget, title: "Development Budget" },
   { component: SlideCapitalStack, title: "Capital Stack" },
   { component: SlideSmartBuild, title: "Smart Build" },
   { component: SlideDevelopmentTimeline, title: "Development Timeline" },
   { component: SlidePreOpeningRisk, title: "Pre-Opening Risk Mitigation" },
 
-  // ACT 6: The Ask & Returns
+  // ACT 6: The Ask — Investment & Returns
   { component: SlideInvestmentAsk, title: "Investment Opportunity" },
   { component: SlideUseOfFundsDetailed, title: "SAFE Use of Funds" },
   { component: SlideValuationBridge, title: "Valuation Bridge" },
@@ -548,8 +547,7 @@ const SLIDES = [
   { component: SlideExitStrategy, title: "Exit Outlook" },
   { component: SlideFiveYearVision, title: "5-Year Vision" },
 
-  // ACT 7: Execution & Community
-  { component: SlideCommunityOutreach, title: "Community Impact" },
+  // ACT 7: Execution — How We Get There
   { component: SlideMarketingStrategy, title: "Marketing" },
   { component: SlideRiskManagement, title: "Risk Management" },
   { component: SlideAdvisoryStructure, title: "Advisory Structure" },
