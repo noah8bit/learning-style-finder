@@ -30,19 +30,17 @@ export default function SlideOperatingCosts({ active }: { active: boolean }) {
 
               <div className="animate-fade-up stagger-3 grid grid-cols-2 gap-3">
                 {costs.map((c, i) => (
-                  <div key={i} className="flex gap-4 items-stretch">
-                    <div className="flex-1">
-                      <div className="flex items-center justify-between mb-1">
-                        <span className="text-white text-[18px] font-bold">{c.category}</span>
-                        <span className={`${c.color} text-[18px] font-bold`}>{c.range}</span>
-                      </div>
-                      <div className="h-[20px] bg-black/60 border border-white/15 rounded-full overflow-hidden">
-                        <div
-                          className={`h-full rounded-full ${c.color === "text-primary" ? "bg-primary/70" : "bg-accent/70"} flex items-center justify-end pr-2`}
-                          style={{ width: `${Math.max(c.pct * 2.5, 15)}%` }}
-                        >
-                          <span className="text-white text-[11px] font-bold">{c.pct}%</span>
-                        </div>
+                  <div key={i} className="bg-black/70 backdrop-blur-md border border-white/15 rounded-xl p-4">
+                    <div className="flex items-center justify-between mb-2">
+                      <span className="text-white text-[18px] font-bold">{c.category}</span>
+                      <span className={`${c.color} text-[18px] font-bold`}>{c.range}</span>
+                    </div>
+                    <div className="h-[20px] bg-black/60 border border-white/10 rounded-full overflow-hidden">
+                      <div
+                        className={`h-full rounded-full ${c.color === "text-primary" ? "bg-primary/70" : "bg-accent/70"} flex items-center justify-end pr-2`}
+                        style={{ width: `${Math.max(c.pct * 2.5, 15)}%` }}
+                      >
+                        <span className="text-white text-[11px] font-bold">{c.pct}%</span>
                       </div>
                     </div>
                   </div>

@@ -20,7 +20,7 @@ export default function SlideExitStrategy({ active }: { active: boolean }) {
 
               <div className="animate-fade-up stagger-4 flex gap-6 mb-6">
                 {/* LEFT: Preferred Return + Cash Flow */}
-                <div className="w-[500px] shrink-0 bg-accent/10 border-2 border-accent/50 rounded-2xl p-7 relative overflow-hidden">
+                <div className="w-[500px] shrink-0 bg-black/70 backdrop-blur-md border-2 border-accent/50 rounded-2xl p-7 relative overflow-hidden">
                   <div className="absolute top-0 right-0 bg-accent text-black text-[13px] font-bold uppercase tracking-wider px-4 py-1.5 rounded-bl-xl">Preferred Return</div>
                   <span className="text-[40px] block mb-3">💸</span>
                   <h3 className="text-white text-[26px] font-bold mb-3">8% Accrued Preferred Return</h3>

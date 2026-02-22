@@ -84,12 +84,12 @@ export default function SlideFinancialProjections({ active }: { active: boolean 
             </div>
 
             {/* Sensitivity */}
-            <div className="animate-fade-up stagger-4 flex gap-4 mb-4">
-              <div className="flex-1 bg-accent/10 border border-accent/30 rounded-xl p-4">
+              <div className="animate-fade-up stagger-4 flex gap-4 mb-4">
+              <div className="flex-1 bg-black/70 backdrop-blur-md border border-accent/30 rounded-xl p-4">
                 <h4 className="text-accent text-[18px] font-bold mb-1">Stress Test (Year 2)</h4>
                 <p className="text-muted-foreground text-[16px]">Revenue $3.8M → EBITDA $800K → Net after debt $180K. <span className="text-foreground font-semibold">Survivable.</span></p>
               </div>
-              <div className="flex-1 bg-primary/10 border border-primary/30 rounded-xl p-4">
+              <div className="flex-1 bg-black/70 backdrop-blur-md border border-primary/30 rounded-xl p-4">
                 <h4 className="text-primary text-[18px] font-bold mb-1">Sensitivity (Year 3)</h4>
                 <p className="text-muted-foreground text-[16px]">If only 500 members: Revenue -$400K → EBITDA ~$900K → Net ~$280K. <span className="text-foreground font-semibold">Viable but no expansion.</span></p>
               </div>
