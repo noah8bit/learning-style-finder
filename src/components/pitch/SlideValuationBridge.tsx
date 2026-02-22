@@ -53,7 +53,7 @@ export default function SlideValuationBridge({ active }: { active: boolean }) {
                 <div className="text-muted-foreground text-[24px]">→</div>
                 <div className="flex-1 bg-accent/10 border border-accent/30 rounded-lg p-4 text-center">
                   <div className="text-accent text-[28px] font-bold">Priced Round</div>
-                  <div className="text-muted-foreground text-[14px]">Full $9–10M Equity Close</div>
+                  <div className="text-muted-foreground text-[14px]">Full $9.8M Equity Close</div>
                   <div className="text-muted-foreground text-[12px] mt-1">Asset-backed · Demand-validated</div>
                 </div>
               </div>

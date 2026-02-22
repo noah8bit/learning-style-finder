@@ -49,7 +49,7 @@ export default function SlideDevelopmentTimeline({ active }: { active: boolean }
               From Capital Close to <span className="text-primary">Full Operations</span>
             </h2>
             <p className="animate-fade-up stagger-2 text-muted-foreground text-[20px] mb-10">
-              ~20-month development cycle. Year 1 financial projections begin at facility opening.
+              20-month development cycle. Year 1 financial projections begin at facility opening.
             </p>
 
             <div className="animate-fade-up stagger-3 relative">

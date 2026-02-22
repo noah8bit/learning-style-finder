@@ -20,7 +20,7 @@ export default function SlideMedicalRevenueEngine({ active }: { active: boolean 
       total: "$110K",
       points: [
         "5 sessions/day avg × $120 avg reimbursement × 280 days = $168K base gross",
-        "Additional rehab bundles and subscription packages increase total gross to ~$310K",
+        "Additional rehab bundles and subscription packages increase total gross to $310K",
         "Net to facility after Rick's 65/35 split: $110K",
       ],
     },

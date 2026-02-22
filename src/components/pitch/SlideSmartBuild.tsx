@@ -47,7 +47,7 @@ export default function SlideSmartBuild({ active }: { active: boolean }) {
                 Smart Build, <span className="text-primary">Premium Feel</span>
               </h2>
               <p className="animate-fade-up stagger-3 text-muted-foreground text-[22px] mb-7 leading-relaxed">
-                How we deliver a 32K sq ft purpose-built campus within our <span className="text-foreground font-semibold">~$8M vertical build budget</span> at ~$250/sq ft — the same playbook institutional facilities worldwide use.
+                How we deliver a 32K sq ft purpose-built campus within our <span className="text-foreground font-semibold">$8M vertical build budget</span> at $250/sq ft — the same playbook institutional facilities worldwide use.
               </p>
 
               <div className="animate-fade-up stagger-4 space-y-4">
