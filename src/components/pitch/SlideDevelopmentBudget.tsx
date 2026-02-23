@@ -4,13 +4,13 @@ import ScaledSlide from "./ScaledSlide";
 export default function SlideDevelopmentBudget({ active }: { active: boolean }) {
   const budget = [
     { item: "Land Acquisition", value: "$2,300,000", color: "text-primary", borderColor: "border-primary/30" },
-    { item: "Site Work & Infrastructure", value: "$1,600,000", color: "text-accent", borderColor: "border-accent/30" },
+    { item: "Site Work & Infrastructure", value: "$1,000,000", color: "text-accent", borderColor: "border-accent/30" },
     { item: "Vertical Construction (32K sq ft)", value: "$8,000,000", color: "text-primary", borderColor: "border-primary/30" },
-    { item: "Outdoor Track & Field", value: "$2,000,000", color: "text-accent", borderColor: "border-accent/30" },
-    { item: "Equipment & Recovery Tech", value: "$1,400,000", color: "text-primary", borderColor: "border-primary/30" },
-    { item: "Soft Costs (A&E, Legal, Permits)", value: "$1,000,000", color: "text-accent", borderColor: "border-accent/30" },
-    { item: "Pre-Opening & Interest Carry", value: "$750,000", color: "text-primary", borderColor: "border-primary/30" },
-    { item: "Contingency", value: "$750,000", color: "text-accent", borderColor: "border-accent/30" },
+    { item: "Outdoor Track & Field", value: "$1,500,000", color: "text-accent", borderColor: "border-accent/30" },
+    { item: "Equipment & Recovery Tech", value: "$1,000,000", color: "text-primary", borderColor: "border-primary/30" },
+    { item: "Soft Costs (A&E, Legal, Permits)", value: "$800,000", color: "text-accent", borderColor: "border-accent/30" },
+    { item: "Pre-Opening & Interest Carry", value: "$600,000", color: "text-primary", borderColor: "border-primary/30" },
+    { item: "Contingency", value: "$600,000", color: "text-accent", borderColor: "border-accent/30" },
   ];
 
   return (
