@@ -143,11 +143,12 @@ function SlideSolution({ active }: { active: boolean }) {
     { icon: "🎬", label: "Film & Stunt Wing" },
   ];
   const pillars = [
-    { icon: "🏅", label: "Diversified Training", desc: "30+ disciplines under one roof generate broad membership appeal and reduce churn — athletes don't outgrow us." },
-    { icon: "🏥", label: "Insurance-Backed Medical", desc: "Sports medicine, neuromuscular therapy, and peptide wellness billed through insurance — recurring clinical revenue independent of membership." },
-    { icon: "🏢", label: "Corporate Wellness", desc: "B2B contracts with employers provide predictable, recurring revenue with higher retention than individual memberships." },
-    { icon: "🤝", label: "Sponsorships & Grants", desc: "Community outreach and youth development funded through brand partnerships, grant programs, and local sponsorships." },
-    { icon: "🎪", label: "Event & Facility Rentals", desc: "Competitions, film productions, private training sessions, and space rentals generate high-margin income with minimal overhead." },
+    { icon: "💪", label: "Monthly Memberships", desc: "Month-to-month and tiered membership plans for athletes of all levels — from youth to pro — providing steady, predictable baseline revenue." },
+    { icon: "🏥", label: "Insurance-Backed Medical", desc: "Neuromuscular therapy, sports rehab, peptide wellness, and IV services billed through insurance — recurring clinical revenue independent of membership." },
+    { icon: "🏢", label: "Corporate B2B Contracts", desc: "Wellness packages sold directly to employers — predictable, high-retention contracts with Atlanta's deep Fortune 500 employer base." },
+    { icon: "🤝", label: "Team & Athlete Sponsorships", desc: "Sponsorship deals spanning school athletics to pro-level teams and individual athletes — brand partnerships that scale with visibility." },
+    { icon: "🎯", label: "Grants & Community Development", desc: "Pursuing a variety of grants to fund youth development, community fitness, and underserved population access — mission-driven revenue that unlocks public and nonprofit funding." },
+    { icon: "🎬", label: "Event & Facility Rentals", desc: "Competitions, film productions, private training, social media shoots, commercials, and space rentals generate high-margin income with minimal overhead." },
   ];
   return (
     <ScaledSlide>
@@ -163,11 +164,11 @@ function SlideSolution({ active }: { active: boolean }) {
                   Train Better. Recover Faster. <span className="text-primary">Go Further.</span>
                 </h2>
                 <p className="text-white/70 text-[20px] max-w-[1100px] leading-relaxed">
-                  A comprehensive high-performance campus for athletes across every sport — with integrated rehabilitation, recovery science, and medical services under one roof. <span className="text-primary font-semibold">Month-to-month memberships aren't the only way to build a successful facility.</span> Iron Form is built on five distinct revenue pillars.
+                  A comprehensive high-performance campus for athletes across every sport — with integrated rehabilitation, recovery science, and medical services under one roof. <span className="text-primary font-semibold">Month-to-month memberships aren't the only path to revenue.</span> Iron Form is built on six distinct revenue pillars.
                 </p>
               </div>
 
-              <div className="animate-fade-up stagger-3 grid grid-cols-5 gap-3 mb-5">
+              <div className="animate-fade-up stagger-3 grid grid-cols-3 gap-3 mb-5">
                 {pillars.map((p, i) => (
                   <div key={i} className="bg-black/85 backdrop-blur-xl border border-primary/30 rounded-xl p-5 flex flex-col">
                     <span className="text-[32px] mb-2">{p.icon}</span>
